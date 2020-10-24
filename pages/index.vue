@@ -33,58 +33,8 @@
     </section>
 
     <section class="main-content mt-5">
-      <!--<b-container fluid no-padding>
-        <b-row align-v="center" no-gutters>
-          <b-col class="left-content" cols="6">
-            <h1>Como geramos valor aos nossos clientes?</h1>
-            <div class="box-subtitle">
-              Atuamos no ciclo completo de desenvolvimento, desde a concepção
-              até a materialização dos produtos digitais.
-            </div>
-          </b-col>
-          <b-col class="right-content" cols="6">
-            <div class="content-box">
-              <h2>Soluções Inovadoras</h2>
-              <p>
-                Conectar clientes com soluçoes proprietárias disruptivas que
-                acelerem a transformação digital ou criar novos modelos de
-                negócios.
-              </p>
-            </div>
-
-            <div class="content-box">
-              <h2>Transformação digital</h2>
-              <p>
-                Transformar negócios com tecnologia evoluindoe acelerando como
-                as empresas operame entregam valor para seus
-                clientes.Digitalização e aprendizado contínuopara melhoria dos
-                negócios dos clientes.
-              </p>
-            </div>
-
-            <div class="content-box">
-              <h2>Squads Gerenciados</h2>
-              <p>
-                Times cross-funcionais, ágeis e auto gerenciáveis, com alta
-                performance e estratégia orientada à entrega de Valor.
-              </p>
-            </div>
-
-            <div class="content-box">
-              <h2>Times especializados</h2>
-              <p>
-                Times multidisciplinares com alta capacidade técnica que apoiam
-                o desenvolvimento e melhoria contínua de produtos digitais.
-              </p>
-            </div>
-          </b-col>
-        </b-row>
-      </b-container>-->
-
       <div class="content-box cover-1">
-        <div class="box-image" style="
-            background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-          ">
+        <div class="box-image" style="background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);">
           &nbsp;
         </div>
         <div class="content container">
