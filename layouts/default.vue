@@ -5,7 +5,20 @@
         <img src="/images/logo-brq.png" class="logo" alt="" />
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse"
+        ><svg
+          width="2em"
+          height="2em"
+          viewBox="0 0 16 16"
+          class="bi bi-list"
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          /></svg
+      ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
@@ -30,12 +43,10 @@
     </b-navbar>
 
     <Nuxt />
-    
   </div>
 </template>
 
 <style lang="scss">
-
 .logo {
   height: 85px;
 }
@@ -43,5 +54,4 @@
 .navbar-nav .nav-link {
   padding-left: 25px !important;
 }
-
 </style>

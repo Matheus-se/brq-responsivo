@@ -4,6 +4,7 @@
     --brq-yellow: #ED8B00;
     --brq-blue: #009CDE;
     --brq-darkblue: #005FA3;
+    --brq-grey: #505050;
 }
 
 body {
@@ -43,6 +44,14 @@ body {
 .title p {
     color: var(--white);
 }
+
+
+/* Backgrounds */
+
+.dark-bg {
+  background-image: linear-gradient(#25242a, #121116);
+}
+
 
 @media (max-width: 575.98px) {
   body, html{
