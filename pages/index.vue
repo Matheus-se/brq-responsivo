@@ -37,6 +37,60 @@
     </section>
 
     <section class="main-content mt-5">
+      <div class="left-content d-flex align-items-center">
+        <div class="container">
+          <h2>TESTANDO</h2>
+        </div>
+      </div>
+      <div class="content-box dark-bg">
+        <div class="content container">
+          <div class="col-md-4 offset-md-8">
+            <h2>Soluções Inovadoras</h2>
+            <p>
+              Conectar clientes com soluçoes proprietárias disruptivas que
+              acelerem a transformação digital ou criar novos modelos de
+              negócios.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-box dark-bg">
+        <div class="content container">
+          <div class="col-md-4 offset-md-8">
+            <h2>Transformação digital</h2>
+            <p>
+              Transformar negócios com tecnologia evoluindoe acelerando como as
+              empresas operame entregam valor para seus clientes. Digitalização e
+              aprendizado contínuopara melhoria dos negócios dos clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-box dark-bg">
+        <div class="content container">
+          <div class="col-md-5 offset-md-7">
+            <h2>Squads Gerenciados</h2>
+            <p>
+              Times cross-funcionais, ágeis e auto gerenciáveis, com alta
+              performance e estratégia orientada à entrega de Valor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-box dark-bg">
+        <div class="content container">
+          <div class="col-md-6 offset-md-6">
+            <h2>Times Especializados</h2>
+            <p>
+              Times multidisciplinares com alta capacidade técnica que apoiam o
+              desenvolvimento e melhoria contínua de produtos digitais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="main-content mt-5">
       <div class="content-box dark-bg cover-1">
         <div
           class="box-image"
@@ -94,8 +148,7 @@
           <div class="cover">&nbsp;</div>
         </div>
       </div>
-      <!--end of box-3-->
-    </section>
+    </section> -->
 
     <section class="about-team">
       <div class="be-brq">
@@ -272,11 +325,27 @@ export default Vue.extend({});
 }
 
 .main-content {
+  position: relative;
+
   .left-content {
-    h1 {
+    background:var(--white);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 60%;
+    height: 100%;
+    z-index: 999;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+
+    .container {
+      margin-left: 20%;
+    }
+
+    h2 {
       font-size: 4rem;
       text-transform: uppercase;
       font-weight: bolder;
+      color: var(--dark);
     }
 
     .box-subtitle {
@@ -291,20 +360,14 @@ export default Vue.extend({});
     color: var(--white);
     text-align: right;
     position: relative;
-    height: 250px;
 
     .content {
-      padding: 4% 0 4% 53vw;
-    }
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
 
-    .cover {
-      background: var(--white);
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      clip-path: polygon(0 0, 100% 0%, 95% 100%, 0 100%);
-      transition: opacity 0.5s ease-in-out;
+      p {
+        margin: 0;
+      }
     }
 
     .box-image {
@@ -313,33 +376,6 @@ export default Vue.extend({});
       height: 100%;
       background-size: cover;
       background-position: center center;
-    }
-  }
-
-  .content-box:hover {
-    .cover {
-      opacity: 0;
-    }
-  }
-
-  .cover-1 {
-    .box-image,
-    .cover {
-      width: 60%;
-    }
-  }
-
-  .cover-2 {
-    .box-image,
-    .cover {
-      width: 57%;
-    }
-  }
-
-  .cover-3 {
-    .box-image,
-    .cover {
-      width: 54.1%;
     }
   }
 
@@ -411,9 +447,9 @@ export default Vue.extend({});
       color: var(--white);
     }
     input:focus {
-      outline:0px !important;
-    -webkit-appearance:none;
-    box-shadow: none !important;
+      outline: 0px !important;
+      -webkit-appearance: none;
+      box-shadow: none !important;
     }
     h2 {
       color: var(--white);
