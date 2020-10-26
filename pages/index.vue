@@ -31,7 +31,7 @@
           </div>
           <div class="col-12 col-md-8 video-cover">
             <b-img
-              src="http://placeimg.com/760/427/tech"
+              src="/images/tech.jpeg"
               fluid-grow
               alt="Fluid-grow image"
             ></b-img>
@@ -53,9 +53,19 @@
       </div>
     </div>
 
-    <section class="main-content mt-5">
+    <section
+      class="main-content mt-5"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="0"
+    >
       <div class="left-content d-flex align-items-center">
-        <div class="container p-0">
+        <div
+          class="container p-0"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <h2>Como geramos valor para os nossos clientes?</h2>
           <div class="box mt-4">
             <p class="m-0">
@@ -116,15 +126,32 @@
       </div>
     </section>
 
-    <section class="about-team">
+    <section
+      class="about-team"
+      data-aos="fade-left"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="100"
+    >
       <div class="be-brq">
         <div class="container h-100">
           <div class="row h-100">
             <div
               class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
             >
-              <h1>Paixão por transformar negócios com tecnologia</h1>
-              <img src="/images/seals-gptw.png" class="mt-auto" alt="" />
+              <h1
+                data-aos="fade-up"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="200"
+              >
+                Paixão por transformar negócios com tecnologia
+              </h1>
+              <img
+                src="/images/seals-gptw.png"
+                class="mt-auto"
+                alt=""
+                data-aos="fade-down"
+                data-aos-delay="100"
+              />
             </div>
           </div>
         </div>
@@ -132,12 +159,21 @@
       <div class="container context">
         <div class="row">
           <div class="col-md-7 offset-md-5">
-            <p>
+            <p
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
               São nossos feras que traduzem a nossa essência para o mercado e
               trabalham engajados para entregar a melhor experiência para nossos
               clientes todos os dias.
             </p>
-            <p class="mt-4">
+            <p
+              class="mt-4"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
               Aqui, <strong>respeito e diversidade</strong> importam, porque
               cada um, do seu jeito, nos ajuda a evoluir para alcançar nosso
               Norte Verdadeiro em uma <strong>Cultura Lean e Ágil</strong>.
@@ -224,6 +260,59 @@
                   <div class="item d-flex third">
                     <div
                       class="img col-6"
+                      style="
+                        background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
+                      "
+                    >
+                      &nbsp;
+                    </div>
+                    <div class="content d-flex align-content-center flex-wrap">
+                      <h2>Podcast</h2>
+                      <p>
+                        Protegido: Série Podcast Transformação Digital com
+                        Santander e BRQ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </b-carousel-slide>
+            </b-carousel>
+
+            <b-carousel
+              id="carousel-2"
+              v-model="slide"
+              :interval="4000"
+              controls
+              img-width="1024"
+              class="d-block d-sm-none"
+            >
+              <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+              <b-carousel-slide img-blank>
+                <div class="blog-item">
+                  <div class="item">
+                    <div
+                      class="img col-12"
+                      style="
+                        background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
+                      "
+                    >
+                      &nbsp;
+                    </div>
+                    <div class="content d-flex align-content-center flex-wrap">
+                      <h2>Podcast</h2>
+                      <p>
+                        Protegido: Série Podcast Transformação Digital com
+                        Santander e BRQ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </b-carousel-slide>
+              <b-carousel-slide img-blank>
+                <div class="blog-item">
+                  <div class="item">
+                    <div
+                      class="img col-12"
                       style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
@@ -643,18 +732,54 @@ export default Vue.extend({});
       width: 50%;
     }
   }
+
+  .blog {
+    .carousel-control-prev,
+    .carousel-control-next {
+      z-index: 999;
+    }
+
+    .carousel-control-prev {
+      left: -10px;
+    }
+
+    .carousel-control-next {
+      right: -10px;
+    }
+
+    .blog-item {
+      position: relative;
+      height: auto;
+
+      .item {
+        background: var(--white);
+        width: 90%;
+        margin: auto;
+        position: relative;
+
+        .content {
+          height: auto;
+          padding: 2rem;
+        }
+
+        .img {
+          height: 150px;
+        }
+      }
+    }
+  }
 }
 
 /* FOR IPHONE 6 USERS */
 @media (max-height: 668px) {
   .main-content {
-    .scale {
+    /*.scale {
       left: -90%;
       bottom: 370px;
       img {
         width: 115vh;
       }
-    }
+    }*/
   }
 }
 </style>

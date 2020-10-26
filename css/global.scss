@@ -12,6 +12,10 @@ body {
     font-family: Montserrat, sans-serif;
     font-size: 14px;
 }
+
+body > div {
+  overflow: hidden;
+}
   
   /* TITLES */
   h1,
