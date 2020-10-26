@@ -36,7 +36,7 @@
               alt="Fluid-grow image"
             ></b-img>
             <a href="#" class="play-button">
-              <img src="/images/_play-button.svg" alt="">
+              <img src="/images/_play-button.svg" alt="" />
             </a>
           </div>
         </div>
@@ -294,9 +294,9 @@ export default Vue.extend({});
 
 .title {
   position: relative;
-  
+
   .video-cover {
-    position:relative
+    position: relative;
   }
 
   .play-button {
@@ -322,7 +322,7 @@ export default Vue.extend({});
 
 .main-content {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 
   .scale {
     position: absolute;
@@ -582,6 +582,7 @@ export default Vue.extend({});
   left: 0;
 }
 
+/* Mobile Users */
 @media (max-width: 575.98px) {
   .db-1 {
     height: 130vw;
@@ -640,6 +641,19 @@ export default Vue.extend({});
 
     img {
       width: 50%;
+    }
+  }
+}
+
+/* FOR IPHONE 6 USERS */
+@media (max-height: 668px) {
+  .main-content {
+    .scale {
+      left: -90%;
+      bottom: 370px;
+      img {
+        width: 115vh;
+      }
     }
   }
 }

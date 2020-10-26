@@ -95,4 +95,15 @@
     font-family: "Bebas Neue Pro";
   }
 }
+
+@media (max-width: 575.98px) {
+  .navbar-collapse {
+    background:#fff;
+
+    .nav-item a {
+      color: var(--brq-dark);
+      font-size: 1.4rem;
+    }
+  }
+}
 </style>
