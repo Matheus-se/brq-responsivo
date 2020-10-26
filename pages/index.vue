@@ -1,8 +1,16 @@
 <template>
   <div>
-    <div class="db-1 dark-bg"></div>
     <!--background-->
-    <section class="title">
+    <section class="pd-top title dark-bg">
+      <!--cuts-->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon fill="white" points="0,100 100,0 100,100" />
+      </svg>
+
       <div class="container">
         <div class="row">
           <div class="col my-md-5 my-3">
@@ -21,26 +29,44 @@
               nossa metodologia
             </h2>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 video-cover">
             <b-img
-              src="https://picsum.photos/300/150/?image=41"
+              src="http://placeimg.com/760/427/tech"
               fluid-grow
               alt="Fluid-grow image"
             ></b-img>
-            <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
-              Conheça a<br />
-              nossa metodologia
-            </h2>
+            <a href="#" class="play-button">
+              <img src="/images/_play-button.svg" alt="">
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!--for responsive-->
+    <div class="container">
+      <div class="row">
+        <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
+          Conheça a<br />
+          nossa metodologia
+        </h2>
+      </div>
+    </div>
+
     <section class="main-content mt-5">
       <div class="left-content d-flex align-items-center">
-        <div class="container">
-          <h2>TESTANDO</h2>
+        <div class="container p-0">
+          <h2>Como geramos valor para os nossos clientes?</h2>
+          <div class="box mt-4">
+            <p class="m-0">
+              Atuamos no ciclo completo de desenvolvimento, desde a concepção
+              até a materialização dos produtos digitais
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="scale">
+        <img src="/images/escala-valores.png" alt="" />
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
@@ -60,8 +86,8 @@
             <h2>Transformação digital</h2>
             <p>
               Transformar negócios com tecnologia evoluindoe acelerando como as
-              empresas operame entregam valor para seus clientes. Digitalização e
-              aprendizado contínuopara melhoria dos negócios dos clientes.
+              empresas operame entregam valor para seus clientes. Digitalização
+              e aprendizado contínuopara melhoria dos negócios dos clientes.
             </p>
           </div>
         </div>
@@ -89,66 +115,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="main-content mt-5">
-      <div class="content-box dark-bg cover-1">
-        <div
-          class="box-image"
-          style="
-            background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-          "
-        >
-          &nbsp;
-        </div>
-        <div class="content container">
-          <h2>Soluções Inovadoras</h2>
-          <p>
-            Conectar clientes com soluçoes proprietárias disruptivas que
-            acelerem a transformação digital ou criar novos modelos de negócios.
-          </p>
-          <div class="cover">&nbsp;</div>
-        </div>
-      </div>
-
-      <div class="content-box dark-bg cover-2">
-        <div
-          class="box-image"
-          style="
-            background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-          "
-        >
-          &nbsp;
-        </div>
-        <div class="content container">
-          <h2>Transformação digital</h2>
-          <p>
-            Transformar negócios com tecnologia evoluindoe acelerando como as
-            empresas operame entregam valor para seus clientes.Digitalização e
-            aprendizado contínuopara melhoria dos negócios dos clientes.
-          </p>
-          <div class="cover">&nbsp;</div>
-        </div>
-      </div>
-
-      <div class="content-box dark-bg cover-3">
-        <div
-          class="box-image"
-          style="
-            background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-          "
-        >
-          &nbsp;
-        </div>
-        <div class="content container">
-          <h2>Squads Gerenciados</h2>
-          <p>
-            Times cross-funcionais, ágeis e auto gerenciáveis, com alta
-            performance e estratégia orientada à entrega de Valor.
-          </p>
-          <div class="cover">&nbsp;</div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="about-team">
       <div class="be-brq">
@@ -314,38 +280,93 @@ export default Vue.extend({});
   z-index: -1;
 }
 
+.method {
+  text-transform: uppercase;
+  padding: 5%;
+  border-left: 1px solid var(--dark);
+  color: var(--brq-yellow);
+  font-weight: medium;
+}
+
+.pd-top {
+  padding-top: 7rem;
+}
+
 .title {
-  .method {
-    text-transform: uppercase;
-    padding: 5%;
-    border-left: 1px solid var(--dark);
-    color: var(--brq-yellow);
-    font-weight: medium;
+  position: relative;
+  
+  .video-cover {
+    position:relative
+  }
+
+  .play-button {
+    position: absolute;
+    z-index: 999;
+    left: calc(50% - 45px);
+    top: calc(50% - 45px);
+  }
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20vw;
+    transform: scaleX(-1);
+    /* set height to pixels if you want angle to change with screen width */
+  }
+
+  p {
+    font-size: 1.05rem;
   }
 }
 
 .main-content {
   position: relative;
+  overflow:hidden;
+
+  .scale {
+    position: absolute;
+    bottom: 332px;
+    left: 22%;
+    z-index: 999;
+    transform: rotate(-67deg);
+
+    img {
+      width: 57vw;
+    }
+  }
 
   .left-content {
-    background:var(--white);
+    background: var(--white);
     position: absolute;
-    top:0;
-    left:0;
-    width: 60%;
-    height: 100%;
+    top: -1px;
+    left: 0;
+    width: 59%;
+    height: 100.1%;
     z-index: 999;
-    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+    padding-right: 5%;
 
     .container {
-      margin-left: 20%;
+      h2 {
+        margin-left: 16%;
+        margin-right: 10%;
+      }
+      .box {
+        background: var(--brq-blue);
+        padding: 2rem 2rem 2rem 16%;
+        margin-right: 23%;
+        font-size: 1.5rem;
+        color: var(--white);
+        clip-path: polygon(100% 0, 100% 55%, 93% 100%, 0 100%, 0 0);
+      }
     }
 
     h2 {
       font-size: 4rem;
       text-transform: uppercase;
       font-weight: bolder;
-      color: var(--dark);
+      color: var(--brq-dark);
     }
 
     .box-subtitle {
@@ -464,90 +485,101 @@ export default Vue.extend({});
     }
   }
 
-  .carousel-caption {
-    position: relative;
-    color: var(--dark);
-    width: 100%;
-    margin: 0;
-    left: 0;
-    top: 0;
-    height: 100%;
-  }
-
-  .carousel-item {
-    img {
-      display: none !important;
-    }
-  }
-
-  .blog-item {
-    position: relative;
-    height: 580px;
-
-    .item {
-      background: var(--white);
-      width: 45%;
-      position: absolute;
-
-      .img {
-        width: 100%;
-        background-size: cover;
-        background-position: center center;
-        padding: 2rem;
-      }
-
-      .content {
-        text-align: left;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        height: 250px;
-      }
-
-      h2 {
-        color: var(--brq-blue);
-        font-size: 1rem;
-        text-transform: uppercase;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-    }
-
-    .first {
-      top: 15%;
-      left: 5%;
-    }
-
-    .second {
-      top: 51%;
-      left: 33%;
-    }
-
-    .third {
-      top: 0;
-      right: 3%;
-    }
-  }
-
-  .blog-item::before {
-    content: "";
-    position: absolute;
-    width: 80%;
-    margin: 5% 10%;
-    height: 80%;
-    border: 2px solid var(--brq-grey);
-    top: 0;
-    left: 0;
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #25242a;
+    border: 1px solid #373737;
+    border-radius: 100%;
   }
 
   .carousel-control-prev {
-    left: -100px;
+    left: -50px;
   }
 
   .carousel-control-next {
-    right: -100px;
+    right: -50px;
   }
+}
+
+.carousel-caption {
+  position: relative;
+  color: var(--dark);
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.carousel-item {
+  img {
+    display: none !important;
+  }
+}
+
+.blog-item {
+  position: relative;
+  height: 580px;
+
+  .item {
+    background: var(--white);
+    width: 45%;
+    position: absolute;
+
+    .img {
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+      padding: 2rem;
+    }
+
+    .content {
+      text-align: left;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      height: 250px;
+    }
+
+    h2 {
+      color: var(--brq-blue);
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .first {
+    top: 15%;
+    left: 5%;
+  }
+
+  .second {
+    top: 51%;
+    left: 33%;
+  }
+
+  .third {
+    top: 0;
+    right: 3%;
+  }
+}
+
+.blog-item::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  margin: 5% 10%;
+  height: 80%;
+  border: 2px solid var(--brq-grey);
+  top: 0;
+  left: 0;
 }
 
 @media (max-width: 575.98px) {
@@ -556,12 +588,47 @@ export default Vue.extend({});
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   }
 
+  .main-content {
+    .scale {
+      transform: rotate(-90deg);
+      left: -85%;
+      bottom: 370px;
+      img {
+        width: 90vh;
+      }
+    }
+
+    .content-box {
+      .content {
+        padding-left: 3rem;
+      }
+    }
+
+    .left-content {
+      position: relative;
+      width: 100%;
+      clip-path: none;
+
+      .container {
+        h2 {
+          margin-left: 30px;
+          margin-right: 30px;
+          font-size: 3rem;
+        }
+        .box {
+          padding: 2rem 2rem 2rem 30px;
+          margin-right: 0;
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
   .about-team {
     .context {
       margin-top: 2rem;
     }
   }
-
   .be-brq {
     height: 60vh;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
