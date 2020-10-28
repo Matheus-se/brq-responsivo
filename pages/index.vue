@@ -1,17 +1,24 @@
 <template>
   <div>
+
+    <div id="slide-next">
+      <video class="img-fluid" controls id="video-player">
+        <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+      </video>
+    </div>
     <!--background-->
     <section class="pd-top title dark-bg">
       <!--cuts-->
       <svg
-        class="diagonal-line"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        ref="diagonal"
+          class="diagonal-line"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          ref="diagonal"
+          id="diagonal"
       >
         <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
-        <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
+        <rect width="100" height="100" style="fill: rgb(255, 255, 255)"/>
       </svg>
 
       <div class="container">
@@ -27,65 +34,72 @@
               até a materialização dos produtos digitais.
             </p>
             <img
-              src="/images/arrow-dobra.svg"
-              ref="setaHz"
-              class="mt-3 d-none d-md-block"
+                src="/images/arrow-dobra.svg"
+                ref="setaHz"
+                id="setaHz"
+                class="mt-3 d-none d-md-block"
             />
 
             <div class="method-title d-flex">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="64.707"
-                height="160.707"
-                viewBox="0 0 64.707 160.707"
-                ref="seta"
-                class="seta"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64.707"
+                  height="160.707"
+                  viewBox="0 0 64.707 160.707"
+                  ref="seta"
+                  id="seta"
+                  class="seta"
               >
                 <g
-                  id="_arrow-1a-dobra"
-                  transform="translate(64.354) rotate(90)"
+                    id="_arrow-1a-dobra"
+                    transform="translate(64.354) rotate(90)"
                 >
                   <path
-                    id="Path"
-                    d="M0,0,32,32,0,64"
-                    transform="translate(128)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
+                      id="Path"
+                      d="M0,0,32,32,0,64"
+                      transform="translate(128)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
                   />
                   <path
-                    id="Path_2"
-                    data-name="Path 2"
-                    d="M0,.5H160"
-                    transform="translate(0 32)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
+                      id="Path_2"
+                      data-name="Path 2"
+                      d="M0,.5H160"
+                      transform="translate(0 32)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
                   />
                 </g>
               </svg>
 
               <h2
-                class="method mt-5 d-none d-md-block"
-                id="metodologia"
-                @mouseover="animateBanner('in')"
-                @mouseout="animateBanner('out')"
+                  class="method mt-5 d-none d-md-block"
+                  id="metodologia"
+                  @mouseover="animateBanner('in')"
+                  @mouseout="animateBanner('out')"
               >
-                Conheça a<br />
+                Conheça a<br/>
                 nossa metodologia
               </h2>
             </div>
           </div>
-          <div class="col-12 col-md-8 video-cover">
-            <b-img
-              src="/images/tech.jpeg"
-              fluid-grow
-              alt="Fluid-grow image"
-            ></b-img>
-            <a href="#" class="play-button">
-              <img src="/images/_play-button.svg" alt="" />
+          <div @mouseover="animateVideo('in')"
+               @mouseout="animateVideo('out')" class="col-12 col-md-8 video-cover">
+            <!--            <b-img-->
+            <!--                src="/images/tech.jpeg"-->
+            <!--                fluid-grow-->
+            <!--                alt="Fluid-grow image"-->
+            <!--            ></b-img>-->
+
+            <video class="img-fluid transition" autoplay muted loop id="video">
+              <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+            </video>
+            <a @click="transformVideo()" id="video-play" href="#" class="play-button">
+              <img src="/images/_play-button.svg" alt=""/>
             </a>
           </div>
         </div>
@@ -96,7 +110,7 @@
     <div class="container">
       <div class="row">
         <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
-          Conheça a<br />
+          Conheça a<br/>
           nossa metodologia
         </h2>
       </div>
@@ -115,7 +129,7 @@
         </div>
       </div>
       <div class="scale">
-        <img src="/images/escala-valores.png" alt="" />
+        <img src="/images/escala-valores.png" alt=""/>
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
@@ -170,23 +184,23 @@
         <div class="container h-100">
           <div class="row h-100">
             <div
-              class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
+                class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
             >
               <h2>Paixão por transformar negócios com tecnologia</h2>
-              <img src="/images/seals-gptw.png" class="mt-auto seals" alt="" />
+              <img src="/images/seals-gptw.png" class="mt-auto seals img-business" alt=""/>
             </div>
           </div>
         </div>
         <svg
-        class="diagonal-line"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        ref="diagonal"
-      >
-        <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
-        <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
-      </svg>
+            class="diagonal-line"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+          <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
+          <rect width="100" height="100" style="fill: rgb(255, 255, 255)"/>
+        </svg>
+
       </div>
       <div class="container context">
         <div class="row">
@@ -204,16 +218,16 @@
             <a href="#" class="btn btn-primary btn-lg mt-4">
               Venha ser um #FERABRQ
               <svg
-                width="1em"
-                height="1em"
-                viewBox="0 0 16 16"
-                class="bi bi-arrow-right"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-arrow-right"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                 />
               </svg>
             </a>
@@ -236,20 +250,20 @@
         <div class="row blog-contents">
           <div class="col-12">
             <b-carousel
-              id="carousel-1"
-              v-model="slide"
-              :interval="4000"
-              controls
-              img-width="1024"
-              class="d-none d-md-block"
+                id="carousel-1"
+                v-model="slide"
+                :interval="4000"
+                controls
+                img-width="1024"
+                class="d-none d-md-block"
             >
               <!-- Slide with blank fluid image to maintain slide aspect ratio -->
               <b-carousel-slide img-blank>
                 <div class="blog-item">
                   <div class="item d-flex first">
                     <div
-                      class="img col-6"
-                      style="
+                        class="img col-6"
+                        style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -265,8 +279,8 @@
                   </div>
                   <div class="item d-flex second">
                     <div
-                      class="img col-6"
-                      style="
+                        class="img col-6"
+                        style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -282,8 +296,8 @@
                   </div>
                   <div class="item d-flex third">
                     <div
-                      class="img col-6"
-                      style="
+                        class="img col-6"
+                        style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -302,20 +316,20 @@
             </b-carousel>
 
             <b-carousel
-              id="carousel-2"
-              v-model="slide"
-              :interval="4000"
-              controls
-              img-width="1024"
-              class="d-block d-sm-none"
+                id="carousel-2"
+                v-model="slide"
+                :interval="4000"
+                controls
+                img-width="1024"
+                class="d-block d-sm-none"
             >
               <!-- Slide with blank fluid image to maintain slide aspect ratio -->
               <b-carousel-slide img-blank>
                 <div class="blog-item">
                   <div class="item">
                     <div
-                      class="img col-12"
-                      style="
+                        class="img col-12"
+                        style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -335,8 +349,8 @@
                 <div class="blog-item">
                   <div class="item">
                     <div
-                      class="img col-12"
-                      style="
+                        class="img col-12"
+                        style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -355,17 +369,18 @@
             </b-carousel>
           </div>
         </div>
+
         <div class="row newsletter text-center">
           <div class="col-12 col-md-auto ml-auto">
             <h2>Receba nossos conteúdos</h2>
           </div>
           <div class="col-12 col-md-auto d-none d-md-block">
-            <img src="/images/long-arrow.svg" alt="" />
+            <img src="/images/long-arrow.svg" alt=""/>
           </div>
           <div class="col-12 col-md-auto mr-auto">
             <b-form-input
-              v-model="text"
-              placeholder="Digite seu e-mail"
+                v-model="text"
+                placeholder="Digite seu e-mail"
             ></b-form-input>
           </div>
         </div>
@@ -376,64 +391,92 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { TimelineLite, gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {TimelineLite, gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 // export default Vue.extend({});
+
+function changeNavWhenScroll() {
+  window.document.body.onscroll = function (e: any) {
+    if (window.pageYOffset > 100) {
+      document.getElementsByTagName('nav')[0].classList.add('bg-translucent');
+      document.getElementById('logo-nav').style.transform = 'scale(.7)';
+      return;
+    }
+    document.getElementsByTagName('nav')[0].classList.remove('bg-translucent');
+    document.getElementById('logo-nav').style.transform = 'scale(1)';
+  }
+}
+
 export default {
   methods: {
     animateBanner: function (prs: string) {
-      const { diagonal, seta, setaHz } = this.$refs;
+      // const {diagonal, seta, setaHz} = this.$refs;
       const timeline = new TimelineLite();
-      gsap.to(diagonal, 0.7, {
+      gsap.to('#diagonal', 0.7, {
         y: prs === "in" ? -70 : 0,
         rotation: prs === "in" ? 0 : 8,
       });
-      gsap.to(seta, 1, {
+      gsap.to('#seta', 1, {
         opacity: prs === "in" ? 1 : 0,
         y: prs === "in" ? 50 : 0,
       });
-      gsap.to(setaHz, 1, {
+      gsap.to('#setaHz', 1, {
         opacity: prs === "in" ? 0 : 1,
         x: prs === "in" ? -100 : 0,
       });
     },
+
+    animateVideo: function (prs: string) {
+      gsap.to('#setaHz', 0.7, {
+        x: prs === "in" ? 100 : 0,
+      });
+    },
+    transformVideo: function () {
+      gsap.to('#slide-panel', .7, {
+        x: -100 + 'vw'
+      });
+
+      const video = document.getElementById('video-player') as any;
+      video.play();
+    }
   },
   mounted() {
+    changeNavWhenScroll();
     gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".main-content",
-          end: "+=300",
-          scrub: true,
-        },
-      })
-      .from(".main-content", { y: 200, autoAlpha: 0 });
+        .timeline({
+          scrollTrigger: {
+            trigger: ".main-content",
+            end: "+=300",
+            scrub: true,
+          },
+        })
+        .from(".main-content", {y: 200, autoAlpha: 0});
 
     gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".be-brq",
-          end: "center bottom",
-          scrub: true,
-        },
-      })
-      .from(".be-brq", { x: 200, autoAlpha: 0 })
-      .from(".be-brq h2", { y: 200, autoAlpha: 0 });
+        .timeline({
+          scrollTrigger: {
+            trigger: ".be-brq",
+            end: "center bottom",
+            scrub: true,
+          },
+        })
+        .from(".be-brq", {x: 200, autoAlpha: 0})
+        .from(".be-brq h2", {y: 200, autoAlpha: 0});
 
     gsap.from(".seals", {
-      y: 100,
+      y: 50,
       autoAlpha: 0,
       scrollTrigger: {
         trigger: ".seals",
-        // start: "top bottom",
-        end: "+=100",
+        start: "top bottom",
+        end: "+=500",
         scrub: true,
       },
     });
 
     gsap.from(".be-brq svg", {
-      rotate: 15,
+      rotate: 5,
       scrollTrigger: {
         trigger: ".context",
         end: "=+500",
@@ -454,6 +497,20 @@ export default {
 
 <style lang="scss">
 /* Diagonal Boxes - */
+.img-business {
+  margin-bottom: 250px !important;
+}
+
+#slide-next {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  z-index: 9999;
+  transform: translateX(100vw);
+  position: fixed;
+}
 
 .db-1 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
@@ -474,6 +531,7 @@ export default {
 
 .method-title {
   position: relative;
+
   .seta {
     position: absolute;
     left: -31px;
@@ -502,7 +560,7 @@ export default {
 
   svg.diagonal-line {
     position: absolute;
-    bottom: -26vw;
+    bottom: -32vw;
     height: 35vw;
     transform: rotate(8deg);
     width: 235vh;
@@ -552,6 +610,7 @@ export default {
         margin-right: 50px;
         padding-right: 50px;
       }
+
       .box {
         background: var(--brq-blue);
         padding: 2rem;
@@ -616,7 +675,7 @@ export default {
 .about-team {
   .context {
     font-size: 1.4rem;
-    margin-top: -50px;
+    margin-top: -150px;
     padding-bottom: 7rem;
 
     strong {
@@ -638,15 +697,15 @@ export default {
 }
 
 .be-brq {
-  height: 110vh;
-  background: url(/images/bg-trabalhe-conosco.jpg) center center/cover;
+  height: 100vh;
+  background: url(/images/bg-trabalhe-conosco.jpg) center top/cover;
 
   svg {
     position: absolute;
-    bottom: -26vw;
-    height: 35vw;
-    transform: rotate(8deg);
-    width: 235vh;
+    bottom: -17vw;
+    height: 33vw;
+    transform: rotate(-8deg);
+    width: 255vh;
     left: -12vh;
   }
 
@@ -664,6 +723,8 @@ export default {
 }
 
 .blog {
+  position: relative;
+
   .title {
     h2 {
       color: var(--white);
@@ -685,14 +746,17 @@ export default {
       border-radius: 0;
       border: 0;
     }
+
     ::placeholder {
       color: var(--white);
     }
+
     input:focus {
       outline: 0px !important;
       -webkit-appearance: none;
       box-shadow: none !important;
     }
+
     h2 {
       color: var(--white);
       text-transform: uppercase;
@@ -812,9 +876,9 @@ export default {
 
   .title {
     svg.diagonal-line {
-    bottom: -38vw;
-    height: 45vw;
-    width: 235vh;
+      bottom: -38vw;
+      height: 45vw;
+      width: 235vh;
     }
   }
 
@@ -823,6 +887,7 @@ export default {
       transform: rotate(-90deg);
       left: -85%;
       bottom: 370px;
+
       img {
         width: 90vh;
       }
@@ -846,6 +911,7 @@ export default {
           margin-right: 30px;
           font-size: 3rem;
         }
+
         .box {
           padding: 2rem 2rem 2rem 30px;
           margin-right: 0;
@@ -861,20 +927,26 @@ export default {
   }
   .about-team {
     .context {
+
       margin-top: 2rem;
     }
   }
   .be-brq {
     height: 60vh;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
+    svg {
+      height: 48vw;
+    }
+
+    //clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    //transform: rotate(-9deg) !important;
     .title {
       padding-top: 2rem;
       padding-bottom: 3rem;
     }
 
     h2 {
-      font-size:3rem;
+      font-size: 3rem;
     }
 
     img {
@@ -923,17 +995,25 @@ export default {
 @media (min-width: 1500px) {
   .main-content {
     .scale {
-      bottom: 332px;
+      bottom: 200px;
       left: 22%;
       z-index: 999;
     }
   }
   .title {
     svg.diagonal-line {
-    bottom: -30vw;
-    height: 35vw;
-    width: 235vh;
-    left: -12vh;
+      bottom: -28vw;
+      height: 35vw;
+      width: 235vh;
+      left: -12vh;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .be-brq {
+    svg {
+      height: 45vw;
     }
   }
 }
@@ -949,5 +1029,6 @@ export default {
       }
     }*/
   }
+
 }
 </style>

@@ -105,7 +105,8 @@
 footer {
   .tp-bar {
     .nav {
-      font-family: "Bebas Neue Pro";
+      font-family: "Bebas Neue";
+      font-weight: normal !important;
       font-size: 1.1rem;
       text-transform: uppercase;
 

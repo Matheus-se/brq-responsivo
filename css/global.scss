@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
 
 /* Global Variables */
 :root {
@@ -24,7 +26,8 @@ body > div {
   h4,
   h5,
   h6 {
-    font-family: "Bebas Neue Pro";
+    font-family: "Bebas Neue";
+    font-weight: normal !important;
   }
 
   /* Main Titles */
@@ -40,13 +43,19 @@ body > div {
     color: var(--white);
 }
 
-
 /* Backgrounds */
-
 .dark-bg {
   background-image: linear-gradient(#25242a, #121116);
 }
 
+.bg-translucent {
+  background-color: rgba(0, 0, 0, .9);
+  transition: all 0.5s ease;
+}
+
+#logo-nav, .transition {
+  transition: all 0.5s ease;
+}
 
 @media (max-width: 575.98px) {
   body, html{
