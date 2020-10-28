@@ -1,363 +1,463 @@
 <template>
   <div>
-    <!--background-->
-    <section class="pd-top title dark-bg">
-      <!--cuts-->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <polygon fill="white" points="0,100 100,0 100,100" />
-      </svg>
-
-      <div class="container">
-        <div class="row">
-          <div class="col my-md-5 my-3">
-            <h1>Sua parceira em todos os desafios da transformação digital</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-10">
-            <p>
-              A BRQ atua no ciclo completo de desenvolvimento, desde a concepção
-              até a materialização dos produtos digitais.
-            </p>
-            <img src="/images/arrow-dobra.svg" class="mt-3 d-none d-md-block" />
-            <h2 class="method mt-5 d-none d-md-block">
-              Conheça a<br />
-              nossa metodologia
-            </h2>
-          </div>
-          <div class="col-12 col-md-8 video-cover">
-            <b-img
-              src="/images/tech.jpeg"
-              fluid-grow
-              alt="Fluid-grow image"
-            ></b-img>
-            <a href="#" class="play-button">
-              <img src="/images/_play-button.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--for responsive-->
-    <div class="container">
-      <div class="row">
-        <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
-          Conheça a<br />
-          nossa metodologia
-        </h2>
-      </div>
-    </div>
-
-    <section
-      class="main-content mt-5"
-      data-aos="fade-up"
-      data-aos-easing="ease-in-out"
-      data-aos-delay="0"
-    >
-      <div class="left-content d-flex align-items-center">
-        <div
-          class="container p-0"
-          data-aos="fade-up"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="100"
+      <!--background-->
+      <section class="pd-top title dark-bg">
+        <!--cuts-->
+        <svg
+          class="diagonal-line"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          ref="diagonal"
         >
-          <h2>Como geramos valor para os nossos clientes?</h2>
-          <div class="box mt-4">
-            <p class="m-0">
-              Atuamos no ciclo completo de desenvolvimento, desde a concepção
-              até a materialização dos produtos digitais
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="scale">
-        <img src="/images/escala-valores.png" alt="" />
-      </div>
-      <div class="content-box dark-bg">
-        <div class="content container">
-          <div class="col-md-4 offset-md-8">
-            <h2>Soluções Inovadoras</h2>
-            <p>
-              Conectar clientes com soluçoes proprietárias disruptivas que
-              acelerem a transformação digital ou criar novos modelos de
-              negócios.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content-box dark-bg">
-        <div class="content container">
-          <div class="col-md-4 offset-md-8">
-            <h2>Transformação digital</h2>
-            <p>
-              Transformar negócios com tecnologia evoluindoe acelerando como as
-              empresas operame entregam valor para seus clientes. Digitalização
-              e aprendizado contínuopara melhoria dos negócios dos clientes.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content-box dark-bg">
-        <div class="content container">
-          <div class="col-md-5 offset-md-7">
-            <h2>Squads Gerenciados</h2>
-            <p>
-              Times cross-funcionais, ágeis e auto gerenciáveis, com alta
-              performance e estratégia orientada à entrega de Valor.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content-box dark-bg">
-        <div class="content container">
-          <div class="col-md-6 offset-md-6">
-            <h2>Times Especializados</h2>
-            <p>
-              Times multidisciplinares com alta capacidade técnica que apoiam o
-              desenvolvimento e melhoria contínua de produtos digitais.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
+          <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
+        </svg>
 
-    <section
-      class="about-team"
-      data-aos="fade-left"
-      data-aos-easing="ease-in-out"
-      data-aos-delay="100"
-    >
-      <div class="be-brq">
-        <div class="container h-100">
-          <div class="row h-100">
-            <div
-              class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
-            >
-              <h1
-                data-aos="fade-up"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="200"
-              >
-                Paixão por transformar negócios com tecnologia
+        <div class="container">
+          <div class="row">
+            <div class="col my-md-5 my-3">
+              <h1>
+                Sua parceira em todos os desafios da transformação digital
               </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-10">
+              <p>
+                A BRQ atua no ciclo completo de desenvolvimento, desde a
+                concepção até a materialização dos produtos digitais.
+              </p>
               <img
-                src="/images/seals-gptw.png"
-                class="mt-auto"
-                alt=""
-                data-aos="fade-down"
-                data-aos-delay="100"
+                src="/images/arrow-dobra.svg"
+                ref="setaHz"
+                class="mt-3 d-none d-md-block"
               />
+
+              <div class="method-title d-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64.707"
+                  height="160.707"
+                  viewBox="0 0 64.707 160.707"
+                  ref="seta"
+                  class="seta"
+                >
+                  <g
+                    id="_arrow-1a-dobra"
+                    transform="translate(64.354) rotate(90)"
+                  >
+                    <path
+                      id="Path"
+                      d="M0,0,32,32,0,64"
+                      transform="translate(128)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_2"
+                      data-name="Path 2"
+                      d="M0,.5H160"
+                      transform="translate(0 32)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
+                    />
+                  </g>
+                </svg>
+
+                <h2
+                  class="method mt-5 d-none d-md-block"
+                  id="metodologia"
+                  @mouseover="animateBanner('in')"
+                  @mouseout="animateBanner('out')"
+                >
+                  Conheça a<br />
+                  nossa metodologia
+                </h2>
+              </div>
+            </div>
+            <div class="col-12 col-md-8 video-cover">
+              <b-img
+                src="/images/tech.jpeg"
+                fluid-grow
+                alt="Fluid-grow image"
+              ></b-img>
+              <a href="#" class="play-button">
+                <img src="/images/_play-button.svg" alt="" />
+              </a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container context">
+      </section>
+
+      <!--for responsive-->
+      <div class="container">
         <div class="row">
-          <div class="col-md-7 offset-md-5">
-            <p
-              data-aos="fade-left"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="100"
-            >
-              São nossos feras que traduzem a nossa essência para o mercado e
-              trabalham engajados para entregar a melhor experiência para nossos
-              clientes todos os dias.
-            </p>
-            <p
-              class="mt-4"
-              data-aos="fade-left"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="200"
-            >
-              Aqui, <strong>respeito e diversidade</strong> importam, porque
-              cada um, do seu jeito, nos ajuda a evoluir para alcançar nosso
-              Norte Verdadeiro em uma <strong>Cultura Lean e Ágil</strong>.
-            </p>
-            <a href="#" class="btn btn-primary btn-lg mt-4">
-              Venha ser um #FERABRQ
-              <svg
-                width="1em"
-                height="1em"
-                viewBox="0 0 16 16"
-                class="bi bi-arrow-right"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
+          <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
+            Conheça a<br />
+            nossa metodologia
+          </h2>
+        </div>
+      </div>
+
+      <section class="main-content mt-5">
+        <div class="left-content d-flex align-items-center">
+          <div class="container-fluid p-0">
+            <h2>Como geramos valor para os nossos clientes?</h2>
+            <div class="box mt-4">
+              <p class="mb-0">
+                Atuamos no ciclo completo de desenvolvimento, desde a concepção
+                até a materialização dos produtos digitais
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="scale">
+          <img src="/images/escala-valores.png" alt="" />
+        </div>
+        <div class="content-box dark-bg">
+          <div class="content container">
+            <div class="col-md-4 offset-md-8">
+              <h2>Soluções Inovadoras</h2>
+              <p>
+                Conectar clientes com soluçoes proprietárias disruptivas que
+                acelerem a transformação digital ou criar novos modelos de
+                negócios.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-box dark-bg">
+          <div class="content container">
+            <div class="col-md-4 offset-md-8">
+              <h2>Transformação digital</h2>
+              <p>
+                Transformar negócios com tecnologia evoluindoe acelerando como
+                as empresas operame entregam valor para seus clientes.
+                Digitalização e aprendizado contínuopara melhoria dos negócios
+                dos clientes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-box dark-bg">
+          <div class="content container">
+            <div class="col-md-5 offset-md-7">
+              <h2>Squads Gerenciados</h2>
+              <p>
+                Times cross-funcionais, ágeis e auto gerenciáveis, com alta
+                performance e estratégia orientada à entrega de Valor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-box dark-bg">
+          <div class="content container">
+            <div class="col-md-6 offset-md-6">
+              <h2>Times Especializados</h2>
+              <p>
+                Times multidisciplinares com alta capacidade técnica que apoiam
+                o desenvolvimento e melhoria contínua de produtos digitais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-team">
+        <div class="be-brq">
+          <div class="container h-100">
+            <div class="row h-100">
+              <div
+                class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                <h2>Paixão por transformar negócios com tecnologia</h2>
+                <img
+                  src="/images/seals-gptw.png"
+                  class="mt-auto seals"
+                  alt=""
                 />
-              </svg>
-            </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--end of section-->
+        <div class="container context">
+          <div class="row">
+            <div class="col-md-7 offset-md-5">
+              <p ref="p1">
+                São nossos feras que traduzem a nossa essência para o mercado e
+                trabalham engajados para entregar a melhor experiência para
+                nossos clientes todos os dias.
+              </p>
+              <p class="mt-4" ref="p2">
+                Aqui, <strong>respeito e diversidade</strong> importam, porque
+                cada um, do seu jeito, nos ajuda a evoluir para alcançar nosso
+                Norte Verdadeiro em uma <strong>Cultura Lean e Ágil</strong>.
+              </p>
+              <a href="#" class="btn btn-primary btn-lg mt-4">
+                Venha ser um #FERABRQ
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-arrow-right"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
 
-    <section class="blog dark-bg py-5">
-      <div class="container mt-md-4">
-        <div class="row title">
-          <div class="col-auto">
-            <h2>Blog BRQ</h2>
+      <section class="blog dark-bg py-5">
+        <div class="container mt-md-4">
+          <div class="row title">
+            <div class="col-auto">
+              <h2>Blog BRQ</h2>
+            </div>
+            <div class="col-md-5 pt-2">
+              <p>
+                Tudo sobre transformação digital e tendências de tecnologia.
+              </p>
+            </div>
           </div>
-          <div class="col-md-5 pt-2">
-            <p>Tudo sobre transformação digital e tendências de tecnologia.</p>
-          </div>
-        </div>
-        <div class="row blog-contents">
-          <div class="col-12">
-            <b-carousel
-              id="carousel-1"
-              v-model="slide"
-              :interval="4000"
-              controls
-              img-width="1024"
-              class="d-none d-md-block"
-            >
-              <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-              <b-carousel-slide img-blank>
-                <div class="blog-item">
-                  <div class="item d-flex first">
-                    <div
-                      class="img col-6"
-                      style="
-                        background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-                      "
-                    >
-                      &nbsp;
+          <div class="row blog-contents">
+            <div class="col-12">
+              <b-carousel
+                id="carousel-1"
+                v-model="slide"
+                :interval="4000"
+                controls
+                img-width="1024"
+                class="d-none d-md-block"
+              >
+                <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+                <b-carousel-slide img-blank>
+                  <div class="blog-item">
+                    <div class="item d-flex first">
+                      <div
+                        class="img col-6"
+                        style="
+                          background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
+                        "
+                      >
+                        &nbsp;
+                      </div>
+                      <div
+                        class="content d-flex align-content-center flex-wrap"
+                      >
+                        <h2>Podcast</h2>
+                        <p>
+                          Protegido: Série Podcast Transformação Digital com
+                          Santander e BRQ.
+                        </p>
+                      </div>
                     </div>
-                    <div class="content d-flex align-content-center flex-wrap">
-                      <h2>Podcast</h2>
-                      <p>
-                        Protegido: Série Podcast Transformação Digital com
-                        Santander e BRQ.
-                      </p>
+                    <div class="item d-flex second">
+                      <div
+                        class="img col-6"
+                        style="
+                          background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
+                        "
+                      >
+                        &nbsp;
+                      </div>
+                      <div
+                        class="content d-flex align-content-center flex-wrap"
+                      >
+                        <h2>Podcast</h2>
+                        <p>
+                          Protegido: Série Podcast Transformação Digital com
+                          Santander e BRQ.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item d-flex third">
+                      <div
+                        class="img col-6"
+                        style="
+                          background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
+                        "
+                      >
+                        &nbsp;
+                      </div>
+                      <div
+                        class="content d-flex align-content-center flex-wrap"
+                      >
+                        <h2>Podcast</h2>
+                        <p>
+                          Protegido: Série Podcast Transformação Digital com
+                          Santander e BRQ.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="item d-flex second">
-                    <div
-                      class="img col-6"
-                      style="
-                        background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-                      "
-                    >
-                      &nbsp;
-                    </div>
-                    <div class="content d-flex align-content-center flex-wrap">
-                      <h2>Podcast</h2>
-                      <p>
-                        Protegido: Série Podcast Transformação Digital com
-                        Santander e BRQ.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="item d-flex third">
-                    <div
-                      class="img col-6"
-                      style="
-                        background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-                      "
-                    >
-                      &nbsp;
-                    </div>
-                    <div class="content d-flex align-content-center flex-wrap">
-                      <h2>Podcast</h2>
-                      <p>
-                        Protegido: Série Podcast Transformação Digital com
-                        Santander e BRQ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </b-carousel-slide>
-            </b-carousel>
+                </b-carousel-slide>
+              </b-carousel>
 
-            <b-carousel
-              id="carousel-2"
-              v-model="slide"
-              :interval="4000"
-              controls
-              img-width="1024"
-              class="d-block d-sm-none"
-            >
-              <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-              <b-carousel-slide img-blank>
-                <div class="blog-item">
-                  <div class="item">
-                    <div
-                      class="img col-12"
-                      style="
-                        background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-                      "
-                    >
-                      &nbsp;
-                    </div>
-                    <div class="content d-flex align-content-center flex-wrap">
-                      <h2>Podcast</h2>
-                      <p>
-                        Protegido: Série Podcast Transformação Digital com
-                        Santander e BRQ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </b-carousel-slide>
-              <b-carousel-slide img-blank>
-                <div class="blog-item">
-                  <div class="item">
-                    <div
-                      class="img col-12"
-                      style="
-                        background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
-                      "
-                    >
-                      &nbsp;
-                    </div>
-                    <div class="content d-flex align-content-center flex-wrap">
-                      <h2>Podcast</h2>
-                      <p>
-                        Protegido: Série Podcast Transformação Digital com
-                        Santander e BRQ.
-                      </p>
+              <b-carousel
+                id="carousel-2"
+                v-model="slide"
+                :interval="4000"
+                controls
+                img-width="1024"
+                class="d-block d-sm-none"
+              >
+                <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+                <b-carousel-slide img-blank>
+                  <div class="blog-item">
+                    <div class="item">
+                      <div
+                        class="img col-12"
+                        style="
+                          background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
+                        "
+                      >
+                        &nbsp;
+                      </div>
+                      <div
+                        class="content d-flex align-content-center flex-wrap"
+                      >
+                        <h2>Podcast</h2>
+                        <p>
+                          Protegido: Série Podcast Transformação Digital com
+                          Santander e BRQ.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </b-carousel-slide>
-            </b-carousel>
+                </b-carousel-slide>
+                <b-carousel-slide img-blank>
+                  <div class="blog-item">
+                    <div class="item">
+                      <div
+                        class="img col-12"
+                        style="
+                          background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
+                        "
+                      >
+                        &nbsp;
+                      </div>
+                      <div
+                        class="content d-flex align-content-center flex-wrap"
+                      >
+                        <h2>Podcast</h2>
+                        <p>
+                          Protegido: Série Podcast Transformação Digital com
+                          Santander e BRQ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </b-carousel-slide>
+              </b-carousel>
+            </div>
+          </div>
+          <div class="row newsletter text-center">
+            <div class="col-12 col-md-auto ml-auto">
+              <h2>Receba nossos conteúdos</h2>
+            </div>
+            <div class="col-12 col-md-auto d-none d-md-block">
+              <img src="/images/long-arrow.svg" alt="" />
+            </div>
+            <div class="col-12 col-md-auto mr-auto">
+              <b-form-input
+                v-model="text"
+                placeholder="Digite seu e-mail"
+              ></b-form-input>
+            </div>
           </div>
         </div>
-        <div class="row newsletter text-center">
-          <div class="col-12 col-md-auto ml-auto">
-            <h2>Receba nossos conteúdos</h2>
-          </div>
-          <div class="col-12 col-md-auto d-none d-md-block">
-            <img src="/images/long-arrow.svg" alt="" />
-          </div>
-          <div class="col-12 col-md-auto mr-auto">
-            <b-form-input
-              v-model="text"
-              placeholder="Digite seu e-mail"
-            ></b-form-input>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import { TimelineLite, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default Vue.extend({});
+// export default Vue.extend({});
+export default {
+  methods: {
+    animateBanner: function (prs: string) {
+      const { diagonal, seta, setaHz } = this.$refs;
+      const timeline = new TimelineLite();
+      gsap.to(diagonal, 0.7, {
+        y: prs === "in" ? -70 : 0,
+        rotation: prs === "in" ? 0 : 8,
+      });
+      gsap.to(seta, 1, {
+        opacity: prs === "in" ? 1 : 0,
+        y: prs === "in" ? 50 : 0,
+      });
+      gsap.to(setaHz, 1, {
+        opacity: prs === "in" ? 0 : 1,
+        x: prs === "in" ? -100 : 0,
+      });
+    },
+  },
+  mounted() {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          
+          trigger: ".main-content",
+          end: "+=300",
+          scrub: true,
+        },
+      })
+      .from(".main-content", { y: 200, autoAlpha: 0 });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          
+          trigger: ".be-brq",
+          end: "center bottom",
+          scrub: true,
+        },
+      })
+      .from(".be-brq", { x: 200, autoAlpha: 0 })
+      .from(".be-brq h2", { y: 200, autoAlpha: 0 });
+
+    gsap.from(".seals", {
+      y: 100,
+      autoAlpha: 0,
+      scrollTrigger: {
+        
+        trigger: ".seals",
+        // start: "top bottom",
+        end: "+=100",
+        scrub: true,
+      },
+    });
+
+    gsap.from(".context", {
+      y: 100,
+      autoAlpha: 0,
+      scrollTrigger: {
+        trigger: ".context",
+        end: "=+500",
+      },
+    });
+  },
+};
 </script>
 
 <style lang="scss">
+
 /* Diagonal Boxes - */
 
 .db-1 {
@@ -375,6 +475,16 @@ export default Vue.extend({});
   border-left: 1px solid var(--dark);
   color: var(--brq-yellow);
   font-weight: medium;
+}
+
+.method-title {
+  position: relative;
+  .seta {
+    position: absolute;
+    left: -31px;
+    top: 40px;
+    opacity: 0;
+  }
 }
 
 .pd-top {
@@ -395,12 +505,14 @@ export default Vue.extend({});
     top: calc(50% - 45px);
   }
 
-  svg {
+  svg.diagonal-line {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20vw;
-    transform: scaleX(-1);
+    bottom: -35vh;
+    height: 30vw;
+    transform: rotate(8deg);
+    width: 220vh;
+    left: -12vh;
+    // transform: scaleX(-1);
     /* set height to pixels if you want angle to change with screen width */
   }
 
@@ -426,28 +538,38 @@ export default Vue.extend({});
   }
 
   .left-content {
-    background: var(--white);
+    // background: var(--white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2312.089' height='880.919' viewBox='0 0 2312.089 880.919'%3E%3Cpath id='Caminho_1' data-name='Caminho 1' d='M2309.37-.547,1929,879.825l-1931.717.547V0Z' transform='translate(2.719 0.547)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-position: top right;
     position: absolute;
     top: -1px;
     left: 0;
-    width: 59%;
+    width: 58%;
     height: 100.1%;
     z-index: 999;
-    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+    // clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
     padding-right: 5%;
 
-    .container {
+    .container-fluid {
       h2 {
-        margin-left: 16%;
-        margin-right: 10%;
+        width: 550px;
+        margin-left: auto;
+        margin-right: 50px;
+        padding-right: 50px;
       }
       .box {
         background: var(--brq-blue);
-        padding: 2rem 2rem 2rem 16%;
-        margin-right: 23%;
+        padding: 2rem;
+        margin-right: 200px;
         font-size: 1.5rem;
         color: var(--white);
-        clip-path: polygon(100% 0, 100% 55%, 93% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 80%, 95% 100%, 0 100%, 0 0);
+
+        p {
+          width: 320px;
+          margin-left: auto;
+          margin-right: 50px;
+        }
       }
     }
 
@@ -528,6 +650,13 @@ export default Vue.extend({});
   .title {
     padding-top: 6rem;
     padding-bottom: 5rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: var(--white);
+    text-transform: uppercase;
   }
 }
 
@@ -699,8 +828,9 @@ export default Vue.extend({});
       width: 100%;
       clip-path: none;
 
-      .container {
+      .container-fluid {
         h2 {
+          width: 100%;
           margin-left: 30px;
           margin-right: 30px;
           font-size: 3rem;
@@ -710,6 +840,10 @@ export default Vue.extend({});
           margin-right: 0;
           font-size: 1.2rem;
           margin-bottom: 2rem;
+
+          p {
+            width: 100%;
+          }
         }
       }
     }
@@ -766,6 +900,17 @@ export default Vue.extend({});
           height: 150px;
         }
       }
+    }
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1500px) {
+  .main-content {
+    .scale {
+      bottom: 332px;
+      left: 22%;
+      z-index: 999;
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="" variant="">
+    <b-navbar toggleable="lg" type="" fixed="top" variant="">
       <b-navbar-brand href="#">
         <img src="/images/logo-brq.png" class="logo" alt="" />
       </b-navbar-brand>
@@ -72,19 +72,18 @@
   </div>
 </template>
 
+<script>
+
+
+</script>
+
 <style lang="scss">
 .logo {
-  height: 85px;
+  height: 10vh;
 }
 
 .navbar-nav .nav-link {
   padding-left: 20px !important;
-}
-
-.navbar {
-  position: absolute;
-  z-index:9999;
-  width: 100%;
 }
 
 .navbar .nav-item {
