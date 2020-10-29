@@ -123,7 +123,7 @@
 
     <section class="main-content mt-5">
       <div class="left-content d-flex align-items-center">
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0 col-md-12">
           <h2>Como geramos valor para os nossos clientes?</h2>
           <div class="box mt-4">
             <p class="mb-0">
@@ -138,7 +138,7 @@
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-md-4 offset-md-8">
+          <div class="col-lg-4 offset-lg-8">
             <h2>Soluções Inovadoras</h2>
             <p>
               Conectar clientes com soluçoes proprietárias disruptivas que
@@ -150,7 +150,7 @@
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-md-4 offset-md-8">
+          <div class="col-lg-4 offset-lg-8">
             <h2>Transformação digital</h2>
             <p>
               Transformar negócios com tecnologia evoluindoe acelerando como as
@@ -162,7 +162,7 @@
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-md-5 offset-md-7">
+          <div class="col-lg-5 offset-lg-7">
             <h2>Squads Gerenciados</h2>
             <p>
               Times cross-funcionais, ágeis e auto gerenciáveis, com alta
@@ -173,7 +173,7 @@
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-md-6 offset-md-6">
+          <div class="col-lg-6 offset-lg-6">
             <h2>Times Especializados</h2>
             <p>
               Times multidisciplinares com alta capacidade técnica que apoiam o
@@ -449,7 +449,12 @@ export default {
     },
     transformVideo: function (prs: string) {
       gsap.to('#slide-panel', 0.5, {
-        x: prs === 'go' ? -100 + 'vw' : 0 + 'vw'
+        x: prs === 'go' ? -100 + 'vw' : 0 + 'vw',
+        onComplete: function () {
+          if (prs === 'back') {
+            document.getElementById('slide-panel').removeAttribute('style');
+          }
+        }
       });
       gsap.to('body', 0.5, {
         overflow: prs === 'go' ? 'hidden' : 'auto'
@@ -473,7 +478,8 @@ export default {
       });
       gsap.to('#send-button', 0.3, {
         scaleX: prs === 'in' ? 1 : 0,
-        x: prs === 'in' ? 0 : -50
+        x: prs === 'in' ? 0 : -50,
+        width: prs === 'in' ? 'auto' : 0,
       });
     }
   },
@@ -512,6 +518,8 @@ export default {
     });
 
     gsap.from(".be-brq svg", {
+      x: 10,
+      autoAlpha: 0,
       rotate: 5,
       scrollTrigger: {
         trigger: ".context",
@@ -534,7 +542,7 @@ export default {
 <style lang="scss">
 /* Diagonal Boxes - */
 .img-business {
-  margin-bottom: 250px !important;
+  margin-bottom: 7rem;
 }
 
 #video-arrow-back {
@@ -577,6 +585,7 @@ export default {
   overflow: hidden;
   padding: 2px 35px 2px 30px;
   height: 36px;
+  width: 0;
   transform: scaleX(0);
 
   img {
@@ -959,13 +968,20 @@ export default {
       transform: rotate(-90deg);
       left: -85%;
       bottom: 370px;
+      display: none;
 
       img {
         width: 90vh;
       }
     }
 
+    .img-business {
+      margin-bottom: 7rem;
+    }
+
     .content-box {
+      text-align: left;
+
       .content {
         padding-left: 3rem;
       }
@@ -1007,7 +1023,7 @@ export default {
     height: 60vh;
 
     svg {
-      height: 48vw;
+      height: 60vw;
     }
 
     //clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -1080,13 +1096,9 @@ export default {
       left: -12vh;
     }
   }
-}
 
-@media (max-width: 991px) {
-  .be-brq {
-    svg {
-      height: 45vw;
-    }
+  .img-business {
+    margin-bottom: 16rem;
   }
 }
 
@@ -1100,6 +1112,83 @@ export default {
         width: 115vh;
       }
     }*/
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .play-button {
+    margin-top: -90px;
+  }
+
+  .be-brq svg {
+    bottom: 7vw !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .be-brq svg {
+    bottom: 0vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .be-brq svg {
+    bottom: -29vw;
+  }
+
+  .img-business {
+    margin-bottom: 14rem;
+  }
+
+  .main-content {
+    .scale {
+      transform: rotate(-90deg);
+      left: -85%;
+      bottom: 370px;
+      display: none;
+
+      img {
+        width: 90vh;
+      }
+    }
+
+    .img-business {
+      margin-bottom: 7rem;
+    }
+
+    .content-box {
+      text-align: left;
+
+      .content {
+        padding-left: 3rem;
+      }
+    }
+
+    .left-content {
+      position: relative;
+      width: 100%;
+      clip-path: none;
+
+      .container-fluid {
+        h2 {
+          width: 100%;
+          margin-left: 30px;
+          margin-right: 30px;
+          font-size: 3rem;
+        }
+
+        .box {
+          padding: 2rem 2rem 2rem 30px;
+          margin-right: 0;
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
 }

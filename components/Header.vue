@@ -134,7 +134,7 @@
   margin-top: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
   .navbar-collapse {
     background: #fff;
 
@@ -142,6 +142,15 @@
       color: var(--brq-dark);
       font-size: 1.4rem;
     }
+  }
+
+  .dropdown-menu {
+    display: none;
+    background: #eaeaea;
+  }
+
+  .dropdown-item {
+    color: black;
   }
 }
 </style>
