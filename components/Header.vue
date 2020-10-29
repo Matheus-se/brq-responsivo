@@ -63,9 +63,8 @@
             <template #button-content>
               <img src="/images/_icon_contrast.svg" alt="">
             </template>
-            <b-dropdown-item href="#">Pequeno</b-dropdown-item>
-            <b-dropdown-item href="#">Grande</b-dropdown-item>
-            <b-dropdown-item href="#">Gigante</b-dropdown-item>
+            <b-dropdown-item href="#">Contrate normal</b-dropdown-item>
+            <b-dropdown-item href="#">Alto contraste</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
 

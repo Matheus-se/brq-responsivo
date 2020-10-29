@@ -1,7 +1,12 @@
 <template>
   <div>
 
-    <div id="slide-next">
+    <div class="dark-bg" id="slide-next">
+      <img @click="transformVideo('back')"
+           src="/images/arrow-dobra.svg"
+           class="mt-3"
+           id="video-arrow-back"
+      />
       <video class="img-fluid" controls id="video-player">
         <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
       </video>
@@ -95,10 +100,10 @@
             <!--                alt="Fluid-grow image"-->
             <!--            ></b-img>-->
 
-            <video class="img-fluid transition" autoplay muted loop id="video">
+            <video class="img-fluid" autoplay muted loop id="video">
               <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
             </video>
-            <a @click="transformVideo()" id="video-play" href="#" class="play-button">
+            <a @click="transformVideo('go')" id="video-play" href="#" class="play-button">
               <img src="/images/_play-button.svg" alt=""/>
             </a>
           </div>
@@ -372,16 +377,23 @@
 
         <div class="row newsletter text-center">
           <div class="col-12 col-md-auto ml-auto">
-            <h2>Receba nossos conteúdos</h2>
+            <h2 class="m-0">Receba nossos conteúdos</h2>
           </div>
-          <div class="col-12 col-md-auto d-none d-md-block">
-            <img src="/images/long-arrow.svg" alt=""/>
+          <div id="content-arrow-footer" class="col-12 col-md-auto d-none d-md-block">
+            <img id="arrow-footer" src="/images/long-arrow.svg" alt=""/>
           </div>
-          <div class="col-12 col-md-auto mr-auto">
+          <div class="col-12 col-md-auto mr-auto d-flex align-items-center">
             <b-form-input
+                id="email-footer"
+                @focusin="transformInputEmail('in')"
+                @focusout="transformInputEmail('out')"
                 v-model="text"
                 placeholder="Digite seu e-mail"
             ></b-form-input>
+            <b-button id="send-button" class="send-button d-flex align-items-center">
+              <img src="/images/long-arrow.svg" alt=""/>
+              Enviar
+            </b-button>
           </div>
         </div>
       </div>
@@ -431,14 +443,38 @@ export default {
       gsap.to('#setaHz', 0.7, {
         x: prs === "in" ? 100 : 0,
       });
+      gsap.to('#video', 0.7, {
+        scale: prs === "in" ? 1.05 : 1,
+      });
     },
-    transformVideo: function () {
-      gsap.to('#slide-panel', .7, {
-        x: -100 + 'vw'
+    transformVideo: function (prs: string) {
+      gsap.to('#slide-panel', 0.5, {
+        x: prs === 'go' ? -100 + 'vw' : 0 + 'vw'
+      });
+      gsap.to('body', 0.5, {
+        overflow: prs === 'go' ? 'hidden' : 'auto'
       });
 
       const video = document.getElementById('video-player') as any;
-      video.play();
+      prs === 'go' ? video.play() : (video.pause(), video.currentTime = 0)
+    },
+    transformInputEmail(prs: string) {
+      gsap.to('#arrow-footer', 0.3, {
+        x: prs === 'in' ? 250 : 0,
+        scaleX: prs === 'in' ? 0 : 1,
+        opacity: prs === 'in' ? 0 : 1,
+        width: prs === 'in' ? 0 : 'auto'
+      });
+      gsap.to('#content-arrow-footer', 0.3, {
+        padding: 0,
+      });
+      gsap.to('#email-footer', 0.3, {
+        width: 300,
+      });
+      gsap.to('#send-button', 0.3, {
+        scaleX: prs === 'in' ? 1 : 0,
+        x: prs === 'in' ? 0 : -50
+      });
     }
   },
   mounted() {
@@ -501,15 +537,51 @@ export default {
   margin-bottom: 250px !important;
 }
 
+#video-arrow-back {
+  transform: rotate(180deg);
+}
+
 #slide-next {
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: gray;
   z-index: 9999;
   transform: translateX(100vw);
   position: fixed;
+
+  img {
+    margin: 70px auto 70px 30px;
+    width: 7em;
+    cursor: pointer;
+  }
+
+  video {
+    margin: 0 auto;
+    width: 75vw;
+  }
+}
+
+#email-footer {
+  height: 36px;
+}
+
+.send-button {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  border-radius: 0;
+  background: orange;
+  border: 0;
+  overflow: hidden;
+  padding: 2px 35px 2px 30px;
+  height: 36px;
+  transform: scaleX(0);
+
+  img {
+    margin: 0 8px 0 -180px;
+  }
 }
 
 .db-1 {
