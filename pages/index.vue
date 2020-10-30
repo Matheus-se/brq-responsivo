@@ -379,7 +379,7 @@
           <div class="col-12 col-md-auto ml-auto">
             <h2 class="m-0">Receba nossos conteúdos</h2>
           </div>
-          <div id="content-arrow-footer" class="col-12 col-md-auto d-none d-md-block">
+          <div id="content-arrow-footer" class="col-12 col-md-auto d-none d-md-none d-lg-block">
             <img id="arrow-footer" src="/images/long-arrow.svg" alt=""/>
           </div>
           <div class="col-12 col-md-auto mr-auto d-flex align-items-center">
@@ -390,7 +390,7 @@
                 v-model="text"
                 placeholder="Digite seu e-mail"
             ></b-form-input>
-            <b-button id="send-button" class="send-button d-flex align-items-center">
+            <b-button id="send-button" class="send-button align-items-center">
               <img src="/images/long-arrow.svg" alt=""/>
               Enviar
             </b-button>
@@ -473,13 +473,13 @@ export default {
       gsap.to('#content-arrow-footer', 0.3, {
         padding: 0,
       });
-      gsap.to('#email-footer', 0.3, {
-        width: 300,
-      });
       gsap.to('#send-button', 0.3, {
         scaleX: prs === 'in' ? 1 : 0,
         x: prs === 'in' ? 0 : -50,
         width: prs === 'in' ? 'auto' : 0,
+      });
+      gsap.to('#send-button', 0, {
+        position: prs === 'in' ? 'relative' : 'absolute'
       });
     }
   },
@@ -507,7 +507,7 @@ export default {
         .from(".be-brq h2", {y: 200, autoAlpha: 0});
 
     gsap.from(".seals", {
-      y: 50,
+      y: 20,
       autoAlpha: 0,
       scrollTrigger: {
         trigger: ".seals",
@@ -585,8 +585,11 @@ export default {
   overflow: hidden;
   padding: 2px 35px 2px 30px;
   height: 36px;
+  display: flex;
   width: 0;
   transform: scaleX(0);
+  position: absolute;
+  right: 0;
 
   img {
     margin: 0 8px 0 -180px;
@@ -1115,19 +1118,15 @@ export default {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .play-button {
-    margin-top: -90px;
-  }
-
-  .be-brq svg {
-    bottom: 7vw !important;
+@media (min-height: 1366px) {
+  .be-brq {
+    height: 53vh;
   }
 }
 
 @media (max-width: 1024px) {
   .be-brq svg {
-    bottom: 0vw !important;
+    bottom: 0vw;
   }
 }
 
@@ -1137,7 +1136,7 @@ export default {
   }
 
   .img-business {
-    margin-bottom: 14rem;
+    margin-bottom: 8rem;
   }
 
   .main-content {
@@ -1191,5 +1190,15 @@ export default {
     }
   }
 
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .play-button {
+    margin-top: -90px;
+  }
+
+  .be-brq svg {
+    bottom: 7vw;
+  }
 }
 </style>
