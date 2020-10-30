@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="" fixed="top" variant="">
       <b-navbar-brand href="#">
-        <img id="logo-nav" src="/images/logo-brq.png" class="logo" alt=""/>
+        <img id="logo-nav" src="~@/static/images/logo-brq.png" class="logo" alt=""/>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"
@@ -38,9 +38,9 @@
           <b-nav-item-dropdown class="language-choose" text="PT" right>
             <template #button-content>
               <span>PT</span>
-              <img src="/images/brasil.svg" alt="">
+              <img src="~@/static/images/brasil.svg" alt="">
             </template>
-            <b-dropdown-item href="#">EN <img src="/images/brasil.svg" alt=""></b-dropdown-item>
+            <b-dropdown-item href="#">EN <img src="~@/static/images/brasil.svg" alt=""></b-dropdown-item>
             <b-dropdown-item href="#">ES</b-dropdown-item>
             <b-dropdown-item href="#">RU</b-dropdown-item>
             <b-dropdown-item href="#">FA</b-dropdown-item>
@@ -50,7 +50,7 @@
         <b-navbar-nav class="ml-0">
           <b-nav-item-dropdown right no-caret>
             <template #button-content>
-              <img src="/images/_icon_font-size.svg" alt="">
+              <img src="~@/static/images/_icon_font-size.svg" alt="">
             </template>
             <b-dropdown-item href="#">Pequeno</b-dropdown-item>
             <b-dropdown-item href="#">Grande</b-dropdown-item>
@@ -61,7 +61,7 @@
         <b-navbar-nav class="ml-0">
           <b-nav-item-dropdown right no-caret>
             <template #button-content>
-              <img src="/images/_icon_contrast.svg" alt="">
+              <img src="~@/static/images/_icon_contrast.svg" alt="">
             </template>
             <b-dropdown-item href="#">Contrate normal</b-dropdown-item>
             <b-dropdown-item href="#">Alto contraste</b-dropdown-item>

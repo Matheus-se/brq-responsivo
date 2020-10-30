@@ -1,4 +1,8 @@
 export default {
+  target: 'server',
+  router: {
+    base: '/clientes/sioux'
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'brq-bt',
@@ -8,6 +12,12 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
+      {
+        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat'
+      },
+      {
+        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Bebas+Neue'
+      },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },

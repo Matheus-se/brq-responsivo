@@ -3,7 +3,7 @@
 
     <div class="dark-bg" id="slide-next">
       <img @click="transformVideo('back')"
-           src="/images/arrow-dobra.svg"
+           src="~@/static/images/arrow-dobra.svg"
            class="mt-3"
            id="video-arrow-back"
       />
@@ -39,7 +39,7 @@
               até a materialização dos produtos digitais.
             </p>
             <img
-                src="/images/arrow-dobra.svg"
+                src="~@/static/images/arrow-dobra.svg"
                 ref="setaHz"
                 id="setaHz"
                 class="mt-3 d-none d-md-block"
@@ -95,7 +95,7 @@
           <div @mouseover="animateVideo('in')"
                @mouseout="animateVideo('out')" class="col-12 col-md-8 video-cover">
             <!--            <b-img-->
-            <!--                src="/images/tech.jpeg"-->
+            <!--                src="~@/static/images/tech.jpeg"-->
             <!--                fluid-grow-->
             <!--                alt="Fluid-grow image"-->
             <!--            ></b-img>-->
@@ -104,7 +104,7 @@
               <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
             </video>
             <a @click="transformVideo('go')" id="video-play" href="#" class="play-button">
-              <img src="/images/_play-button.svg" alt=""/>
+              <img src="~@/static/images/_play-button.svg" alt=""/>
             </a>
           </div>
         </div>
@@ -134,11 +134,11 @@
         </div>
       </div>
       <div class="scale">
-        <img src="/images/escala-valores.png" alt=""/>
+        <img src="~@/static/images/escala-valores.png" alt=""/>
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-lg-4 offset-lg-8">
+          <div class="col-lg-4 offset-lg-8 z-index">
             <h2>Soluções Inovadoras</h2>
             <p>
               Conectar clientes com soluçoes proprietárias disruptivas que
@@ -147,10 +147,16 @@
             </p>
           </div>
         </div>
+        <div class="container-fluid">
+          <div id="box-1" class="col-lg-7 offset-lg-5 image-effect">
+
+          </div>
+        </div>
+
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-lg-4 offset-lg-8">
+          <div class="col-lg-4 offset-lg-8 z-index">
             <h2>Transformação digital</h2>
             <p>
               Transformar negócios com tecnologia evoluindoe acelerando como as
@@ -159,10 +165,15 @@
             </p>
           </div>
         </div>
+        <div class="container-fluid">
+          <div id="box-2" class="col-lg-7 offset-lg-5 image-effect">
+
+          </div>
+        </div>
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-lg-5 offset-lg-7">
+          <div class="col-lg-5 offset-lg-7 z-index">
             <h2>Squads Gerenciados</h2>
             <p>
               Times cross-funcionais, ágeis e auto gerenciáveis, com alta
@@ -170,15 +181,25 @@
             </p>
           </div>
         </div>
+        <div class="container-fluid">
+          <div id="box-3" class="col-lg-8 offset-lg-4 image-effect">
+
+          </div>
+        </div>
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-lg-6 offset-lg-6">
+          <div class="col-lg-6 offset-lg-6 z-index">
             <h2>Times Especializados</h2>
             <p>
               Times multidisciplinares com alta capacidade técnica que apoiam o
               desenvolvimento e melhoria contínua de produtos digitais.
             </p>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div id="box-4" class="col-lg-8 offset-lg-4 image-effect">
+
           </div>
         </div>
       </div>
@@ -192,7 +213,7 @@
                 class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
             >
               <h2>Paixão por transformar negócios com tecnologia</h2>
-              <img src="/images/seals-gptw.png" class="mt-auto seals img-business" alt=""/>
+              <img src="~@/static/images/seals-gptw.png" class="mt-auto seals img-business" alt=""/>
             </div>
           </div>
         </div>
@@ -380,7 +401,7 @@
             <h2 class="m-0">Receba nossos conteúdos</h2>
           </div>
           <div id="content-arrow-footer" class="col-12 col-md-auto d-none d-md-none d-lg-block">
-            <img id="arrow-footer" src="/images/long-arrow.svg" alt=""/>
+            <img id="arrow-footer" src="~@/static/images/long-arrow.svg" alt=""/>
           </div>
           <div class="col-12 col-md-auto mr-auto d-flex align-items-center">
             <b-form-input
@@ -391,7 +412,7 @@
                 placeholder="Digite seu e-mail"
             ></b-form-input>
             <b-button id="send-button" class="send-button align-items-center">
-              <img src="/images/long-arrow.svg" alt=""/>
+              <img src="~@/static/images/long-arrow.svg" alt=""/>
               Enviar
             </b-button>
           </div>
@@ -412,11 +433,11 @@ function changeNavWhenScroll() {
   window.document.body.onscroll = function (e: any) {
     if (window.pageYOffset > 100) {
       document.getElementsByTagName('nav')[0].classList.add('bg-translucent');
-      document.getElementById('logo-nav').style.transform = 'scale(.7)';
+      document.getElementById('logo-nav')!.style.transform = 'scale(.7)';
       return;
     }
     document.getElementsByTagName('nav')[0].classList.remove('bg-translucent');
-    document.getElementById('logo-nav').style.transform = 'scale(1)';
+    document.getElementById('logo-nav')!.style.transform = 'scale(1)';
   }
 }
 
@@ -452,7 +473,7 @@ export default {
         x: prs === 'go' ? -100 + 'vw' : 0 + 'vw',
         onComplete: function () {
           if (prs === 'back') {
-            document.getElementById('slide-panel').removeAttribute('style');
+            document.getElementById('slide-panel')!.removeAttribute('style');
           }
         }
       });
@@ -481,7 +502,13 @@ export default {
       gsap.to('#send-button', 0, {
         position: prs === 'in' ? 'relative' : 'absolute'
       });
-    }
+    },
+    // hoverBackground(box: string, param: any) {
+    //   console.log(box);
+    //   gsap.to('#box-'+box, .5, {
+    //     backgroundImage: 'url(/images/bg-trabalhe-conosco.jpg)',
+    //   });
+    // }
   },
   mounted() {
     changeNavWhenScroll();
@@ -540,6 +567,44 @@ export default {
 </script>
 
 <style lang="scss">
+.z-index {
+  z-index: 1;
+}
+
+.content-box:hover .image-effect {
+  opacity: .3;
+}
+
+.image-effect {
+  transition: all .3s linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+#box-1 {
+  background-image: url(~@/static/images/bg-1.jpeg);
+}
+
+#box-2 {
+  background-image: url(~@/static/images/bg-2.jpeg);
+}
+
+#box-3 {
+  background-image: url(~@/static/images/bg-3.jpeg);
+}
+
+#box-4 {
+  background-image: url(~@/static/images/bg-4.jpeg);
+}
+
+
 /* Diagonal Boxes - */
 .img-business {
   margin-bottom: 7rem;
@@ -782,7 +847,7 @@ export default {
 
 .be-brq {
   height: 100vh;
-  background: url(/images/bg-trabalhe-conosco.jpg) center top/cover;
+  background: url('~@/static/images/bg-trabalhe-conosco.jpg') center top/cover;
 
   svg {
     position: absolute;
@@ -1121,6 +1186,12 @@ export default {
 @media (min-height: 1366px) {
   .be-brq {
     height: 53vh;
+  }
+}
+
+@media (max-width: 1366px) {
+  .title svg.diagonal-line {
+    height: 42vw;
   }
 }
 

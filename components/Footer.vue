@@ -4,7 +4,7 @@
       <div class="container-fluid tp-bar">
         <div class="row d-flex align-items-center py-3">
           <div class="col-md-2">
-            <img src="/images/logo-brq.png" class="logo" alt="" />
+            <img src="~@/static/images/logo-brq.png" class="logo" alt="" />
           </div>
           <div class="col-12 col-md-8">
             <ul class="nav justify-content-center">
@@ -35,45 +35,45 @@
         <div class="container-fluid">
           <div class="row d-flex align-items-center">
             <div class="col-12 col-md-2 text-center seals">
-              <img src="/images/seals-gptw.png" alt="" />
+              <img src="~@/static/images/seals-gptw.png" alt="" />
             </div>
             <div class="col-md-7 mt-3 mt-md-0">
               <ul class="nav justify-content-center">
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <img src="/images/facebook.svg" alt="" />
+                    <img src="~@/static/images/facebook.svg" alt="" />
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img src="/images/twitter.svg" alt=""
+                    ><img src="~@/static/images/twitter.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img src="/images/youtube.svg" alt=""
+                    ><img src="~@/static/images/youtube.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img src="/images/linkedin.svg" alt=""
+                    ><img src="~@/static/images/linkedin.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img src="/images/instagram.svg" alt=""
+                    ><img src="~@/static/images/instagram.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img src="/images/glassdoor.svg" alt=""
+                    ><img src="~@/static/images/glassdoor.svg" alt=""
                   /></a>
                 </li>
               </ul>
             </div>
             <div class="col-md-3 text-center mt-3 mt-md-0 tags">
-              <img src="/images/bovespa.png" alt="" />
-              <img src="/images/bndes.png" alt="" />
+              <img src="~@/static/images/bovespa.png" alt="" />
+              <img src="~@/static/images/bndes.png" alt="" />
             </div>
           </div>
         </div>
