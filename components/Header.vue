@@ -25,12 +25,18 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#">Quem Somos</b-nav-item>
-          <b-nav-item href="#">Como Transformamos</b-nav-item>
-          <b-nav-item href="#">Conteúdos</b-nav-item>
-          <b-nav-item href="#">RI</b-nav-item>
-          <b-nav-item href="#">Venha ser Fera</b-nav-item>
-          <b-nav-item href="#">Fale com a gente</b-nav-item>
+          <b-nav-item-dropdown text="PT" right no-caret>
+            <template #button-content>
+              <span>Quem somos</span>
+            </template>
+            <b-dropdown-item href="#">Sobre nós</b-dropdown-item>
+            <b-dropdown-item href="#">Nossa cultura</b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item href="#"><span>Como Transformamos</span></b-nav-item>
+          <b-nav-item href="#"><span>Conteúdos</span></b-nav-item>
+          <b-nav-item href="#"><span>RI</span></b-nav-item>
+          <b-nav-item href="#"><span>Venha ser Fera</span></b-nav-item>
+          <b-nav-item href="#"><span>Fale com a gente</span></b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -63,7 +69,7 @@
             <template #button-content>
               <img src="~@/static/images/_icon_contrast.svg" alt="">
             </template>
-            <b-dropdown-item href="#">Contrate normal</b-dropdown-item>
+            <b-dropdown-item href="#">Contraste normal</b-dropdown-item>
             <b-dropdown-item href="#">Alto contraste</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
@@ -74,9 +80,16 @@
   </div>
 </template>
 
-<script>
-
-
+<script lang="ts">
+// if (typeof document !== 'undefined') {
+//   const links = document.getElementsByClassName('nav-link');
+//   for (let i = 0; i < links.length; i++) {
+//     links[i].addEventListener('mouseover', () => {
+//       links[i].parentElement!.setAttribute('style', 'opacity: 1 !important');
+//     });
+//   }
+//   console.log(links);
+// }
 </script>
 
 <style lang="scss">
@@ -85,7 +98,7 @@
 }
 
 .navbar-nav .nav-link {
-  padding-left: 20px !important;
+  padding: 10px 20px !important;
 }
 
 .navbar .nav-item {
@@ -103,11 +116,16 @@
 .navbar .nav-item {
   > a:hover {
     color: var(--brq-yellow);
+
+    span {
+      border-bottom: 2px solid dodgerblue;
+    }
   }
 }
 
 .dropdown-menu {
   background: #181718;
+  border-radius: 0;
   display: block;
   visibility: hidden;
   opacity: 0;
@@ -124,7 +142,8 @@
 }
 
 .dropdown-item:hover {
-  color: black;
+  color: var(--brq-yellow);
+  background: #181718;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -132,6 +151,34 @@
   opacity: 1;
   transform: scale(1);
   margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    z-index: 12;
+  }
+
+  .dropdown:hover a:not(:hover) {
+    opacity: .3;
+  }
+
+  .dropdown:hover {
+    a {
+      z-index: 13 !important;
+    }
+  }
+
+  .navbar-nav:first-child .dropdown-menu {
+    left: 0;
+  }
+
+  .nav-item .nav-link {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 768px) {

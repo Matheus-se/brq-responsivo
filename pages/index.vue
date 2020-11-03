@@ -7,8 +7,8 @@
            class="mt-3"
            id="video-arrow-back"
       />
-      <video class="img-fluid" controls id="video-player">
-        <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+      <video class="img-fluid" controls id="video-player" src="~@/static/video/video-brq.mp4">
+<!--        <source src="~@/static/video/video-brq.mp4" type="video/mp4">-->
       </video>
     </div>
     <!--background-->
@@ -99,9 +99,8 @@
             <!--                fluid-grow-->
             <!--                alt="Fluid-grow image"-->
             <!--            ></b-img>-->
-
-            <video class="img-fluid" autoplay muted loop id="video">
-              <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+            <video class="img-fluid" autoplay muted loop id="video" src="~@/static/video/video-brq.mp4">
+<!--              <source src="static/video/video-brq.mp4" type="video/mp4">-->
             </video>
             <a @click="transformVideo('go')" id="video-play" href="#" class="play-button">
               <img src="~@/static/images/_play-button.svg" alt=""/>
@@ -603,8 +602,6 @@ export default {
 #box-4 {
   background-image: url(~@/static/images/bg-4.jpeg);
 }
-
-
 /* Diagonal Boxes - */
 .img-business {
   margin-bottom: 7rem;
@@ -624,11 +621,16 @@ export default {
   z-index: 9999;
   transform: translateX(100vw);
   position: fixed;
+  align-items: center;
+  justify-content: center;
 
   img {
     margin: 70px auto 70px 30px;
     width: 7em;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 0;
   }
 
   video {
