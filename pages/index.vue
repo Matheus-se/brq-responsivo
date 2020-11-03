@@ -1,13 +1,18 @@
 <template>
   <div>
-
     <div class="dark-bg" id="slide-next">
-      <img @click="transformVideo('back')"
-           src="~@/static/images/arrow-dobra.svg"
-           class="mt-3"
-           id="video-arrow-back"
+      <img
+        @click="transformVideo('back')"
+        src="~@/static/images/arrow-dobra.svg"
+        class="mt-3"
+        id="video-arrow-back"
       />
-      <video class="img-fluid" controls id="video-player" src="~@/static/video/video-brq.mp4">
+      <video
+        class="img-fluid"
+        controls
+        id="video-player"
+        src="~@/static/video/video-brq.mp4"
+      >
         <!--        <source src="~@/static/video/video-brq.mp4" type="video/mp4">-->
       </video>
     </div>
@@ -15,15 +20,15 @@
     <section id="banner" class="pd-top title dark-bg">
       <!--cuts-->
       <svg
-          class="diagonal-line"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          ref="diagonal"
-          id="diagonal"
+        class="diagonal-line"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        ref="diagonal"
+        id="diagonal"
       >
         <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
-        <rect width="100" height="100" style="fill: rgb(255, 255, 255)"/>
+        <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
       </svg>
 
       <div class="container">
@@ -39,71 +44,81 @@
               até a materialização dos produtos digitais.
             </p>
             <img
-                src="~@/static/images/arrow-dobra.svg"
-                ref="setaHz"
-                id="setaHz"
-                class="mt-3 d-none d-md-block"
+              src="~@/static/images/arrow-dobra.svg"
+              ref="setaHz"
+              id="setaHz"
+              class="mt-3 d-none d-md-block"
             />
 
             <div class="method-title d-flex">
               <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="64.707"
-                  height="160.707"
-                  viewBox="0 0 64.707 160.707"
-                  ref="seta"
-                  id="seta"
-                  class="seta"
+                xmlns="http://www.w3.org/2000/svg"
+                width="64.707"
+                height="160.707"
+                viewBox="0 0 64.707 160.707"
+                ref="seta"
+                id="seta"
+                class="seta d-none d-md-block"
               >
                 <g
-                    id="_arrow-1a-dobra"
-                    transform="translate(64.354) rotate(90)"
+                  id="_arrow-1a-dobra"
+                  transform="translate(64.354) rotate(90)"
                 >
                   <path
-                      id="Path"
-                      d="M0,0,32,32,0,64"
-                      transform="translate(128)"
-                      fill="none"
-                      stroke="#000"
-                      stroke-miterlimit="10"
-                      stroke-width="1"
+                    id="Path"
+                    d="M0,0,32,32,0,64"
+                    transform="translate(128)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
                   />
                   <path
-                      id="Path_2"
-                      data-name="Path 2"
-                      d="M0,.5H160"
-                      transform="translate(0 32)"
-                      fill="none"
-                      stroke="#000"
-                      stroke-miterlimit="10"
-                      stroke-width="1"
+                    id="Path_2"
+                    data-name="Path 2"
+                    d="M0,.5H160"
+                    transform="translate(0 32)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
                   />
                 </g>
               </svg>
 
-              <h2
-                  class="method mt-5 d-none d-md-block"
-                  id="metodologia"
-                  @mouseover="animateBanner('in')"
-                  @mouseout="animateBanner('out')"
-              >
-                Conheça a<br/>
+              <h2 class="method mt-5 d-none d-md-block" id="metodologia">
+                Conheça a<br />
                 nossa metodologia
               </h2>
             </div>
           </div>
-          <div @mouseover="animateVideo('in')"
-               @mouseout="animateVideo('out')" class="col-12 col-md-8 video-cover">
+          <div
+            @mouseover="animateVideo('in')"
+            @mouseout="animateVideo('out')"
+            class="col-12 col-md-8 video-cover"
+          >
             <!--            <b-img-->
             <!--                src="~@/static/images/tech.jpeg"-->
             <!--                fluid-grow-->
             <!--                alt="Fluid-grow image"-->
             <!--            ></b-img>-->
-            <video class="img-fluid" autoplay muted loop id="video" src="~@/static/video/video-brq.mp4">
+            <video
+              class="img-fluid"
+              autoplay
+              muted
+              loop
+              id="video"
+              src="~@/static/video/video-brq.mp4"
+            >
               <!--              <source src="static/video/video-brq.mp4" type="video/mp4">-->
             </video>
-            <a @click="transformVideo('go')" id="video-play" href="#" class="play-button">
-              <img src="~@/static/images/_play-button.svg" alt=""/>
+            <a
+              @click="transformVideo('go')"
+              id="video-play"
+              href="#"
+              class="play-button"
+            >
+              <img src="~@/static/images/_play-button.svg" alt="" />
             </a>
           </div>
         </div>
@@ -114,7 +129,7 @@
     <div class="container">
       <div class="row">
         <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
-          Conheça a<br/>
+          Conheça a<br />
           nossa metodologia
         </h2>
       </div>
@@ -133,7 +148,7 @@
         </div>
       </div>
       <div class="scale">
-        <img src="~@/static/images/escala-valores.png" alt=""/>
+        <img src="~@/static/images/escala-valores.png" alt="" />
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
@@ -147,11 +162,8 @@
           </div>
         </div>
         <div class="container-fluid">
-          <div id="box-1" class="col-lg-7 offset-lg-5 image-effect">
-
-          </div>
+          <div id="box-1" class="col-lg-7 offset-lg-5 image-effect"></div>
         </div>
-
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
@@ -165,9 +177,7 @@
           </div>
         </div>
         <div class="container-fluid">
-          <div id="box-2" class="col-lg-7 offset-lg-5 image-effect">
-
-          </div>
+          <div id="box-2" class="col-lg-7 offset-lg-5 image-effect"></div>
         </div>
       </div>
       <div class="content-box dark-bg">
@@ -181,9 +191,7 @@
           </div>
         </div>
         <div class="container-fluid">
-          <div id="box-3" class="col-lg-8 offset-lg-4 image-effect">
-
-          </div>
+          <div id="box-3" class="col-lg-8 offset-lg-4 image-effect"></div>
         </div>
       </div>
       <div class="content-box dark-bg">
@@ -197,9 +205,7 @@
           </div>
         </div>
         <div class="container-fluid">
-          <div id="box-4" class="col-lg-8 offset-lg-4 image-effect">
-
-          </div>
+          <div id="box-4" class="col-lg-8 offset-lg-4 image-effect"></div>
         </div>
       </div>
     </section>
@@ -209,23 +215,26 @@
         <div class="container h-100">
           <div class="row h-100">
             <div
-                class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
+              class="col-12 col-md-8 title d-flex align-items-start flex-column h-100"
             >
               <h2>Paixão por transformar negócios com tecnologia</h2>
-              <img src="~@/static/images/seals-gptw.png" class="mt-auto seals img-business" alt=""/>
+              <img
+                src="~@/static/images/seals-gptw.png"
+                class="mt-auto seals img-business"
+                alt=""
+              />
             </div>
           </div>
         </div>
         <svg
-            class="diagonal-line"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
+          class="diagonal-line"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
         >
           <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
-          <rect width="100" height="100" style="fill: rgb(255, 255, 255)"/>
+          <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
         </svg>
-
       </div>
       <div class="container context">
         <div class="row">
@@ -243,16 +252,16 @@
             <a href="#" class="btn btn-primary btn-lg mt-4">
               Venha ser um #FERABRQ
               <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  class="bi bi-arrow-right"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-arrow-right"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                 />
               </svg>
             </a>
@@ -275,20 +284,20 @@
         <div class="row blog-contents">
           <div class="col-12">
             <b-carousel
-                id="carousel-1"
-                v-model="slide"
-                :interval="4000"
-                controls
-                img-width="1024"
-                class="d-none d-md-block"
+              id="carousel-1"
+              v-model="slide"
+              :interval="4000"
+              controls
+              img-width="1024"
+              class="d-none d-md-block"
             >
               <!-- Slide with blank fluid image to maintain slide aspect ratio -->
               <b-carousel-slide img-blank>
                 <div class="blog-item">
                   <div class="item d-flex first">
                     <div
-                        class="img col-6"
-                        style="
+                      class="img col-6"
+                      style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -304,8 +313,8 @@
                   </div>
                   <div class="item d-flex second">
                     <div
-                        class="img col-6"
-                        style="
+                      class="img col-6"
+                      style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -321,8 +330,8 @@
                   </div>
                   <div class="item d-flex third">
                     <div
-                        class="img col-6"
-                        style="
+                      class="img col-6"
+                      style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -341,20 +350,20 @@
             </b-carousel>
 
             <b-carousel
-                id="carousel-2"
-                v-model="slide"
-                :interval="4000"
-                controls
-                img-width="1024"
-                class="d-block d-sm-none"
+              id="carousel-2"
+              v-model="slide"
+              :interval="4000"
+              controls
+              img-width="1024"
+              class="d-block d-sm-none"
             >
               <!-- Slide with blank fluid image to maintain slide aspect ratio -->
               <b-carousel-slide img-blank>
                 <div class="blog-item">
                   <div class="item">
                     <div
-                        class="img col-12"
-                        style="
+                      class="img col-12"
+                      style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -374,8 +383,8 @@
                 <div class="blog-item">
                   <div class="item">
                     <div
-                        class="img col-12"
-                        style="
+                      class="img col-12"
+                      style="
                         background-image: url(https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg);
                       "
                     >
@@ -399,19 +408,26 @@
           <div class="col-12 col-md-auto ml-auto">
             <h2 class="m-0">Receba nossos conteúdos</h2>
           </div>
-          <div id="content-arrow-footer" class="col-12 col-md-auto d-none d-md-none d-lg-block">
-            <img id="arrow-footer" src="~@/static/images/long-arrow.svg" alt=""/>
+          <div
+            id="content-arrow-footer"
+            class="col-12 col-md-auto d-none d-md-none d-lg-block"
+          >
+            <img
+              id="arrow-footer"
+              src="~@/static/images/long-arrow.svg"
+              alt=""
+            />
           </div>
           <div class="col-12 col-md-auto mr-auto d-flex align-items-center">
             <b-form-input
-                id="email-footer"
-                @focusin="transformInputEmail('in')"
-                @focusout="transformInputEmail('out')"
-                v-model="text"
-                placeholder="Digite seu e-mail"
+              id="email-footer"
+              @focusin="transformInputEmail('in')"
+              @focusout="transformInputEmail('out')"
+              v-model="text"
+              placeholder="Digite seu e-mail"
             ></b-form-input>
             <b-button id="send-button" class="send-button align-items-center">
-              <img src="~@/static/images/long-arrow.svg" alt=""/>
+              <img src="~@/static/images/long-arrow.svg" alt="" />
               Enviar
             </b-button>
           </div>
@@ -423,83 +439,66 @@
 
 <script lang="ts">
 import Vue from "vue";
-import {TimelineLite, gsap} from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
+import { TimelineLite, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // export default Vue.extend({});
 
 function changeNavWhenScroll() {
   window.document.body.onscroll = function (e: any) {
     if (window.pageYOffset > 100) {
-      document.getElementsByTagName('nav')[0].classList.add('bg-translucent');
-      document.getElementById('logo-nav')!.style.transform = 'scale(.7)';
+      document.getElementsByTagName("nav")[0].classList.add("bg-translucent");
+      document.getElementById("logo-nav")!.style.transform = "scale(.7)";
       return;
     }
-    document.getElementsByTagName('nav')[0].classList.remove('bg-translucent');
-    document.getElementById('logo-nav')!.style.transform = 'scale(1)';
-  }
+    document.getElementsByTagName("nav")[0].classList.remove("bg-translucent");
+    document.getElementById("logo-nav")!.style.transform = "scale(1)";
+  };
 }
 
 export default {
   methods: {
-    animateBanner: function (prs: string) {
-      // const {diagonal, seta, setaHz} = this.$refs;
-      const timeline = new TimelineLite();
-      gsap.to('#diagonal', 0.7, {
-        y: prs === "in" ? -70 : 0,
-        rotation: prs === "in" ? 0 : 8,
-      });
-      gsap.to('#seta', 1, {
-        opacity: prs === "in" ? 1 : 0,
-        y: prs === "in" ? 50 : 0,
-      });
-      gsap.to('#setaHz', 1, {
-        opacity: prs === "in" ? 0 : 1,
-        x: prs === "in" ? -100 : 0,
-      });
-    },
-
     animateVideo: function (prs: string) {
-      gsap.to('#setaHz', 0.7, {
+      gsap.to("#setaHz", 0.7, {
         x: prs === "in" ? 100 : 0,
       });
-      gsap.to('#video', 0.7, {
+      gsap.to("#video", 0.7, {
         scale: prs === "in" ? 1.05 : 1,
       });
     },
     transformVideo: function (prs: string) {
-      gsap.to('#slide-panel', 0.5, {
-        x: prs === 'go' ? -100 + 'vw' : 0 + 'vw',
+      gsap.to("#slide-panel", 0.5, {
+        x: prs === "go" ? -100 + "vw" : 0 + "vw",
         onComplete: function () {
-          if (prs === 'back') {
-            document.getElementById('slide-panel')!.removeAttribute('style');
+          if (prs === "back") {
+            document.getElementById("slide-panel")!.removeAttribute("style");
           }
-        }
+        },
       });
-      gsap.to('body', 0.5, {
-        overflow: prs === 'go' ? 'hidden' : 'auto'
+      gsap.to("body", 0.5, {
+        overflow: prs === "go" ? "hidden" : "auto",
       });
 
-      const video = document.getElementById('video-player') as any;
-      prs === 'go' ? video.play() : (video.pause(), video.currentTime = 0)
+      const video = document.getElementById("video-player") as any;
+      prs === "go" ? video.play() : (video.pause(), (video.currentTime = 0));
     },
     transformInputEmail(prs: string) {
-      gsap.to('#arrow-footer', 0.3, {
-        x: prs === 'in' ? 250 : 0,
-        scaleX: prs === 'in' ? 0 : 1,
-        opacity: prs === 'in' ? 0 : 1,
-        width: prs === 'in' ? 0 : 'auto'
+      gsap.to("#arrow-footer", 0.3, {
+        x: prs === "in" ? 250 : 0,
+        scaleX: prs === "in" ? 0 : 1,
+        opacity: prs === "in" ? 0 : 1,
+        width: prs === "in" ? 0 : "auto",
       });
-      gsap.to('#content-arrow-footer', 0.3, {
+      gsap.to("#content-arrow-footer", 0.3, {
         padding: 0,
       });
-      gsap.to('#send-button', 0.3, {
-        scaleX: prs === 'in' ? 1 : 0,
-        x: prs === 'in' ? 0 : -50,
-        width: prs === 'in' ? 'auto' : 0,
+      gsap.to("#send-button", 0.3, {
+        scaleX: prs === "in" ? 1 : 0,
+        x: prs === "in" ? 0 : -50,
+        width: prs === "in" ? "auto" : 0,
       });
-      gsap.to('#send-button', 0, {
-        position: prs === 'in' ? 'relative' : 'absolute'
+      gsap.to("#send-button", 0, {
+        position: prs === "in" ? "relative" : "absolute",
       });
     },
     // hoverBackground(box: string, param: any) {
@@ -510,31 +509,64 @@ export default {
     // }
   },
   mounted() {
-    // gsap.to('#diagonal', 0.7, {
-    //   y: 0,
-    //   rotation: 8,
-    // });
+    gsap.to("#diagonal", {
+      scrollTrigger: {
+        trigger: ".main-content",
+        start: "top bottom",
+        end: "=+70 bottom",
+        scrub: 0.5,
+      },
+      rotation: 0,
+      ease: "power1",
+      y: -70,
+    });
+
+    gsap.to("#setaHz", {
+      scrollTrigger: {
+        trigger: ".main-content",
+        start: "top bottom",
+        end: "=+70 bottom",
+        scrub: 0.5,
+      },
+      rotation: 0,
+      ease: "power1",
+      x: -70,
+      opacity: 0,
+    });
+
+    gsap.to(".seta", {
+      scrollTrigger: {
+        trigger: ".main-content",
+        start: "top bottom",
+        end: "=+70 bottom",
+        scrub: 0.5,
+      },
+      ease: "power1",
+      opacity: 1,
+      y: 50,
+    });
+
     changeNavWhenScroll();
     gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".main-content",
-            end: "+=300",
-            scrub: true,
-          },
-        })
-        .from(".main-content", {y: 200, autoAlpha: 0});
+      .timeline({
+        scrollTrigger: {
+          trigger: ".main-content",
+          end: "+=300",
+          scrub: true,
+        },
+      })
+      .from(".main-content", { y: 200, autoAlpha: 0 });
 
     gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".be-brq",
-            end: "center bottom",
-            scrub: true,
-          },
-        })
-        .from(".be-brq", {x: 200, autoAlpha: 0})
-        .from(".be-brq h2", {y: 200, autoAlpha: 0});
+      .timeline({
+        scrollTrigger: {
+          trigger: ".be-brq",
+          end: "center bottom",
+          scrub: true,
+        },
+      })
+      .from(".be-brq", { x: 200, autoAlpha: 0 })
+      .from(".be-brq h2", { y: 200, autoAlpha: 0 });
 
     gsap.from(".seals", {
       y: 20,
@@ -575,11 +607,11 @@ export default {
 }
 
 .content-box:hover .image-effect {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .image-effect {
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -650,7 +682,7 @@ export default {
 
 .send-button {
   text-transform: uppercase;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   border-radius: 0;
   background: orange;
   border: 0;
@@ -854,7 +886,7 @@ export default {
 
 .be-brq {
   height: 100vh;
-  background: url('~@/static/images/bg-trabalhe-conosco.jpg') center top/cover;
+  background: url("~@/static/images/bg-trabalhe-conosco.jpg") center top/cover;
 
   svg {
     position: absolute;
@@ -1090,7 +1122,6 @@ export default {
   }
   .about-team {
     .context {
-
       margin-top: 2rem;
     }
   }
@@ -1155,17 +1186,17 @@ export default {
 }
 
 /* For larger screens */
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .main-content {
     .scale {
-      bottom: 200px;
+      bottom: 324px;
       left: 22%;
       z-index: 999;
     }
   }
   .title {
     svg.diagonal-line {
-      bottom: -28vw;
+      bottom: -26vw;
       height: 35vw;
       width: 235vh;
       left: -12vh;
@@ -1267,7 +1298,6 @@ export default {
       }
     }
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

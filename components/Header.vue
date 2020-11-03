@@ -92,7 +92,7 @@
 
 <script lang="ts">
 if (typeof document !== 'undefined') {
-  const links = document.getElementsByClassName('nav-item');
+  const links = document.querySelectorAll('nav .nav-item');
 
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('mouseover', () => {
@@ -129,7 +129,7 @@ if (typeof document !== 'undefined') {
 }
 
 .navbar .nav-item {
-  > a {
+  a {
     font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
