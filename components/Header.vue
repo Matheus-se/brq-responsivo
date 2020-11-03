@@ -69,30 +69,57 @@
             <template #button-content>
               <img src="~@/static/images/_icon_contrast.svg" alt="">
             </template>
-            <b-dropdown-item href="#">Contraste normal</b-dropdown-item>
-            <b-dropdown-item href="#">Alto contraste</b-dropdown-item>
+            <b-dropdown-item href="#">
+              Contraste normal
+              <b-form-checkbox checked="true"></b-form-checkbox>
+            </b-dropdown-item>
+
+            <b-dropdown-item href="#">
+              Alto contraste
+              <b-form-checkbox></b-form-checkbox>
+
+            </b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
       </b-collapse>
+
     </b-navbar>
+
 
   </div>
 </template>
 
 <script lang="ts">
-// if (typeof document !== 'undefined') {
-//   const links = document.getElementsByClassName('nav-link');
-//   for (let i = 0; i < links.length; i++) {
-//     links[i].addEventListener('mouseover', () => {
-//       links[i].parentElement!.setAttribute('style', 'opacity: 1 !important');
-//     });
-//   }
-//   console.log(links);
-// }
+if (typeof document !== 'undefined') {
+  const links = document.getElementsByClassName('nav-item');
+
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('mouseover', () => {
+      for (let j = 0; j < links.length; j++) {
+        if (j != i) {
+          links[j].setAttribute('style', 'opacity: .2 !important');
+        }
+      }
+    });
+    links[i].addEventListener('mouseout', () => {
+      for (let j = 0; j < links.length; j++) {
+        if (j != i) {
+          links[j].setAttribute('style', 'opacity: 1 !important');
+        }
+      }
+    });
+  }
+}
 </script>
 
 <style lang="scss">
+.custom-control-input:checked ~ .custom-control-label::before, .custom-control-label::before {
+  border-color: transparent;
+  border-radius: 0 !important;
+  background-color: #565656;
+}
+
 .logo {
   height: 10vh;
 }
@@ -114,6 +141,8 @@
 }
 
 .navbar .nav-item {
+  transition: all .3s linear;
+
   > a:hover {
     color: var(--brq-yellow);
 
@@ -135,10 +164,12 @@
 
 .dropdown-item {
   color: white;
-}
+  display: flex;
+  align-items: center;
 
-.dropdown-item:focus {
-  background: grey;
+  .custom-checkbox {
+    margin-left: 8px;
+  }
 }
 
 .dropdown-item:hover {
@@ -161,10 +192,6 @@
     z-index: 12;
   }
 
-  .dropdown:hover a:not(:hover) {
-    opacity: .3;
-  }
-
   .dropdown:hover {
     a {
       z-index: 13 !important;
@@ -173,6 +200,16 @@
 
   .navbar-nav:first-child .dropdown-menu {
     left: 0;
+  }
+
+  #last-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .dropdown-item {
+    padding-top: 0;
   }
 
   .nav-item .nav-link {
