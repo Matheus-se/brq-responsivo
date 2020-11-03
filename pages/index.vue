@@ -512,8 +512,8 @@ export default {
     gsap.to("#diagonal", {
       scrollTrigger: {
         trigger: ".main-content",
-        start: "top bottom",
-        end: "=+70 bottom",
+        start: "-=200 bottom",
+        end: "+=50 bottom",
         scrub: 0.5,
       },
       rotation: 0,
@@ -524,8 +524,8 @@ export default {
     gsap.to("#setaHz", {
       scrollTrigger: {
         trigger: ".main-content",
-        start: "top bottom",
-        end: "=+70 bottom",
+        start: "-=200 bottom",
+        end: "+=50 bottom",
         scrub: 0.5,
       },
       rotation: 0,
@@ -537,8 +537,8 @@ export default {
     gsap.to(".seta", {
       scrollTrigger: {
         trigger: ".main-content",
-        start: "top bottom",
-        end: "=+70 bottom",
+        start: "-=200 bottom",
+        end: "+=50 bottom",
         scrub: 0.5,
       },
       ease: "power1",
@@ -880,6 +880,11 @@ export default {
       border: 0;
       border-radius: 0;
       padding: 1.1rem 2rem;
+      transition: all .3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.1);
     }
   }
 }
