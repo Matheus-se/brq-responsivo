@@ -8,11 +8,11 @@
            id="video-arrow-back"
       />
       <video class="img-fluid" controls id="video-player" src="~@/static/video/video-brq.mp4">
-<!--        <source src="~@/static/video/video-brq.mp4" type="video/mp4">-->
+        <!--        <source src="~@/static/video/video-brq.mp4" type="video/mp4">-->
       </video>
     </div>
     <!--background-->
-    <section class="pd-top title dark-bg">
+    <section id="banner" class="pd-top title dark-bg">
       <!--cuts-->
       <svg
           class="diagonal-line"
@@ -100,7 +100,7 @@
             <!--                alt="Fluid-grow image"-->
             <!--            ></b-img>-->
             <video class="img-fluid" autoplay muted loop id="video" src="~@/static/video/video-brq.mp4">
-<!--              <source src="static/video/video-brq.mp4" type="video/mp4">-->
+              <!--              <source src="static/video/video-brq.mp4" type="video/mp4">-->
             </video>
             <a @click="transformVideo('go')" id="video-play" href="#" class="play-button">
               <img src="~@/static/images/_play-button.svg" alt=""/>
@@ -510,6 +510,10 @@ export default {
     // }
   },
   mounted() {
+    // gsap.to('#diagonal', 0.7, {
+    //   y: 0,
+    //   rotation: 8,
+    // });
     changeNavWhenScroll();
     gsap
         .timeline({
@@ -602,6 +606,7 @@ export default {
 #box-4 {
   background-image: url(~@/static/images/bg-4.jpeg);
 }
+
 /* Diagonal Boxes - */
 .img-business {
   margin-bottom: 7rem;
