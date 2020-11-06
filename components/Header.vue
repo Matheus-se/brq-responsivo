@@ -1,8 +1,10 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="" fixed="top" variant="">
-      <b-navbar-brand href="#">
+      <b-navbar-brand>
+        <NuxtLink to="/">
         <img id="logo-nav" src="~@/static/images/logo-brq.png" class="logo" alt=""/>
+        </NuxtLink>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"
@@ -29,14 +31,14 @@
             <template #button-content>
               <span>Quem somos</span>
             </template>
-            <b-dropdown-item href="#">Sobre nós</b-dropdown-item>
-            <b-dropdown-item href="#">Nossa cultura</b-dropdown-item>
+            <b-dropdown-item>Sobre nós</b-dropdown-item>
+            <b-dropdown-item>Nossa cultura</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="#"><span>Como Transformamos</span></b-nav-item>
-          <b-nav-item href="#"><span>Conteúdos</span></b-nav-item>
-          <b-nav-item href="#"><span>RI</span></b-nav-item>
-          <b-nav-item href="#"><span>Venha ser Fera</span></b-nav-item>
-          <b-nav-item href="#"><span>Fale com a gente</span></b-nav-item>
+          <b-nav-item><span>Como Transformamos</span></b-nav-item>
+          <b-nav-item><span>Conteúdos</span></b-nav-item>
+          <b-nav-item><span>RI</span></b-nav-item>
+          <b-nav-item><span>Venha ser Fera</span></b-nav-item>
+          <b-nav-item to="/fale-conosco"><span>Fale com a gente</span></b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -91,26 +93,7 @@
 </template>
 
 <script lang="ts">
-if (typeof document !== 'undefined') {
-  const links = document.querySelectorAll('nav .nav-item');
 
-  for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('mouseover', () => {
-      for (let j = 0; j < links.length; j++) {
-        if (j != i) {
-          links[j].setAttribute('style', 'opacity: .2 !important');
-        }
-      }
-    });
-    links[i].addEventListener('mouseout', () => {
-      for (let j = 0; j < links.length; j++) {
-        if (j != i) {
-          links[j].setAttribute('style', 'opacity: 1 !important');
-        }
-      }
-    });
-  }
-}
 </script>
 
 <style lang="scss">
@@ -143,7 +126,7 @@ if (typeof document !== 'undefined') {
 .navbar .nav-item {
   transition: all .3s linear;
 
-  > a:hover {
+  > a:hover, .nuxt-link-active {
     color: var(--brq-yellow);
 
     span {
@@ -219,6 +202,9 @@ if (typeof document !== 'undefined') {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    height: 7vh;
+  }
   .navbar-collapse {
     background: #fff;
 

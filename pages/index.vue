@@ -33,7 +33,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col my-md-4 my-3">
+          <div class="col my-md-1 my-3">
             <h1>Sua parceira em todos os desafios da transformação digital</h1>
           </div>
         </div>
@@ -167,12 +167,12 @@
       </div>
       <div class="content-box dark-bg">
         <div class="content container">
-          <div class="col-lg-4 offset-lg-8 z-index">
+          <div class="col-lg-5 offset-lg-7 z-index">
             <h2>Transformação digital</h2>
             <p>
-              Transformar negócios com tecnologia evoluindoe acelerando como as
-              empresas operame entregam valor para seus clientes. Digitalização
-              e aprendizado contínuopara melhoria dos negócios dos clientes.
+              Transformar negócios com tecnologia evoluindo e acelerando como as
+              empresas operam e entregam valor para seus clientes. Digitalização
+              e aprendizado contínuo para melhoria dos negócios dos clientes.
             </p>
           </div>
         </div>
@@ -272,6 +272,18 @@
     <!--end of section-->
 
     <section class="blog dark-bg py-5">
+      <svg
+        class="diagonal-line"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        ref="diagonal"
+        id="diagonal-line"
+      >
+        <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
+        <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
+      </svg>
+
       <div class="container mt-md-4">
         <div class="row title">
           <div class="col-auto">
@@ -442,20 +454,6 @@ import Vue from "vue";
 import { TimelineLite, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// export default Vue.extend({});
-
-function changeNavWhenScroll() {
-  window.document.body.onscroll = function (e: any) {
-    if (window.pageYOffset > 100) {
-      document.getElementsByTagName("nav")[0].classList.add("bg-translucent");
-      document.getElementById("logo-nav")!.style.transform = "scale(.7)";
-      return;
-    }
-    document.getElementsByTagName("nav")[0].classList.remove("bg-translucent");
-    document.getElementById("logo-nav")!.style.transform = "scale(1)";
-  };
-}
-
 export default {
   methods: {
     animateVideo: function (prs: string) {
@@ -501,102 +499,122 @@ export default {
         position: prs === "in" ? "relative" : "absolute",
       });
     },
-    // hoverBackground(box: string, param: any) {
-    //   console.log(box);
-    //   gsap.to('#box-'+box, .5, {
-    //     backgroundImage: 'url(/images/bg-trabalhe-conosco.jpg)',
-    //   });
-    // }
   },
   mounted() {
-    gsap.to("#diagonal", {
-      scrollTrigger: {
-        trigger: ".main-content",
-        start: "-=200 bottom",
-        end: "+=50 bottom",
-        scrub: 0.5,
-      },
-      rotation: 0,
-      ease: "power1",
-      y: -70,
-    });
-
-    gsap.to("#setaHz", {
-      scrollTrigger: {
-        trigger: ".main-content",
-        start: "-=200 bottom",
-        end: "+=50 bottom",
-        scrub: 0.5,
-      },
-      rotation: 0,
-      ease: "power1",
-      x: -70,
-      opacity: 0,
-    });
-
-    gsap.to(".seta", {
-      scrollTrigger: {
-        trigger: ".main-content",
-        start: "-=200 bottom",
-        end: "+=50 bottom",
-        scrub: 0.5,
-      },
-      ease: "power1",
-      opacity: 1,
-      y: 50,
-    });
-
-    changeNavWhenScroll();
-    gsap
-      .timeline({
+      gsap.to("#diagonal", {
         scrollTrigger: {
-          trigger: ".main-content",
+          trigger: ".video-cover",
+          start: "-=200",
+          end: "+=200",
+          scrub: 0.5
+        },
+        rotation: 0,
+        ease: "expo",
+        y: -70,
+      });
+
+      gsap.to("#setaHz", {
+        scrollTrigger: {
+          trigger: ".video-cover",
+          start: "-=200",
+          end: "+=200",
+          scrub: 0.5,
+        },
+        rotation: 0,
+        ease: "expo",
+        x: -70,
+        opacity: 0,
+      });
+
+      gsap.to(".seta", {
+        scrollTrigger: {
+          trigger: ".video-cover",
+          start: "-=200",
+          end: "+=200",
+          scrub: 0.5,
+        },
+        ease: "expo",
+        opacity: 1,
+        y: 50,
+      });
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".main-content",
+            end: "+=200",
+            scrub: 0.5,
+          },
+        })
+        .from(".main-content", { y: 200, autoAlpha: 0 });
+
+      gsap
+        .from('.be-brq',{
+          scrollTrigger: {
+            trigger: ".be-brq",
+            start: "top bottom",
+            end: "+=400",
+            scrub: 0.5
+          },
+          x:200,
+          ease:'linear',
+          autoAlpha: 0
+        });
+
+        gsap
+        .from('.be-brq h2',{
+          scrollTrigger: {
+            trigger: ".be-brq",
+            start: "top bottom",
+            end: "center top",
+            scrub: 0.5,
+          },
+          y:200,
+          autoAlpha:0,
+          ease:'expo'
+        });
+
+      gsap.from(".seals", {
+        y: 20,
+        autoAlpha: 0,
+        scrollTrigger: {
+          trigger: ".seals",
+          start: "top bottom",
+          end: "+=500",
+          scrub: 0.5,
+        },
+      });
+
+      gsap.from(".be-brq svg", {
+        x: 10,
+        rotate: 5,
+        scrollTrigger: {
+          trigger: ".context",
+          end: "+=500",
+          scrub: 0.5,
+        },
+      });
+
+      gsap.from(".context", {
+        y: 100,
+        autoAlpha: 0,
+        scrollTrigger: {
+          trigger: ".context",
           end: "+=300",
-          scrub: true,
+          scrub: 0.5,
         },
-      })
-      .from(".main-content", { y: 200, autoAlpha: 0 });
+      });
 
-    gsap
-      .timeline({
+      gsap.to(".blog svg", {
+        x: -100,
+        rotate: 0,
         scrollTrigger: {
-          trigger: ".be-brq",
-          end: "center bottom",
-          scrub: true,
+          trigger: ".blog-item",
+          start: "top bottom",
+          end: "+=300",
+          scrub: 0.5
         },
-      })
-      .from(".be-brq", { x: 200, autoAlpha: 0 })
-      .from(".be-brq h2", { y: 200, autoAlpha: 0 });
-
-    gsap.from(".seals", {
-      y: 20,
-      autoAlpha: 0,
-      scrollTrigger: {
-        trigger: ".seals",
-        start: "top bottom",
-        end: "+=500",
-        scrub: true,
-      },
-    });
-
-    gsap.from(".be-brq svg", {
-      x: 10,
-      autoAlpha: 0,
-      rotate: 5,
-      scrollTrigger: {
-        trigger: ".context",
-        end: "=+500",
-      },
-    });
-
-    gsap.from(".context", {
-      y: 100,
-      autoAlpha: 0,
-      scrollTrigger: {
-        trigger: ".context",
-        end: "=+500",
-      },
-    });
+      });
   },
 };
 </script>
@@ -604,6 +622,17 @@ export default {
 <style lang="scss">
 .z-index {
   z-index: 1;
+}
+
+.title h1 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--white);
+}
+
+.title p {
+  color: var(--white);
 }
 
 .content-box:hover .image-effect {
@@ -764,7 +793,6 @@ export default {
 
 .main-content {
   position: relative;
-  overflow: hidden;
 
   .scale {
     position: absolute;
@@ -774,7 +802,7 @@ export default {
     transform: rotate(-67deg);
 
     img {
-      width: 57vw;
+      width: 55vw;
     }
   }
 
@@ -783,10 +811,10 @@ export default {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2312.089' height='880.919' viewBox='0 0 2312.089 880.919'%3E%3Cpath id='Caminho_1' data-name='Caminho 1' d='M2309.37-.547,1929,879.825l-1931.717.547V0Z' transform='translate(2.719 0.547)' fill='%23fff'/%3E%3C/svg%3E%0A");
     background-position: top right;
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 0;
     width: 58%;
-    height: 100.1%;
+    height: 100.3%;
     z-index: 999;
     // clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
     padding-right: 5%;
@@ -880,7 +908,7 @@ export default {
       border: 0;
       border-radius: 0;
       padding: 1.1rem 2rem;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
 
     .btn-primary:hover {
@@ -890,8 +918,9 @@ export default {
 }
 
 .be-brq {
-  height: 100vh;
+  height: 120vh;
   background: url("~@/static/images/bg-trabalhe-conosco.jpg") center top/cover;
+  position: relative;
 
   svg {
     position: absolute;
@@ -916,7 +945,22 @@ export default {
 }
 
 .blog {
+  padding-top:10rem !important;
   position: relative;
+  overflow: hidden;
+
+  svg.diagonal-line {
+    position: absolute;
+    top: -28vw;
+    height: 35vw;
+    transform: rotate(5deg);
+    width: 235vh;
+    left: -12vh;
+  }
+
+  .carousel-inner img {
+    position: absolute;
+  }
 
   .title {
     h2 {
@@ -993,10 +1037,8 @@ export default {
   height: 100%;
 }
 
-.carousel-item {
-  img {
-    display: none !important;
-  }
+#carousel-1 img {
+  display: none !important;
 }
 
 .blog-item {
@@ -1065,6 +1107,10 @@ export default {
   .db-1 {
     height: 130vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  }
+
+  .blog {
+    padding-top:4rem !important;
   }
 
   .title {
@@ -1215,15 +1261,7 @@ export default {
 
 /* FOR IPHONE 6 USERS */
 @media (max-height: 668px) {
-  .main-content {
-    /*.scale {
-      left: -90%;
-      bottom: 370px;
-      img {
-        width: 115vh;
-      }
-    }*/
-  }
+  
 }
 
 @media (min-height: 1366px) {

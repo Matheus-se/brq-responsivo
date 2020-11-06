@@ -1,71 +1,231 @@
-/* Global Variables */
-:root {
-    --brq-yellow: #ED8B00;
-    --brq-blue: #009CDE;
-    --brq-darkblue: #005FA3;
-    --brq-grey: #505050;
-    --brq-dark: #121116;
-}
-
-body {
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-}
-
-body > div {
-  overflow: hidden;
-}
-  
-  /* TITLES */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Bebas Neue";
-    font-weight: normal !important;
-  }
-
-  /* Main Titles */
-  
-.title h1 {
-    font-size: 4.5rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    color:var(--white);
-}
-  
-.title p {
-    color: var(--white);
-}
-
-/* Backgrounds */
-.dark-bg {
-  background-image: linear-gradient(#25242a, #121116);
-}
-
-.bg-translucent {
-  background-color: rgba(0, 0, 0, .9);
-  transition: all 0.5s ease;
-}
-
-#logo-nav, .transition {
-  transition: all 0.5s ease;
-}
-
-@media (max-width: 575.98px) {
-  body, html{
-    font-size: 14px;
-  } 
-  .title h1 {
-    font-size: 3rem;
-  }
-
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
-    padding-left:25px;
-    padding-right: 25px;
-  }
-
-
-}
+    /* Global Variables */
+    
+     :root {
+        --brq-yellow: #ED8B00;
+        --brq-blue: #009CDE;
+        --brq-darkblue: #005FA3;
+        --brq-grey: #505050;
+        --brq-light-grey: #ccc;
+        --brq-dark: #121116;
+        --brq-light: #f3f3f3;
+    }
+    
+    body {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+    }
+    
+    body>div {
+        overflow: hidden;
+    }
+    /* ------------TITLES -----------------*/
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: normal !important;
+    }
+    /* ------------Backgrounds------------ */
+    
+    .dark-bg {
+        background-image: linear-gradient(#25242a, #121116);
+    }
+    
+    .bg-translucent {
+        background-color: rgba(0, 0, 0, .9);
+        transition: all 0.5s ease;
+    }
+    
+    #logo-nav,
+    .transition {
+        transition: all 0.5s ease;
+    }
+    /*----------- MAIN TITLES ---------------*/
+    
+    .main-title {
+        padding: 7rem 0 8rem 0;
+        position: relative;
+        overflow: hidden;
+        .breadcrumb {
+            background: none;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1rem;
+            color: var(--brq-grey);
+            padding: 0;
+        }
+        .title {
+            h1 {
+                font-size: 3rem;
+                margin-top: 1rem;
+                color: var(--white);
+                font-weight: normal;
+            }
+        }
+    }
+    
+    .main-title.cut-lr .diagonal-pages {
+        position: absolute;
+        height: 28vw;
+        transform: rotate(-6deg);
+        width: 200%;
+        top: 75%;
+        left: -10%;
+    }
+    /* --------- INPUTS ----------*/
+    
+    .form-control,
+    .custom-select,
+    textarea {
+        border-radius: 0;
+    }
+    
+    .form-control:focus,
+    .custom-select:focus,
+    textarea:focus {
+        box-shadow: none;
+        border-color: inherit;
+    }
+    /*--------------- Custom Button -----------*/
+    
+    .btn.btn-primary {
+        background: var(--brq-darkblue);
+        border-radius: 0;
+        border: 0;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease;
+        img {
+            max-width: 50px;
+        }
+    }
+    
+    .btn.btn-primary:hover {
+        transform: scale(1.1);
+    }
+    /* -------------- Background Diagonal ----------*/
+    /*Diagonal descendente*/
+    
+    .bg-diagonal-light {
+        background: var(--brq-light);
+        transform: skewY(-10deg);
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        .content {
+            transform: skewY(10deg);
+        }
+    }
+    
+    .blue-title {
+        font-size: 3rem;
+        color: var(--brq-darkblue);
+    }
+    /* Mobile Users */
+    
+    @media (max-width: 575.98px) {
+        body,
+        html {
+            font-size: 14px;
+        }
+        .title h1 {
+            font-size: 3rem !important;
+        }
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-10,
+        .col-11,
+        .col-12,
+        .col,
+        .col-auto,
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm,
+        .col-sm-auto,
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-md,
+        .col-md-auto,
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-lg,
+        .col-lg-auto,
+        .col-xl-1,
+        .col-xl-2,
+        .col-xl-3,
+        .col-xl-4,
+        .col-xl-5,
+        .col-xl-6,
+        .col-xl-7,
+        .col-xl-8,
+        .col-xl-9,
+        .col-xl-10,
+        .col-xl-11,
+        .col-xl-12,
+        .col-xl,
+        .col-xl-auto {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .main-title {
+            padding-bottom: 6rem;
+        }
+        .breadcrumb {
+            margin-bottom: 0;
+        }
+        .main-title.cut-lr:before {
+            height: 28vw;
+            transform: rotate(-6deg);
+            bottom: 0;
+            left: -12vh;
+        }
+    }
+    /*Notebooks*/
+    
+    @media (min-width: 576px) and (max-width:1440px) {
+        .main-title.cut-lr .diagonal-pages {
+            height: 28vw;
+            transform: rotate(-6deg);
+            width: 200%;
+            top: 60%;
+            left: -10%;
+        }
+    }

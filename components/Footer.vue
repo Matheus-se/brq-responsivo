@@ -38,36 +38,36 @@
               <img src="~@/static/images/seals-gptw.png" alt="" />
             </div>
             <div class="col-md-7 mt-3 mt-md-0">
-              <ul class="nav justify-content-center">
+              <ul class="nav justify-content-center socials">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="https://www.facebook.com/brqdigital/" target="_blank">
                     <img src="~@/static/images/facebook.svg" alt="" />
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="https://twitter.com/brqdigital" target="_blank"
                     ><img src="~@/static/images/twitter.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="https://www.youtube.com/user/brqitservices" target="_blank"
                     ><img src="~@/static/images/youtube.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="https://www.linkedin.com/company/brq/?originalSubdomain=br" target="_blank"
                     ><img src="~@/static/images/linkedin.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="https://www.instagram.com/brqdigital/" target="_blank"
                     ><img src="~@/static/images/instagram.svg" alt=""
                   /></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><img src="~@/static/images/glassdoor.svg" alt=""
-                  /></a>
+                  <a class="nav-link" target="_blank" href="https://www.glassdoor.com.br/Visão-geral/Trabalhar-na-BRQ-EI_IE224434.13,16.htm">
+                  <img src='https://www.glassdoor.com.br/pc-app/static/img/partnerCenter/badges/eng_BASIC_250x90.png'>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -109,7 +109,6 @@ footer {
       font-weight: normal !important;
       font-size: 1.1rem;
       text-transform: uppercase;
-
       a {
         color: var(--gray);
       }
@@ -123,6 +122,11 @@ footer {
         width: 80%;
       }
     }
+
+    .socials img {
+      max-height: 30px;
+    }
+
     .tags {
       img {
         height: 50px;
