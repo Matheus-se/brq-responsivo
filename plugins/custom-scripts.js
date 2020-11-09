@@ -31,3 +31,6 @@ for (let i = 0; i < links.length; i++) {
         }
     });
 }
+
+const background = document.getElementById('menuView');
+const botaoMenu = document.getElementById('menuButtonView')

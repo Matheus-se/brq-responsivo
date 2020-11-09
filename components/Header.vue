@@ -1,14 +1,13 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="" fixed="top" variant="">
+    <b-navbar toggleable="lg" type="" fixed="top" variant="" id="app">
       <b-navbar-brand>
         <NuxtLink to="/">
         <img id="logo-nav" src="~@/static/images/logo-brq.png" class="logo" alt=""/>
         </NuxtLink>
       </b-navbar-brand>
-
-      <b-navbar-toggle target="nav-collapse"
-      >
+      <div id="menuView"></div>
+      <b-navbar-toggle target="nav-collapse" id="menuButtonView">
         <svg
             width="2em"
             height="2em"
@@ -26,8 +25,8 @@
       </b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown text="PT" right no-caret>
+        <b-navbar-nav class="ml-lg-auto center-align-md">
+          <b-nav-item-dropdown text="PT" right no-caret class="navDropdownItem">
             <template #button-content>
               <span>Quem somos</span>
             </template>
@@ -41,9 +40,8 @@
           <b-nav-item to="/fale-conosco"><span>Fale com a gente</span></b-nav-item>
         </b-navbar-nav>
 
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-0">
-          <b-nav-item-dropdown class="language-choose" text="PT" right>
+        <b-navbar-nav class="ml-0 nav-item-brq">
+          <b-nav-item-dropdown class="language-choose navDropdownItem" text="PT" right>
             <template #button-content>
               <span>PT</span>
               <img src="~@/static/images/brasil.svg" alt="">
@@ -53,10 +51,8 @@
             <b-dropdown-item href="#">RU</b-dropdown-item>
             <b-dropdown-item href="#">FA</b-dropdown-item>
           </b-nav-item-dropdown>
-        </b-navbar-nav>
 
-        <b-navbar-nav class="ml-0">
-          <b-nav-item-dropdown right no-caret>
+          <b-nav-item-dropdown right no-caret class="navDropdownItem">
             <template #button-content>
               <img src="~@/static/images/_icon_font-size.svg" alt="">
             </template>
@@ -64,10 +60,8 @@
             <b-dropdown-item href="#">Grande</b-dropdown-item>
             <b-dropdown-item href="#">Gigante</b-dropdown-item>
           </b-nav-item-dropdown>
-        </b-navbar-nav>
 
-        <b-navbar-nav class="ml-0">
-          <b-nav-item-dropdown right no-caret>
+          <b-nav-item-dropdown right no-caret class="navDropdownItem">
             <template #button-content>
               <img src="~@/static/images/_icon_contrast.svg" alt="">
             </template>
@@ -91,12 +85,11 @@
 
   </div>
 </template>
-
-<script lang="ts">
-
+<script>
 </script>
 
 <style lang="scss">
+
 .custom-control-input:checked ~ .custom-control-label::before, .custom-control-label::before {
   border-color: transparent;
   border-radius: 0 !important;
@@ -127,11 +120,12 @@
   transition: all .3s linear;
 
   > a:hover, .nuxt-link-active {
-    color: var(--brq-yellow);
+    // color: var(--brq-yellow);
+    background-color: var(--brq-yellow);
 
-    span {
-      border-bottom: 2px solid dodgerblue;
-    }
+    // span {
+      // border-bottom: 2px solid dodgerblue;
+    // }
   }
 }
 
@@ -206,10 +200,8 @@
     height: 7vh;
   }
   .navbar-collapse {
-    background: #fff;
 
     .nav-item a {
-      color: var(--brq-dark);
       font-size: 1.4rem;
     }
   }
@@ -221,6 +213,56 @@
 
   .dropdown-item {
     color: black;
+  }
+  
+  .navbar {
+    .navbar-collapse.collapsing.show {
+      left: 100%;
+      transition: none;
+    }
+    
+    .navbar-collapse.show  {
+        position: fixed;
+        width: 101vw;
+        max-height: 100vh;
+        top: 10vh;
+        left: 0;
+        padding-bottom: 100px;
+        transition: left .3s;
+        background-color: #232228;
+        overflow: auto;
+        border-top: 10vh solid #232228;
+        transform: translate(0, -10vh);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+      }
+  }
+
+  .navbar-brand, .navbar-toggler {
+    z-index: 99;
+  }
+
+  .nav-item-brq {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #nav-collapse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .center-align-md {
+    text-align: center;
+    width: 100vw;
+
+    li {
+      width: 100vw;
+    }
   }
 }
 </style>
