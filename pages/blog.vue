@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="main-title cut-lr dark-bg">
-        <!--cuts-->
+    <section class="main-title cut-rl dark-bg">
+      <!--cuts-->
       <svg
         class="diagonal-pages"
         xmlns="http://www.w3.org/2000/svg"
@@ -18,13 +18,14 @@
           <!--componentizar-->
           <nav aria-label="breadcrumb" class="col-md-12">
             <ol class="breadcrumb">
+              <li class="breadcrumb-item" aria-current="page">Conteúdos</li>
               <li class="breadcrumb-item" aria-current="page">
-                Fale com a gente
+                Blog/Release/Notícias
               </li>
             </ol>
           </nav>
           <div class="col-md-5 title">
-            <h1>Vamos conversar</h1>
+            <h1>Acompanhe as últimas notícias de novidades</h1>
           </div>
         </div>
       </div>
@@ -260,7 +261,7 @@ export default {
         trigger: ".content",
         start: "-=200 +=20%",
         end: "+=150",
-        scrub: 0.5
+        scrub: 0.5,
       },
       rotation: 0,
     });
@@ -270,93 +271,7 @@ export default {
 
 
 <style lang="scss" scoped>
-.side-box {
-  overflow: hidden;
-  padding-bottom: 2rem;
-  padding-left: 1.5rem;
-  height: 450px;
-  a {
-    text-decoration: none;
-    color: var(--dark);
-  }
-  img {
-    margin-right: 10px;
-  }
-}
-
-.side-box:before {
-  content: "";
-  border: 2px solid var(--brq-light-grey);
-  background: transparent;
-  position: absolute;
-  width: 100%;
-  height: 150%;
-  transform: skewY(-10deg);
-  top: -58%;
-  left: 0;
-  z-index: -1;
-}
-
-.main-box {
-  font-size: 1.5rem;
-  input,
-  select,
-  textarea {
-    border-width: 0 0 1px 0;
-    outline: 0;
-    padding: 0.5rem 1rem;
-    margin: 0 10px;
-    border-color: var(--dark);
-  }
-  a {
-    color: var(--brq-yellow);
-  }
-  .form-control {
-    display: inline-block;
-    font-size: 1.5rem;
-  }
-  .custom-select {
-    width: auto;
-    font-size: 1.5rem;
-  }
-  select {
-    color: var(--brq-yellow);
-  }
-  textarea {
-    width: 85%;
-    padding-left: 0;
-  }
-  input {
-    width: 500px;
-  }
-  p {
-    padding: 0.6rem 0;
-  }
-}
-
-#where {
-  padding-bottom: 7rem;
-}
-
-@media (max-width: 575.98px) {
-  .bg-diagonal-light {
-    margin-top: 0 !important;
-  }
-  .main-box {
-    .form-control {
-      width: 90%;
-      margin: 0;
-    }
-    .custom-select {
-      width: 90%;
-      margin-bottom: 10px;
-    }
-    input,
-    select,
-    textarea {
-      margin: 0;
-      width: 100%;
-    }
-  }
+.main-title {
+  padding-bottom: 10rem;
 }
 </style>
