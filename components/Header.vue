@@ -1,13 +1,13 @@
 <template>
   <div>
+    <span id="background-menubrq"></span>
     <b-navbar toggleable="lg" type="" fixed="top" variant="" id="app">
       <b-navbar-brand>
         <NuxtLink to="/">
         <img id="logo-nav" src="~@/static/images/logo-brq.png" class="logo" alt=""/>
         </NuxtLink>
       </b-navbar-brand>
-      <div id="menuView"></div>
-      <b-navbar-toggle target="nav-collapse" id="menuButtonView">
+      <b-navbar-toggle target="nav-collapse">
         <svg
             width="2em"
             height="2em"
@@ -82,7 +82,6 @@
 
     </b-navbar>
 
-
   </div>
 </template>
 <script>
@@ -120,12 +119,11 @@
   transition: all .3s linear;
 
   > a:hover, .nuxt-link-active {
-    // color: var(--brq-yellow);
-    background-color: var(--brq-yellow);
+    color: var(--brq-yellow);
 
-    // span {
-      // border-bottom: 2px solid dodgerblue;
-    // }
+    span {
+      border-bottom: 2px solid dodgerblue;
+    }
   }
 }
 
@@ -159,6 +157,19 @@
   opacity: 1;
   transform: scale(1);
   margin-top: 0;
+}
+
+#background-menubrq {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: black;
+  animation: left .5s;
+  transform: translate(100%);
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -196,6 +207,18 @@
 }
 
 @media (max-width: 768px) {
+  .navbar .nav-item {
+
+    > a:hover, .nuxt-link-active {
+    color: white;
+    background-color: var(--brq-yellow);
+
+    span {
+      border-bottom: 2px solid dodgerblue;
+    }
+  }
+  }
+
   .logo {
     height: 7vh;
   }

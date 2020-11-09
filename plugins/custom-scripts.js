@@ -32,5 +32,11 @@ for (let i = 0; i < links.length; i++) {
     });
 }
 
-const background = document.getElementById('menuView');
-const botaoMenu = document.getElementById('menuButtonView')
+const backgroundMenu = document.getElementById('background-menubrq');
+const botaoMenu = document.querySelector('.collapsed')
+
+document.addEventListener('click', () => {
+    if (botaoMenu) {
+        backgroundMenu.style.left = '0%';
+    }
+})
