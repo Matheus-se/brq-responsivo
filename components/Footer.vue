@@ -104,6 +104,8 @@
 <style lang="scss">
 footer {
   .tp-bar {
+    border: solid var(--dark);
+    border-width: 2px 0 2px 0;
     .nav {
       font-family: "Bebas Neue";
       font-weight: normal !important;
@@ -116,7 +118,6 @@ footer {
   }
 
   .bk-bar {
-    border-top: 2px solid var(--dark);
     .seals {
       img {
         width: 80%;
