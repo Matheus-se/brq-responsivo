@@ -75,6 +75,14 @@
         top: 75%;
         left: -10%;
     }
+    .main-title.cut-rl .diagonal-pages {
+        position: absolute;
+        height: 28vw;
+        transform: rotate(6deg);
+        width: 200%;
+        top: 95%;
+        left: -10%;
+    }
     /* --------- INPUTS ----------*/
     
     .form-control,
