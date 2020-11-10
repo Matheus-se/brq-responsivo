@@ -23,7 +23,7 @@
               </li>
             </ol>
           </nav>
-          <div class="col-md-5 title">
+          <div class="col-md-12 title">
             <h1>Vamos conversar</h1>
           </div>
         </div>

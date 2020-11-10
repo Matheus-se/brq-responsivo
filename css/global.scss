@@ -66,7 +66,6 @@
             }
         }
     }
-    /* Left to right */
     
     .main-title.cut-lr .diagonal-pages {
         position: absolute;
@@ -74,16 +73,6 @@
         transform: rotate(-6deg);
         width: 200%;
         top: 75%;
-        left: -10%;
-    }
-    /* right to left */
-    
-    .main-title.cut-rl .diagonal-pages {
-        position: absolute;
-        height: 28vw;
-        transform: rotate(6deg);
-        width: 200%;
-        top: 95%;
         left: -10%;
     }
     /* --------- INPUTS ----------*/
@@ -223,12 +212,6 @@
             margin-bottom: 0;
         }
         .main-title.cut-lr:before {
-            height: 28vw;
-            transform: rotate(-6deg);
-            bottom: 0;
-            left: -12vh;
-        }
-        .main-title.cut-rl:before {
             height: 28vw;
             transform: rotate(-6deg);
             bottom: 0;

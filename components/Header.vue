@@ -1,13 +1,13 @@
 <template>
   <div>
-    <span id="background-menubrq"></span>
+    <!-- <div id="background-menubrq"></div> -->
     <b-navbar toggleable="lg" type="" fixed="top" variant="" id="app">
       <b-navbar-brand>
         <NuxtLink to="/">
         <img id="logo-nav" src="~@/static/images/logo-brq.png" class="logo" alt=""/>
         </NuxtLink>
       </b-navbar-brand>
-      <b-navbar-toggle target="nav-collapse">
+      <b-navbar-toggle target="nav-collapse" id="button-menu-nav">
         <svg
             width="2em"
             height="2em"
@@ -89,6 +89,15 @@
 
 <style lang="scss">
 
+body {
+  position: relative;
+}
+
+body, html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 .custom-control-input:checked ~ .custom-control-label::before, .custom-control-label::before {
   border-color: transparent;
   border-radius: 0 !important;
@@ -159,25 +168,24 @@
   margin-top: 0;
 }
 
-#background-menubrq {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  background-color: black;
-  animation: left .5s;
-  transform: translate(100%);
-  display: none;
-}
+// #background-menubrq {
+//   width: 100vw;
+//   height: 100vh;
+//   position: fixed;
+//   visibility: hidden;
+//   top: 0;
+//   left: 100%;
+//   z-index: 1000;
+//   background-color: black;
+//   transition: left .3s, visibility 0s;
+// }
 
 @media (min-width: 768px) {
   .dropdown:hover .dropdown-menu {
     position: absolute;
     top: 0;
     padding-top: 50px;
-    z-index: 12;
+    z-index: 1000;
   }
 
   .dropdown:hover {
@@ -207,16 +215,13 @@
 }
 
 @media (max-width: 768px) {
+
   .navbar .nav-item {
 
     > a:hover, .nuxt-link-active {
-    color: white;
-    background-color: var(--brq-yellow);
-
-    span {
-      border-bottom: 2px solid dodgerblue;
+      color: white;
+      background-color: var(--brq-yellow);
     }
-  }
   }
 
   .logo {
@@ -240,28 +245,28 @@
   
   .navbar {
     .navbar-collapse.collapsing.show {
-      left: 100%;
+      top: -100%;
       transition: none;
     }
     
     .navbar-collapse.show  {
-        position: fixed;
-        width: 101vw;
-        max-height: 100vh;
-        top: 10vh;
-        left: 0;
-        padding-bottom: 100px;
-        transition: left .3s;
-        background-color: #232228;
-        overflow: auto;
-        border-top: 10vh solid #232228;
-        transform: translate(0, -10vh);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-      }
+      position: fixed;
+      width: 101vw;
+      max-height: 110vh;
+      top: 10vh;
+      left: 0;
+      padding-bottom: 100px;
+      transition: top .3s;
+      background-color: #232228;
+      overflow: auto;
+      border-top: 15vh solid #232228;
+      transform: translate(0, -10vh);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    }
   }
 
   .navbar-brand, .navbar-toggler {
-    z-index: 99;
+    z-index: 1000;
   }
 
   .nav-item-brq {
