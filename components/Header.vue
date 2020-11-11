@@ -113,7 +113,7 @@ body, html {
 }
 
 .navbar .nav-item {
-  a {
+  > a {
     font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -122,6 +122,15 @@ body, html {
     font-weight: normal !important;
     transition: color .3s linear;
   }
+}
+
+.dropdown-menu a {
+  font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    font-weight: normal !important;
+    transition: color .3s linear;
 }
 
 .navbar .nav-item {
@@ -166,26 +175,14 @@ body, html {
   opacity: 1;
   transform: scale(1);
   margin-top: 0;
+  z-index: 1;
 }
-
-// #background-menubrq {
-//   width: 100vw;
-//   height: 100vh;
-//   position: fixed;
-//   visibility: hidden;
-//   top: 0;
-//   left: 100%;
-//   z-index: 1000;
-//   background-color: black;
-//   transition: left .3s, visibility 0s;
-// }
 
 @media (min-width: 768px) {
   .dropdown:hover .dropdown-menu {
     position: absolute;
     top: 0;
     padding-top: 50px;
-    z-index: 1000;
   }
 
   .dropdown:hover {
@@ -250,18 +247,18 @@ body, html {
     }
     
     .navbar-collapse.show  {
+      justify-content: flex-end;
       position: fixed;
       width: 101vw;
-      max-height: 110vh;
-      top: 10vh;
+      height: 100vh;
+      top: 0;
       left: 0;
       padding-bottom: 100px;
       transition: top .3s;
       background-color: #232228;
       overflow: auto;
-      border-top: 15vh solid #232228;
-      transform: translate(0, -10vh);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+      border-top: 10vh solid #232228;
+      opacity: .95;
     }
   }
 

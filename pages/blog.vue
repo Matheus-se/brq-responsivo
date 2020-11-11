@@ -13,7 +13,7 @@
         <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
       </svg>
 
-      <div class="container">
+      <div class="container mt-lg-5">
         <div class="row">
           <!--componentizar-->
           <nav aria-label="breadcrumb" class="col-md-12">
@@ -24,13 +24,14 @@
               </li>
             </ol>
           </nav>
-          <div class="col-md-5 title">
+          <div class="col-lg-5 title">
             <h1>Acompanhe as últimas notícias de novidades</h1>
           </div>
         </div>
       </div>
     </section>
-    <div class="container">
+    <section id="content-float">
+      <div class="container">
       <div class="row laptop-brq">
         <div class="col-lg-5">
           <h2 class="blue-text">blog brq</h2>
@@ -39,7 +40,7 @@
             digital e tencologia autalizados semanalmente além de cases e-books
             e infogréficos.
           </p>
-          <h4 class="blue-text">Acesse!</h4>
+          <h4 class="blue-text" id="acesse-text">Acesse!</h4>
         </div>
         <div class="col-lg-7 laptop">
           <img src="~@/static/images/laptop-brq.png" />
@@ -59,13 +60,12 @@
               Acompanhe os releases enviados, notícias na imprensa e demais
               informações
             </p>
-
             <button class="btn btn-primary">
               <div class="row">
                 <div class="col-8 font-desc text-left">
                   Confira as últimas notícias sobre a BRQ
                 </div>
-                <div class="col-4">
+                <div class="col-4 p-0 align-self-center">
                   <img
                     src="~@/static/images/arrow-dobra.svg"
                     height="100%"
@@ -79,19 +79,22 @@
       </div>
     </section>
 
-    <section class="py-5 text-center" id="mensagem">
+    <section class="py-lg-5 text-center" id="mensagem">
       <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto">
             <p>
               Para mais informações, solicitações de entrevistas e conteúdos entre
-              em contato com <span>Leticia@pineapplehub.com.br</span> ou
-              <span>marketing@brq.com</span>
+              em contato com <span class="color-transition-text">Leticia@pineapplehub.com.br</span><br>ou
+              <span class="color-transition-text">marketing@brq.com</span>
             </p>
           </div>
         </div>
       </div>
     </section>
+    </section>
+    
+
   </div>
 </template>
 
@@ -110,7 +113,7 @@ export default {
         scrub: 0.5,
       },
       rotation: 0,
-      y: -100,
+       y: -50,
     });
 
     gsap.from(".laptop-brq .laptop", {
@@ -140,17 +143,34 @@ export default {
 
 
 <style lang="scss" scoped>
+#acesse-text {
+  cursor: pointer;
+}
+
+.color-transition-text {
+  color: var(--brq-yellow);
+  transition: color .5s;
+  cursor: pointer;
+  word-break:break-all;
+}
+
+.color-transition-text:hover {
+  color: var(--brq-darkblue)
+}
+
 #mensagem {
   margin-top: 15rem;
 
   p {
     font-size: 1.8rem;
-    color: var(--brq-grey);
-  }
-  span {
-    color: var(--brq-yellow);
   }
 
+}
+
+#contato {
+  margin-top: 200px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .font-desc {
@@ -175,10 +195,10 @@ export default {
 }
 
 h1 {
-  font-size: 4.5rem;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: var(--white);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--white);
 }
 
 .laptop {
@@ -191,17 +211,17 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .blue-text {
-  color: var(--brq-darkblue);
+    color: var(--brq-darkblue);
 }
 
 .white-text {
-  color: var(--white);
+    color: var(--white);
 }
 
 .laptop-brq {
@@ -209,24 +229,51 @@ h2 {
   font-size: 1.3rem;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
+
+  .main-title {
+    padding-bottom: 20rem;
+    overflow: unset; //retirar bordas no mobile
+  }
+
+  #content-float {
+    transform: translate(0, -250px);
+  }
+  
+  #mensagem {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #ultimas-noticias {
+    padding-bottom: 1rem;
+  }
+
+  #contato {
+    margin-top: 0;
+  }
 
   #foto {
+    position: relative;
+    width: 100%;
+
     img {
       position: relative;
-      max-width: 100%;
+      width: 100%;
+      transform: translateY(-5%);
     }
   }
 
   .laptop-brq {
+    margin-bottom: 0;
     flex-direction: column-reverse;
   }
 
   .laptop {
+  position: relative;
+  img {
     position: relative;
-    img {
-      position: relative;
-    }
   }
+}
 }
 </style>
