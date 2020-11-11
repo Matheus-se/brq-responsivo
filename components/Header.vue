@@ -34,7 +34,7 @@
             <b-dropdown-item>Nossa cultura</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item><span>Como Transformamos</span></b-nav-item>
-          <b-nav-item><span>Conteúdos</span></b-nav-item>
+          <b-nav-item to="/conteudos/blog"><span>Conteúdos</span></b-nav-item>
           <b-nav-item><span>RI</span></b-nav-item>
           <b-nav-item><span>Venha ser Fera</span></b-nav-item>
           <b-nav-item to="/fale-conosco"><span>Fale com a gente</span></b-nav-item>
