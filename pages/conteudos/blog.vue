@@ -18,10 +18,8 @@
           <!--componentizar-->
           <nav aria-label="breadcrumb" class="col-md-12">
             <ol class="breadcrumb">
+              <li class="breadcrumb-item" aria-current="page">Home</li>
               <li class="breadcrumb-item" aria-current="page">Conteúdos</li>
-              <li class="breadcrumb-item" aria-current="page">
-                Blog/Release/Notícias
-              </li>
             </ol>
           </nav>
           <div class="col-lg-5 title">
@@ -117,7 +115,7 @@
                 Para mais informações, solicitações de entrevistas e conteúdos
                 entre em contato com
                 <span class="color-transition-text"
-                  >Leticia@pineapplehub.com.br</span
+                  >leticia@pineapplehub.com.br</span
                 ><br />ou
                 <span class="color-transition-text">marketing@brq.com</span>
               </p>
@@ -155,7 +153,7 @@ export default {
         scrub: 0.5,
       },
       rotation: 0,
-      y: -50,
+      y: 100,
     });
 
     gsap.from("#foto", {
@@ -191,6 +189,8 @@ export default {
 
 #mensagem {
   margin-top: 15rem;
+  margin-bottom: 3rem;
+  color: var(--brq-grey);
 
   p {
     font-size: 1.8rem;

@@ -138,10 +138,6 @@ body, html {
 
   > a:hover, .nuxt-link-active {
     color: var(--brq-yellow);
-
-    span {
-      border-bottom: 2px solid dodgerblue;
-    }
   }
 }
 
@@ -258,7 +254,7 @@ body, html {
       background-color: #232228;
       overflow: auto;
       border-top: 10vh solid #232228;
-      opacity: .95;
+      opacity: .98;
     }
   }
 

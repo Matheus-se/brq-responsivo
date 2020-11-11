@@ -289,7 +289,7 @@ export default {
 <style lang="scss">
 
 #img-ct {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .title h1.title-ct {
