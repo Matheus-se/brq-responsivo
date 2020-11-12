@@ -32,15 +32,3 @@ for (let i = 0; i < links.length; i++) {
     });
 }
 
-// const backgroundMenu = document.getElementById('background-menubrq');
-// const botaoMenu = document.querySelector('#button-menu-nav');
-
-// botaoMenu.addEventListener('click', () => {
-//     if (backgroundMenu.style.left == '0%') {
-//         backgroundMenu.style.visibility = 'hidden';
-//         backgroundMenu.style.left = '100%';
-//     } else {
-//         backgroundMenu.style.visibility = 'visible';
-//         backgroundMenu.style.left = '0%';
-//     }
-// })

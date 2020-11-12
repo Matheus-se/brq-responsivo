@@ -13,7 +13,6 @@
         id="video-player"
         src="~@/static/video/video-brq.mp4"
       >
-        <!--        <source src="~@/static/video/video-brq.mp4" type="video/mp4">-->
       </video>
     </div>
     <!--background-->
@@ -27,7 +26,6 @@
         ref="diagonal"
         id="diagonal"
       >
-        <!-- <polygon fill="white" points="0,100 100,0 100,100" /> -->
         <rect width="100" height="100" style="fill: rgb(255, 255, 255)" />
       </svg>
 
@@ -47,7 +45,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 col-10 mt-3">
-            <h2 class="blue-text">+ de 6 milhões horas/ano</h2>
+            <h2 class="blue-header">+ de 6 milhões horas/ano</h2>
             <h2 class="white-text">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
             <img
               src="~@/static/images/arrow-dobra.svg"
@@ -112,7 +110,118 @@
         </div>
       </div>
     </section>
-
+    <section>
+      <div class="container scale side-box content-bottom-header d-md-flex px-5 mb-md-3">
+        <div class="content col-md-6">
+          <p>A plataforma BRQ reúne todos os serviços ofertados e foi pensada para conduzir o processo de inovação de maneira escalonada, estratégica e contínua.</p>
+        </div>
+        <div class="content col-md-6">
+          <h2>serviços + capabilidades</h2>
+          <p>que aceleram o ciclo de inovação dos nossos clientes e levam uma melhor experiência para o consumidor final</p>
+        </div>
+      </div>
+      <div class="container col-md-6 scale text-center content">
+        <p>De uma forma prática, iniciamos nosso processo de parceria <span class="orange-text">definindo estratégias</span>, passando pela <span class="orange-text">identificação</span> e <span class="orange-text">escolha das melhores soluções</span> até a <span class="orange-text">entrega</span> e <span class="orange-text">monitoramento constante dos resultados</span>.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container col-md-6 mt-5">
+        <div class="d-flex flex-row align-items-center justify-content-between">
+          <h2 class="p-0 m-0">Plataforma<br>de serviços</h2>
+          <h2 class="p-0 m-0 plus-sign">+</h2>
+          <img src="~@/static/images/_logo-hub.png"/>
+          <h2 class="p-0 m-0 plus-sign">+</h2>
+          <h2 class="p-0 m-0">Parceiros</h2>
+        </div>
+        <svg
+          class="mb-1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height="64.707"
+          viewBox="0 0 100% 64.707">
+          <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
+            <path
+              id="Path"
+              d="M0,15,16,32,0,50"
+              transform="translate(600)"
+              fill="none"
+              stroke="#005fa3"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <path
+              id="Path_2"
+              data-name="Path 2"
+              d="M0,.5H616"
+              transform="translate(0 32)"
+              fill="none"
+              stroke="#005fa3"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+          </g>
+        </svg>
+        <h2 class="text-right darkblue-text">Governança</h2>
+      </div>
+    </section>
+    <section class="container my-5">
+      <div class="text-center header-governance darkblue-text my-5">
+        <p class="m-0 ">E a nossa metodologia está dividida em três fases:</p>
+        <h2>Descoberta, materialização e eficácia.</h2>
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-6">
+          <h1 class="pl-3 border-primary border-left my-5 h1-font-size">Com governança<br>real time</h1>
+          <p class="my-5 font-size-p">Além da governança ágil de facil conexão com indicadores importantes para tomada de decisão com uma ferramenta própria, o Team Care.</p>
+          <p class="orange-text ul-font-size">Principais métricas disponíveis para times:</p>
+          <ul class="ul-font-size">
+            <li>Visão evolução épicos</li>
+            <li>Detalhe status histórias por épico</li>
+            <li>Objetivos da sprint</li>
+            <li>Throughtput</li>
+            <li>Planejamento da sprint</li>
+            <li>Impedimentos por sprint</li>
+            <li>Detalhamento sub-tarefas e status</li>
+            <li>CYcle time e lead time breakdown</li>
+            <li>Previsibilidade de sprints</li>
+            <li>Throughtput x arrival rate</li>
+            <li>CFD</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center images-team-care">
+          <div class="d-flex align-items-end flex-column">
+            <img src="~@/static/images/team_care.png" class="pr-4 pb-3"/>
+          </div>
+          <div class="d-flex align-items-end flex-column">
+            <img src="~@/static/images/_computador.png"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-diagonal-light d-flex align-items-center justify-content-center">
+        <div class="container reverse-hub">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+              <div>
+                <img src="~@/static/images/_logo-hub.png" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h1 class="mb-5 pl-3 border-left border-primary h1-font-size">Trazendo mais valor com o innovation hub</h1>
+              <p class="pb-5 font-size-p text-right">Para refuzir o time to market de inovação dos nossos clientes, desenvolvemos e colocamos a disposição o <span class="darkblue-text">Innovation Hub</span>, com mais de 10 soluções e sempre buscando aumentar esse portfolio.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="col-md-7 offset-md-5 text-right">
+          <h1 class="pl-3 border-left border-primary h1-font-size">parcerias estratégicas</h1>
+          <p class="font-size-p my-5">Acelerar o time to market através de catálogo de ferramentas e soluções</p>
+        </div>
+      </div>
+    </section>
+    varias parcerias socorro
   </div>
 </template>
 
@@ -288,6 +397,93 @@ export default {
 
 <style lang="scss">
 
+.bg-diagonal-light {
+  height: 100vh;
+}
+  .reverse-hub {
+      transform: skewY(10deg);
+  }
+
+.font-size-p {
+  font-size: 1.5rem;
+}
+
+.ul-font-size {
+  font-size: 1.2rem;
+}
+
+.h1-font-size {
+  font-size: 4.5rem;
+}
+
+.header-governance {
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 4rem
+  }
+}
+
+.full-text {
+  font-size: 2.5vw;
+}
+
+.plus-sign {
+  font-size: 5rem;
+  color: var(--brq-darkblue)
+}
+
+.content {
+  p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    color: var(--brq-darkblue);
+  }
+}
+
+.darkblue-text {
+  color: var(--brq-darkblue)
+}
+
+.blue-text {
+  color: var(--brq-blue)
+}
+
+.orange-text {
+  color: var(--brq-yellow);
+  font-weight: bolder;
+}
+
+.side-box {
+  overflow: hidden;
+  padding-bottom: 12rem;
+}
+
+.side-box:before {
+  content: "";
+  border: 2px solid var(--brq-blue);
+  border-top: 0;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  transform: skewY(-10deg);
+  top: -80%;
+  left: 0;
+  z-index: -1;
+}
+
+.content-bottom-header {
+  margin-top: 2rem;
+}
+
+.scale {
+  transform: scale(1);
+}
+
 #img-ct {
     margin-top: 30px;
 }
@@ -305,7 +501,7 @@ export default {
     padding-left: 1em;
 }
 
-.blue-text {
+.blue-header {
     color: var(--brq-darkblue);
     font-size: 2.5rem;
 }
