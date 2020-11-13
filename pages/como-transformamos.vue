@@ -125,11 +125,11 @@
       </div>
     </section>
     <section>
-      <div class="container col-md-6 mt-5">
+      <div class="container col-md-6 my-5">
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
           <h2 class="p-0 m-0">Plataforma<br>de serviços</h2>
           <h2 class="p-0 m-0 plus-sign">+</h2>
-          <img src="~@/static/images/_logo-hub.png"/>
+          <img src="~@/static/images/_logo-hub.png" id="logo-width-governance"/>
           <h2 class="p-0 m-0 plus-sign">+</h2>
           <h2 class="p-0 m-0">Parceiros</h2>
         </div>
@@ -164,10 +164,89 @@
         <h2 class="text-md-right text-center darkblue-text">Governança</h2>
       </div>
     </section>
+    <section>
+      <div class="container mt-5">
+        <p class="h1 text-uppercase gray-text mb-5">conheça nossa <span class="blue-text font-weight-bold">plataforma de serviços:</span></p>
+      </div>
+      <div class="container">
+        <div class="col-md-7">
+        </div>
+        <div class="col-md-5">
+          <h1 class="color-change-text transition-opacity">definir a estratégia e transformar a cultura</h1>
+          <ul class="font-size-p">
+            <li>Consultoria de Negócio</li>
+            <li>Aculturamento para Transformação (Lean, Ágil, OKRs, Data driven)</li>
+            <li>Governança Estratégica</li>
+          </ul>
+          <div class="d-flex row justify-content-between mt-5">
+            <button class="btn button-left-brq">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="90"
+                height="64.707"
+                viewBox="0 0 90 64.707">
+                <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
+                  <path
+                    id="Path"
+                    d="M0,0,-32,32,0,64"
+                    transform="translate(32)"
+                    fill="none"
+                    stroke="#005fa3"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                  <path
+                    id="Path_2"
+                    data-name="Path 2"
+                    d="M0,.5H90"
+                    transform="translate(0 32)"
+                    fill="none"
+                    stroke="#005fa3"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
+              <span class="text-change-button-left transition-opacity font-weight-bold">Monitorar</span>
+            </button>
+            <button class="btn button-right-brq">
+              <span class="text-change-button-right transition-opacity font-weight-bold">Entender</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="90"
+                height="64.707"
+                viewBox="0 0 90 64.707">
+                <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
+                  <path
+                    id="Path"
+                    d="M0,0,32,32,0,64"
+                    transform="translate(58)"
+                    fill="none"
+                    stroke="#005fa3"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                  <path
+                    id="Path_2"
+                    data-name="Path 2"
+                    d="M0,.5H90"
+                    transform="translate(0 32)"
+                    fill="none"
+                    stroke="#005fa3"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="container my-5">
-      <div class="text-md-center header-governance darkblue-text my-5">
+      <div class="text-md-center header-governance my-5">
         <p class="m-0">E a nossa metodologia está dividida em três fases:</p>
-        <h2>Descoberta, materialização e eficácia.</h2>
+        <h2 class="darkblue-text">Descoberta, materialização e eficácia.</h2>
       </div>
       <div class="row my-5">
         <div class="col-lg-6">
@@ -192,8 +271,8 @@
           <div class="d-flex align-items-end flex-column">
             <img src="~@/static/images/team_care.png" class="pr-4 pb-3"/>
           </div>
-          <div class="d-flex align-items-end flex-column">
-            <img src="~@/static/images/_computador.png" id="computador"/>
+          <div class="d-flex align-items-end flex-column computador">
+            <img src="~@/static/images/computador.png" class="computador"/>
           </div>
         </div>
       </div>
@@ -203,12 +282,12 @@
           <div class="row">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
               <div>
-                <img src="~@/static/images/_logo-hub.png" />
+                <img src="~@/static/images/_logo-hub.png" id="logo-max-width"/>
               </div>
             </div>
             <div class="col-md-6">
               <h1 class="mb-5 pl-3 border-left border-primary h1-font-size">Trazendo mais valor com o innovation hub</h1>
-              <p class="pb-5 font-size-p text-md-right">Para refuzir o time to market de inovação dos nossos clientes, desenvolvemos e colocamos a disposição o <span class="darkblue-text">Innovation Hub</span>, com mais de 10 soluções e sempre buscando aumentar esse portfolio.</p>
+              <p class="pb-5 font-size-p text-md-right">Para refuzir o time to market de inovação dos nossos clientes, desenvolvemos e colocamos a disposição o <span class="darkblue-text font-weight-bold transition-orange">Innovation Hub</span>, com mais de 10 soluções e sempre buscando aumentar esse portfolio.</p>
             </div>
           </div>
         </div>
@@ -266,6 +345,7 @@ import { TimelineLite, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
+  transition: 'test',
   methods: {
     animateVideo: function (prs: string) {
       gsap.to("#setaHz", 0.7, {
@@ -432,7 +512,36 @@ export default {
 
 <style lang="scss">
 
-#computador {
+.transition-opacity, .color-change-text {
+  transition: opacity .25s;
+}
+
+.color-change-text {
+  color: var(--brq-darkblue);
+}
+
+.transition-orange {
+  transition: color .5s;
+  cursor: pointer;
+}
+
+.transition-orange:hover {
+  color: var(--brq-yellow);
+}
+
+#logo-max-width {
+  max-width: 100%;
+}
+
+#logo-width-governance {
+  width: 200px;
+}
+
+.gray-text {
+  color: var(--brq-grey)
+}
+
+.computador {
   max-width: 100%;
 }
 
