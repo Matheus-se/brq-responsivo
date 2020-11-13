@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-10 mt-3">
+          <div class="col-md-4 mt-3">
             <h2 class="blue-header">+ de 6 milhões horas/ano</h2>
             <h2 class="white-text">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
             <img
@@ -120,13 +120,13 @@
           <p>que aceleram o ciclo de inovação dos nossos clientes e levam uma melhor experiência para o consumidor final</p>
         </div>
       </div>
-      <div class="container col-md-6 scale text-center content">
+      <div class="container col-md-6 scale text-md-center content">
         <p>De uma forma prática, iniciamos nosso processo de parceria <span class="orange-text">definindo estratégias</span>, passando pela <span class="orange-text">identificação</span> e <span class="orange-text">escolha das melhores soluções</span> até a <span class="orange-text">entrega</span> e <span class="orange-text">monitoramento constante dos resultados</span>.</p>
       </div>
     </section>
     <section>
       <div class="container col-md-6 mt-5">
-        <div class="d-flex flex-row align-items-center justify-content-between">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
           <h2 class="p-0 m-0">Plataforma<br>de serviços</h2>
           <h2 class="p-0 m-0 plus-sign">+</h2>
           <img src="~@/static/images/_logo-hub.png"/>
@@ -161,12 +161,12 @@
             />
           </g>
         </svg>
-        <h2 class="text-right darkblue-text">Governança</h2>
+        <h2 class="text-md-right text-center darkblue-text">Governança</h2>
       </div>
     </section>
     <section class="container my-5">
-      <div class="text-center header-governance darkblue-text my-5">
-        <p class="m-0 ">E a nossa metodologia está dividida em três fases:</p>
+      <div class="text-md-center header-governance darkblue-text my-5">
+        <p class="m-0">E a nossa metodologia está dividida em três fases:</p>
         <h2>Descoberta, materialização e eficácia.</h2>
       </div>
       <div class="row my-5">
@@ -193,7 +193,7 @@
             <img src="~@/static/images/team_care.png" class="pr-4 pb-3"/>
           </div>
           <div class="d-flex align-items-end flex-column">
-            <img src="~@/static/images/_computador.png"/>
+            <img src="~@/static/images/_computador.png" id="computador"/>
           </div>
         </div>
       </div>
@@ -208,15 +208,15 @@
             </div>
             <div class="col-md-6">
               <h1 class="mb-5 pl-3 border-left border-primary h1-font-size">Trazendo mais valor com o innovation hub</h1>
-              <p class="pb-5 font-size-p text-right">Para refuzir o time to market de inovação dos nossos clientes, desenvolvemos e colocamos a disposição o <span class="darkblue-text">Innovation Hub</span>, com mais de 10 soluções e sempre buscando aumentar esse portfolio.</p>
+              <p class="pb-5 font-size-p text-md-right">Para refuzir o time to market de inovação dos nossos clientes, desenvolvemos e colocamos a disposição o <span class="darkblue-text">Innovation Hub</span>, com mais de 10 soluções e sempre buscando aumentar esse portfolio.</p>
             </div>
           </div>
         </div>
     </section>
     <section>
       <div class="container">
-        <div class="col-md-7 offset-md-5 text-right">
-          <h1 class="pl-3 border-left border-primary h1-font-size">parcerias estratégicas</h1>
+        <div class="col-md-7 offset-md-5 text-md-right">
+          <h1 class="pl-3 border-left border-primary h1-font-size text-left">parcerias estratégicas</h1>
           <p class="font-size-p my-5">Acelerar o time to market através de catálogo de ferramentas e soluções</p>
         </div>
       </div>
@@ -431,6 +431,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+#computador {
+  max-width: 100%;
+}
 
 .parcerias {
   display: flex;
