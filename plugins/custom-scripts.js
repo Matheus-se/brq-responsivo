@@ -53,10 +53,10 @@ if (butonRight) {
         i++;
         j++;
 
-        if (i == contentSliderTitle.length - 1) {
+        if (i >= contentSliderTitle.length - 1) {
             i = 0;
         }
-        if (i == contentSliderTitle.length - 2) {
+        if (i >= contentSliderTitle.length - 2) {
             j = 0;
         }
 
@@ -82,10 +82,10 @@ if (butonLeft) {
         i--;
         j--;
 
-        if (i == -1) {
+        if (i <= -1) {
             i = contentSliderTitle.length - 1;
         }
-        if (j == -1) {
+        if (j <= -1) {
             j = contentSliderTitle.length - 1;
         }
         
