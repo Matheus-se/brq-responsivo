@@ -90,7 +90,7 @@
                 </g>
               </svg>
 
-              <h2 class="method mt-5 d-none d-md-block" id="metodologia">
+              <h2 class="method mt-5 d-flex flex-row-reverse" id="metodologia">
                 Conheça a<br />
                 nossa metodologia
               </h2>
@@ -171,7 +171,7 @@
       </div>
       <div class="row my-5">
         <div class="col-lg-6">
-          <h1 class="pl-3 border-primary border-left my-5 h1-font-size">Com governança<br>real time</h1>
+          <h1 class="pl-3 border-primary border-left my-5 h1-font-size low-line-height">Com governança<br>real time</h1>
           <p class="my-5 font-size-p">Além da governança ágil de facil conexão com indicadores importantes para tomada de decisão com uma ferramenta própria, o Team Care.</p>
           <p class="orange-text ul-font-size">Principais métricas disponíveis para times:</p>
           <ul class="ul-font-size">
@@ -221,7 +221,42 @@
         </div>
       </div>
     </section>
-    varias parcerias socorro
+    <section>
+      <div class="container scale side-box parcerias">
+        <img src="~@/static/images/brands/Alteryx.png"/>
+        <img src="~@/static/images/brands/1280px-Amazon_Web_Services_Logo.svg.png"/>
+        <img src="~@/static/images/brands/AutomationAnywhere.png"/>
+        <img src="~@/static/images/brands/blue.png"/>
+        <img src="~@/static/images/brands/dynatrace_web.png"/>
+        <img src="~@/static/images/brands/elastic.png"/>
+        <img src="~@/static/images/brands/download (2).png"/>
+        <img src="~@/static/images/brands/google-logo-1.png"/>
+        <img src="~@/static/images/brands/HCL_Technologies_logo.svg.png"/>
+        <img src="~@/static/images/brands/hiper.png"/>
+        <img src="~@/static/images/brands/Huawei-Logo.png"/>
+        <img src="~@/static/images/brands/1000px-IBM_logo.svg.png"/>
+        <img src="~@/static/images/brands/loud-roxo.png"/>
+        <img src="~@/static/images/brands/microsoft-logo-2.png"/>
+        <img src="~@/static/images/brands/mule_soft.png"/>
+        <img src="~@/static/images/brands/Logo-Neoway-1.png"/>
+        <img src="~@/static/images/brands/Oracle-Logo.png"/>
+        <img src="~@/static/images/brands/pegasystems-inc-vector-logo.png"/>
+        <img src="~@/static/images/brands/Pipefy.png"/>
+        <img src="~@/static/images/brands/download (1).png"/>
+        <img src="~@/static/images/brands/red-hat-logo-a-sample.png"/>
+        <img src="~@/static/images/brands/102-1029458_salesforce-began-in-1999-with-a-vision-of-reinventing-salesforce-com-logo copy.png"/>
+        <img src="~@/static/images/brands/Logo_SAP.png"/>
+        <img src="~@/static/images/brands/SAS_logo_horiz.svg.png"/>
+        <img src="~@/static/images/brands/signavio.png"/>
+        <img src="~@/static/images/brands/stibo_logo_og.png"/>
+        <img src="~@/static/images/brands/Daco_6077951.png"/>
+        <img src="~@/static/images/brands/tableau-logo.png"/>
+        <img src="~@/static/images/brands/TCG_logo_redesign_2019_EN_Enable_The_Digital_Enterprise_RGB-2.png"/>
+        <img src="~@/static/images/brands/team_care.png"/>
+        <img src="~@/static/images/brands/uipath-logo.png"/>
+        <img src="~@/static/images/brands/VMware.png"/>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -396,6 +431,22 @@ export default {
 </script>
 
 <style lang="scss">
+
+.parcerias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.parcerias {
+  padding-bottom: 30rem;
+}
+
+.parcerias * {
+  padding: 20px;
+  width: 175px;
+}
 
 .bg-diagonal-light {
   height: 100vh;

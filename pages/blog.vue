@@ -71,7 +71,7 @@
             </a>
           </div>
           <div class="col-lg-7 laptop">
-            <img src="~@/static/images/laptop-brq.png" />
+            <img src="~@/static/images/laptop-brq.png" id="laptop-img"/>
           </div>
           <div class="col-lg-6 p-0"></div>
         </div>
@@ -300,6 +300,7 @@ h2 {
 
     img {
       position: relative;
+      transform: translate(0, -100px);
     }
   }
 }
