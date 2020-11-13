@@ -300,6 +300,7 @@ h2 {
 
     img {
       position: relative;
+      transform: translate(0, -100px);
     }
   }
 }

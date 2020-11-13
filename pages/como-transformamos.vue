@@ -90,7 +90,7 @@
                 </g>
               </svg>
 
-              <h2 class="method mt-5 d-flex flex-row-reverse" id="metodologia">
+              <h2 class="method mt-5" id="metodologia">
                 Conheça a<br />
                 nossa metodologia
               </h2>
