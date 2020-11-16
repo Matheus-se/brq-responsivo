@@ -43,10 +43,10 @@
                 <h1 class="title-ct">Bem-vindo ao melhor da transmormação digital</h1>
             </div>
         </div>
-        <div class="row">
+        <h2 class="blue-header">+ de 6 milhões horas/ano</h2>
+        <h2 class="white-text">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
+        <div class="d-flex flex-lg-row flex-xl-row flex-column-reverse">
           <div class="col-md-4 mt-3">
-            <h2 class="blue-header">+ de 6 milhões horas/ano</h2>
-            <h2 class="white-text">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
             <img
               src="~@/static/images/arrow-dobra.svg"
               ref="setaHz"
@@ -112,11 +112,11 @@
     </section>
     <section>
       <div class="container scale side-box content-bottom-header d-md-flex px-5 mb-md-3">
-        <div class="content col-md-6">
+        <div class="content col-md-6 mb-4 p-0">
           <p>A plataforma BRQ reúne todos os serviços ofertados e foi pensada para conduzir o processo de inovação de maneira escalonada, estratégica e contínua.</p>
         </div>
-        <div class="content col-md-6">
-          <h2>serviços + capabilidades</h2>
+        <div class="content col-md-6 p-0">
+          <h2 class="m-0 p-0">serviços + capabilidades</h2>
           <p>que aceleram o ciclo de inovação dos nossos clientes e levam uma melhor experiência para o consumidor final</p>
         </div>
       </div>
@@ -168,8 +168,9 @@
       <div class="container mt-5">
         <p class="h1 text-uppercase gray-text mb-5">conheça nossa <span class="blue-text font-weight-bold">plataforma de serviços:</span></p>
       </div>
-      <div class="container">
-        <div class="col-md-7">
+      <div class="d-md-flex flex-column flex-md-row align-items-center" id="slider-container">
+        <div class="col-md-7 p-0">
+          <img src="~@/static/images/circulo-services.png" class="slider-image"/>
         </div>
         <div class="col-md-5">
           <h1 class="color-change-text transition-opacity">definir a estratégia e transformar a cultura</h1>
@@ -248,9 +249,9 @@
         <p class="m-0">E a nossa metodologia está dividida em três fases:</p>
         <h2 class="darkblue-text">Descoberta, materialização e eficácia.</h2>
       </div>
-      <div class="row my-5">
+      <h1 class="pl-3 border-primary border-left my-5 h1-font-size low-line-height">Com governança<br>real time</h1>
+      <div class="d-flex flex-column-reverse flex-lg-row flex-xl-row my-5">
         <div class="col-lg-6">
-          <h1 class="pl-3 border-primary border-left my-5 h1-font-size low-line-height">Com governança<br>real time</h1>
           <p class="my-5 font-size-p">Além da governança ágil de facil conexão com indicadores importantes para tomada de decisão com uma ferramenta própria, o Team Care.</p>
           <p class="orange-text ul-font-size">Principais métricas disponíveis para times:</p>
           <ul class="ul-font-size">
@@ -272,7 +273,7 @@
             <img src="~@/static/images/team_care.png" class="pr-4 pb-3"/>
           </div>
           <div class="d-flex align-items-end flex-column computador">
-            <img src="~@/static/images/computador.png" class="computador"/>
+            <img src="~@/static/images/Grupo 1.png" class="computador"/>
           </div>
         </div>
       </div>
@@ -280,15 +281,15 @@
     <section class="bg-diagonal-light d-flex align-items-center justify-content-center">
         <div class="container reverse-hub">
           <div class="row">
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="col-md-6 d-flex justify-content-center align-items-center offset-md-6">
               <div>
-                <img src="~@/static/images/_logo-hub.png" id="logo-max-width"/>
+                <h1 class="mb-5 pl-3 border-left border-primary h1-font-size">Trazendo mais valor com o innovation hub</h1>
               </div>
             </div>
-            <div class="col-md-6">
-              <h1 class="mb-5 pl-3 border-left border-primary h1-font-size">Trazendo mais valor com o innovation hub</h1>
-              <p class="pb-5 font-size-p text-md-right">Para refuzir o time to market de inovação dos nossos clientes, desenvolvemos e colocamos a disposição o <span class="darkblue-text font-weight-bold transition-orange">Innovation Hub</span>, com mais de 10 soluções e sempre buscando aumentar esse portfolio.</p>
-            </div>
+          </div>
+          <div class="d-flex flex-md-row flex-column align-items-center">
+            <img src="~@/static/images/_logo-hub.png" id="logo-max-width" class="col-md-5 mb-5"/>
+            <p class="pb-5 font-size-p text-md-right col-md-7">Para reduzir o time to market de inovação dos nossos clientes, desenvolvemos e colocamos a disposição o <span class="darkblue-text font-weight-bold transition-orange">Innovation Hub</span>, com mais de 10 soluções e sempre buscando aumentar esse portfolio.</p>
           </div>
         </div>
     </section>
@@ -512,6 +513,14 @@ export default {
 
 <style lang="scss">
 
+.slider-image {
+  max-width: 100vw;
+}
+
+#slider-container {
+  background-color: var(--brq-even-lighter-gray);
+}
+
 .transition-opacity, .color-change-text {
   transition: opacity .25s;
 }
@@ -530,7 +539,8 @@ export default {
 }
 
 #logo-max-width {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #logo-width-governance {
@@ -553,12 +563,14 @@ export default {
 }
 
 div.parcerias {
-  padding-bottom: 30rem;
+  overflow: hidden;
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .parcerias * {
   padding: 20px;
-  width: 175px;
+  width: 150px;
 }
 
 .bg-diagonal-light {
@@ -582,7 +594,7 @@ div.parcerias {
 
 .header-governance {
   p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   h2 {
     font-size: 4rem
@@ -622,8 +634,8 @@ div.parcerias {
 }
 
 .side-box {
-  overflow: hidden;
-  padding-bottom: 12rem;
+  // overflow: hidden;
+  width: 90%;
 }
 
 .side-box:before {
@@ -635,13 +647,15 @@ div.parcerias {
   width: 100%;
   height: 150%;
   transform: skewY(-10deg);
-  top: -80%;
+  bottom: 100px;
   left: 0;
   z-index: -1;
 }
 
 .content-bottom-header {
+  overflow: hidden;
   margin-top: 2rem;
+  padding-bottom: 12rem;
 }
 
 .scale {
@@ -1162,6 +1176,14 @@ div.parcerias {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   }
 
+  div.parcerias {
+    padding-bottom: 10rem;
+  }
+
+  // .side-box:before {
+  // top: -70%;
+  // }
+
   .blog {
     padding-top:4rem !important;
   }
@@ -1313,8 +1335,10 @@ div.parcerias {
 }
 
 /* FOR IPHONE 6 USERS */
-@media (max-height: 668px) {
-  
+@media (max-width: 668px) {
+  .main-title-ct {
+    padding-bottom: 0rem;
+} 
 }
 
 @media (min-height: 1366px) {

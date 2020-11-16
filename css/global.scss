@@ -7,8 +7,24 @@
         --brq-darkblue: #005FA3;
         --brq-grey: #686670;
         --brq-light-grey: #ccc;
+        --brq-even-lighter-gray: #f3f3f3;
         --brq-dark: #121116;
         --brq-light: #f3f3f3;
+    }
+
+    // box-side azul
+    .side-box:before {
+        content: "";
+        border: 2px solid var(--brq-blue);
+        border-top: 0;
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        transform: skewY(-10deg);
+        bottom: 100px;
+        left: 0;
+        z-index: -1;
     }
     
     body {
