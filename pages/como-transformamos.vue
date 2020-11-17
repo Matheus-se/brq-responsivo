@@ -43,30 +43,29 @@
                 <h1 class="title-ct">Bem-vindo ao melhor da transmormação digital</h1>
             </div>
         </div>
-        <div class="container col-md-4 m-0 mt-5">
-          <h2 class="blue-header mb-0">+ de 6 milhões horas/ano</h2>
-          <h2 class="white-text header-desc-font">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
-        </div>
-
-        <div class="d-flex flex-lg-row flex-xl-row flex-column-reverse">
-          <div class="col-md-4 mt-3">
+        <div class="container row p-0">
+          <div class="col-md-4 m-0 mt-5">
+            <h2 class="blue-header mb-0">+ de 6 milhões horas/ano</h2>
+            <h2 class="white-text header-desc-font">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
             <img
               src="~@/static/images/arrow-dobra.svg"
               ref="setaHz"
               id="setaHz"
-              class="mt-3 d-none d-md-block"
+              class="mt-5 d-none d-md-block"
             />
           </div>
-          <div
-            @mouseover="animateVideo('in')"
-            @mouseout="animateVideo('out')"
-            class="col-12 col-md-8 video-cover"
-          >
-            <img
-              class="img-fluid"
-              id="img-ct"
-              src="~@/static/images/CT-title-image.png"
-            />
+          <div class="col-md-8 m-0">
+            <div
+              @mouseover="animateVideo('in')"
+              @mouseout="animateVideo('out')"
+              class="video-cover"
+            >
+              <img
+                class="img-fluid"
+                id="img-ct"
+                src="~@/static/images/CT-title-image.png"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -714,7 +713,7 @@ div.parcerias {
 }
 
 #img-ct {
-  margin-top: -100px;
+  margin-top: 100px;
 }
 
 .title h1.title-ct {
@@ -888,7 +887,8 @@ div.parcerias {
   position: relative;
 
   .video-cover {
-    position: relative;
+    // width: 100%;
+    // margin: 0px
   }
 
   .play-button {

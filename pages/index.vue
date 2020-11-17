@@ -1278,7 +1278,15 @@ export default {
 }
 
 /* FOR IPHONE 6 USERS */
-@media (max-height: 668px) {
+@media (min-width: 1367px) and (max-width: 1936px) {
+    .title {
+    svg.diagonal-line {
+      bottom: -26vw;
+      height: 38vw;
+      width: 120vw;
+      left: -12vh;
+    }
+  }
   
 }
 
@@ -1370,4 +1378,5 @@ export default {
     bottom: 7vw;
   }
 }
+
 </style>
