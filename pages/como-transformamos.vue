@@ -548,10 +548,11 @@ export default {
   > * {
     transition: all .5s;
   }
-  > *:hover {
-    width: 180px;
-    height: 120px;
-    object-fit: contain;
+
+  img:hover {
+    display: inline-block;
+   -webkit-transform: scale(1.5) !important;
+    transform: scale(1.1) !important;
   }
 }
 
