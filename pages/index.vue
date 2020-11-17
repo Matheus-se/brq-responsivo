@@ -795,7 +795,7 @@ export default {
     bottom: -32vw;
     height: 35vw;
     transform: rotate(8deg);
-    width: 235vh;
+    width: 120vw;
     left: -12vh;
     // transform: scaleX(-1);
     /* set height to pixels if you want angle to change with screen width */
