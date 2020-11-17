@@ -102,16 +102,14 @@
             <!--                fluid-grow-->
             <!--                alt="Fluid-grow image"-->
             <!--            ></b-img>-->
-            <video
+            <img
               class="img-fluid"
-              autoplay
-              muted
               loop
               id="video"
-              src="~@/static/video/video-brq.mp4"
+              src="~@/static/images/brq-home-gif.gif"
             >
               <!--              <source src="static/video/video-brq.mp4" type="video/mp4">-->
-            </video>
+            </img>
             <a
               @click="transformVideo('go')"
               id="video-play"
@@ -129,8 +127,10 @@
     <div class="container">
       <div class="row">
         <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
-          Conheça a<br />
-          nossa metodologia
+          <span>
+            Conheça a<br />
+            nossa metodologia
+          </span>
         </h2>
       </div>
     </div>
@@ -561,6 +561,16 @@ export default {
           autoAlpha: 0
         });
 
+      gsap.to("#metodologia", {
+        scrollTrigger: {
+          trigger: "#metodologia",
+          start: "-=400",
+          end: "+1000",
+          scrub: 0.5,          
+        },
+        css:{className:"+=active mt-5 d-none d-md-block"},
+      });
+
         gsap
         .from('.be-brq h2',{
           scrollTrigger: {
@@ -620,6 +630,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+#seta {
+  margin-top: -50px;
+}
+
 .z-index {
   z-index: 1;
 }
@@ -1238,6 +1253,9 @@ export default {
 
 /* For larger screens */
 @media (min-width: 1400px) {
+  .pd-top {
+    padding-bottom: 4rem;
+  }
   .main-content {
     .scale {
       bottom: 324px;
@@ -1249,7 +1267,7 @@ export default {
     svg.diagonal-line {
       bottom: -26vw;
       height: 35vw;
-      width: 235vh;
+      width: 120vw;
       left: -12vh;
     }
   }

@@ -43,8 +43,11 @@
                 <h1 class="title-ct">Bem-vindo ao melhor da transmormação digital</h1>
             </div>
         </div>
-        <h2 class="blue-header">+ de 6 milhões horas/ano</h2>
-        <h2 class="white-text">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
+        <div class="container col-md-4 m-0 mt-5">
+          <h2 class="blue-header mb-0">+ de 6 milhões horas/ano</h2>
+          <h2 class="white-text header-desc-font">Ajudando empresas líderes em seus setores na jornada de transformação</h2>
+        </div>
+
         <div class="d-flex flex-lg-row flex-xl-row flex-column-reverse">
           <div class="col-md-4 mt-3">
             <img
@@ -53,48 +56,6 @@
               id="setaHz"
               class="mt-3 d-none d-md-block"
             />
-
-            <div class="method-title d-flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="64.707"
-                height="160.707"
-                viewBox="0 0 64.707 160.707"
-                ref="seta"
-                id="seta"
-                class="seta d-none d-md-block"
-              >
-                <g
-                  id="_arrow-1a-dobra"
-                  transform="translate(64.354) rotate(90)"
-                >
-                  <path
-                    id="Path"
-                    d="M0,0,32,32,0,64"
-                    transform="translate(128)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                  <path
-                    id="Path_2"
-                    data-name="Path 2"
-                    d="M0,.5H160"
-                    transform="translate(0 32)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                </g>
-              </svg>
-
-              <h2 class="method mt-5" id="metodologia">
-                Conheça a<br />
-                nossa metodologia
-              </h2>
-            </div>
           </div>
           <div
             @mouseover="animateVideo('in')"
@@ -110,9 +71,52 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <div class="method-title d-flex negative-margin">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64.707"
+          height="160.707"
+          viewBox="0 0 64.707 160.707"
+          ref="seta"
+          id="seta"
+          class="seta-ct d-none d-md-block"
+        >
+          <g
+            id="_arrow-1a-dobra"
+            transform="translate(64.354) rotate(90)"
+          >
+            <path
+              id="Path"
+              d="M0,0,32,32,0,64"
+              transform="translate(128)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <path
+              id="Path_2"
+              data-name="Path 2"
+              d="M0,.5H160"
+              transform="translate(0 32)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+          </g>
+        </svg>
+
+        <h2 class="method-ct mt-0" id="metodologia">
+          Conheça a<br />
+          nossa metodologia
+        </h2>
+      </div>
+    </div>
     <section>
       <div class="container scale side-box content-bottom-header d-md-flex px-5 mb-md-3">
-        <div class="content col-md-6 mb-4 p-0">
+        <div class="content col-md-6 mb-4">
           <p>A plataforma BRQ reúne todos os serviços ofertados e foi pensada para conduzir o processo de inovação de maneira escalonada, estratégica e contínua.</p>
         </div>
         <div class="content col-md-6 p-0">
@@ -120,39 +124,39 @@
           <p>que aceleram o ciclo de inovação dos nossos clientes e levam uma melhor experiência para o consumidor final</p>
         </div>
       </div>
-      <div class="container col-md-6 scale text-md-center content">
+      <div class="container col-md-6 scale text-md-center content mt-5">
         <p>De uma forma prática, iniciamos nosso processo de parceria <span class="orange-text">definindo estratégias</span>, passando pela <span class="orange-text">identificação</span> e <span class="orange-text">escolha das melhores soluções</span> até a <span class="orange-text">entrega</span> e <span class="orange-text">monitoramento constante dos resultados</span>.</p>
       </div>
     </section>
     <section>
       <div class="container col-md-6 my-5">
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
-          <h2 class="p-0 m-0">Plataforma<br>de serviços</h2>
-          <h2 class="p-0 m-0 plus-sign">+</h2>
+          <h1 class="p-0 m-0">Plataforma<br>de serviços</h1>
+          <h1 class="p-0 m-0 plus-sign">+</h1>
           <img src="~@/static/images/_logo-hub.png" id="logo-width-governance"/>
           <h2 class="p-0 m-0 plus-sign">+</h2>
-          <h2 class="p-0 m-0">Parceiros</h2>
+          <h1 class="p-0 m-0">Parceiros</h1>
         </div>
         <svg
           class="mb-1"
           xmlns="http://www.w3.org/2000/svg"
-          width="100%"
+          width= "100"
           height="64.707"
           viewBox="0 0 100% 64.707">
           <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
             <path
               id="Path"
               d="M0,15,16,32,0,50"
-              transform="translate(600)"
               fill="none"
               stroke="#005fa3"
               stroke-miterlimit="10"
               stroke-width="1"
+              class="ponta-seta"
             />
             <path
               id="Path_2"
               data-name="Path 2"
-              d="M0,.5H616"
+              d="M0,.5H10000"
               transform="translate(0 32)"
               fill="none"
               stroke="#005fa3"
@@ -161,7 +165,7 @@
             />
           </g>
         </svg>
-        <h2 class="text-md-right text-center darkblue-text">Governança</h2>
+        <h1 class="text-md-right text-center darkblue-text">Governança</h1>
       </div>
     </section>
     <section>
@@ -303,38 +307,38 @@
     </section>
     <section>
       <div class="container scale side-box parcerias">
-        <img src="~@/static/images/brands/Alteryx.png"/>
-        <img src="~@/static/images/brands/1280px-Amazon_Web_Services_Logo.svg.png"/>
-        <img src="~@/static/images/brands/AutomationAnywhere.png"/>
-        <img src="~@/static/images/brands/blue.png"/>
-        <img src="~@/static/images/brands/dynatrace_web.png"/>
-        <img src="~@/static/images/brands/elastic.png"/>
-        <img src="~@/static/images/brands/download (2).png"/>
-        <img src="~@/static/images/brands/google-logo-1.png"/>
-        <img src="~@/static/images/brands/HCL_Technologies_logo.svg.png"/>
-        <img src="~@/static/images/brands/hiper.png"/>
-        <img src="~@/static/images/brands/Huawei-Logo.png"/>
-        <img src="~@/static/images/brands/1000px-IBM_logo.svg.png"/>
-        <img src="~@/static/images/brands/loud-roxo.png"/>
-        <img src="~@/static/images/brands/microsoft-logo-2.png"/>
-        <img src="~@/static/images/brands/mule_soft.png"/>
-        <img src="~@/static/images/brands/Logo-Neoway-1.png"/>
-        <img src="~@/static/images/brands/Oracle-Logo.png"/>
-        <img src="~@/static/images/brands/pegasystems-inc-vector-logo.png"/>
-        <img src="~@/static/images/brands/Pipefy.png"/>
-        <img src="~@/static/images/brands/download (1).png"/>
-        <img src="~@/static/images/brands/red-hat-logo-a-sample.png"/>
-        <img src="~@/static/images/brands/102-1029458_salesforce-began-in-1999-with-a-vision-of-reinventing-salesforce-com-logo copy.png"/>
-        <img src="~@/static/images/brands/Logo_SAP.png"/>
-        <img src="~@/static/images/brands/SAS_logo_horiz.svg.png"/>
-        <img src="~@/static/images/brands/signavio.png"/>
-        <img src="~@/static/images/brands/stibo_logo_og.png"/>
-        <img src="~@/static/images/brands/Daco_6077951.png"/>
-        <img src="~@/static/images/brands/tableau-logo.png"/>
-        <img src="~@/static/images/brands/TCG_logo_redesign_2019_EN_Enable_The_Digital_Enterprise_RGB-2.png"/>
-        <img src="~@/static/images/brands/team_care.png"/>
-        <img src="~@/static/images/brands/uipath-logo.png"/>
-        <img src="~@/static/images/brands/VMware.png"/>
+        <img src="~@/static/images/brands/Alteryx.png" class="parceria"/>
+        <img src="~@/static/images/brands/1280px-Amazon_Web_Services_Logo.svg.png" class="parceria"/>
+        <img src="~@/static/images/brands/AutomationAnywhere.png" class="parceria"/>
+        <img src="~@/static/images/brands/blue.png" class="parceria"/>
+        <img src="~@/static/images/brands/dynatrace_web.png" class="parceria"/>
+        <img src="~@/static/images/brands/elastic.png" class="parceria"/>
+        <img src="~@/static/images/brands/download (2).png" class="parceria"/>
+        <img src="~@/static/images/brands/google-logo-1.png" class="parceria"/>
+        <img src="~@/static/images/brands/HCL_Technologies_logo.svg.png" class="parceria"/>
+        <img src="~@/static/images/brands/hiper.png" class="parceria"/>
+        <img src="~@/static/images/brands/Huawei-Logo.png" class="parceria"/>
+        <img src="~@/static/images/brands/1000px-IBM_logo.svg.png" class="parceria"/>
+        <img src="~@/static/images/brands/loud-roxo.png" class="parceria"/>
+        <img src="~@/static/images/brands/microsoft-logo-2.png" class="parceria"/>
+        <img src="~@/static/images/brands/mule_soft.png" class="parceria"/>
+        <img src="~@/static/images/brands/Logo-Neoway-1.png" class="parceria"/>
+        <img src="~@/static/images/brands/Oracle-Logo.png" class="parceria"/>
+        <img src="~@/static/images/brands/pegasystems-inc-vector-logo.png" class="parceria"/>
+        <img src="~@/static/images/brands/Pipefy.png" class="parceria"/>
+        <img src="~@/static/images/brands/download (1).png" class="parceria"/>
+        <img src="~@/static/images/brands/red-hat-logo-a-sample.png" class="parceria"/>
+        <img src="~@/static/images/brands/102-1029458_salesforce-began-in-1999-with-a-vision-of-reinventing-salesforce-com-logo copy.png" class="parceria"/>
+        <img src="~@/static/images/brands/Logo_SAP.png" class="parceria"/>
+        <img src="~@/static/images/brands/SAS_logo_horiz.svg.png" class="parceria"/>
+        <img src="~@/static/images/brands/signavio.png" class="parceria"/>
+        <img src="~@/static/images/brands/stibo_logo_og.png" class="parceria"/>
+        <img src="~@/static/images/brands/Daco_6077951.png" class="parceria"/>
+        <img src="~@/static/images/brands/tableau-logo.png" class="parceria"/>
+        <img src="~@/static/images/brands/TCG_logo_redesign_2019_EN_Enable_The_Digital_Enterprise_RGB-2.png" class="parceria"/>
+        <img src="~@/static/images/brands/team_care.png" class="parceria"/>
+        <img src="~@/static/images/brands/uipath-logo.png" class="parceria"/>
+        <img src="~@/static/images/brands/VMware.png" class="parceria"/>
       </div>
     </section>
   </div>
@@ -393,6 +397,20 @@ export default {
     },
   },
   mounted() {
+      gsap.utils.toArray(".parceria").forEach(parceria => {
+      gsap.from(parceria, {
+        scrollTrigger: {
+          trigger: parceria,
+          start: "-=400",
+          end: "-=400",
+          scrub: 0.2,
+          onLeaveBack: self => self.disable()
+        },
+        opacity: 0,
+        y: 80
+      })
+    });
+
       gsap.to("#diagonal", {
         scrollTrigger: {
           trigger: ".video-cover",
@@ -418,7 +436,7 @@ export default {
         opacity: 0,
       });
 
-      gsap.to(".seta", {
+      gsap.to(".seta-ct", {
         scrollTrigger: {
           trigger: ".video-cover",
           start: "-=200",
@@ -427,7 +445,17 @@ export default {
         },
         ease: "expo",
         opacity: 1,
-        y: 50,
+        y: 50
+      });
+
+      gsap.to("#metodologia", {
+        scrollTrigger: {
+          trigger: ".video-cover",
+          start: "-=200",
+          end: "+1000",
+          scrub: 0.5,          
+        },
+        css:{className:"+=active-ct"},
       });
 
       gsap
@@ -513,6 +541,29 @@ export default {
 
 <style lang="scss">
 
+.header-desc-font {
+  font-size: 2rem;
+}
+
+.parcerias {
+  > * {
+    transition: all .5s;
+  }
+  > *:hover {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+  }
+}
+
+.negative-margin {
+  margin-top: -100px;
+}
+
+.ponta-seta {
+  transform: translate(calc(100% - 16px)) !important;
+}
+
 .slider-image {
   max-width: 100vw;
 }
@@ -569,8 +620,9 @@ div.parcerias {
 }
 
 .parcerias * {
-  padding: 20px;
+  height: 100px;
   width: 150px;
+  object-fit: scale-down;
 }
 
 .bg-diagonal-light {
@@ -594,7 +646,7 @@ div.parcerias {
 
 .header-governance {
   p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   h2 {
     font-size: 4rem
@@ -654,7 +706,6 @@ div.parcerias {
 
 .content-bottom-header {
   overflow: hidden;
-  margin-top: 2rem;
   padding-bottom: 12rem;
 }
 
@@ -663,7 +714,7 @@ div.parcerias {
 }
 
 #img-ct {
-    margin-top: 30px;
+  margin-top: -100px;
 }
 
 .title h1.title-ct {
@@ -805,22 +856,27 @@ div.parcerias {
   z-index: -1;
 }
 
-.method {
+.method-ct {
+  margin-bottom: 8rem;
   text-transform: uppercase;
   padding: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-left: 1px solid var(--dark);
   color: var(--brq-yellow);
   font-weight: medium;
+  font-size: 2.5rem;
 }
 
 .method-title {
   position: relative;
 
-  .seta {
+  .seta-ct {
     position: absolute;
     left: -31px;
-    top: 40px;
+    top: 0;
     opacity: 0;
+    margin-top: -50px;
   }
 }
 
@@ -847,7 +903,7 @@ div.parcerias {
     bottom: -32vw;
     height: 35vw;
     transform: rotate(8deg);
-    width: 235vh;
+    width: 120vw;
     left: -12vh;
     // transform: scaleX(-1);
     /* set height to pixels if you want angle to change with screen width */
@@ -1313,6 +1369,9 @@ div.parcerias {
 
 /* For larger screens */
 @media (min-width: 1400px) {
+  .pd-top {
+    padding-bottom: 4rem;
+  }
   .main-content {
     .scale {
       bottom: 324px;
@@ -1324,7 +1383,7 @@ div.parcerias {
     svg.diagonal-line {
       bottom: -26vw;
       height: 35vw;
-      width: 235vh;
+      width: 120vw;
       left: -12vh;
     }
   }
@@ -1362,6 +1421,19 @@ div.parcerias {
 @media (max-width: 768px) {
   .be-brq svg {
     bottom: -29vw;
+  }
+  
+  #img-ct {
+    margin-top: 30px;
+  }
+
+  .negative-margin {
+    margin-top: 30px;
+  }
+
+  .method-ct {
+    margin-bottom: 30px;
+    margin-left: 30px;
   }
 
   .img-business {
