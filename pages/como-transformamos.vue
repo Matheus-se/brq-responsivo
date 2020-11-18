@@ -42,100 +42,103 @@
           </nav>
           <div class="col my-md-1 my-3">
             <h1 class="title-ct">
-              Bem-vindo ao melhor da transmormação digital
+              Bem-vindo ao melhor da transformação digital
             </h1>
           </div>
         </div>
-        <div class="container row p-0">
-          <div class="col-md-4 m-0 mt-5">
-            <h2 class="blue-header mb-0">+ de 6 milhões horas/ano</h2>
-            <h2 class="white-text header-desc-font">
-              Ajudando empresas líderes em seus setores na jornada de
-              transformação
-            </h2>
-            <img
-              src="~@/static/images/arrow-dobra.svg"
-              ref="setaHz"
-              id="setaHz"
-              class="mt-3 d-none d-md-block"
-            />
-            <div class="method-title mt-5 d-flex negative-margin">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="64.707"
-          height="160.707"
-          viewBox="0 0 64.707 160.707"
-          ref="seta"
-          id="seta"
-          class="seta-ct d-none d-md-block"
-        >
-          <g id="_arrow-1a-dobra" transform="translate(64.354) rotate(90)">
-            <path
-              id="Path"
-              d="M0,0,32,32,0,64"
-              transform="translate(128)"
-              fill="none"
-              stroke="#000"
-              stroke-miterlimit="10"
-              stroke-width="1"
-            />
-            <path
-              id="Path_2"
-              data-name="Path 2"
-              d="M0,.5H160"
-              transform="translate(0 32)"
-              fill="none"
-              stroke="#000"
-              stroke-miterlimit="10"
-              stroke-width="1"
-            />
-          </g>
-        </svg>
-        <h2 class="method-ct mt-5" id="metodologia">
-          Conheça a<br />
-          nossa metodologia
-        </h2>
-      </div>
-          </div>
-          <div class="col-md-8 m-0">
-            <div
-              @mouseover="animateVideo('in')"
-              @mouseout="animateVideo('out')"
-              class="video-cover"
-            >
+        <div class="container mt-2 p-0">
+          <div class="row">
+            <div class="col-md-4 m-0">
+              <h2 class="blue-header mb-0">+ de 6 milhões horas/ano</h2>
+              <h2 class="white-text header-desc-font">
+                Ajudando empresas líderes em seus setores na jornada de
+                transformação
+              </h2>
               <img
-                class="img-fluid"
-                id="img-ct"
-                src="~@/static/images/CT-title-image.png"
+                src="~@/static/images/arrow-dobra.svg"
+                ref="setaHz"
+                id="setaHz"
+                class="mt-3 d-none d-md-block"
               />
+              <div class="method-title mt-5 d-flex negative-margin">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64.707"
+                  height="160.707"
+                  viewBox="0 0 64.707 160.707"
+                  ref="seta"
+                  id="seta"
+                  class="seta-ct d-none d-md-block"
+                >
+                  <g
+                    id="_arrow-1a-dobra"
+                    transform="translate(64.354) rotate(90)"
+                  >
+                    <path
+                      id="Path"
+                      d="M0,0,32,32,0,64"
+                      transform="translate(128)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_2"
+                      data-name="Path 2"
+                      d="M0,.5H160"
+                      transform="translate(0 32)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
+                    />
+                  </g>
+                </svg>
+                <h2 class="method-ct" id="metodologia">
+                  Conheça a<br />
+                  nossa metodologia
+                </h2>
+              </div>
+            </div>
+            <div class="col-md-8 m-0">
+              <div
+                @mouseover="animateVideo('in')"
+                @mouseout="animateVideo('out')"
+                class="video-cover"
+              >
+                <img
+                  class="img-fluid"
+                  id="img-ct"
+                  src="~@/static/images/CT-title-image.png"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="container">
-      
-    </div>
+    <div class="container"></div>
     <section>
       <div
         class="container scale side-box content-bottom-header d-md-flex px-5 mb-md-3"
       >
-        <div class="content col-md-6 mb-4">
+        <div class="content col-md-6 mb-4 px-4">
           <p>
             A plataforma BRQ reúne todos os serviços ofertados e foi pensada
             para conduzir o processo de inovação de maneira escalonada,
             estratégica e contínua.
           </p>
         </div>
-        <div class="content col-md-6 p-0">
-          <h2 class="m-0 p-0">serviços + capabilidades</h2>
+        <div class="content col-md-6 px-4">
+          <h2 class="m-0 p-0">serviços + capabilities</h2>
           <p>
             que aceleram o ciclo de inovação dos nossos clientes e levam uma
-            melhor experiência para o consumidor final
+            melhor experiência para o consumidor final.
           </p>
         </div>
       </div>
-      <div class="container col-md-6 scale text-md-center content mt-5">
+      <div class="container col-md-6 scale text-md-center content mt-5 pb-4">
         <p>
           De uma forma prática, iniciamos nosso processo de parceria
           <span class="orange-text">definindo estratégias</span>, passando pela
@@ -148,7 +151,7 @@
       </div>
     </section>
     <section>
-      <div class="container col-md-6 my-5">
+      <div class="container platform-hub col-md-6 my-5">
         <div
           class="d-flex flex-column flex-md-row align-items-center justify-content-between"
         >
@@ -161,145 +164,153 @@
           <h2 class="p-0 m-0 plus-sign">+</h2>
           <h1 class="p-0 m-0">Parceiros</h1>
         </div>
+
         <svg
-          class="mb-1"
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="64.707"
-          viewBox="0 0 100% 64.707"
+          width="862.451"
+          height="30.844"
+          viewBox="0 0 862.451 30.844"
+          class="governance-tip"
         >
-          <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
+          <g
+            id="_arrow-1a-dobra_copy_3"
+            data-name="_arrow-1a-dobra copy 3"
+            transform="translate(800.255 -11.677)"
+          >
             <path
               id="Path"
-              d="M0,15,16,32,0,50"
+              d="M0,0,14.715,14.715,0,29.43"
+              transform="translate(46.067 12.385)"
               fill="none"
-              stroke="#005fa3"
+              stroke="#035398"
               stroke-miterlimit="10"
-              stroke-width="1"
-              class="ponta-seta"
+              stroke-width="2"
             />
             <path
               id="Path_2"
               data-name="Path 2"
-              d="M0,.5H10000"
-              transform="translate(0 32)"
+              d="M0,.5H861.229"
+              transform="translate(-800.255 27.023)"
               fill="none"
-              stroke="#005fa3"
+              stroke="#035398"
               stroke-miterlimit="10"
-              stroke-width="1"
+              stroke-width="2"
             />
           </g>
         </svg>
+
         <div class="governance-h1 ml-auto text-right">
           <h1 class="text-md-right text-center darkblue-text">Governança</h1>
         </div>
       </div>
     </section>
-    <section>
+    <section class="service-platform">
       <div class="container mt-5">
-        <p class="h1 text-uppercase gray-text mb-5">
+        <h2 class="text-center gray-text mb-5">
           conheça nossa
           <span class="blue-text font-weight-bold"
             >plataforma de serviços:</span
           >
-        </p>
+        </h2>
       </div>
-      <div
-        class="d-md-flex flex-column flex-md-row align-items-center"
-        id="slider-container"
-      >
-        <div class="col-md-7 p-0">
-          <img
-            src="~@/static/images/circulo-services.png"
-            class="slider-image"
-          />
-        </div>
-        <div class="col-md-5">
-          <h1 class="color-change-text transition-opacity">
-            definir a estratégia e transformar a cultura
-          </h1>
-          <ul class="font-size-p">
-            <li>Consultoria de Negócio</li>
-            <li>
-              Aculturamento para Transformação (Lean, Ágil, OKRs, Data driven)
-            </li>
-            <li>Governança Estratégica</li>
-          </ul>
-          <div class="d-flex row justify-content-between mt-5">
-            <button class="btn button-left-brq">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="90"
-                height="64.707"
-                viewBox="0 0 90 64.707"
-              >
-                <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
-                  <path
-                    id="Path"
-                    d="M0,0,-32,32,0,64"
-                    transform="translate(32)"
-                    fill="none"
-                    stroke="#005fa3"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                  <path
-                    id="Path_2"
-                    data-name="Path 2"
-                    d="M0,.5H90"
-                    transform="translate(0 32)"
-                    fill="none"
-                    stroke="#005fa3"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                </g>
-              </svg>
-              <span
-                class="text-change-button-left transition-opacity font-weight-bold"
-                >Monitorar</span
-              >
-            </button>
-            <button class="btn button-right-brq">
-              <span
-                class="text-change-button-right transition-opacity font-weight-bold"
-                >Entender</span
-              >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="90"
-                height="64.707"
-                viewBox="0 0 90 64.707"
-              >
-                <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
-                  <path
-                    id="Path"
-                    d="M0,0,32,32,0,64"
-                    transform="translate(58)"
-                    fill="none"
-                    stroke="#005fa3"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                  <path
-                    id="Path_2"
-                    data-name="Path 2"
-                    d="M0,.5H90"
-                    transform="translate(0 32)"
-                    fill="none"
-                    stroke="#005fa3"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                </g>
-              </svg>
-            </button>
+      <div id="slider-container">
+        <div class="container h-100">
+          <div class="row d-flex align-items-center h-100">
+            <div class="col-md-6 circle">
+              <img
+                src="~@/static/images/circulo-services.png"
+                class="slider-image"
+              />
+            </div>
+            <div class="col-md-5 pl-md-5">
+              <h1 class="color-change-text transition-opacity">
+                definir a estratégia e transformar a cultura
+              </h1>
+              <ul>
+                <li>Consultoria de Negócio</li>
+                <li>
+                  Aculturamento para Transformação (Lean, Ágil, OKRs, Data
+                  driven)
+                </li>
+                <li>Governança Estratégica</li>
+              </ul>
+              <div class="d-flex row justify-content-between mt-5">
+                <button class="btn button-left-brq">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="90"
+                    height="64.707"
+                    viewBox="0 0 90 64.707"
+                  >
+                    <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
+                      <path
+                        id="Path"
+                        d="M0,0,-32,32,0,64"
+                        transform="translate(32)"
+                        fill="none"
+                        stroke="#005fa3"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                      <path
+                        id="Path_2"
+                        data-name="Path 2"
+                        d="M0,.5H90"
+                        transform="translate(0 32)"
+                        fill="none"
+                        stroke="#005fa3"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                  <span
+                    class="text-change-button-left transition-opacity font-weight-bold"
+                    >Monitorar</span
+                  >
+                </button>
+                <button class="btn button-right-brq">
+                  <span
+                    class="text-change-button-right transition-opacity font-weight-bold"
+                    >Entender</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="90"
+                    height="64.707"
+                    viewBox="0 0 90 64.707"
+                  >
+                    <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
+                      <path
+                        id="Path"
+                        d="M0,0,32,32,0,64"
+                        transform="translate(58)"
+                        fill="none"
+                        stroke="#005fa3"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                      <path
+                        id="Path_2"
+                        data-name="Path 2"
+                        d="M0,.5H90"
+                        transform="translate(0 32)"
+                        fill="none"
+                        stroke="#005fa3"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="container my-5">
-      <div class="text-md-center header-governance my-5">
+      <div class="text-md-center header-governance">
         <p class="m-0">E a nossa metodologia está dividida em três fases:</p>
         <h2 class="darkblue-text">Descoberta, materialização e eficácia.</h2>
       </div>
@@ -310,7 +321,7 @@
       </h1>
       <div class="d-flex flex-column-reverse flex-lg-row flex-xl-row my-5">
         <div class="col-lg-6">
-          <p class="my-5 font-size-p">
+          <p class="mb-5 font-size-p">
             Além da governança ágil de facil conexão com indicadores importantes
             para tomada de decisão com uma ferramenta própria, o Team Care.
           </p>
@@ -561,35 +572,24 @@ export default {
       y: 50,
     });
 
-    gsap.to(".mb-1", {
-      scrollTrigger: {
-        trigger: ".ponta-seta",
-        start: "-=500",
-        end: "-=400",
-        scrub: 0.5,
-      },
-      width: "100%",
-    });
-
-    gsap.to(".ponta-seta", {
-      scrollTrigger: {
-        trigger: ".ponta-seta",
-        start: "-=500",
-        end: "-=400",
-        scrub: 0.5,
-      },
-      x: "100%",
-      xPercent: -100,
-    });
-
-    gsap.from(".governance-h1", {
-      scrollTrigger: {
-        trigger: ".ponta-seta",
-        start: "-=500",
-        scrub: 1,
-      },
-      width: "0%",
-    });
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".platform-hub",
+          start: "-=400px",
+          end: "+=300px",
+          scrub: 0.5,
+          markers: true,
+        },
+      })
+      .from(".governance-tip", {
+        xPercent: -100,
+        autoAlpha: 0,
+      })
+      .from(".governance-h1", {
+        y: 30,
+        autoAlpha: 0,
+      });
 
     gsap.to("#metodologia", {
       scrollTrigger: {
@@ -683,25 +683,27 @@ export default {
 </script>
 
 <style lang="scss">
+.service-platform {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+.platform-hub {
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    right: 15px;
+  }
+}
+
 #img-ct {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .governance-h1 {
-  margin-left: auto !important;
-  align-self: right;
-  overflow: hidden;
-  right: 0px;
-  display: block;
-  height: auto;
-  width: auto;
-
-  * {
-    position: relative;
-    display: inline-block;
-
-    width: auto;
-  }
+  margin-top: 2.5rem;
 }
 
 .header-desc-font {
@@ -725,11 +727,21 @@ export default {
 }
 
 .slider-image {
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 #slider-container {
   background-color: var(--brq-even-lighter-gray);
+  margin: 6rem 0;
+
+  .circle {
+    transform: scale(1.1);
+  }
+
+  ul {
+    font-size: 1.3rem;
+  }
+
 }
 
 .transition-opacity,
@@ -802,10 +814,12 @@ div.parcerias {
 }
 
 .h1-font-size {
-  font-size: 4.5rem;
+  font-size: 4rem;
+  line-height: 0.9;
 }
 
 .header-governance {
+  margin: 5rem 0;
   p {
     font-size: 1.7rem;
   }
@@ -825,7 +839,7 @@ div.parcerias {
 
 .content {
   p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   h2 {
@@ -1057,7 +1071,7 @@ div.parcerias {
 
   svg.diagonal-line {
     position: absolute;
-    bottom: -23vw !important;
+    bottom: -25vw !important;
     height: 35vw;
     transform: rotate(8deg);
     width: 120vw;
