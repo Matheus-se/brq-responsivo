@@ -249,7 +249,9 @@
               Norte Verdadeiro em uma <strong>Cultura Lean e Ágil</strong>.
             </p>
             <a href="#" class="btn btn-primary btn-lg mt-4">
-              Venha ser um <span class="font-weight-bold">#FERABRQ</span>
+              <div>
+                Venha ser um <span class="font-weight-bold">#FERABRQ</span>
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="65.207"
@@ -1104,16 +1106,14 @@ export default {
   .main-content {
     .scale {
       transform: rotate(-90deg);
-      left: -85%;
-      bottom: 370px;
-      display: none;
+      left: 15px;
+      bottom: -3%;
+      transform-origin: left top;
       img {
-        width: 90vh;
+        width: 205vw;
       }
     }
-    .img-business {
-      margin-bottom: 7rem;
-    }
+
     .content-box {
       text-align: left;
       .content {
@@ -1145,7 +1145,7 @@ export default {
   }
   .about-team {
     .context {
-      margin-top: 2rem;
+      margin-top: 5rem;
     }
   }
   .be-brq {
@@ -1199,7 +1199,7 @@ export default {
 /* For larger screens */
 
 /* 1440px users */
-@media (min-width: 1367px) and (max-width:1440px) {
+@media (min-width: 1367px) and (max-width: 1440px) {
   .pd-top {
     padding-bottom: 4rem;
   }
@@ -1225,13 +1225,12 @@ export default {
 
 /* FOR 1441 to 1920 users */
 @media (min-width: 1441px) and (max-width: 1936px) {
-  
   .be-brq {
     height: 100vh;
   }
 
   .img-business {
-    padding-bottom:10rem;
+    padding-bottom: 10rem;
   }
 
   .title {
@@ -1253,7 +1252,7 @@ export default {
     left: 32%;
     z-index: 999;
     img {
-      width: 40vw
+      width: 40vw;
     }
   }
 }
@@ -1281,26 +1280,20 @@ export default {
   .be-brq svg {
     bottom: -59vw;
   }
+
   .img-business {
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
   }
+
   .main-content {
-    .scale {
-      transform: rotate(-90deg);
-      left: -85%;
-      bottom: 370px;
-      display: none;
-      img {
-        width: 90vh;
-      }
-    }
     .img-business {
-      margin-bottom: 7rem;
+      margin-bottom: 2rem;
     }
     .content-box {
       text-align: left;
       .content {
-        padding-left: 3rem;
+        padding-left: 5rem;
+        padding-right: 0
       }
     }
     .left-content {
