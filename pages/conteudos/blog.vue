@@ -45,6 +45,7 @@
                 width="160.707"
                 height="64.707"
                 viewBox="0 0 160.707 64.707"
+                class="d-none d-md-block"
               >
                 <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
                   <path
@@ -204,6 +205,7 @@ export default {
   transition: color 0.5s;
   cursor: pointer;
   word-break: break-all;
+  font-weight: 600;
 }
 
 .color-transition-text:hover {
@@ -211,7 +213,7 @@ export default {
 }
 
 #mensagem {
-  margin-top: 5rem;
+  margin-top: 15rem;
   margin-bottom: 3rem;
   color: var(--brq-grey);
 
@@ -240,7 +242,7 @@ export default {
 
 #ultimas-noticias {
   padding-bottom: 7rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .main-title {
@@ -279,7 +281,7 @@ h2 {
 
 .laptop-brq {
   margin-bottom: 15rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {

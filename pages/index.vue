@@ -250,7 +250,10 @@
             </p>
             <div class="row">
               <div class="col-md-10">
-                <a href="#" class="btn btn-primary text-left btn-lg mt-4 d-flex justify-content-between align-items-center">
+                <a
+                  href="#"
+                  class="btn btn-primary text-left btn-lg mt-4 d-flex justify-content-between align-items-center"
+                >
                   <div>
                     Venha ser um <span class="font-weight-bold">#FERABRQ</span>
                   </div>
@@ -321,7 +324,7 @@
               :interval="4000"
               controls
               img-width="1024"
-              class="d-none d-md-block"
+              class="carousels d-none d-md-block"
             >
               <!-- Slide with blank fluid image to maintain slide aspect ratio -->
               <b-carousel-slide img-blank>
@@ -387,7 +390,7 @@
               :interval="4000"
               controls
               img-width="1024"
-              class="d-block d-sm-none"
+              class="d-block d-sm-none carousels"
             >
               <!-- Slide with blank fluid image to maintain slide aspect ratio -->
               <b-carousel-slide img-blank>
@@ -565,7 +568,7 @@ export default {
         end: "+=100",
         scrub: 0.5,
       },
-      borderLeftColor:'#fff'
+      borderLeftColor: "#fff",
     });
 
     gsap
@@ -592,7 +595,6 @@ export default {
       ease: "linear",
       autoAlpha: 0,
     });
-
 
     gsap.from(".be-brq h2", {
       scrollTrigger: {
@@ -650,6 +652,132 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+
+/* Sem Scoped por causa do componente de slider */
+
+.blog-item {
+  position: relative;
+  height: 580px;
+  .item {
+    background: var(--white);
+    width: 45%;
+    position: absolute;
+    .img {
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+      padding: 2rem;
+    }
+    .content {
+      text-align: left;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      height: 250px;
+    }
+    h2 {
+      color: var(--brq-blue);
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .first {
+    top: 15%;
+    left: 5%;
+  }
+  .second {
+    top: 51%;
+    left: 33%;
+  }
+  .third {
+    top: 0;
+    right: 3%;
+  }
+}
+
+.blog-item::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  margin: 5% 10%;
+  height: 80%;
+  border: 2px solid var(--brq-grey);
+  top: 0;
+  left: 0;
+}
+
+.carousels img {
+  display: none !important;
+}
+
+.carousels .carousel-caption {
+  position: relative;
+  color: var(--dark);
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.blog {
+  .carousel-inner img {
+    position: absolute;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #25242a;
+    border: 1px solid #373737;
+    border-radius: 100%;
+  }
+  .carousel-control-prev {
+    left: -50px;
+  }
+  .carousel-control-next {
+    right: -50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+.blog {
+    .carousel-control-prev,
+    .carousel-control-next {
+      z-index: 999;
+    }
+    .carousel-control-prev {
+      left: -10px;
+    }
+    .carousel-control-next {
+      right: -10px;
+    }
+    .blog-item {
+      position: relative;
+      height: auto;
+      .item {
+        background: var(--white);
+        width: 90%;
+        margin: auto;
+        position: relative;
+        .content {
+          height: auto;
+          padding: 2rem;
+        }
+        .img {
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+</style>
 
 <style lang="scss" scoped>
 #seta {
@@ -906,8 +1034,8 @@ export default {
 .about-team {
   .context {
     font-size: 1.4rem;
-    margin-top: -150px;
-    padding-bottom: 7rem;
+    margin-top: -100px;
+    padding-bottom: 4rem;
     strong {
       color: var(--brq-darkblue);
     }
@@ -964,9 +1092,7 @@ export default {
     width: 300vh;
     left: -12vh;
   }
-  .carousel-inner img {
-    position: absolute;
-  }
+
   .title {
     h2 {
       color: var(--white);
@@ -1005,93 +1131,12 @@ export default {
       position: absolute;
     }
   }
-  .carousel-control-prev,
-  .carousel-control-next {
-    height: 50px;
-    width: 50px;
-    margin-top: auto;
-    margin-bottom: auto;
-    background: #25242a;
-    border: 1px solid #373737;
-    border-radius: 100%;
-  }
-  .carousel-control-prev {
-    left: -50px;
-  }
-  .carousel-control-next {
-    right: -50px;
-  }
-}
-
-.carousel-caption {
-  position: relative;
-  color: var(--dark);
-  width: 100%;
-  margin: 0;
-  left: 0;
-  top: 0;
-  height: 100%;
-}
-
-#carousel-1 img {
-  display: none !important;
-}
-
-.blog-item {
-  position: relative;
-  height: 580px;
-  .item {
-    background: var(--white);
-    width: 45%;
-    position: absolute;
-    .img {
-      width: 100%;
-      background-size: cover;
-      background-position: center center;
-      padding: 2rem;
-    }
-    .content {
-      text-align: left;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      height: 250px;
-    }
-    h2 {
-      color: var(--brq-blue);
-      font-size: 1rem;
-      text-transform: uppercase;
-    }
-    p {
-      font-size: 1rem;
-    }
-  }
-  .first {
-    top: 15%;
-    left: 5%;
-  }
-  .second {
-    top: 51%;
-    left: 33%;
-  }
-  .third {
-    top: 0;
-    right: 3%;
-  }
-}
-
-.blog-item::before {
-  content: "";
-  position: absolute;
-  width: 80%;
-  margin: 5% 10%;
-  height: 80%;
-  border: 2px solid var(--brq-grey);
-  top: 0;
-  left: 0;
 }
 /* Mobile Users */
 
 @media (max-width: 575.98px) {
+
+  
   .db-1 {
     height: 130vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -1169,35 +1214,7 @@ export default {
       width: 50%;
     }
   }
-  .blog {
-    .carousel-control-prev,
-    .carousel-control-next {
-      z-index: 999;
-    }
-    .carousel-control-prev {
-      left: -10px;
-    }
-    .carousel-control-next {
-      right: -10px;
-    }
-    .blog-item {
-      position: relative;
-      height: auto;
-      .item {
-        background: var(--white);
-        width: 90%;
-        margin: auto;
-        position: relative;
-        .content {
-          height: auto;
-          padding: 2rem;
-        }
-        .img {
-          height: 150px;
-        }
-      }
-    }
-  }
+  
 }
 /* For larger screens */
 
