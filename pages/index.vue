@@ -248,39 +248,43 @@
               cada um, do seu jeito, nos ajuda a evoluir para alcançar nosso
               Norte Verdadeiro em uma <strong>Cultura Lean e Ágil</strong>.
             </p>
-            <a href="#" class="btn btn-primary btn-lg mt-4">
-              <div>
-                Venha ser um <span class="font-weight-bold">#FERABRQ</span>
+            <div class="row">
+              <div class="col-md-10">
+                <a href="#" class="btn btn-primary text-left btn-lg mt-4 d-flex justify-content-between align-items-center">
+                  <div>
+                    Venha ser um <span class="font-weight-bold">#FERABRQ</span>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="65.207"
+                    height="32.707"
+                    viewBox="0 0 65.207 32.707"
+                  >
+                    <g id="Group" transform="translate(-0.5 0.354)">
+                      <path
+                        id="Path"
+                        d="M0,0,16,16,0,32"
+                        transform="translate(49)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                      <path
+                        id="Path_2"
+                        data-name="Path 2"
+                        d="M.5.5h64"
+                        transform="translate(0 15)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </a>
               </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="65.207"
-                height="32.707"
-                viewBox="0 0 65.207 32.707"
-              >
-                <g id="Group" transform="translate(-0.5 0.354)">
-                  <path
-                    id="Path"
-                    d="M0,0,16,16,0,32"
-                    transform="translate(49)"
-                    fill="none"
-                    stroke="#fff"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                  <path
-                    id="Path_2"
-                    data-name="Path 2"
-                    d="M.5.5h64"
-                    transform="translate(0 15)"
-                    fill="none"
-                    stroke="#fff"
-                    stroke-miterlimit="10"
-                    stroke-width="1"
-                  />
-                </g>
-              </svg>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1293,7 +1297,7 @@ export default {
       text-align: left;
       .content {
         padding-left: 5rem;
-        padding-right: 0
+        padding-right: 0;
       }
     }
     .left-content {
