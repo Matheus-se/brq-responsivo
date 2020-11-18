@@ -578,8 +578,7 @@ export default {
           trigger: ".platform-hub",
           start: "-=400px",
           end: "+=300px",
-          scrub: 0.5,
-          markers: true,
+          scrub: 0.5
         },
       })
       .from(".governance-tip", {
