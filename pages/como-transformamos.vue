@@ -521,19 +521,19 @@ export default {
     },
   },
   mounted() {
-    gsap.utils.toArray(".parceria").forEach((parceria) => {
-      gsap.from(parceria, {
-        scrollTrigger: {
-          trigger: parceria,
-          start: "-=400",
-          end: "-=400",
-          scrub: 0.2,
-          onLeaveBack: (self) => self.disable(),
-        },
-        opacity: 0,
-        y: 80,
-      });
-    });
+    // gsap.utils.toArray(".parceria").forEach((parceria) => {
+    //   gsap.from(parceria, {
+    //     scrollTrigger: {
+    //       trigger: parceria,
+    //       start: "-=400",
+    //       end: "-=400",
+    //       scrub: 0.2,
+    //       onLeaveBack: (self) => self.disable(),
+    //     },
+    //     opacity: 0,
+    //     y: 80,
+    //   });
+    // });
 
     gsap.to("#diagonal", {
       scrollTrigger: {

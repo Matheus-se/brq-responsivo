@@ -188,7 +188,7 @@ export default {
 }
 
 #mensagem {
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-bottom: 3rem;
   color: var(--brq-grey);
 
