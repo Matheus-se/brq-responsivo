@@ -469,7 +469,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" scoped>
 import Vue from "vue";
 import { TimelineLite, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -558,6 +558,16 @@ export default {
       y: 50,
     });
 
+    gsap.to("#metodologia", {
+      scrollTrigger: {
+        trigger: ".video-cover",
+        start: "-=200",
+        end: "+=100",
+        scrub: 0.5,
+      },
+      borderLeftColor:'#fff'
+    });
+
     gsap
       .timeline({
         scrollTrigger: {
@@ -583,17 +593,6 @@ export default {
       autoAlpha: 0,
     });
 
-    gsap.to("#metodologia", {
-      scrollTrigger: {
-        trigger: "#metodologia",
-        start: "-=400",
-        end: "+1000",
-        scrub: 0.5,
-      },
-      css: {
-        className: "+=active mt-5 d-none d-md-block",
-      },
-    });
 
     gsap.from(".be-brq h2", {
       scrollTrigger: {
@@ -652,7 +651,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #seta {
   margin-top: -50px;
 }

@@ -236,7 +236,7 @@
               </ul>
               <div class="d-flex row justify-content-between mt-5 buton-change-1">
                 <button class="btn button-left-brq">
-                  <img src="~@/static/images/seta-slider.png">
+                  <img src="~@/static/images/seta-slider.png" />
                   <span
                     class="text-change-button-left transition-opacity font-weight-bold"
                     >Monitorar</span
@@ -247,7 +247,7 @@
                     class="text-change-button-right transition-opacity font-weight-bold"
                     >Entender</span
                   >
-                  <img src="~@/static/images/seta-slider2.png"/>
+                  <img src="~@/static/images/seta-slider2.png" />
                 </button>
               </div>
             </div>
@@ -382,9 +382,7 @@
             <li>CFD</li>
           </ul>
         </div>
-        <div
-          class="col-lg-6 d-flex flex-column justify-content-center images-team-care"
-        >
+        <div class="col-lg-6 d-flex flex-column images-team-care">
           <div class="d-flex align-items-end flex-column logo-brq-care">
             <img src="~@/static/images/team_care.png" class="pr-4 pb-3" />
           </div>
@@ -429,9 +427,9 @@
     <section>
       <div class="container">
         <div class="col-md-7 offset-md-5 text-md-right">
-          <h1 class="pl-3 border-left border-primary h1-font-size">
+          <h2 class="pl-3 border-left border-primary h1-font-size partnership-h1">
             parcerias estratégicas
-          </h1>
+          </h2>
           <p class="font-size-p my-5">
             Acelerar o time to market através de catálogo de ferramentas e
             soluções.
@@ -508,7 +506,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" scoped>
 import Vue from "vue";
 import { TimelineLite, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -648,6 +646,89 @@ export default {
         y: 80,
       });
     });
+    //   const tituloSlider = document.querySelector('.color-change-text');
+    //   const butonRight = document.querySelector('.button-right-brq');
+    //   const butonLeft = document.querySelector('.button-left-brq');
+    //   const butonLeftText = document.querySelector('.text-change-button-left');
+    //   const butonRightText = document.querySelector('.text-change-button-right');
+
+    //   const contentSliderTitle = [
+    //       {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-darkblue)", label: "Definir"},
+    //       {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-yellow)", label: "Entender"},
+    //       {texto: "Definir a estratégia e transformar a cultura", cor: "#8B008B", label: "Entregar"},
+    //       {texto: "Definir a estratégia e transformar a cultura", cor: "#5F9EA0", label: "Monitorar"}
+    //     ];
+
+    //   let i = 0;
+    //   let j = i + 1
+
+    //   if (butonRight) {
+    //     butonRight.addEventListener('click', () => {
+    //       i++;
+    //       j++;
+
+    //       if (i >= contentSliderTitle.length - 1) {
+    //           i = 0;
+    //       }
+    //       if (i >= contentSliderTitle.length - 2) {
+    //           j = 0;
+    //       }
+
+    //       tituloSlider.style.opacity = 0;
+    //       butonLeftText.style.opacity = 0;
+    //       butonRightText.style.opacity = 0;
+    //       setTimeout(() => {
+    //           tituloSlider.style.color = contentSliderTitle[i].cor;
+    //           butonRightText.style.color = contentSliderTitle[j].cor;
+    //           butonRightText.innerHTML = contentSliderTitle[j].label;
+    //           butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
+    //           butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
+    //           tituloSlider.innerHTML = contentSliderTitle[i].texto;
+    //           tituloSlider.style.opacity = 1;
+    //           butonLeftText.style.opacity = 1;
+    //           butonRightText.style.opacity = 1;
+    //       }, 250);
+    //   });
+    // }
+
+    // if (butonLeft) {
+    //     butonLeft.addEventListener('click', () => {
+    //         i--;
+    //         j--;
+
+    //         if (i <= -1) {
+    //             i = contentSliderTitle.length - 1;
+    //         }
+    //         if (j <= -1) {
+    //             j = contentSliderTitle.length - 1;
+    //         }
+
+    //         tituloSlider.style.opacity = 0;
+    //         butonLeftText.style.opacity = 0;
+    //         butonRightText.style.opacity = 0;
+    //         setTimeout(() => {
+    //             tituloSlider.style.color = contentSliderTitle[i].cor;
+    //             butonRightText.style.color = contentSliderTitle[j].cor;
+    //             butonRightText.innerHTML = contentSliderTitle[j].label;
+    //             butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
+    //             butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
+    //             tituloSlider.innerHTML = contentSliderTitle[i].texto;
+    //             tituloSlider.style.opacity = 1;
+    //             butonLeftText.style.opacity = 1;
+    //             butonRightText.style.opacity = 1;
+    //         }, 250);
+    //     });
+    //   }
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '#slider-container',
+        start: "center center",
+        end: "+=500",
+        markers: true,
+        pin: true
+      }
+    }).from('.circle', {xPercent:50});
 
     gsap.to("#diagonal", {
       scrollTrigger: {
@@ -691,29 +772,30 @@ export default {
         scrollTrigger: {
           trigger: ".platform-hub",
           start: "-=400px",
-          end: "+=300px",
-          scrub: 0.5
+          end: "+=400px",
+          scrub: 0.5,
         },
       })
       .from(".governance-tip", {
         xPercent: -100,
         autoAlpha: 0,
+        ease: "expo"
       })
       .from(".governance-h1", {
         y: 30,
         autoAlpha: 0,
+        ease: "expo"
       });
 
     gsap.to("#metodologia", {
       scrollTrigger: {
         trigger: ".video-cover",
         start: "-=200",
-        end: "+1000",
+        end: "+=100",
         scrub: 0.5,
       },
-      // css: { className: "+=active-ct" },
-      borderLeftWidth: "0px",
-      autoAlpha: 1,
+      borderLeftColor: "#fff",
+      ease: "expo"
     });
 
     gsap
@@ -724,7 +806,7 @@ export default {
           scrub: 0.5,
         },
       })
-      .from(".main-content", { y: 200, autoAlpha: 0 });
+      .from(".main-content", { y: 200, autoAlpha: 0, ease: "expo" });
 
     gsap.from(".be-brq", {
       scrollTrigger: {
@@ -738,84 +820,52 @@ export default {
       autoAlpha: 0,
     });
 
-    gsap.from(".logo-brq-care", {
+    gsap.from(".images-team-care", {
       scrollTrigger: {
-        trigger: ".logo-brq-care",
-        start: "-=300 +=20%",
+        trigger: ".header-governance",
+        start: "top top",
         end: "+=500",
         scrub: 0.5,
       },
-      rotation: 0,
-      y: -150,
+      y: 150,
+      ease: "expo",
     });
 
     gsap.from("#logo-max-width", {
       scrollTrigger: {
         trigger: ".reverse-hub",
-        start: "-=300 +=20%",
+        start: "-=300",
         end: "+=350",
         scrub: 0.5,
       },
-      rotation: 0,
       y: 150,
+      ease: "expo"
     });
 
-    gsap.from(".be-brq h2", {
-      scrollTrigger: {
-        trigger: ".be-brq",
-        start: "top bottom",
-        end: "center top",
-        scrub: 0.5,
-      },
-      y: 200,
-      autoAlpha: 0,
-      ease: "expo",
+    gsap.utils.toArray(".parceria").forEach((parceria) => {
+      gsap.from(parceria,{
+        scrollTrigger: {
+          trigger: parceria,
+          start: "-=500",
+          end: "-=500",
+          scrub: 0
+        },
+        ease: "expo",
+        autoAlpha:0,
+        y: 50,
+      });
     });
-
-    gsap.from(".seals", {
-      y: 20,
-      autoAlpha: 0,
-      scrollTrigger: {
-        trigger: ".seals",
-        start: "top bottom",
-        end: "+=500",
-        scrub: 0.5,
-      },
-    });
-
-    gsap.from(".be-brq svg", {
-      x: 10,
-      rotate: 5,
-      scrollTrigger: {
-        trigger: ".context",
-        end: "+=500",
-        scrub: 0.5,
-      },
-    });
-
-    gsap.from(".context", {
-      y: 100,
-      autoAlpha: 0,
-      scrollTrigger: {
-        trigger: ".context",
-        end: "+=300",
-        scrub: 0.5,
-      },
-    });
-
-    gsap.to(".blog svg", {
-      x: -100,
-      rotate: 0,
-      scrollTrigger: {
-        trigger: ".blog-item",
-        start: "top bottom",
-        end: "+=300",
-        scrub: 0.5,
-      },
-    });
-  },
-};
+  }
+}
 </script>
+
+<style lang="scss" scoped>
+
+
+.partnership-h1 {
+  width:fit-content;
+  margin-left: auto;
+}
 
 <style lang="scss">
 
@@ -949,7 +999,6 @@ export default {
   ul {
     font-size: 1.3rem;
   }
-
 }
 
 .transition-opacity,
@@ -1271,7 +1320,7 @@ div.parcerias {
 
   svg.diagonal-line {
     position: absolute;
-    bottom: -25vw !important;
+    bottom: -19vw !important;
     height: 35vw;
     transform: rotate(8deg);
     width: 120vw;
