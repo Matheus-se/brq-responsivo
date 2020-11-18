@@ -222,8 +222,8 @@
                 class="slider-image"
               />
             </div>
-            <div class="col-md-5 pl-md-5">
-              <h1 class="color-change-text transition-opacity">
+            <div class="col-md-5 pl-md-5 slider-1">
+              <h1 class="change-text-1 transition-opacity">
                 definir a estratégia e transformar a cultura
               </h1>
               <ul>
@@ -234,7 +234,7 @@
                 </li>
                 <li>Governança Estratégica</li>
               </ul>
-              <div class="d-flex row justify-content-between mt-5">
+              <div class="d-flex row justify-content-between mt-5 buton-change-1">
                 <button class="btn button-left-brq">
                   <img src="~@/static/images/seta-slider.png">
                   <span
@@ -246,6 +246,100 @@
                   <span
                     class="text-change-button-right transition-opacity font-weight-bold"
                     >Entender</span
+                  >
+                  <img src="~@/static/images/seta-slider2.png"/>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-5 pl-md-5 slider-2">
+              <h1 class="change-text-2 transition-opacity">
+                ENTENDER OS PROBLEMAS E CONCEBER SOLUÇÕES
+              </h1>
+              <ul>
+                <li>Pesquisa e Design</li>
+                <li>
+                  Engenharia de valor
+                </li>
+                <li>Consultoria tecnológica e novas tendências</li>
+                <li>Intelligent Business Automation</li>
+              </ul>
+              <div class="d-flex row justify-content-between mt-5 buton-change-2">
+                <button class="btn button-left-brq">
+                  <img src="~@/static/images/seta-slider.png">
+                  <span
+                    class="text-change-button-left transition-opacity font-weight-bold"
+                    >Definir</span
+                  >
+                </button>
+                <button class="btn button-right-brq">
+                  <span
+                    class="text-change-button-right transition-opacity font-weight-bold"
+                    >Entregar</span
+                  >
+                  <img src="~@/static/images/seta-slider2.png"/>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-5 pl-md-5 slider-3">
+              <h1 class="change-text-3 transition-opacity">
+                ENTREGAR SOLUÇÕES COM EXCELÊNCIA
+              </h1>
+              <ul>
+                <li>Blockchain</li>
+                <li>
+                  DevSecOps
+                </li>
+                <li>Microserviços</li>
+                <li>Advanced Analytics</li>
+                <li>Integração SaaS</li>
+                <li>SAP</li>
+                <li>Cloud</li>
+                <li>Aplicações Web e Mobile</li>
+                <li>Sistemas Mainframe e migração para cloud</li>
+                <li>Open Banking</li>
+                <li>Automação de processos</li>
+              </ul>
+              <div class="d-flex row justify-content-between mt-5 buton-change-3">
+                <button class="btn button-left-brq">
+                  <img src="~@/static/images/seta-slider.png">
+                  <span
+                    class="text-change-button-left transition-opacity font-weight-bold"
+                    >Entender</span
+                  >
+                </button>
+                <button class="btn button-right-brq">
+                  <span
+                    class="text-change-button-right transition-opacity font-weight-bold"
+                    >Monitorar</span
+                  >
+                  <img src="~@/static/images/seta-slider2.png"/>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-5 pl-md-5 slider-4">
+              <h1 class="change-text-4 transition-opacity">
+                MONITORAR EFICÁCIA E AMPLIAR CAPTURA DE VALOR
+              </h1>
+              <ul>
+                <li>KPIs de Negócio</li>
+                <li>
+                  Evolução da Experiência Digital
+                </li>
+                <li>Melhor Compreensão do Consumidor</li>
+                <li>Insights para Melhorias na Plataforma tecnológica</li>
+              </ul>
+              <div class="d-flex row justify-content-between mt-5 buton-change-4">
+                <button class="btn button-left-brq">
+                  <img src="~@/static/images/seta-slider.png">
+                  <span
+                    class="text-change-button-left transition-opacity font-weight-bold"
+                    >Entregar</span
+                  >
+                </button>
+                <button class="btn button-right-brq">
+                  <span
+                    class="text-change-button-right transition-opacity font-weight-bold"
+                    >Definir</span
                   >
                   <img src="~@/static/images/seta-slider2.png"/>
                 </button>
@@ -468,79 +562,92 @@ export default {
   },
   mounted() {
 
-    const tituloSlider = document.querySelector('.color-change-text');
-    const butonRight = document.querySelector('.button-right-brq');
-    const butonLeft = document.querySelector('.button-left-brq');
-    const butonLeftText = document.querySelector('.text-change-button-left');
-    const butonRightText = document.querySelector('.text-change-button-right');
+  //   const tituloSlider = document.querySelector('.color-change-text');
+  //   const butonRight = document.querySelector('.button-right-brq');
+  //   const butonLeft = document.querySelector('.button-left-brq');
+  //   const butonLeftText = document.querySelector('.text-change-button-left');
+  //   const butonRightText = document.querySelector('.text-change-button-right');
 
-    const contentSliderTitle = [
-        {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-darkblue)", label: "Definir"},
-        {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-yellow)", label: "Entender"},
-        {texto: "Definir a estratégia e transformar a cultura", cor: "#8B008B", label: "Entregar"},
-        {texto: "Definir a estratégia e transformar a cultura", cor: "#5F9EA0", label: "Monitorar"}
-      ];
+  //   const contentSliderTitle = [
+  //       {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-darkblue)", label: "Definir"},
+  //       {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-yellow)", label: "Entender"},
+  //       {texto: "Definir a estratégia e transformar a cultura", cor: "#8B008B", label: "Entregar"},
+  //       {texto: "Definir a estratégia e transformar a cultura", cor: "#5F9EA0", label: "Monitorar"}
+  //     ];
 
-    let i = 0;
-    let j = i + 1
+  //   let i = 0;
+  //   let j = i + 1
 
-    if (butonRight) {
-      butonRight.addEventListener('click', () => {
-        i++;
-        j++;
+  //   if (butonRight) {
+  //     butonRight.addEventListener('click', () => {
+  //       i++;
+  //       j++;
 
-        if (i >= contentSliderTitle.length - 1) {
-            i = 0;
-        }
-        if (i >= contentSliderTitle.length - 2) {
-            j = 0;
-        }
+  //       if (i >= contentSliderTitle.length - 1) {
+  //           i = 0;
+  //       }
+  //       if (i >= contentSliderTitle.length - 2) {
+  //           j = 0;
+  //       }
 
-        tituloSlider.style.opacity = 0;
-        butonLeftText.style.opacity = 0;
-        butonRightText.style.opacity = 0;
-        setTimeout(() => {
-            tituloSlider.style.color = contentSliderTitle[i].cor;
-            butonRightText.style.color = contentSliderTitle[j].cor;
-            butonRightText.innerHTML = contentSliderTitle[j].label;
-            butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
-            butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
-            tituloSlider.innerHTML = contentSliderTitle[i].texto;
-            tituloSlider.style.opacity = 1;
-            butonLeftText.style.opacity = 1;
-            butonRightText.style.opacity = 1;
-        }, 250);
-    });
-  }
+  //       tituloSlider.style.opacity = 0;
+  //       butonLeftText.style.opacity = 0;
+  //       butonRightText.style.opacity = 0;
+  //       setTimeout(() => {
+  //           tituloSlider.style.color = contentSliderTitle[i].cor;
+  //           butonRightText.style.color = contentSliderTitle[j].cor;
+  //           butonRightText.innerHTML = contentSliderTitle[j].label;
+  //           butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
+  //           butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
+  //           tituloSlider.innerHTML = contentSliderTitle[i].texto;
+  //           tituloSlider.style.opacity = 1;
+  //           butonLeftText.style.opacity = 1;
+  //           butonRightText.style.opacity = 1;
+  //       }, 250);
+  //   });
+  // }
 
-  if (butonLeft) {
-      butonLeft.addEventListener('click', () => {
-          i--;
-          j--;
+  // if (butonLeft) {
+  //     butonLeft.addEventListener('click', () => {
+  //         i--;
+  //         j--;
 
-          if (i <= -1) {
-              i = contentSliderTitle.length - 1;
-          }
-          if (j <= -1) {
-              j = contentSliderTitle.length - 1;
-          }
+  //         if (i <= -1) {
+  //             i = contentSliderTitle.length - 1;
+  //         }
+  //         if (j <= -1) {
+  //             j = contentSliderTitle.length - 1;
+  //         }
           
-          tituloSlider.style.opacity = 0;
-          butonLeftText.style.opacity = 0;
-          butonRightText.style.opacity = 0;
-          setTimeout(() => {
-              tituloSlider.style.color = contentSliderTitle[i].cor;
-              butonRightText.style.color = contentSliderTitle[j].cor;
-              butonRightText.innerHTML = contentSliderTitle[j].label;
-              butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
-              butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
-              tituloSlider.innerHTML = contentSliderTitle[i].texto;
-              tituloSlider.style.opacity = 1;
-              butonLeftText.style.opacity = 1;
-              butonRightText.style.opacity = 1;
-          }, 250);
+  //         tituloSlider.style.opacity = 0;
+  //         butonLeftText.style.opacity = 0;
+  //         butonRightText.style.opacity = 0;
+  //         setTimeout(() => {
+  //             tituloSlider.style.color = contentSliderTitle[i].cor;
+  //             butonRightText.style.color = contentSliderTitle[j].cor;
+  //             butonRightText.innerHTML = contentSliderTitle[j].label;
+  //             butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
+  //             butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
+  //             tituloSlider.innerHTML = contentSliderTitle[i].texto;
+  //             tituloSlider.style.opacity = 1;
+  //             butonLeftText.style.opacity = 1;
+  //             butonRightText.style.opacity = 1;
+  //         }, 250);
+  //     });
+  //   }
+
+    gsap.utils.toArray(".parceria").forEach((parceria) => {
+      gsap.from(parceria, {
+        scrollTrigger: {
+          trigger: parceria,
+          start: "-=400",
+          end: "-=400",
+          scrub: 0.2,
+        },
+        opacity: 0,
+        y: 80,
       });
-    }
+    });
 
     gsap.to("#diagonal", {
       scrollTrigger: {
@@ -644,7 +751,6 @@ export default {
 
     gsap.from("#logo-max-width", {
       scrollTrigger: {
-        markers:true,
         trigger: ".reverse-hub",
         start: "-=300 +=20%",
         end: "+=350",
@@ -712,6 +818,79 @@ export default {
 </script>
 
 <style lang="scss">
+
+.change-text-1 {
+  color: var(--brq-darkblue);
+}
+
+.change-text-2 {
+    color: var(--brq-yellow);
+}
+
+.change-text-3 {
+  color: #8B008B;
+}
+
+.change-text-4 {
+    color: #5F9EA0;
+}
+
+.buton-change-1 {
+  .button-left-brq  {
+    span {
+      color: #5F9EA0; 
+    }
+  }
+
+  .button-right-brq {
+    span {
+      color: var(--brq-yellow);
+    }
+  }
+}
+
+.buton-change-2 {
+  .button-left-brq  {
+    span {
+      color: var(--brq-darkblue); 
+    }
+  }
+
+  .button-right-brq {
+    span {
+      color: #8B008B;
+    }
+  }
+}
+
+.buton-change-3 {
+  .button-left-brq  {
+    span {
+      color: var(--brq-yellow); 
+    }
+  }
+
+  .button-right-brq {
+    span {
+      color: #5F9EA0;
+    }
+  }
+}
+
+.buton-change-4 {
+  .button-left-brq  {
+    span {
+      color: #8B008B; 
+    }
+  }
+
+  .button-right-brq {
+    span {
+      color: var(--brq-darkblue);
+    }
+  }
+}
+
 .service-platform {
   h2 {
     font-size: 3.5rem;
@@ -774,17 +953,9 @@ export default {
 }
 
 .transition-opacity,
-.color-change-text {
-  transition: opacity 0.25s;
-}
-
-.color-change-text {
-  color: var(--brq-darkblue);
-}
 
 .transition-orange {
   transition: color 0.5s;
-  cursor: pointer;
 }
 
 .transition-orange:hover {
