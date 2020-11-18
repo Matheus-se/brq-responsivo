@@ -414,7 +414,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" scoped>
 import Vue from "vue";
 import { TimelineLite, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -711,7 +711,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .service-platform {
   h2 {
     font-size: 3.5rem;
@@ -1100,7 +1100,7 @@ div.parcerias {
 
   svg.diagonal-line {
     position: absolute;
-    bottom: -25vw !important;
+    bottom: -19vw !important;
     height: 35vw;
     transform: rotate(8deg);
     width: 120vw;
