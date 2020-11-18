@@ -542,20 +542,6 @@ export default {
       });
     }
 
-    gsap.utils.toArray(".parceria").forEach((parceria) => {
-      gsap.from(parceria, {
-        scrollTrigger: {
-          trigger: parceria,
-          start: "-=400",
-          end: "-=400",
-          scrub: 0.2,
-          onLeaveBack: (self) => self.disable(),
-        },
-        opacity: 0,
-        y: 80,
-      });
-    });
-
     gsap.to("#diagonal", {
       scrollTrigger: {
         trigger: ".video-cover",
@@ -599,7 +585,7 @@ export default {
           trigger: ".platform-hub",
           start: "-=400px",
           end: "+=300px",
-          scrub: 0.5,
+          scrub: 0.5
         },
       })
       .from(".governance-tip", {

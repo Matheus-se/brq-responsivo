@@ -94,11 +94,34 @@
                     Confira as últimas notícias sobre a BRQ
                   </div>
                   <div class="col-4 p-0 align-self-center">
-                    <img
-                      src="~@/static/images/arrow-dobra.svg"
-                      height="100%"
-                      class="image-seta"
-                    />
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="65.207"
+                    height="32.707"
+                    viewBox="0 0 65.207 32.707"
+                  >
+                    <g id="Group" transform="translate(-0.5 0.354)">
+                      <path
+                        id="Path"
+                        d="M0,0,16,16,0,32"
+                        transform="translate(49)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                      <path
+                        id="Path_2"
+                        data-name="Path 2"
+                        d="M.5.5h64"
+                        transform="translate(0 15)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-miterlimit="10"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
                   </div>
                 </div>
               </button>

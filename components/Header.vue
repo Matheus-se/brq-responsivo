@@ -33,7 +33,7 @@
             <b-dropdown-item>Sobre nós</b-dropdown-item>
             <b-dropdown-item>Nossa cultura</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item><span>Como Transformamos</span></b-nav-item>
+          <b-nav-item to="/como-transformamos"><span>Como Transformamos</span></b-nav-item>
           <b-nav-item to="/conteudos/blog"><span>Conteúdos</span></b-nav-item>
           <b-nav-item><span>RI</span></b-nav-item>
           <b-nav-item><span>Venha ser Fera</span></b-nav-item>
@@ -46,10 +46,7 @@
               <span>PT</span>
               <img src="~@/static/images/brasil.svg" alt="">
             </template>
-            <b-dropdown-item href="#">EN <img src="~@/static/images/brasil.svg" alt=""></b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
+            <b-dropdown-item href="#">EN <img src="~@/static/images/eua.svg" alt=""></b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown right no-caret class="navDropdownItem">
@@ -88,6 +85,19 @@
 </script>
 
 <style lang="scss">
+
+.language-choose{
+  img {
+    width: 17px;
+    margin-left: 0.3rem;
+  }
+}
+
+button:focus {
+  border:none;
+  outline: none;
+  box-shadow: none;
+}
 
 body {
   position: relative;
