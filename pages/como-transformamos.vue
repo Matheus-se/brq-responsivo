@@ -236,34 +236,7 @@
               </ul>
               <div class="d-flex row justify-content-between mt-5">
                 <button class="btn button-left-brq">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="90"
-                    height="64.707"
-                    viewBox="0 0 90 64.707"
-                  >
-                    <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
-                      <path
-                        id="Path"
-                        d="M0,0,-32,32,0,64"
-                        transform="translate(32)"
-                        fill="none"
-                        stroke="#005fa3"
-                        stroke-miterlimit="10"
-                        stroke-width="1"
-                      />
-                      <path
-                        id="Path_2"
-                        data-name="Path 2"
-                        d="M0,.5H90"
-                        transform="translate(0 32)"
-                        fill="none"
-                        stroke="#005fa3"
-                        stroke-miterlimit="10"
-                        stroke-width="1"
-                      />
-                    </g>
-                  </svg>
+                  <img src="~@/static/images/seta-slider.png">
                   <span
                     class="text-change-button-left transition-opacity font-weight-bold"
                     >Monitorar</span
@@ -274,34 +247,7 @@
                     class="text-change-button-right transition-opacity font-weight-bold"
                     >Entender</span
                   >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="90"
-                    height="64.707"
-                    viewBox="0 0 90 64.707"
-                  >
-                    <g id="_arrow-1a-dobra" transform="translate(0 0.354)">
-                      <path
-                        id="Path"
-                        d="M0,0,32,32,0,64"
-                        transform="translate(58)"
-                        fill="none"
-                        stroke="#005fa3"
-                        stroke-miterlimit="10"
-                        stroke-width="1"
-                      />
-                      <path
-                        id="Path_2"
-                        data-name="Path 2"
-                        d="M0,.5H90"
-                        transform="translate(0 32)"
-                        fill="none"
-                        stroke="#005fa3"
-                        stroke-miterlimit="10"
-                        stroke-width="1"
-                      />
-                    </g>
-                  </svg>
+                  <img src="~@/static/images/seta-slider2.png"/>
                 </button>
               </div>
             </div>
@@ -345,7 +291,7 @@
         <div
           class="col-lg-6 d-flex flex-column justify-content-center images-team-care"
         >
-          <div class="d-flex align-items-end flex-column">
+          <div class="d-flex align-items-end flex-column logo-brq-care">
             <img src="~@/static/images/team_care.png" class="pr-4 pb-3" />
           </div>
           <div class="d-flex align-items-end flex-column computador">
@@ -389,12 +335,12 @@
     <section>
       <div class="container">
         <div class="col-md-7 offset-md-5 text-md-right">
-          <h1 class="pl-3 border-left border-primary h1-font-size text-left">
+          <h1 class="pl-3 border-left border-primary h1-font-size">
             parcerias estratégicas
           </h1>
           <p class="font-size-p my-5">
             Acelerar o time to market através de catálogo de ferramentas e
-            soluções
+            soluções.
           </p>
         </div>
       </div>
@@ -521,6 +467,81 @@ export default {
     },
   },
   mounted() {
+
+    const tituloSlider = document.querySelector('.color-change-text');
+    const butonRight = document.querySelector('.button-right-brq');
+    const butonLeft = document.querySelector('.button-left-brq');
+    const butonLeftText = document.querySelector('.text-change-button-left');
+    const butonRightText = document.querySelector('.text-change-button-right');
+
+    const contentSliderTitle = [
+        {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-darkblue)", label: "Definir"},
+        {texto: "Definir a estratégia e transformar a cultura", cor: "var(--brq-yellow)", label: "Entender"},
+        {texto: "Definir a estratégia e transformar a cultura", cor: "#8B008B", label: "Entregar"},
+        {texto: "Definir a estratégia e transformar a cultura", cor: "#5F9EA0", label: "Monitorar"}
+      ];
+
+    let i = 0;
+    let j = i + 1
+
+    if (butonRight) {
+      butonRight.addEventListener('click', () => {
+        i++;
+        j++;
+
+        if (i >= contentSliderTitle.length - 1) {
+            i = 0;
+        }
+        if (i >= contentSliderTitle.length - 2) {
+            j = 0;
+        }
+
+        tituloSlider.style.opacity = 0;
+        butonLeftText.style.opacity = 0;
+        butonRightText.style.opacity = 0;
+        setTimeout(() => {
+            tituloSlider.style.color = contentSliderTitle[i].cor;
+            butonRightText.style.color = contentSliderTitle[j].cor;
+            butonRightText.innerHTML = contentSliderTitle[j].label;
+            butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
+            butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
+            tituloSlider.innerHTML = contentSliderTitle[i].texto;
+            tituloSlider.style.opacity = 1;
+            butonLeftText.style.opacity = 1;
+            butonRightText.style.opacity = 1;
+        }, 250);
+    });
+  }
+
+  if (butonLeft) {
+      butonLeft.addEventListener('click', () => {
+          i--;
+          j--;
+
+          if (i <= -1) {
+              i = contentSliderTitle.length - 1;
+          }
+          if (j <= -1) {
+              j = contentSliderTitle.length - 1;
+          }
+          
+          tituloSlider.style.opacity = 0;
+          butonLeftText.style.opacity = 0;
+          butonRightText.style.opacity = 0;
+          setTimeout(() => {
+              tituloSlider.style.color = contentSliderTitle[i].cor;
+              butonRightText.style.color = contentSliderTitle[j].cor;
+              butonRightText.innerHTML = contentSliderTitle[j].label;
+              butonLeftText.style.color = contentSliderTitle.slice(i-1)[0].cor;
+              butonLeftText.innerHTML = contentSliderTitle.slice(i-1)[0].label;
+              tituloSlider.innerHTML = contentSliderTitle[i].texto;
+              tituloSlider.style.opacity = 1;
+              butonLeftText.style.opacity = 1;
+              butonRightText.style.opacity = 1;
+          }, 250);
+      });
+    }
+
     gsap.utils.toArray(".parceria").forEach((parceria) => {
       gsap.from(parceria, {
         scrollTrigger: {
@@ -579,7 +600,6 @@ export default {
           start: "-=400px",
           end: "+=300px",
           scrub: 0.5,
-          markers: true,
         },
       })
       .from(".governance-tip", {
@@ -623,6 +643,29 @@ export default {
       x: 200,
       ease: "linear",
       autoAlpha: 0,
+    });
+
+    gsap.from(".logo-brq-care", {
+      scrollTrigger: {
+        trigger: ".logo-brq-care",
+        start: "-=300 +=20%",
+        end: "+=500",
+        scrub: 0.5,
+      },
+      rotation: 0,
+      y: -150,
+    });
+
+    gsap.from("#logo-max-width", {
+      scrollTrigger: {
+        markers:true,
+        trigger: ".reverse-hub",
+        start: "-=300 +=20%",
+        end: "+=350",
+        scrub: 0.5,
+      },
+      rotation: 0,
+      y: 150,
     });
 
     gsap.from(".be-brq h2", {
