@@ -221,10 +221,10 @@
               <div class="circle-labels">
                 <div class="image-container">
                   <div class="labels">
+                    <p class="definir label">definir</p>
                     <p class="entender label">entender</p>
                     <p class="entregar label">entregar</p>
                     <p class="monitorar label">monitorar</p>
-                    <p class="definir label">definir</p>
                   </div>
                   <img
                     src="~@/static/images/plataforma_servicos-02.svg"
@@ -594,8 +594,6 @@ export default {
     rightButton.forEach((btn) => {
       btn.addEventListener("click", () => {
         sliderBox = document.querySelectorAll('.slider-brq')[index]
-        label = document.querySelectorAll(".label")[index];
-
 
         if (index == numberOfSlides - 1) {
           index = 0;
@@ -606,6 +604,8 @@ export default {
           index += 1;
           carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
         }
+
+        label = document.querySelectorAll(".label")[index];
 
         document.querySelectorAll('.label').forEach(lbl => {
           lbl.style.fontWeight = 'normal';
@@ -622,7 +622,6 @@ export default {
     leftButton.forEach((btn) => {
       btn.addEventListener("click", () => {
       sliderBox = document.querySelectorAll('.slider-brq')[index];
-        label = document.querySelectorAll(".label")[-index];
 
 
         if (index == 0) {
@@ -634,6 +633,8 @@ export default {
           index -= 1;
           carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
         }
+        label = document.querySelectorAll(".label")[index];
+
 
         document.querySelectorAll('.label').forEach(lbl => {
           lbl.style.fontWeight = 'normal';
@@ -643,6 +644,7 @@ export default {
         plataformServices.style.transform = `rotate(${degrees + rotation}deg)`;
         degrees += rotation;
 
+        console.log(index)
         carouselContainer.scrollBy(-carouselItemWidth, 0);
       });
     });
