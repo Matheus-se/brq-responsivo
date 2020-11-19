@@ -35,8 +35,8 @@
             <h2 class="blue-text">blog brq</h2>
             <p>
               Aqui você encontra os principais conteudos sobre transformação
-              digital e tencologia autalizados semanalmente além de cases
-              e-books e infogréficos.
+              digital e tecnologia atualizados semanalmente além de cases,
+              e-books e infográficos.
             </p>
             <a href="" class="blue-text" id="acesse-text"
               >Acesse! <br>
@@ -83,18 +83,18 @@
             <div class="col-md-6" id="foto">
               <img src="~@/static/images/foto-noticias.png" />
             </div>
-            <div class="col-lg-5 offset-lg-1 my-5 text-right ultimas-noticias">
-              <h2 class="blue-text pb-5">últimas notícias</h2>
-              <p class="pb-5">
+            <div class="col-lg-5 offset-lg-1 my-5 text-md-right text-left ultimas-noticias">
+              <h2 class="blue-text pb-md-5 pb-3">últimas notícias</h2>
+              <p class="pb-md-5 pb-4">
                 Acompanhe os releases enviados, notícias na imprensa e demais
                 informações
               </p>
               <button class="btn btn-primary">
                 <div class="row">
-                  <div class="col-8 font-desc text-left">
+                  <div class="col font-desc px-0 px-md-3 text-left">
                     Confira as últimas notícias sobre a BRQ
                   </div>
-                  <div class="col-4 p-0 align-self-center">
+                  <div class="col-auto p-0 align-self-center">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="65.207"
@@ -131,16 +131,16 @@
         </div>
       </section>
 
-      <section class="py-lg-5 text-center pb-5" id="mensagem">
+      <section class="py-lg-5 text-md-center text-left pb-5" id="mensagem">
         <div class="container">
           <div class="row">
             <div class="col-md-10 mx-auto">
               <p>
                 Para mais informações, solicitações de entrevistas e conteúdos
-                entre em contato com
+                entre <br class="d-block d-md-none"> em contato com <br class="d-block d-md-none">
                 <span class="color-transition-text"
                   >leticia@pineapplehub.com.br</span
-                ><br />ou
+                ><br> ou 
                 <span class="color-transition-text">marketing@brq.com</span>
               </p>
             </div>
@@ -228,8 +228,10 @@ export default {
   text-align: center;
 }
 
-.font-desc {
-  font-size: 1.3rem;
+.font-desc,
+.laptop-brq,
+#ultimas-noticias {
+  font-size: 1.5rem;
 }
 
 #foto {
@@ -242,7 +244,6 @@ export default {
 
 #ultimas-noticias {
   padding-bottom: 7rem;
-  font-size: 1.5rem;
 }
 
 .main-title {
@@ -281,7 +282,6 @@ h2 {
 
 .laptop-brq {
   margin-bottom: 15rem;
-  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -293,6 +293,9 @@ h2 {
   #mensagem {
     margin-top: 0;
     padding-top: 0;
+    p {
+      font-size: 1.5rem;
+    }
   }
 
   #ultimas-noticias {
@@ -321,7 +324,7 @@ h2 {
 
   .laptop {
     position: relative;
-    margin-top: -60%;
+    margin-top: -70%;
 
     img {
       position: relative;

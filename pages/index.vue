@@ -123,8 +123,39 @@
     </section>
 
     <!--for responsive-->
-    <div class="container d-block d-sm-none">
+    <div class="container d-block method-title d-sm-none">
       <div class="row">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64.707"
+          height="160.707"
+          viewBox="0 0 64.707 160.707"
+          ref="seta"
+          id="seta"
+          class="seta"
+        >
+          <g id="_arrow-1a-dobra" transform="translate(64.354) rotate(90)">
+            <path
+              id="Path"
+              d="M0,0,32,32,0,64"
+              transform="translate(128)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <path
+              id="Path_2"
+              data-name="Path 2"
+              d="M0,.5H160"
+              transform="translate(0 32)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+          </g>
+        </svg>
         <h2 class="method mt-5 col-9 mx-auto ml-auto">
           <span>
             Conheça a<br />
@@ -561,7 +592,7 @@ export default {
       y: 50,
     });
 
-    gsap.to("#metodologia", {
+    gsap.to(".method", {
       scrollTrigger: {
         trigger: ".video-cover",
         start: "-=200",
@@ -971,7 +1002,7 @@ export default {
     left: 0;
     width: 58%;
     height: 100.3%;
-    z-index: 999;
+    z-index: 9999;
     // clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
     padding-right: 5%;
     .container-fluid {
@@ -1134,8 +1165,85 @@ export default {
     }
   }
 }
-/* Mobile Users */
 
+/* 1440px users */
+@media (min-width: 1367px) and (max-width: 1440px) {
+  .pd-top {
+    padding-bottom: 4rem;
+  }
+  .main-content {
+    .scale {
+      bottom: 324px;
+      left: 22%;
+      z-index: 999;
+    }
+  }
+  .title {
+    svg.diagonal-line {
+      bottom: -26vw;
+      height: 40vw;
+      width: 120vw;
+      left: -12vh;
+    }
+  }
+  .img-business {
+    margin-bottom: 16rem;
+  }
+}
+
+/* FOR 1441 to 1920 users */
+@media (min-width: 1441px) and (max-width: 1936px) {
+  .be-brq {
+    height: 100vh;
+  }
+
+  .img-business {
+    padding-bottom: 10rem;
+  }
+
+  .title {
+    svg.diagonal-line {
+      bottom: -26vw;
+      height: 33vw;
+      width: 120vw;
+      left: -12vh;
+    }
+  }
+
+  .main-content .left-content .container-fluid .box {
+    -webkit-clip-path: polygon(100% 0, 100% 69%, 95% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 69%, 95% 100%, 0 100%, 0 0);
+  }
+
+  .main-content .scale {
+    bottom: 324px;
+    left: 32%;
+    z-index: 999;
+    img {
+      width: 40vw;
+    }
+  }
+}
+
+@media (min-height: 1366px) {
+  .be-brq {
+    height: 53vh;
+  }
+}
+
+@media (max-width: 1366px) {
+  .title svg.diagonal-line {
+    height: 42vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .be-brq svg {
+    bottom: 0vw;
+  }
+}
+
+/* Mobile Users */
 @media (max-width: 575.98px) {
   .cta-fera {
     .btn-lg {
@@ -1144,6 +1252,15 @@ export default {
       div {
         width: fit-content;
       }
+    }
+  }
+
+  .method-title {
+    .seta {
+      left: 16px;
+      top: 35px;
+      z-index: 999;
+      height: 10rem;
     }
   }
 
@@ -1225,82 +1342,22 @@ export default {
     }
   }
 }
-/* For larger screens */
 
-/* 1440px users */
-@media (min-width: 1367px) and (max-width: 1440px) {
-  .pd-top {
-    padding-bottom: 4rem;
+/* 425px max resolution - Pixel 2 + Iphone Plus   */
+@media (min-width: 380px) and (max-width: 425px) {
+  .method-title {
+    .seta {
+      left: 19px;
+    }
   }
   .main-content {
     .scale {
-      bottom: 324px;
-      left: 22%;
-      z-index: 999;
+      left: 13px;
+      bottom: -4%;
+      img {
+        width: 183vw;
+      }
     }
-  }
-  .title {
-    svg.diagonal-line {
-      bottom: -26vw;
-      height: 40vw;
-      width: 120vw;
-      left: -12vh;
-    }
-  }
-  .img-business {
-    margin-bottom: 16rem;
-  }
-}
-
-/* FOR 1441 to 1920 users */
-@media (min-width: 1441px) and (max-width: 1936px) {
-  .be-brq {
-    height: 100vh;
-  }
-
-  .img-business {
-    padding-bottom: 10rem;
-  }
-
-  .title {
-    svg.diagonal-line {
-      bottom: -26vw;
-      height: 33vw;
-      width: 120vw;
-      left: -12vh;
-    }
-  }
-
-  .main-content .left-content .container-fluid .box {
-    -webkit-clip-path: polygon(100% 0, 100% 69%, 95% 100%, 0 100%, 0 0);
-    clip-path: polygon(100% 0, 100% 69%, 95% 100%, 0 100%, 0 0);
-  }
-
-  .main-content .scale {
-    bottom: 324px;
-    left: 32%;
-    z-index: 999;
-    img {
-      width: 40vw;
-    }
-  }
-}
-
-@media (min-height: 1366px) {
-  .be-brq {
-    height: 53vh;
-  }
-}
-
-@media (max-width: 1366px) {
-  .title svg.diagonal-line {
-    height: 42vw;
-  }
-}
-
-@media (max-width: 1024px) {
-  .be-brq svg {
-    bottom: 0vw;
   }
 }
 

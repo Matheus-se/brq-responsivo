@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="main-title cut-lr dark-bg">
-        <!--cuts-->
+      <!--cuts-->
       <svg
         class="diagonal-pages"
         xmlns="http://www.w3.org/2000/svg"
@@ -75,12 +75,42 @@
               ></b-form-textarea>
             </div>
 
-            <b-button
-              class="btn btn-primary mt-5"
-              type="submit"
-              :disabled="!dept"
-              >Enviar <img src="~@/static/images/arrow-dobra.svg" alt=""
-            /></b-button>
+            <div class="text-center text-md-left">
+              <b-button
+                class="btn btn-primary btn-lg mt-md-5 mt-3 mb-5"
+                type="submit"
+                :disabled="!dept"
+                >Enviar
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="65.207"
+                  height="32.707"
+                  viewBox="0 0 65.207 32.707"
+                  class="ml-3"
+                >
+                  <g id="Group" transform="translate(-0.5 0.354)">
+                    <path
+                      id="Path"
+                      d="M0,0,16,16,0,32"
+                      transform="translate(49)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_2"
+                      data-name="Path 2"
+                      d="M.5.5h64"
+                      transform="translate(0 15)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="1"
+                    />
+                  </g></svg
+              ></b-button>
+            </div>
           </div>
           <!--end of form content-->
           <div class="col-md-3 side-box mt-5 mx-4 mx-md-0 mt-md-0">
@@ -209,7 +239,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" scoped>
 import Vue from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -260,7 +290,7 @@ export default {
         trigger: ".content",
         start: "-=200 +=20%",
         end: "+=150",
-        scrub: 0.5
+        scrub: 0.5,
       },
       rotation: 0,
     });
@@ -275,6 +305,7 @@ export default {
   padding-bottom: 2rem;
   padding-left: 1.5rem;
   height: 450px;
+
   a {
     text-decoration: none;
     color: var(--dark);
@@ -341,6 +372,14 @@ export default {
 @media (max-width: 575.98px) {
   .bg-diagonal-light {
     margin-top: 0 !important;
+  }
+  .side-box {
+    h2 {
+      font-size: 2.5rem;
+    }
+    a {
+      font-size: 1.2rem;
+    }
   }
   .main-box {
     .form-control {

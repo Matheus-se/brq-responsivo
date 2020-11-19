@@ -153,6 +153,10 @@ textarea:focus {
     transform: scale(1.1);
 }
 
+.btn.btn.btn-primary.disabled {
+    background-color: var(--brq-grey);
+}
+
 
 /* ---------- Slideshow Itens ---------*/
 
@@ -289,9 +293,12 @@ textarea:focus {
     }
     .main-title.cut-lr:before {
         height: 28vw;
-        transform: rotate(-6deg);
+        transform: rotate(-8deg);
         bottom: 0;
         left: -12vh;
+    }
+    .main-title.cut-lr .diagonal-pages {
+        transform: rotate(-25deg);
     }
 }
 
