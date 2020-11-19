@@ -621,7 +621,9 @@ export default {
 
     leftButton.forEach((btn) => {
       btn.addEventListener("click", () => {
-      sliderBox = document.querySelectorAll('.slider-brq')[index]
+      sliderBox = document.querySelectorAll('.slider-brq')[index];
+        label = document.querySelectorAll(".label")[-index];
+
 
         if (index == 0) {
           index = 3;
@@ -632,6 +634,11 @@ export default {
           index -= 1;
           carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
         }
+
+        document.querySelectorAll('.label').forEach(lbl => {
+          lbl.style.fontWeight = 'normal';
+        });
+        label.style.fontWeight = 'bold';
 
         plataformServices.style.transform = `rotate(${degrees + rotation}deg)`;
         degrees += rotation;
