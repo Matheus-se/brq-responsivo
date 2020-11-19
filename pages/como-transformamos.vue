@@ -217,27 +217,38 @@
         <div class="container h-100">
           <div class="row d-flex align-items-center h-100">
             <div class="col-md-6 circle">
-              <img
-                src="~@/static/images/circulo-services.png"
-                class="slider-image"
-              />
+              <img src="~@/static/images/wheel_base.svg" class="slider-image" />
+              <div class="circle-labels">
+                <div class="image-container">
+                  <div class="labels">
+                    <p class="entender label">entender</p>
+                    <p class="entregar label">entregar</p>
+                    <p class="monitorar label">monitorar</p>
+                    <p class="definir label">definir</p>
+                  </div>
+                  <img
+                    src="~@/static/images/plataforma_servicos-02.svg"
+                    class="slider-image slider-image-centered"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="col-md-5 pl-md-5 sliders-circle">
-              <div class="slider-1">
-                <h1 class="change-text-1 transition-opacity">
-                  definir a estratégia e transformar a cultura
-                </h1>
-                <ul>
-                  <li>Consultoria de Negócio</li>
-                  <li>
-                    Aculturamento para Transformação (Lean, Ágil, OKRs, Data
-                    driven)
-                  </li>
-                  <li>Governança Estratégica</li>
-                </ul>
-                <div
-                  class="d-flex row justify-content-between mt-5 buton-change-1"
-                >
+            <div class="col-md-5 sliders-circle">
+              <div class="slider-1 pl-5 slider-brq">
+                <section>
+                  <h1 class="change-text-1 transition-opacity">
+                    definir a estratégia e transformar a cultura
+                  </h1>
+                  <ul>
+                    <li>Consultoria de Negócio</li>
+                    <li>
+                      Aculturamento para Transformação (Lean, Ágil, OKRs, Data
+                      driven)
+                    </li>
+                    <li>Governança Estratégica</li>
+                  </ul>
+                </section>
+                <div class="d-flex row justify-content-between buton-change-1">
                   <button class="btn button-left-brq">
                     <img src="~@/static/images/seta-slider.png" />
                     <span
@@ -254,100 +265,100 @@
                   </button>
                 </div>
               </div>
-              <!--<div class="col-md-5 pl-md-5 slider-2">
-              <h1 class="change-text-2 transition-opacity">
-                ENTENDER OS PROBLEMAS E CONCEBER SOLUÇÕES
-              </h1>
-              <ul>
-                <li>Pesquisa e Design</li>
-                <li>
-                  Engenharia de valor
-                </li>
-                <li>Consultoria tecnológica e novas tendências</li>
-                <li>Intelligent Business Automation</li>
-              </ul>
-              <div class="d-flex row justify-content-between mt-5 buton-change-2">
-                <button class="btn button-left-brq">
-                  <img src="~@/static/images/seta-slider.png">
-                  <span
-                    class="text-change-button-left transition-opacity font-weight-bold"
-                    >Definir</span
-                  >
-                </button>
-                <button class="btn button-right-brq">
-                  <span
-                    class="text-change-button-right transition-opacity font-weight-bold"
-                    >Entregar</span
-                  >
-                  <img src="~@/static/images/seta-slider2.png"/>
-                </button>
+              <div class="pl-5 slider-2 slider-brq">
+                <section>
+                  <h1 class="change-text-2 transition-opacity">
+                    ENTENDER OS PROBLEMAS E CONCEBER SOLUÇÕES
+                  </h1>
+                  <ul>
+                    <li>Pesquisa e Design</li>
+                    <li>Engenharia de valor</li>
+                    <li>Consultoria tecnológica e novas tendências</li>
+                    <li>Intelligent Business Automation</li>
+                  </ul>
+                </section>
+                <div class="d-flex row justify-content-between buton-change-2">
+                  <button class="btn button-left-brq">
+                    <img src="~@/static/images/seta-slider.png" />
+                    <span
+                      class="text-change-button-left transition-opacity font-weight-bold"
+                      >Definir</span
+                    >
+                  </button>
+                  <button class="btn button-right-brq">
+                    <span
+                      class="text-change-button-right transition-opacity font-weight-bold"
+                      >Entregar</span
+                    >
+                    <img src="~@/static/images/seta-slider2.png" />
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="col-md-5 pl-md-5 slider-3">
-              <h1 class="change-text-3 transition-opacity">
-                ENTREGAR SOLUÇÕES COM EXCELÊNCIA
-              </h1>
-              <ul>
-                <li>Blockchain</li>
-                <li>
-                  DevSecOps
-                </li>
-                <li>Microserviços</li>
-                <li>Advanced Analytics</li>
-                <li>Integração SaaS</li>
-                <li>SAP</li>
-                <li>Cloud</li>
-                <li>Aplicações Web e Mobile</li>
-                <li>Sistemas Mainframe e migração para cloud</li>
-                <li>Open Banking</li>
-                <li>Automação de processos</li>
-              </ul>
-              <div class="d-flex row justify-content-between mt-5 buton-change-3">
-                <button class="btn button-left-brq">
-                  <img src="~@/static/images/seta-slider.png">
-                  <span
-                    class="text-change-button-left transition-opacity font-weight-bold"
-                    >Entender</span
-                  >
-                </button>
-                <button class="btn button-right-brq">
-                  <span
-                    class="text-change-button-right transition-opacity font-weight-bold"
-                    >Monitorar</span
-                  >
-                  <img src="~@/static/images/seta-slider2.png"/>
-                </button>
+              <div class="pl-5 slider-3 slider-brq">
+                <section>
+                  <h1 class="change-text-3 transition-opacity">
+                    ENTREGAR SOLUÇÕES COM EXCELÊNCIA
+                  </h1>
+                  <ul>
+                    <li>Blockchain</li>
+                    <li>DevSecOps</li>
+                    <li>Microserviços</li>
+                    <li>Advanced Analytics</li>
+                    <li>Integração SaaS</li>
+                    <li>SAP</li>
+                    <li>Cloud</li>
+                    <li>Aplicações Web e Mobile</li>
+                    <li>Sistemas Mainframe e migração para cloud</li>
+                    <li>Open Banking</li>
+                    <li>Automação de processos</li>
+                  </ul>
+                </section>
+                <div class="d-flex row justify-content-between buton-change-3">
+                  <button class="btn button-left-brq">
+                    <img src="~@/static/images/seta-slider.png" />
+                    <span
+                      class="text-change-button-left transition-opacity font-weight-bold"
+                      >Entender</span
+                    >
+                  </button>
+                  <button class="btn button-right-brq">
+                    <span
+                      class="text-change-button-right transition-opacity font-weight-bold"
+                      >Monitorar</span
+                    >
+                    <img src="~@/static/images/seta-slider2.png" />
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="col-md-5 pl-md-5 slider-4">
-              <h1 class="change-text-4 transition-opacity">
-                MONITORAR EFICÁCIA E AMPLIAR CAPTURA DE VALOR
-              </h1>
-              <ul>
-                <li>KPIs de Negócio</li>
-                <li>
-                  Evolução da Experiência Digital
-                </li>
-                <li>Melhor Compreensão do Consumidor</li>
-                <li>Insights para Melhorias na Plataforma tecnológica</li>
-              </ul>
-              <div class="d-flex row justify-content-between mt-5 buton-change-4">
-                <button class="btn button-left-brq">
-                  <img src="~@/static/images/seta-slider.png">
-                  <span
-                    class="text-change-button-left transition-opacity font-weight-bold"
-                    >Entregar</span
-                  >
-                </button>
-                <button class="btn button-right-brq">
-                  <span
-                    class="text-change-button-right transition-opacity font-weight-bold"
-                    >Definir</span
-                  >
-                  <img src="~@/static/images/seta-slider2.png"/>
-                </button>
+              <div class="pl-5 slider-4 slider-brq">
+                <section>
+                  <h1 class="change-text-4 transition-opacity">
+                    MONITORAR EFICÁCIA E AMPLIAR CAPTURA DE VALOR
+                  </h1>
+                  <ul>
+                    <li>KPIs de Negócio</li>
+                    <li>Evolução da Experiência Digital</li>
+                    <li>Melhor Compreensão do Consumidor</li>
+                    <li>Insights para Melhorias na Plataforma tecnológica</li>
+                  </ul>
+                </section>
+                <div class="d-flex row justify-content-between buton-change-4">
+                  <button class="btn button-left-brq">
+                    <img src="~@/static/images/seta-slider.png" />
+                    <span
+                      class="text-change-button-left transition-opacity font-weight-bold"
+                      >Entregar</span
+                    >
+                  </button>
+                  <button class="btn button-right-brq">
+                    <span
+                      class="text-change-button-right transition-opacity font-weight-bold"
+                      >Definir</span
+                    >
+                    <img src="~@/static/images/seta-slider2.png" />
+                  </button>
+                </div>
               </div>
-            </div>-->
             </div>
           </div>
         </div>
@@ -565,6 +576,70 @@ export default {
     },
   },
   mounted() {
+    let index = 0;
+    const numberOfSlides = 4;
+    const rotation = 90;
+    let degrees = 0;
+    let sliderBox:any;
+    const carouselContainer: any = document.querySelector(".sliders-circle");
+    let carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
+    const rightButton = document.querySelectorAll(".button-right-brq");
+    const leftButton = document.querySelectorAll(".button-left-brq");
+    let label:any;
+    const loopSlide:any = document.querySelector(".slider-4");
+    const plataformServices: any = document.querySelector(
+      ".circle-labels"
+    );
+
+    rightButton.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        sliderBox = document.querySelectorAll('.slider-brq')[index]
+        label = document.querySelectorAll(".label")[index];
+
+
+        if (index == numberOfSlides - 1) {
+          index = 0;
+          carouselItemWidth = (carouselContainer.scrollWidth / numberOfSlides) * -numberOfSlides;
+          //sliderBox.style.order = -1;
+        }
+        else { 
+          index += 1;
+          carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
+        }
+
+        document.querySelectorAll('.label').forEach(lbl => {
+          lbl.style.fontWeight = 'normal';
+        });
+        label.style.fontWeight = 'bold';
+
+        plataformServices.style.transform = `rotate(${degrees - rotation}deg)`;
+        degrees -= rotation;
+
+        carouselContainer.scrollBy(carouselItemWidth, 0);
+      });
+    });
+
+    leftButton.forEach((btn) => {
+      btn.addEventListener("click", () => {
+      sliderBox = document.querySelectorAll('.slider-brq')[index]
+
+        if (index == 0) {
+          index = 3;
+          carouselItemWidth = (carouselContainer.scrollWidth / numberOfSlides) * -numberOfSlides;
+          //sliderBox.style.order = -1;
+        }
+        else { 
+          index -= 1;
+          carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
+        }
+
+        plataformServices.style.transform = `rotate(${degrees + rotation}deg)`;
+        degrees += rotation;
+
+        carouselContainer.scrollBy(-carouselItemWidth, 0);
+      });
+    });
+
     //Animation Pinned Circle
     gsap
       .timeline({
@@ -691,7 +766,7 @@ export default {
       ease: "expo",
     });
 
-    gsap.utils.toArray(".parceria").forEach((parceria) => {
+    gsap.utils.toArray(".parceria").forEach((parceria: any) => {
       gsap.from(parceria, {
         scrollTrigger: {
           trigger: parceria,
@@ -709,6 +784,115 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.definir {
+  font-weight: bold;
+}
+
+.entender {
+  transform: rotate(90deg);
+}
+
+.monitorar {
+  transform: rotate(-90deg);
+}
+
+.entregar {
+  transform: rotate(180deg);
+}
+
+.circle-labels {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+
+  p {
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 9%;
+    text-transform: capitalize;
+    color: var(--brq-light);
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .labels {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    z-index: 10;
+  }
+  .image-container {
+    width: 63%;
+    margin: auto;
+    position: relative;
+  }
+}
+
+
+.slider-image-centered {
+  // position: absolute !important;
+  // left: 0;
+  // top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sliders-circle {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: 0;
+  scrollbar-color: transparent transparent;
+  height: 100%;
+  width: 100%;
+
+  * {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+  }
+
+  > *::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.sliders-circle::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-1,
+.slider-2,
+.slider-3,
+.slider-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
 .partnership-h1 {
   width: fit-content;
   margin-left: auto;
