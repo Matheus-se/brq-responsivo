@@ -222,8 +222,9 @@
                 class="slider-image"
               />
             </div>
-            <div class="col-md-5 pl-md-5 slider-1">
-              <h1 class="change-text-1 transition-opacity">
+            <div class="col-md-5 pl-md-5 sliders-circle">
+              <div class="slider-1">
+<h1 class="change-text-1 transition-opacity">
                 definir a estratégia e transformar a cultura
               </h1>
               <ul>
@@ -250,6 +251,8 @@
                   <img src="~@/static/images/seta-slider2.png" />
                 </button>
               </div>
+              </div>
+              
             </div>
             <!--<div class="col-md-5 pl-md-5 slider-2">
               <h1 class="change-text-2 transition-opacity">
@@ -566,11 +569,13 @@ export default {
       scrollTrigger: {
         trigger: '#slider-container',
         start: "center center",
-        end: "+=500",
+        end: "+=300",
         markers: true,
         pin: true
       }
-    }).from('.circle', {xPercent:50});
+    })
+    .from('.circle', {xPercent:50, ease:"expo"})
+    .from('.sliders-circle', {autoAlpha:0, x:100, ease:"expo"});
 
     gsap.to("#diagonal", {
       scrollTrigger: {

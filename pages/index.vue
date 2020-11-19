@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-10 mt-3">
+          <div class="col-md-4 col-11 mb-4 mb-md-0 mt-md-3">
             <p>
               A BRQ atua no ciclo completo de desenvolvimento, desde a concepção
               até a materialização dos produtos digitais.
@@ -123,9 +123,9 @@
     </section>
 
     <!--for responsive-->
-    <div class="container">
+    <div class="container d-block d-sm-none">
       <div class="row">
-        <h2 class="method mt-5 col-8 mx-auto d-block d-sm-none ml-auto">
+        <h2 class="method mt-5 col-9 mx-auto ml-auto">
           <span>
             Conheça a<br />
             nossa metodologia
@@ -248,46 +248,46 @@
               cada um, do seu jeito, nos ajuda a evoluir para alcançar nosso
               Norte Verdadeiro em uma <strong>Cultura Lean e Ágil</strong>.
             </p>
-            <div class="row">
-              <div class="col-md-10">
-                <a
-                  href="#"
-                  class="btn btn-primary text-left btn-lg mt-4 d-flex justify-content-between align-items-center"
-                >
-                  <div>
-                    Venha ser um <span class="font-weight-bold">#FERABRQ</span>
-                  </div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="65.207"
-                    height="32.707"
-                    viewBox="0 0 65.207 32.707"
-                  >
-                    <g id="Group" transform="translate(-0.5 0.354)">
-                      <path
-                        id="Path"
-                        d="M0,0,16,16,0,32"
-                        transform="translate(49)"
-                        fill="none"
-                        stroke="#fff"
-                        stroke-miterlimit="10"
-                        stroke-width="1"
-                      />
-                      <path
-                        id="Path_2"
-                        data-name="Path 2"
-                        d="M.5.5h64"
-                        transform="translate(0 15)"
-                        fill="none"
-                        stroke="#fff"
-                        stroke-miterlimit="10"
-                        stroke-width="1"
-                      />
-                    </g>
-                  </svg>
-                </a>
+          </div>
+        </div>
+        <div class="row cta-fera">
+          <div class="col-md-5 offset-md-5">
+            <a
+              href="#"
+              class="btn btn-primary text-left btn-lg mt-4 d-flex justify-content-between align-items-center"
+            >
+              <div>
+                Venha ser um <span class="font-weight-bold">#FERABRQ</span>
               </div>
-            </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="65.207"
+                height="32.707"
+                viewBox="0 0 65.207 32.707"
+              >
+                <g id="Group" transform="translate(-0.5 0.354)">
+                  <path
+                    id="Path"
+                    d="M0,0,16,16,0,32"
+                    transform="translate(49)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                  <path
+                    id="Path_2"
+                    data-name="Path 2"
+                    d="M.5.5h64"
+                    transform="translate(0 15)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -439,7 +439,7 @@
           </div>
         </div>
 
-        <div class="row newsletter text-center">
+        <div class="row newsletter text-center mt-3 mt-md-0">
           <div class="col-12 col-md-auto ml-auto">
             <h2 class="m-0">Receba nossos conteúdos</h2>
           </div>
@@ -654,7 +654,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 /* Sem Scoped por causa do componente de slider */
 
 .blog-item {
@@ -747,7 +746,11 @@ export default {
 }
 
 @media (max-width: 575.98px) {
-.blog {
+  .method {
+    font-size: 2.6rem;
+  }
+
+  .blog {
     .carousel-control-prev,
     .carousel-control-next {
       z-index: 999;
@@ -943,7 +946,7 @@ export default {
     /* set height to pixels if you want angle to change with screen width */
   }
   p {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1040,7 +1043,6 @@ export default {
       color: var(--brq-darkblue);
     }
     svg {
-      margin-left: 5rem;
       font-size: 2rem;
     }
     .btn-primary {
@@ -1135,8 +1137,16 @@ export default {
 /* Mobile Users */
 
 @media (max-width: 575.98px) {
+  .cta-fera {
+    .btn-lg {
+      font-size: 1.8rem;
+      line-height: 1.25;
+      div {
+        width: fit-content;
+      }
+    }
+  }
 
-  
   .db-1 {
     height: 130vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -1211,10 +1221,9 @@ export default {
       font-size: 3rem;
     }
     img {
-      width: 50%;
+      width: 40%;
     }
   }
-  
 }
 /* For larger screens */
 
