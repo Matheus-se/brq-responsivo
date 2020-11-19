@@ -1180,7 +1180,7 @@ export default {
   }
   .title {
     svg.diagonal-line {
-      bottom: -26vw;
+      bottom: -29vw;
       height: 40vw;
       width: 120vw;
       left: -12vh;
@@ -1192,7 +1192,7 @@ export default {
 }
 
 /* FOR 1441 to 1920 users */
-@media (min-width: 1441px) and (max-width: 1936px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
   .be-brq {
     height: 100vh;
   }
@@ -1203,10 +1203,9 @@ export default {
 
   .title {
     svg.diagonal-line {
-      bottom: -26vw;
-      height: 33vw;
-      width: 120vw;
-      left: -12vh;
+      bottom: -27vw;
+    left: -12vh;
+    transform: rotate(6deg) !important;
     }
   }
 
