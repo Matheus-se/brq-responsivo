@@ -224,37 +224,37 @@
             </div>
             <div class="col-md-5 pl-md-5 sliders-circle">
               <div class="slider-1">
-<h1 class="change-text-1 transition-opacity">
-                definir a estratégia e transformar a cultura
-              </h1>
-              <ul>
-                <li>Consultoria de Negócio</li>
-                <li>
-                  Aculturamento para Transformação (Lean, Ágil, OKRs, Data
-                  driven)
-                </li>
-                <li>Governança Estratégica</li>
-              </ul>
-              <div class="d-flex row justify-content-between mt-5 buton-change-1">
-                <button class="btn button-left-brq">
-                  <img src="~@/static/images/seta-slider.png" />
-                  <span
-                    class="text-change-button-left transition-opacity font-weight-bold"
-                    >Monitorar</span
-                  >
-                </button>
-                <button class="btn button-right-brq">
-                  <span
-                    class="text-change-button-right transition-opacity font-weight-bold"
-                    >Entender</span
-                  >
-                  <img src="~@/static/images/seta-slider2.png" />
-                </button>
+                <h1 class="change-text-1 transition-opacity">
+                  definir a estratégia e transformar a cultura
+                </h1>
+                <ul>
+                  <li>Consultoria de Negócio</li>
+                  <li>
+                    Aculturamento para Transformação (Lean, Ágil, OKRs, Data
+                    driven)
+                  </li>
+                  <li>Governança Estratégica</li>
+                </ul>
+                <div
+                  class="d-flex row justify-content-between mt-5 buton-change-1"
+                >
+                  <button class="btn button-left-brq">
+                    <img src="~@/static/images/seta-slider.png" />
+                    <span
+                      class="text-change-button-left transition-opacity font-weight-bold"
+                      >Monitorar</span
+                    >
+                  </button>
+                  <button class="btn button-right-brq">
+                    <span
+                      class="text-change-button-right transition-opacity font-weight-bold"
+                      >Entender</span
+                    >
+                    <img src="~@/static/images/seta-slider2.png" />
+                  </button>
+                </div>
               </div>
-              </div>
-              
-            </div>
-            <!--<div class="col-md-5 pl-md-5 slider-2">
+              <!--<div class="col-md-5 pl-md-5 slider-2">
               <h1 class="change-text-2 transition-opacity">
                 ENTENDER OS PROBLEMAS E CONCEBER SOLUÇÕES
               </h1>
@@ -348,6 +348,7 @@
                 </button>
               </div>
             </div>-->
+            </div>
           </div>
         </div>
       </div>
@@ -430,7 +431,9 @@
     <section>
       <div class="container">
         <div class="col-md-7 offset-md-5 text-md-right">
-          <h2 class="pl-3 border-left border-primary h1-font-size partnership-h1">
+          <h2
+            class="pl-3 border-left border-primary h1-font-size partnership-h1"
+          >
             parcerias estratégicas
           </h2>
           <p class="font-size-p my-5">
@@ -562,20 +565,19 @@ export default {
     },
   },
   mounted() {
-
-
-//Animation Pinned Circle
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: '#slider-container',
-        start: "center center",
-        end: "+=300",
-        markers: true,
-        pin: true
-      }
-    })
-    .from('.circle', {xPercent:50, ease:"expo"})
-    .from('.sliders-circle', {autoAlpha:0, x:100, ease:"expo"});
+    //Animation Pinned Circle
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#slider-container",
+          start: "center center",
+          end: "+=300",
+          markers: true,
+          pin: true,
+        },
+      })
+      .from(".circle", { xPercent: 50, ease: "expo" })
+      .from(".sliders-circle", { autoAlpha: 0, x: 100, ease: "expo" });
 
     gsap.to("#diagonal", {
       scrollTrigger: {
@@ -626,12 +628,12 @@ export default {
       .from(".governance-tip", {
         xPercent: -100,
         autoAlpha: 0,
-        ease: "expo"
+        ease: "expo",
       })
       .from(".governance-h1", {
         y: 30,
         autoAlpha: 0,
-        ease: "expo"
+        ease: "expo",
       });
 
     gsap.to("#metodologia", {
@@ -642,7 +644,7 @@ export default {
         scrub: 0.5,
       },
       borderLeftColor: "#fff",
-      ease: "expo"
+      ease: "expo",
     });
 
     gsap
@@ -686,31 +688,29 @@ export default {
         scrub: 0.5,
       },
       y: 150,
-      ease: "expo"
+      ease: "expo",
     });
 
     gsap.utils.toArray(".parceria").forEach((parceria) => {
-      gsap.from(parceria,{
+      gsap.from(parceria, {
         scrollTrigger: {
           trigger: parceria,
           start: "-=500",
           end: "-=500",
-          scrub: 0
+          scrub: 0,
         },
         ease: "expo",
-        autoAlpha:0,
+        autoAlpha: 0,
         y: 50,
       });
     });
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
-
 .partnership-h1 {
-  width:fit-content;
+  width: fit-content;
   margin-left: auto;
 }
 
@@ -719,21 +719,21 @@ export default {
 }
 
 .change-text-2 {
-    color: var(--brq-yellow);
+  color: var(--brq-yellow);
 }
 
 .change-text-3 {
-  color: #8B008B;
+  color: #8b008b;
 }
 
 .change-text-4 {
-    color: #5F9EA0;
+  color: #5f9ea0;
 }
 
 .buton-change-1 {
-  .button-left-brq  {
+  .button-left-brq {
     span {
-      color: #5F9EA0; 
+      color: #5f9ea0;
     }
   }
 
@@ -745,37 +745,37 @@ export default {
 }
 
 .buton-change-2 {
-  .button-left-brq  {
+  .button-left-brq {
     span {
-      color: var(--brq-darkblue); 
+      color: var(--brq-darkblue);
     }
   }
 
   .button-right-brq {
     span {
-      color: #8B008B;
+      color: #8b008b;
     }
   }
 }
 
 .buton-change-3 {
-  .button-left-brq  {
+  .button-left-brq {
     span {
-      color: var(--brq-yellow); 
+      color: var(--brq-yellow);
     }
   }
 
   .button-right-brq {
     span {
-      color: #5F9EA0;
+      color: #5f9ea0;
     }
   }
 }
 
 .buton-change-4 {
-  .button-left-brq  {
+  .button-left-brq {
     span {
-      color: #8B008B; 
+      color: #8b008b;
     }
   }
 
@@ -847,7 +847,6 @@ export default {
 }
 
 .transition-opacity,
-
 .transition-orange {
   transition: color 0.5s;
 }
