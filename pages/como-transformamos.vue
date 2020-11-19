@@ -248,7 +248,7 @@
                     <li>Governança Estratégica</li>
                   </ul>
                 </section>
-                <div class="d-flex row justify-content-between buton-change-1">
+                <div class="d-flex row justify-content-between buton-change-1 botoes-slider">
                   <button class="btn button-left-brq">
                     <img src="~@/static/images/seta-slider.png" />
                     <span
@@ -277,7 +277,7 @@
                     <li>Intelligent Business Automation</li>
                   </ul>
                 </section>
-                <div class="d-flex row justify-content-between buton-change-2">
+                <div class="d-flex row justify-content-between buton-change-2 botoes-slider">
                   <button class="btn button-left-brq">
                     <img src="~@/static/images/seta-slider.png" />
                     <span
@@ -299,7 +299,7 @@
                   <h1 class="change-text-3 transition-opacity">
                     ENTREGAR SOLUÇÕES COM EXCELÊNCIA
                   </h1>
-                  <ul>
+                  <ul class="ul-long">
                     <li>Blockchain</li>
                     <li>DevSecOps</li>
                     <li>Microserviços</li>
@@ -313,7 +313,7 @@
                     <li>Automação de processos</li>
                   </ul>
                 </section>
-                <div class="d-flex row justify-content-between buton-change-3">
+                <div class="d-flex row justify-content-between buton-change-3 botoes-slider">
                   <button class="btn button-left-brq">
                     <img src="~@/static/images/seta-slider.png" />
                     <span
@@ -894,7 +894,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   flex-grow: 0;
   flex-shrink: 0;
   max-width: 100%;
