@@ -200,7 +200,9 @@
         </svg>
 
         <div class="governance-h1 ml-auto text-right mt-5 mt-md-0">
-          <h1 class="text-md-right text-center darkblue-text">Governança</h1>
+          <h2 class="text-md-right text-center darkblue-text h1 mt-5">
+            Governança
+          </h2>
         </div>
       </div>
     </section>
@@ -215,7 +217,7 @@
       </div>
       <div id="slider-container">
         <div class="container h-100">
-          <div class="row d-flex align-items-center h-100">
+          <div class="row d-flex align-items-center h-100 py-3">
             <div class="col-md-6 circle">
               <img src="~@/static/images/wheel_base.svg" class="slider-image" />
               <div class="circle-labels">
@@ -233,7 +235,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 sliders-circle mt-5 mt-md-0">
+            <div class="col-md-5 offset-md-1 sliders-circle mt-5 mt-md-0">
               <div class="slider-1 pl-5 slider-brq">
                 <section>
                   <h1 class="change-text-1 transition-opacity">
@@ -248,7 +250,9 @@
                     <li>Governança Estratégica</li>
                   </ul>
                 </section>
-                <div class="d-flex row justify-content-between buton-change-1 botoes-slider">
+                <div
+                  class="d-flex row justify-content-between buton-change-1 botoes-slider"
+                >
                   <button class="btn button-left-brq">
                     <img src="~@/static/images/seta-slider.png" />
                     <span
@@ -277,7 +281,9 @@
                     <li>Intelligent Business Automation</li>
                   </ul>
                 </section>
-                <div class="d-flex row justify-content-between buton-change-2 botoes-slider">
+                <div
+                  class="d-flex row justify-content-between buton-change-2 botoes-slider"
+                >
                   <button class="btn button-left-brq">
                     <img src="~@/static/images/seta-slider.png" />
                     <span
@@ -313,7 +319,9 @@
                     <li>Automação de processos</li>
                   </ul>
                 </section>
-                <div class="d-flex row justify-content-between buton-change-3 botoes-slider">
+                <div
+                  class="d-flex row justify-content-between buton-change-3 botoes-slider"
+                >
                   <button class="btn button-left-brq">
                     <img src="~@/static/images/seta-slider.png" />
                     <span
@@ -555,25 +563,6 @@ export default {
       const video = document.getElementById("video-player") as any;
       prs === "go" ? video.play() : (video.pause(), (video.currentTime = 0));
     },
-    transformInputEmail(prs: string) {
-      gsap.to("#arrow-footer", 0.3, {
-        x: prs === "in" ? 250 : 0,
-        scaleX: prs === "in" ? 0 : 1,
-        opacity: prs === "in" ? 0 : 1,
-        width: prs === "in" ? 0 : "auto",
-      });
-      gsap.to("#content-arrow-footer", 0.3, {
-        padding: 0,
-      });
-      gsap.to("#send-button", 0.3, {
-        scaleX: prs === "in" ? 1 : 0,
-        x: prs === "in" ? 0 : -50,
-        width: prs === "in" ? "auto" : 0,
-      });
-      gsap.to("#send-button", 0, {
-        position: prs === "in" ? "relative" : "absolute",
-      });
-    },
   },
   mounted() {
     let index = 0;
@@ -592,7 +581,6 @@ export default {
     rightButton.forEach((btn) => {
       btn.addEventListener("click", () => {
         sliderBox = document.querySelectorAll(".slider-brq")[index];
-        label = document.querySelectorAll(".label")[index];
 
         if (index == numberOfSlides - 1) {
           index = 0;
@@ -604,7 +592,9 @@ export default {
           carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
         }
 
-        document.querySelectorAll(".label").forEach((lbl) => {
+        label = document.querySelectorAll(".label")[index];
+
+        document.querySelectorAll(".label").forEach((lbl: any) => {
           lbl.style.fontWeight = "normal";
         });
         label.style.fontWeight = "bold";
@@ -632,8 +622,7 @@ export default {
         }
         label = document.querySelectorAll(".label")[index];
 
-
-        document.querySelectorAll(".label").forEach((lbl) => {
+        document.querySelectorAll(".label").forEach((lbl: any) => {
           lbl.style.fontWeight = "normal";
         });
         label.style.fontWeight = "bold";
@@ -641,25 +630,26 @@ export default {
         plataformServices.style.transform = `rotate(${degrees + rotation}deg)`;
         degrees += rotation;
 
-        console.log(index)
+        console.log(index);
         carouselContainer.scrollBy(-carouselItemWidth, 0);
       });
     });
 
     //Animation Pinned Circle
     //If is not a Mobile Device
-    if(window.matchMedia("(min-width: 700px)").matches){
+    if (window.matchMedia("(min-width: 700px)").matches) {
       gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#slider-container",
-          start: "center center+=5%",
-          end: "+=300",
-          pin:true
-        },
-      })
-      .from(".circle", { xPercent: 50, ease: "expo" })
-      .from(".sliders-circle", { autoAlpha: 0, x: 100, ease: "expo" });
+        .timeline({
+          scrollTrigger: {
+            trigger: "#slider-container",
+            start: "center center+=5%",
+            end: "+=300",
+            pin: true,
+            onLeave: (self) => self.disable(),
+          },
+        })
+        .from(".circle", { xPercent: 50, ease: "expo" })
+        .from(".sliders-circle", { autoAlpha: 0, x: 100, ease: "expo" });
     }
 
     gsap.to("#diagonal", {
@@ -730,48 +720,26 @@ export default {
       ease: "expo",
     });
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".main-content",
-          end: "+=200",
-          scrub: 0.5,
-        },
-      })
-      .from(".main-content", { y: 200, autoAlpha: 0, ease: "expo" });
-
-    gsap.from(".be-brq", {
-      scrollTrigger: {
-        trigger: ".be-brq",
-        start: "top bottom",
-        end: "+=400",
-        scrub: 0.5,
-      },
-      x: 200,
-      ease: "linear",
-      autoAlpha: 0,
-    });
-
     gsap.from(".images-team-care", {
       scrollTrigger: {
         trigger: ".header-governance",
-        start: "top top",
-        end: "+=500",
+        start: "-=200",
+        end: "+=200",
         scrub: 0.5,
       },
       y: 150,
-      autoAlpha:0
+      autoAlpha: 0,
     });
 
     gsap.from("#logo-max-width", {
       scrollTrigger: {
         trigger: ".reverse-hub",
-        start: "-=300",
+        start: "-=400",
         end: "+=350",
-        scrub: 0.5,
+        scrub: 0.5
       },
       y: 150,
-      autoAlpha:0
+      autoAlpha: 0,
     });
 
     gsap.utils.toArray(".parceria").forEach((parceria: any) => {
@@ -826,7 +794,7 @@ export default {
     padding: 9%;
     text-transform: capitalize;
     color: var(--brq-light);
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -867,6 +835,7 @@ export default {
   scrollbar-color: transparent transparent;
   height: 100%;
   width: 100%;
+  touch-action: none;
 
   * {
     outline: none;
@@ -896,6 +865,12 @@ export default {
   max-width: 100%;
   width: 100%;
   scroll-snap-align: center;
+}
+
+.slider-3 {
+  ul {
+    font-size: 1.2rem !important;
+  }
 }
 
 .partnership-h1 {
@@ -1027,7 +1002,7 @@ export default {
   margin: 6rem 0;
 
   .circle {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   ul {
