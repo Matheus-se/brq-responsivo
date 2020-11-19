@@ -60,7 +60,7 @@
                 id="setaHz"
                 class="mt-3 d-none d-md-block"
               />
-              <div class="method-title mt-5 d-flex negative-margin">
+              <div class="method-title mt-5 d-none d-md-flex negative-margin">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="64.707"
@@ -121,7 +121,7 @@
     <div class="container"></div>
     <section>
       <div
-        class="container scale side-box content-bottom-header d-md-flex px-5 mb-md-3"
+        class="container scale side-box content-bottom-header d-md-flex px-md-5 mb-md-3"
       >
         <div class="content col-md-6 mb-4 px-4">
           <p>
@@ -155,14 +155,14 @@
         <div
           class="d-flex flex-column flex-md-row align-items-center justify-content-between"
         >
-          <h1 class="p-0 m-0">Plataforma<br />de serviços</h1>
-          <h1 class="p-0 m-0 plus-sign">+</h1>
+          <h2 class="p-0 m-0 h1">Plataforma<br />de serviços</h2>
+          <h2 class="p-0 m-0 plus-sign h1">+</h2>
           <img
             src="~@/static/images/_logo-hub.png"
             id="logo-width-governance"
           />
-          <h2 class="p-0 m-0 plus-sign">+</h2>
-          <h1 class="p-0 m-0">Parceiros</h1>
+          <h2 class="p-0 m-0 plus-sign h1">+</h2>
+          <h2 class="p-0 m-0 h1">Parceiros</h2>
         </div>
 
         <svg
@@ -170,7 +170,7 @@
           width="862.451"
           height="30.844"
           viewBox="0 0 862.451 30.844"
-          class="governance-tip"
+          class="governance-tip my-3 my-md-0"
         >
           <g
             id="_arrow-1a-dobra_copy_3"
@@ -199,14 +199,14 @@
           </g>
         </svg>
 
-        <div class="governance-h1 ml-auto text-right">
+        <div class="governance-h1 ml-auto text-right mt-5 mt-md-0">
           <h1 class="text-md-right text-center darkblue-text">Governança</h1>
         </div>
       </div>
     </section>
     <section class="service-platform">
       <div class="container mt-5">
-        <h2 class="text-center gray-text mb-5">
+        <h2 class="text-md-center gray-text mb-5">
           conheça nossa
           <span class="blue-text font-weight-bold"
             >plataforma de serviços:</span
@@ -233,7 +233,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 sliders-circle">
+            <div class="col-md-5 sliders-circle mt-5 mt-md-0">
               <div class="slider-1 pl-5 slider-brq">
                 <section>
                   <h1 class="change-text-1 transition-opacity">
@@ -580,37 +580,34 @@ export default {
     const numberOfSlides = 4;
     const rotation = 90;
     let degrees = 0;
-    let sliderBox:any;
+    let sliderBox: any;
     const carouselContainer: any = document.querySelector(".sliders-circle");
     let carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
     const rightButton = document.querySelectorAll(".button-right-brq");
     const leftButton = document.querySelectorAll(".button-left-brq");
-    let label:any;
-    const loopSlide:any = document.querySelector(".slider-4");
-    const plataformServices: any = document.querySelector(
-      ".circle-labels"
-    );
+    let label: any;
+    const loopSlide: any = document.querySelector(".slider-4");
+    const plataformServices: any = document.querySelector(".circle-labels");
 
     rightButton.forEach((btn) => {
       btn.addEventListener("click", () => {
-        sliderBox = document.querySelectorAll('.slider-brq')[index]
+        sliderBox = document.querySelectorAll(".slider-brq")[index];
         label = document.querySelectorAll(".label")[index];
-
 
         if (index == numberOfSlides - 1) {
           index = 0;
-          carouselItemWidth = (carouselContainer.scrollWidth / numberOfSlides) * -numberOfSlides;
+          carouselItemWidth =
+            (carouselContainer.scrollWidth / numberOfSlides) * -numberOfSlides;
           //sliderBox.style.order = -1;
-        }
-        else { 
+        } else {
           index += 1;
           carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
         }
 
-        document.querySelectorAll('.label').forEach(lbl => {
-          lbl.style.fontWeight = 'normal';
+        document.querySelectorAll(".label").forEach((lbl) => {
+          lbl.style.fontWeight = "normal";
         });
-        label.style.fontWeight = 'bold';
+        label.style.fontWeight = "bold";
 
         plataformServices.style.transform = `rotate(${degrees - rotation}deg)`;
         degrees -= rotation;
@@ -621,24 +618,23 @@ export default {
 
     leftButton.forEach((btn) => {
       btn.addEventListener("click", () => {
-      sliderBox = document.querySelectorAll('.slider-brq')[index];
+        sliderBox = document.querySelectorAll(".slider-brq")[index];
         label = document.querySelectorAll(".label")[-index];
-
 
         if (index == 0) {
           index = 3;
-          carouselItemWidth = (carouselContainer.scrollWidth / numberOfSlides) * -numberOfSlides;
+          carouselItemWidth =
+            (carouselContainer.scrollWidth / numberOfSlides) * -numberOfSlides;
           //sliderBox.style.order = -1;
-        }
-        else { 
+        } else {
           index -= 1;
           carouselItemWidth = carouselContainer.scrollWidth / numberOfSlides;
         }
 
-        document.querySelectorAll('.label').forEach(lbl => {
-          lbl.style.fontWeight = 'normal';
+        document.querySelectorAll(".label").forEach((lbl) => {
+          lbl.style.fontWeight = "normal";
         });
-        label.style.fontWeight = 'bold';
+        label.style.fontWeight = "bold";
 
         plataformServices.style.transform = `rotate(${degrees + rotation}deg)`;
         degrees += rotation;
@@ -648,18 +644,20 @@ export default {
     });
 
     //Animation Pinned Circle
-    gsap
+    //If is not a Mobile Device
+    if(window.matchMedia("(min-width: 700px)").matches){
+      gsap
       .timeline({
         scrollTrigger: {
           trigger: "#slider-container",
-          start: "center center",
+          start: "center center+=5%",
           end: "+=300",
-          markers: true,
-          pin: true,
+          pin:true
         },
       })
       .from(".circle", { xPercent: 50, ease: "expo" })
       .from(".sliders-circle", { autoAlpha: 0, x: 100, ease: "expo" });
+    }
 
     gsap.to("#diagonal", {
       scrollTrigger: {
@@ -759,7 +757,7 @@ export default {
         scrub: 0.5,
       },
       y: 150,
-      ease: "expo",
+      autoAlpha:0
     });
 
     gsap.from("#logo-max-width", {
@@ -770,7 +768,7 @@ export default {
         scrub: 0.5,
       },
       y: 150,
-      ease: "expo",
+      autoAlpha:0
     });
 
     gsap.utils.toArray(".parceria").forEach((parceria: any) => {
@@ -791,7 +789,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .definir {
   font-weight: bold;
 }
@@ -831,8 +828,7 @@ export default {
     width: 100%;
     text-align: center;
   }
-  
-  
+
   .labels {
     position: absolute;
     width: 100%;
@@ -846,7 +842,6 @@ export default {
     position: relative;
   }
 }
-
 
 .slider-image-centered {
   // position: absolute !important;
@@ -1341,18 +1336,6 @@ div.parcerias {
 .title {
   position: relative;
 
-  .video-cover {
-    // width: 100%;
-    // margin: 0px
-  }
-
-  .play-button {
-    position: absolute;
-    z-index: 999;
-    left: calc(50% - 45px);
-    top: calc(50% - 45px);
-  }
-
   svg.diagonal-line {
     position: absolute;
     bottom: -19vw !important;
@@ -1381,6 +1364,29 @@ div.parcerias {
 
     img {
       width: 55vw;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  #slider-container {
+    /* Avoid touch */
+    touch-action: none;
+    .circle {
+      transform: scale(1);
+    }
+  }
+
+  .content {
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .title {
+    svg.diagonal-line {
+      width: 150vw;
+      bottom: -50vw !important;
+      height: 100vw;
     }
   }
 }
