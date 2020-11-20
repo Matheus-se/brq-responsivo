@@ -49,7 +49,7 @@
 
             <div class="services" v-if="dept">
               <p v-if="dept === 'rh'">
-                Para conhecer nossas vagas, <a href="#">Clique aqui.</a> Agora
+                Para conhecer nossas vagas, <a href="#" class="text-uppercase">Clique aqui.</a> Agora
                 se precisar de outras informações, continua a preencher o
                 formulário. :)
               </p>

@@ -30,7 +30,7 @@
 
       <div class="container main-title-ct">
         <div class="row">
-          <nav aria-label="breadcrumb" class="col-md-12">
+          <nav aria-label="breadcrumb" class="col-md-12 d-none d-md-flex">
             <ol class="breadcrumb">
               <li class="breadcrumb-item" aria-current="page">
                 Como transformamos
@@ -113,6 +113,14 @@
                   src="~@/static/images/CT-title-image.png"
                 />
               </div>
+            </div>
+            <div
+              class="method-title mt-5 d-md-none d-flex negative-margin w-100 justify-content-center"
+            >
+              <h2 class="method-ct" id="metodologia">
+                Conheça a<br />
+                nossa metodologia
+              </h2>
             </div>
           </div>
         </div>
@@ -235,8 +243,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 offset-md-1 sliders-circle mt-5 mt-md-0">
-              <div class="slider-1 pl-5 slider-brq">
+            <div class="col-md-5 offset-md-1 sliders-circle mt-md-5 mt-md-0">
+              <div class="slider-1 pl-2 pr-2 slider-brq">
                 <section>
                   <h1 class="change-text-1 transition-opacity">
                     definir a estratégia e transformar a cultura
@@ -269,7 +277,7 @@
                   </button>
                 </div>
               </div>
-              <div class="pl-5 slider-2 slider-brq">
+              <div class="pl-2 pr-2 slider-2 slider-brq">
                 <section>
                   <h1 class="change-text-2 transition-opacity">
                     ENTENDER OS PROBLEMAS E CONCEBER SOLUÇÕES
@@ -300,7 +308,7 @@
                   </button>
                 </div>
               </div>
-              <div class="pl-5 slider-3 slider-brq">
+              <div class="pl-2 pr-2 pt-1 slider-3 slider-brq">
                 <section>
                   <h1 class="change-text-3 transition-opacity">
                     ENTREGAR SOLUÇÕES COM EXCELÊNCIA
@@ -338,7 +346,7 @@
                   </button>
                 </div>
               </div>
-              <div class="pl-5 slider-4 slider-brq">
+              <div class="pl-2 pr-2 slider-4 slider-brq">
                 <section>
                   <h1 class="change-text-4 transition-opacity">
                     MONITORAR EFICÁCIA E AMPLIAR CAPTURA DE VALOR
@@ -709,16 +717,18 @@ export default {
         ease: "expo",
       });
 
-    gsap.to("#metodologia", {
-      scrollTrigger: {
-        trigger: ".video-cover",
-        start: "-=200",
-        end: "+=100",
-        scrub: 0.5,
-      },
-      borderLeftColor: "#fff",
-      ease: "expo",
-    });
+    if (window.matchMedia("(min-width: 700px)").matches) {
+      gsap.to("#metodologia", {
+        scrollTrigger: {
+          trigger: ".video-cover",
+          start: "-=200",
+          end: "+=100",
+          scrub: 0.5,
+        },
+        borderLeftColor: "#fff",
+        ease: "expo",
+      });
+    }
 
     gsap.from(".images-team-care", {
       scrollTrigger: {
@@ -736,7 +746,7 @@ export default {
         trigger: ".reverse-hub",
         start: "-=400",
         end: "+=350",
-        scrub: 0.5
+        scrub: 0.5,
       },
       y: 150,
       autoAlpha: 0,
@@ -1056,7 +1066,7 @@ div.parcerias {
 }
 
 .bg-diagonal-light {
-  height: 100vh;
+  min-height: 100vh;
 }
 .reverse-hub {
   transform: skewY(10deg);
@@ -1347,6 +1357,23 @@ div.parcerias {
 }
 
 @media (max-width: 575.98px) {
+  .bg-diagonal-light {
+    padding-top: 100px;
+  }
+  .method-ct {
+    font-size: 2.5rem;
+  }
+
+  .circle-labels {
+    .image-container {
+      width: 59%;
+    }
+  }
+
+  .method-ct {
+    transform: translate(0, 30px);
+  }
+
   #slider-container {
     /* Avoid touch */
     touch-action: none;
