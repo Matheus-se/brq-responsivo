@@ -6,7 +6,9 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "generate": "nuxt-ts generate",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id EWRIF9NL5CF74 --paths /*",
+    "deploy": "npm run generate && aws s3 sync dist s3://brq.siouxlab.com.br/ --delete && npm run invalidate"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
