@@ -40,8 +40,8 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p class="font-size-p">
+          <div class="col-md-5">
+            <p class="font-size-p content-title-brq">
               Com mais de 28 anos de experiência no mercado, somos uma das
               principais empresas de serviços e soluções de tecnologia no
               Brasil. A nossa missão é construir jornadas de transformação com
@@ -53,7 +53,7 @@
           <div
             @mouseover="animateVideo('in')"
             @mouseout="animateVideo('out')"
-            class="video-cover col-md-6"
+            class="video-cover col-md-5 offset-md-1"
           >
             <img src="~@/static/images/sn-image-header.png" />
           </div>
@@ -61,10 +61,16 @@
       </div>
     </section>
     <section>
-      <div class="container-fluid pt-5 p-0">
+      <div class="container-fluid mt-5 p-0 image-text-container">
         <img src="~@/static/images/group 6.png" width="100%" />
+        <div class="container">
+          <p class="absolute-text col-5 mt-5">
+            Porque acreditamos que o resultado é a evolução de modelos de
+            negócio que visam levar a melhor experiência para os consumidores.
+          </p>
+        </div>
       </div>
-      <div class="container">
+      <div class="container bottom-image-container">
         <p class="font-size-p">
           Somos um time de mais de
           <span class="text-orange font-weight-bold">3.000 #feras</span
@@ -111,18 +117,41 @@
         </svg>
         <p class="font-size-h1 text-muted mt-5 mb-5">SEJA DIGITAL COM A BRQ</p>
       </div>
-      <div class="containers boxes-seja-digital">
-        <div>
-          <p><span class="h2 font-weight-bold">TRANSFORMAÇÃO DIGITAL</span> com robustez, segurança e credibilidade</p>
-        </div>
-        <div>
-          <p>Aplicação de <span class="h2 font-weight-bold">EFICIENTES E INOVADORAS</span> tecnologias e metodologias</p>
-        </div>
-        <div>
-          <p>Processos e ferramentas<span class="h2 font-weight-bold">TESTADAS E MADURAS</span></p>
-        </div>
-        <div>
-          <p><span class="h2 font-weight-bold">ENTRE AS MELHORES</span> empresas para trabalhar</p>
+      <div class="container boxes-seja-digital">
+        <div class="row">
+          <div class="col-3">
+            <p>
+              <span class="text-uppercase font-weight-bold"
+                >TRANSFORMAÇÃO DIGITAL<br
+              /></span>
+              com robustez, segurança e credibilidade
+            </p>
+          </div>
+          <div class="col-3">
+            <p>
+              Aplicação de
+              <span class="text-uppercase font-weight-bold"
+                ><br />EFICIENTES E INOVADORAS<br
+              /></span>
+              tecnologias e metodologias
+            </p>
+          </div>
+          <div class="col-3">
+            <p>
+              Processos e ferramentas<span
+                class="text-uppercase font-weight-bold"
+                ><br />TESTADAS E MADURAS</span
+              >
+            </p>
+          </div>
+          <div class="col-3">
+            <p>
+              <span class="text-uppercase font-weight-bold"
+                >ENTRE AS MELHORES<br
+              /></span>
+              empresas para trabalhar
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -214,8 +243,8 @@ export default {
     gsap.to(".diagonal-pages", {
       scrollTrigger: {
         markers: true,
-        trigger: ".header-description",
-        start: "-=200 +=20%",
+        trigger: ".content-title-brq",
+        start: "-=300 +=20%",
         end: "+=150",
         scrub: 0.5,
       },
@@ -227,6 +256,16 @@ export default {
 
 
 <style lang="scss" scoped>
+.boxes-seja-digital {
+  * {
+    font-size: 1.6rem;
+  }
+}
+
+.bottom-image-container {
+  margin-top: -40px;
+}
+
 .blue-text {
   color: var(--brq-darkblue);
 }
@@ -259,6 +298,25 @@ export default {
     color: white;
     line-height: 1.1;
   }
+}
+
+.main-title.cut-lr .diagonal-pages {
+  height: 28vw;
+  transform: rotate(-6deg);
+  width: 200%;
+  top: 70%;
+  left: -10%;
+}
+
+.image-text-container {
+  position: relative;
+}
+
+.absolute-text {
+  position: absolute;
+  color: white;
+  top: 0;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 575.98px) {
