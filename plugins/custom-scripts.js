@@ -31,3 +31,12 @@ for (let i = 0; i < links.length; i++) {
         }
     });
 }
+
+// const navItem = document.querySelectorAll('.nav-item');
+// const dropdownMenu = document.querySelector('#nav-collapse');
+
+// navItem.forEach(item => {
+//     item.addEventListener('click', () => {
+//         dropdownMenu.style.display = 'block';
+//     })
+// }); 

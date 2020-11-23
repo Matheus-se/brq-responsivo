@@ -242,7 +242,6 @@ export default {
   mounted() {
     gsap.to(".diagonal-pages", {
       scrollTrigger: {
-        markers: true,
         trigger: ".content-title-brq",
         start: "-=300 +=20%",
         end: "+=150",
