@@ -150,7 +150,10 @@
                     />
                   </g>
                 </svg>
-                <h2 class="method-ct mx-auto ml-auto text-nowrap" id="metodologia">
+                <h2
+                  class="method-ct mx-auto ml-auto text-nowrap"
+                  id="metodologia"
+                >
                   Conheça a<br />
                   nossa metodologia
                 </h2>
@@ -268,7 +271,7 @@
               <div class="circle-labels">
                 <div class="image-container">
                   <div class="labels">
-                    <p class="definir label">definir</p>
+                    <p class="definir label">desdobrar</p>
                     <p class="entender label">entender</p>
                     <p class="entregar label">entregar</p>
                     <p class="monitorar label">monitorar</p>
@@ -280,15 +283,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 offset-md-1 mt-md-5 mt-md-0 p-0">
-              <img
-                class="botao-absolute-left"
-                src="~@/static/images/seta-slider.png"
-              />
-              <img
-                class="botao-absolute-right"
-                src="~@/static/images/seta-slider2.png"
-              />
+            <div class="col-md-5 offset-md-1 mt-3 mt-md-0 p-0">
+              <div class="botao-absolute">
+                <button class="button-left-brq row align-items-center">
+                  <img
+                    src="~@/static/images/seta-slider.png"
+                  />
+                  <p class="left-placeholder font-size-p">Monitorar</p>
+                </button>
+                <button class="button-right-brq row align-items-center">
+                  <p class="right-placeholder font-size-p">Entender</p>
+                  <img src="~@/static/images/seta-slider2.png" />
+                </button>
+              </div>
               <div class="sliders-circle">
                 <div class="slider-1 px-md-2 px-4 slider-brq">
                   <section>
@@ -305,24 +312,6 @@
                       <li>Governança Estratégica</li>
                     </ul>
                   </section>
-                  <div
-                    class="d-flex row justify-content-between buton-change-1 botoes-slider"
-                  >
-                    <button class="btn button-left-brq">
-                      <img src="~@/static/images/seta-slider.png" />
-                      <span
-                        class="text-change-button-left transition-opacity font-weight-bold"
-                        >Monitorar</span
-                      >
-                    </button>
-                    <button class="btn button-right-brq">
-                      <span
-                        class="text-change-button-right transition-opacity font-weight-bold"
-                        >Entender</span
-                      >
-                      <img src="~@/static/images/seta-slider2.png" />
-                    </button>
-                  </div>
                 </div>
                 <div class="px-md-2 slider-2 px-4 slider-brq">
                   <section>
@@ -336,24 +325,6 @@
                       <li>Intelligent Business Automation</li>
                     </ul>
                   </section>
-                  <div
-                    class="d-flex row justify-content-between buton-change-2 botoes-slider"
-                  >
-                    <button class="btn button-left-brq">
-                      <img src="~@/static/images/seta-slider.png" />
-                      <span
-                        class="text-change-button-left transition-opacity font-weight-bold"
-                        >Definir</span
-                      >
-                    </button>
-                    <button class="btn button-right-brq">
-                      <span
-                        class="text-change-button-right transition-opacity font-weight-bold"
-                        >Entregar</span
-                      >
-                      <img src="~@/static/images/seta-slider2.png" />
-                    </button>
-                  </div>
                 </div>
                 <div class="px-md-2 px-4 pt-1 slider-3 slider-brq">
                   <section>
@@ -374,24 +345,6 @@
                       <li>Automação de processos</li>
                     </ul>
                   </section>
-                  <div
-                    class="d-flex row justify-content-between buton-change-3 botoes-slider"
-                  >
-                    <button class="btn button-left-brq">
-                      <img src="~@/static/images/seta-slider.png" />
-                      <span
-                        class="text-change-button-left transition-opacity font-weight-bold"
-                        >Entender</span
-                      >
-                    </button>
-                    <button class="btn button-right-brq">
-                      <span
-                        class="text-change-button-right transition-opacity font-weight-bold"
-                        >Monitorar</span
-                      >
-                      <img src="~@/static/images/seta-slider2.png" />
-                    </button>
-                  </div>
                 </div>
                 <div class="px-md-2 slider-4 px-4 slider-brq">
                   <section>
@@ -405,24 +358,6 @@
                       <li>Insights para Melhorias na Plataforma tecnológica</li>
                     </ul>
                   </section>
-                  <div
-                    class="d-flex row justify-content-between buton-change-4"
-                  >
-                    <button class="btn button-left-brq">
-                      <img src="~@/static/images/seta-slider.png" />
-                      <span
-                        class="text-change-button-left transition-opacity font-weight-bold"
-                        >Entregar</span
-                      >
-                    </button>
-                    <button class="btn button-right-brq">
-                      <span
-                        class="text-change-button-right transition-opacity font-weight-bold"
-                        >Definir</span
-                      >
-                      <img src="~@/static/images/seta-slider2.png" />
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -640,10 +575,24 @@ export default {
     let label: any;
     const loopSlide: any = document.querySelector(".slider-4");
     const plataformServices: any = document.querySelector(".circle-labels");
+    const leftPlaceholder: any = document.querySelector('.left-placeholder');
+    const rightPlaceholder: any = document.querySelector('.right-placeholder');
+
+    const placeholders = [
+      {text: 'Desdobrar',color: 'var(--brq-blue)'}, 
+      {text: 'Entender',color: 'var(--brq-yellow)'}, 
+      {text: 'Entregar',color: '#8b008b'}, 
+      {text: 'Monitorar',color: '#5f9ea0'}
+    ]
 
     rightButton.forEach((btn) => {
       btn.addEventListener("click", () => {
         sliderBox = document.querySelectorAll(".slider-brq")[index];
+
+        leftPlaceholder.innerHTML = placeholders.slice(index)[0].text;
+        leftPlaceholder.style.color = placeholders.slice(index)[0].color;
+        rightPlaceholder.innerHTML =  placeholders.slice(index-2)[0].text;
+        rightPlaceholder.style.color =  placeholders.slice(index-2)[0].color;
 
         if (index == numberOfSlides - 1) {
           index = 0;
@@ -674,6 +623,11 @@ export default {
         sliderBox = document.querySelectorAll(".slider-brq")[index];
         label = document.querySelectorAll(".label")[-index];
 
+        leftPlaceholder.innerHTML = placeholders.slice(index-2)[0].text;
+        leftPlaceholder.style.color = placeholders.slice(index-2)[0].color;
+        rightPlaceholder.innerHTML =  placeholders.slice(index)[0].text;
+        rightPlaceholder.style.color =  placeholders.slice(index)[0].color;
+
         if (index == 0) {
           index = 3;
           carouselItemWidth =
@@ -693,7 +647,6 @@ export default {
         plataformServices.style.transform = `rotate(${degrees + rotation}deg)`;
         degrees += rotation;
 
-        console.log(index);
         carouselContainer.scrollBy(-carouselItemWidth, 0);
       });
     });
@@ -823,16 +776,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.botao-absolute-left {
+.botao-absolute {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
 
-.botao-absolute-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  .button-left-brq {
+    background-color: var(--brq-light-gray);
+    z-index: 100;
+    border: 0px;
+
+    p {
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+  }
+
+  .button-right-brq {
+    background-color: var(--brq-light-gray);
+    z-index: 100;
+    border: 0px;
+
+    p {
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+  }
 }
 
 .ul-metricas {
@@ -853,6 +826,11 @@ export default {
 
 .entregar {
   transform: rotate(180deg);
+}
+
+
+.left-placeholder, .right-placeholder {
+  transform: translate(0, 25%)
 }
 
 .circle-labels {
@@ -936,6 +914,7 @@ export default {
 .slider-3,
 .slider-4 {
   width: 100%;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   flex-grow: 0;
@@ -975,102 +954,6 @@ export default {
 .change-text-4 {
   color: #5f9ea0;
   font-size: 3.5rem;
-}
-
-.buton-change-1 {
-  .button-left-brq {
-    z-index: 100;
-
-    span {
-      color: #5f9ea0;
-    }
-    img {
-      opacity: 0;
-    }
-  }
-
-  .button-right-brq {
-    z-index: 100;
-
-    span {
-      color: var(--brq-yellow);
-    }
-    img {
-      opacity: 0;
-    }
-  }
-}
-
-.buton-change-2 {
-  .button-left-brq {
-    z-index: 100;
-
-    span {
-      color: var(--brq-darkblue);
-    }
-    img {
-      opacity: 0;
-    }
-  }
-
-  .button-right-brq {
-    z-index: 100;
-
-    span {
-      color: #8b008b;
-    }
-    img {
-      opacity: 0;
-    }
-  }
-}
-
-.buton-change-3 {
-  .button-left-brq {
-    z-index: 100;
-
-    span {
-      color: var(--brq-yellow);
-    }
-    img {
-      opacity: 0;
-    }
-  }
-
-  .button-right-brq {
-    z-index: 100;
-
-    span {
-      color: #5f9ea0;
-    }
-    img {
-      opacity: 0;
-    }
-  }
-}
-
-.buton-change-4 {
-  .button-left-brq {
-    z-index: 100;
-
-    span {
-      color: #8b008b;
-    }
-    img {
-      opacity: 0;
-    }
-  }
-
-  .button-right-brq {
-    z-index: 100;
-
-    span {
-      color: var(--brq-darkblue);
-    }
-    img {
-      opacity: 0;
-    }
-  }
 }
 
 .service-platform {
@@ -1470,7 +1353,6 @@ div.parcerias {
 }
 
 @media (max-width: 575.98px) {
-
   .seta-responsive {
     margin-left: 33px;
   }
