@@ -281,6 +281,16 @@ export default {
   * {
     font-size: 1.6rem;
   }
+
+  div {
+    transform: translate(-30px, 0) rotate(-15deg);
+    border-bottom: 1px solid var(--brq-blue);
+    
+
+    p {
+      transform: translate(30px, 0) rotate(15deg);
+    }
+  }
 }
 
 .blue-text {
