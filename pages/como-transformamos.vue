@@ -139,7 +139,7 @@
           </p>
         </div>
         <div class="content col-md-6 px-4">
-          <h2 class="m-0 p-0">serviços + capabilities</h2>
+          <h2 class="m-0 p-0 capabilities">serviços + capabilities</h2>
           <p>
             que aceleram o ciclo de inovação dos nossos clientes e levam uma
             melhor experiência para o consumidor final.
@@ -147,7 +147,7 @@
         </div>
       </div>
       <div class="container col-md-6 scale text-md-center content mt-5 pb-4">
-        <p>
+        <p class="desc-parag">
           De uma forma prática, iniciamos nosso processo de parceria
           <span class="orange-text">definindo estratégias</span>, passando pela
           <span class="orange-text">identificação</span> e
@@ -159,18 +159,18 @@
       </div>
     </section>
     <section>
-      <div class="container platform-hub col-md-6 my-5">
+      <div class="container platform-hub col-md-6">
         <div
           class="d-flex flex-column flex-md-row align-items-center justify-content-between"
         >
-          <h2 class="p-0 m-0 h1">Plataforma<br />de serviços</h2>
+          <h2 class="p-0 m-0 h1 text-center platform-h2">Plataforma <br class="d-none d-md-block"/>de <br class="d-block-d-md-none"/>serviços</h2>
           <h2 class="p-0 m-0 plus-sign h1">+</h2>
           <img
             src="~@/static/images/_logo-hub.png"
             id="logo-width-governance"
           />
           <h2 class="p-0 m-0 plus-sign h1">+</h2>
-          <h2 class="p-0 m-0 h1">Parceiros</h2>
+          <h2 class="p-0 m-0 h1 platform-h2">Parceiros</h2>
         </div>
 
         <svg
@@ -208,7 +208,7 @@
         </svg>
 
         <div class="governance-h1 ml-auto text-right mt-5 mt-md-0">
-          <h2 class="text-md-right text-center darkblue-text h1 mt-5">
+          <h2 class="text-md-right text-center darkblue-text platform-h2 mt-5">
             Governança
           </h2>
         </div>
@@ -247,7 +247,7 @@
               <div class="slider-1 pl-2 pr-2 slider-brq">
                 <section>
                   <h1 class="change-text-1 transition-opacity">
-                    definir a estratégia e transformar a cultura
+                    definir a estratégia <br class="d-block d-md-none"/>e transformar <br class="d-block d-md-none"/>a cultura
                   </h1>
                   <ul>
                     <li>Consultoria de Negócio</li>
@@ -382,8 +382,8 @@
     </section>
     <section class="container my-5">
       <div class="text-md-center header-governance">
-        <p class="m-0">E a nossa metodologia está dividida em três fases:</p>
-        <h2 class="darkblue-text">Descoberta, materialização e eficácia.</h2>
+        <p class="m-0">E a nossa metodologia <br class="d-block d-md-none"/>está dividida em três fases:</p>
+        <h2 class="darkblue-text low-line-height">Descoberta, materialização  <br class="d-block d-md-none"/>e eficácia.</h2>
       </div>
       <h1
         class="pl-3 border-primary border-left my-5 h1-font-size low-line-height"
@@ -396,7 +396,7 @@
             Além da governança ágil de facil conexão com indicadores importantes
             para tomada de decisão com uma ferramenta própria, o Team Care.
           </p>
-          <p class="orange-text ul-font-size">
+          <p class="orange-text ul-font-size mb-5 mb-md-0">
             Principais métricas disponíveis para times:
           </p>
           <ul class="ul-font-size">
@@ -889,19 +889,23 @@ export default {
 }
 
 .change-text-1 {
-  color: var(--brq-darkblue);
+  color: var(--brq-blue);
+  font-size: 3.5rem;
 }
 
 .change-text-2 {
   color: var(--brq-yellow);
+  font-size: 3.5rem;
 }
 
 .change-text-3 {
   color: #8b008b;
+  font-size: 3.5rem;
 }
 
 .change-text-4 {
   color: #5f9ea0;
+  font-size: 3.5rem;
 }
 
 .buton-change-1 {
@@ -962,7 +966,7 @@ export default {
 
 .service-platform {
   h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -1360,8 +1364,17 @@ div.parcerias {
   .bg-diagonal-light {
     padding-top: 100px;
   }
+
+  .bg-diagonal-light {
+    margin-top: 0;
+  }
+
   .method-ct {
     font-size: 2.5rem;
+  }
+
+  .low-line-height {
+    line-height: 1.1;
   }
 
   .circle-labels {
@@ -1382,17 +1395,51 @@ div.parcerias {
     }
   }
 
+  .platform-h2 {
+    font-size: 3.5rem;
+  }
+
   .content {
     p {
+      font-size: 1.5rem;
+    }
+    p.desc-parag {
       font-size: 1.8rem;
+      margin-top: -80px;
+    }
+    h2.capabilities {
+      font-size: 2.4rem;
     }
   }
   .title {
     svg.diagonal-line {
       width: 150vw;
       bottom: -50vw !important;
-      height: 100vw;
+      height: 145vw;
     }
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+
+  .blue-header {
+    font-size: 2.7rem;
+  }
+
+  .slider-1,
+  .slider-2,
+  .slider-3,
+  .slider-4 {
+    ul {
+       li {
+        font-size: 1.5rem; 
+       }
+    }
+  }
+
+  .header-desc-font {
+    font-size: 2.2rem;
+    line-height: 1.4;
   }
 }
 </style>
