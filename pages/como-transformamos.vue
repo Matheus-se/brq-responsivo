@@ -231,7 +231,7 @@
               <div class="circle-labels">
                 <div class="image-container">
                   <div class="labels">
-                    <p class="definir label">definir</p>
+                    <p class="definir label">desdobrar</p>
                     <p class="entender label">entender</p>
                     <p class="entregar label">entregar</p>
                     <p class="monitorar label">monitorar</p>
@@ -247,7 +247,7 @@
               <div class="slider-1 pl-2 pr-2 slider-brq">
                 <section>
                   <h1 class="change-text-1 transition-opacity">
-                    definir a estratégia <br class="d-block d-md-none"/>e transformar <br class="d-block d-md-none"/>a cultura
+                    Desdobrar a estratégia <br class="d-block d-md-none"/>e transformar <br class="d-block d-md-none"/>a cultura
                   </h1>
                   <ul>
                     <li>Consultoria de Negócio</li>
@@ -296,7 +296,7 @@
                     <img src="~@/static/images/seta-slider.png" />
                     <span
                       class="text-change-button-left transition-opacity font-weight-bold"
-                      >Definir</span
+                      >Desdobrar</span
                     >
                   </button>
                   <button class="btn button-right-brq">
@@ -369,7 +369,7 @@
                   <button class="btn button-right-brq">
                     <span
                       class="text-change-button-right transition-opacity font-weight-bold"
-                      >Definir</span
+                      >Desdobrar</span
                     >
                     <img src="~@/static/images/seta-slider2.png" />
                   </button>
