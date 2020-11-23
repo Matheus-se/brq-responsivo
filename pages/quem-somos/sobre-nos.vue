@@ -60,17 +60,33 @@
         </div>
       </div>
     </section>
+    <section class="image-text-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="h2">Porque acreditamos que o resultado é a evolução de modelos de
+            negócio que visam levar a melhor experiência para os consumidores.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="~@/static/images/platform-plus.png" class="w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
     <section>
-      <div class="container-fluid mt-5 p-0 image-text-container">
+      <!-- <div class="container-fluid mt-5 p-0 image-text-container">
         <img src="~@/static/images/group 6.png" width="100%" />
         <div class="container">
           <p class="absolute-text col-5 mt-5">
             Porque acreditamos que o resultado é a evolução de modelos de
             negócio que visam levar a melhor experiência para os consumidores.
           </p>
+          <div class="col-md-6">
+            <img src="~@/static/images/platform-plus.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="container bottom-image-container">
+      </div> -->
+      <div class="container">
         <p class="font-size-p">
           Somos um time de mais de
           <span class="text-orange font-weight-bold">3.000 #feras</span
@@ -259,10 +275,6 @@ export default {
   * {
     font-size: 1.6rem;
   }
-}
-
-.bottom-image-container {
-  margin-top: -40px;
 }
 
 .blue-text {
