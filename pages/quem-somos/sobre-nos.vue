@@ -64,11 +64,17 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p class="h2">Porque acreditamos que o resultado é a evolução de modelos de
-            negócio que visam levar a melhor experiência para os consumidores.</p>
+            <p class="h2">
+              Porque acreditamos que o resultado é a evolução de modelos de
+              negócio que visam levar a melhor experiência para os consumidores.
+            </p>
           </div>
           <div class="col-md-6">
-            <img src="~@/static/images/platform-plus.png" class="w-100" alt="">
+            <img
+              src="~@/static/images/platform-plus.png"
+              class="w-100"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -133,41 +139,41 @@
         </svg>
         <p class="font-size-h1 text-muted mt-5 mb-5">SEJA DIGITAL COM A BRQ</p>
       </div>
-      <div class="container boxes-seja-digital">
-        <div class="row">
-          <div class="col-3">
-            <p>
-              <span class="text-uppercase font-weight-bold"
-                >TRANSFORMAÇÃO DIGITAL<br
-              /></span>
-              com robustez, segurança e credibilidade
-            </p>
-          </div>
-          <div class="col-3">
-            <p>
-              Aplicação de
-              <span class="text-uppercase font-weight-bold"
-                ><br />EFICIENTES E INOVADORAS<br
-              /></span>
-              tecnologias e metodologias
-            </p>
-          </div>
-          <div class="col-3">
-            <p>
-              Processos e ferramentas<span
-                class="text-uppercase font-weight-bold"
-                ><br />TESTADAS E MADURAS</span
-              >
-            </p>
-          </div>
-          <div class="col-3">
-            <p>
-              <span class="text-uppercase font-weight-bold"
-                >ENTRE AS MELHORES<br
-              /></span>
-              empresas para trabalhar
-            </p>
-          </div>
+      <div
+        class="container d-flex flex-row justify-content-between boxes-seja-digital"
+      >
+        <div>
+          <p>
+            <span class="text-uppercase font-weight-bold"
+              >TRANSFORMAÇÃO <br />DIGITAL<br
+            /></span>
+            com robustez, <br />segurança e <br />credibilidade
+          </p>
+        </div>
+        <div>
+          <p>
+            Aplicação de
+            <span class="text-uppercase font-weight-bold"
+              ><br />EFICIENTES E <br />INOVADORAS<br
+            /></span>
+            tecnologias e <br />metodologias
+          </p>
+        </div>
+        <div>
+          <p>
+            Processos e <br />ferramentas<span
+              class="text-uppercase font-weight-bold"
+              ><br />TESTADAS E <br />MADURAS</span
+            >
+          </p>
+        </div>
+        <div>
+          <p>
+            <span class="text-uppercase font-weight-bold"
+              >ENTRE AS <br />MELHORES<br
+            /></span>
+            empresas para <br />trabalhar
+          </p>
         </div>
       </div>
     </section>

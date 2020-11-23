@@ -289,10 +289,10 @@
                   <img
                     src="~@/static/images/seta-slider.png"
                   />
-                  <p class="left-placeholder font-size-p">Monitorar</p>
+                  <p class="left-placeholder">Monitorar</p>
                 </button>
                 <button class="button-right-brq row align-items-center">
-                  <p class="right-placeholder font-size-p">Entender</p>
+                  <p class="right-placeholder">Entender</p>
                   <img src="~@/static/images/seta-slider2.png" />
                 </button>
               </div>
@@ -579,7 +579,7 @@ export default {
     const rightPlaceholder: any = document.querySelector('.right-placeholder');
 
     const placeholders = [
-      {text: 'Desdobrar',color: 'var(--brq-blue)'}, 
+      {text: 'Desdobrar',color: 'var(--brq-darkblue)'}, 
       {text: 'Entender',color: 'var(--brq-yellow)'}, 
       {text: 'Entregar',color: '#8b008b'}, 
       {text: 'Monitorar',color: '#5f9ea0'}
@@ -831,6 +831,14 @@ export default {
 
 .left-placeholder, .right-placeholder {
   transform: translate(0, 25%)
+}
+
+.left-placeholder {
+  color: #5f9ea0;
+}
+
+.right-placeholder {
+  color: #8b008b;
 }
 
 .circle-labels {
