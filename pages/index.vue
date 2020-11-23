@@ -1232,7 +1232,7 @@ export default {
 
 @media (max-width: 1366px) {
   .title svg.diagonal-line {
-    height: 42vw;
+    height: 39vw;
   }
 }
 
