@@ -63,7 +63,7 @@
 
     <section class="image-text-container pt-5 mt-5">
       <div class="container mt-5">
-        <div class="row">
+        <div class="row pt-5">
           <div class="col-md-6 positioned-container text-content">
             <p class="text-white">
               Porque acreditamos que o resultado é a evolução de modelos de
@@ -413,8 +413,7 @@ export default {
           trigger: ".boxes-seja-digital",
           start: "-=500",
           end: "+=250",
-          scrub: 0.5,
-          markers: true
+          scrub: 0.5
         },
       }).from(".boxes-seja-digital .first", { y:100, autoAlpha:0 })
       .from(".boxes-seja-digital .second", { y:100, autoAlpha:0 })
@@ -427,8 +426,7 @@ export default {
           trigger: ".governance",
           start: "-=500",
           end: "+=250",
-          scrub: 0.5,
-          markers: true
+          scrub: 0.5
         },
       }).from(".governance .first", { y:100, autoAlpha:0 })
       .from(".governance .second", { y:100, autoAlpha:0 })
@@ -441,8 +439,7 @@ export default {
           trigger: ".infra",
           start: "-=500",
           end: "+=250",
-          scrub: 0.5,
-          markers: true
+          scrub: 0.5
         },
       }).from(".infra .first", { y:100, autoAlpha:0 })
       .from(".infra .second", { y:100, autoAlpha:0 })
@@ -451,15 +448,14 @@ export default {
       gsap
       .timeline({
         scrollTrigger: {
-          trigger: ".market-share",
-          start: "-=500",
+          trigger: "#market-share",
+          start: "-=300",
           end: "+=250",
-          scrub: 0.5,
-          markers: true
+          scrub: 0.5
         },
-      }).from(".market-share .first", { y:100, autoAlpha:0 })
-      .from(".market-share .second", { y:100, autoAlpha:0 })
-      .from(".market-share .third", { y:100, autoAlpha:0 });
+      }).from("#market-share .first", { y:100, autoAlpha:0 })
+      .from("#market-share .second", { y:100, autoAlpha:0 })
+      .from("#market-share .third", { y:100, autoAlpha:0 });
 
       gsap
       .timeline({
@@ -467,8 +463,7 @@ export default {
           trigger: "#premiacoes",
           start: "-=500",
           end: "+=250",
-          scrub: 0.5,
-          markers: true
+          scrub: 0.5
         },
       }).from("#premiacoes .first", { y:100, autoAlpha:0 })
       .from("#premiacoes .second", { y:100, autoAlpha:0 })
@@ -549,7 +544,7 @@ export default {
 
 .image-text-container {
   background-image: url("~@/static/images/group 6.png");
-  height: 110vh;
+  height: 100vh;
   background-size: cover;
 
   p {
