@@ -39,7 +39,7 @@
     </section>
     <section>
       <div class="container">
-        <div class="row">
+        <div class="row mb-md-5">
           <div class="col-md-5">
             <p class="font-size-p content-title-brq">
               Com mais de 28 anos de experiência no mercado, somos uma das
@@ -53,9 +53,9 @@
           <div
             @mouseover="animateVideo('in')"
             @mouseout="animateVideo('out')"
-            class="video-cover col-md-5 offset-md-1"
+            class="video-cover col-md-6 offset-md-1"
           >
-            <img src="~@/static/images/sn-image-header.png" />
+            <img src="~@/static/images/sn-image-header.png" class="w-100" />
           </div>
         </div>
       </div>
@@ -64,13 +64,13 @@
     <section class="image-text-container pt-5">
       <div class="container mt-5">
         <div class="row">
-          <div class="col-md-6 positioned-container">
+          <div class="col-md-6 positioned-container text-content">
             <p class="h2 text-white">
               Porque acreditamos que o resultado é a evolução de modelos de
               negócio que visam levar a melhor experiência para os consumidores.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 image-content">
             <img
               src="~@/static/images/platform-plus.png"
               class="w-100"
@@ -80,18 +80,6 @@
       </div>
     </section>
     <section>
-      <!-- <div class="container-fluid mt-5 p-0 image-text-container">
-        <img src="~@/static/images/group 6.png" width="100%" />
-        <div class="container">
-          <p class="absolute-text col-5 mt-5">
-            Porque acreditamos que o resultado é a evolução de modelos de
-            negócio que visam levar a melhor experiência para os consumidores.
-          </p>
-          <div class="col-md-6">
-            <img src="~@/static/images/platform-plus.png">
-          </div>
-        </div>
-      </div> -->
       <div class="container">
         <p class="font-size-p">
           Somos um time de mais de
@@ -362,6 +350,29 @@ export default {
         scrub: 0.5,
       },
       rotation: 0,
+      y:70
+    });
+
+    gsap.timeline({
+          scrollTrigger: {
+            trigger: ".image-text-container",
+            start: "top center+=5%",
+            end: "+=300"
+          },
+        })
+        .from(".image-text-container", { y:100, autoAlpha:0 })
+        .from(".image-text-container .text-content", { xPercent: -50, ease: "expo", autoAlpha:0 })
+        .from(".image-text-container .image-content", { autoAlpha: 0, xPercent:50, ease: "expo" });
+
+    gsap.from('.video-cover', {
+      scrollTrigger: {
+        trigger: '.video-cover',
+        start: "-=300",
+        end:"+=300",
+        markers:true,
+        scrub: 0.5,
+      },
+      y:100
     });
   },
 };
