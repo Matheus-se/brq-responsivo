@@ -76,7 +76,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="seja-digital">
       <div class="container" id="feras">
         <p class="font-size-p">
           Somos um time de mais de
@@ -122,16 +122,14 @@
             />
           </g>
         </svg>
-        <h2 class="font-size-h1 text-muted mt-5 mb-5">
-          SEJA DIGITAL COM A BRQ
-        </h2>
+        <h2 class="text-muted mt-5 mb-5">SEJA DIGITAL COM A BRQ</h2>
       </div>
       <div
         class="container d-flex flex-row justify-content-between boxes-seja-digital"
       >
         <div class="first">
           <p>
-            <span class="text-uppercase font-weight-bold text-nowrap"
+            <span class="text-uppercase text-nowrap"
               >TRANSFORMAÇÃO <br />DIGITAL<br
             /></span>
             com robustez, <br />segurança e <br />credibilidade
@@ -140,7 +138,7 @@
         <div class="second">
           <p>
             Aplicação de
-            <span class="text-uppercase font-weight-bold text-nowrap"
+            <span class="text-uppercase text-nowrap"
               ><br />EFICIENTES E <br />INOVADORAS<br
             /></span>
             tecnologias e <br />metodologias
@@ -149,14 +147,14 @@
         <div class="third">
           <p>
             Processos e <br />ferramentas<span
-              class="text-uppercase font-weight-bold text-nowrap"
+              class="text-uppercase text-nowrap"
               ><br />TESTADAS E <br />MADURAS</span
             >
           </p>
         </div>
         <div class="forth">
           <p>
-            <span class="text-uppercase font-weight-bold text-nowrap"
+            <span class="text-uppercase text-nowrap"
               >ENTRE AS <br />MELHORES<br
             /></span>
             empresas para <br />trabalhar
@@ -168,25 +166,25 @@
 
     <section>
       <div class="container side-box infra">
-        <p class="h1">INFRAESTRUTURA ROBUSTA</p>
-        <div class="d-flex flex-row justify-content-around">
+        <p class="h1 text-muted">INFRAESTRUTURA ROBUSTA</p>
+        <div class="d-flex flex-row justify-content-around mt-5">
           <div class="text-center first">
-            <p class="h2-font-size font-weight-bold text-orange m-0">6</p>
+            <h2 class="h2-font-size text-orange m-0">6</h2>
             <p class="font-size-p">Centros de Serviço</p>
           </div>
           <div class="text-center second">
-            <p class="h2-font-size font-weight-bold text-orange m-0">3.000</p>
+            <h2 class="h2-font-size text-orange m-0">3.000</h2>
             <p class="font-size-p">Profissionais</p>
           </div>
           <div class="text-center third">
-            <p class="h2-font-size font-weight-bold text-orange m-0">500MM</p>
+            <h2 class="h2-font-size text-orange m-0">500MM</h2>
             <p class="font-size-p">De receita</p>
           </div>
         </div>
         <div class="text-center mt-5 d-flex justify-content-center flex-row">
           <p class="font-size-p anywhere-office">
             Nosso time engajado atuando<br /><span
-              class="blue-text font-weight-bold"
+              class="blue-text"
               >ANYWHERE OFFICE</span
             >
           </p>
@@ -197,35 +195,20 @@
       </div>
     </section>
 
-    <section class="bg-diagonal-light">
-      <div class="container content market-share">
+    <section class="bg-diagonal-light" id="market-share">
+      <div class="container content">
         <div class="row">
-          <h2 class="blue-text font-size-h1 w-100 text-right">MARKET SHARE</h2>
+          <h2 class="blue-text w-100 text-right mb-5">MARKET SHARE</h2>
         </div>
         <div class="row mt-5">
           <div class="col-12 col-md-4 first">
-            <p class="text-center font-size-p">
-              IT SERVICE TOTAL<br /><span
-                class="text-orange font-size-h1 font-weight-bold"
-                >8º Local/<br />28º Geral</span
-              >
-            </p>
+            <p class="text-center font-size-p">IT SERVICE TOTAL<br><span class="text-orange">8º Local/<br />28º Geral</span></p>
           </div>
           <div class="col-12 col-md-4 second">
-            <p class="text-center font-size-p">
-              APLICAÇÕES<br /><span
-                class="text-orange font-size-h1 font-weight-bold"
-                >2º Local/<br />7º Geral</span
-              >
-            </p>
+            <p class="text-center font-size-p">APLICAÇÕES<br><span class="text-orange">2º Local/<br>7º Geral</span></p>
           </div>
           <div class="col-12 col-md-4 third">
-            <p class="text-center font-size-p">
-              APLICAÇÕES PARA O SETOR<br /><span
-                class="text-orange font-size-h1 font-weight-bold"
-                >2º geral</span
-              >
-            </p>
+            <p class="text-center font-size-p">APLICAÇÕES PARA<br>O SETOR<br><span class="text-orange">2º geral</span></p>
           </div>
         </div>
         <p class="mt-5">Fonte: IDC</p>
@@ -233,11 +216,9 @@
     </section>
 
     <section>
-      <div class="container governance">
+      <div class="container governance" id="gov-e-transp">
         <div class="row w-100 text-right mb-5">
-          <p class="font-size-p text-muted w-100 text-uppercase">
-            Governança<br />e transparência
-          </p>
+          <h2 class="text-muted w-100 text-uppercase">Governança<br>e transparência</h2>
         </div>
         <div class="row justify-content-between gov-e-transp">
           <div class="first">
@@ -310,28 +291,28 @@
           >
         </h2>
         <div class="relacionamentos">
-          <img src="~@/static/images/relacionamentos/ambev.png" />
-          <img src="~@/static/images/relacionamentos/avon.png" />
-          <img src="~@/static/images/relacionamentos/bnds.png" />
-          <img src="~@/static/images/relacionamentos/bradesco.png" />
-          <img src="~@/static/images/relacionamentos/btg.png" />
-          <img src="~@/static/images/relacionamentos/ccee.png" />
-          <img src="~@/static/images/relacionamentos/claro.png" />
-          <img src="~@/static/images/relacionamentos/delta.png" />
-          <img src="~@/static/images/relacionamentos/gpa.png" />
-          <img src="~@/static/images/relacionamentos/itau.png" />
-          <img src="~@/static/images/relacionamentos/jbs.png" />
-          <img src="~@/static/images/relacionamentos/leroy.png" />
-          <img src="~@/static/images/relacionamentos/liberty.png" />
-          <img src="~@/static/images/relacionamentos/boticario.png" />
-          <img src="~@/static/images/relacionamentos/ons.png" />
-          <img src="~@/static/images/relacionamentos/porto seguro.png" />
-          <img src="~@/static/images/relacionamentos/renault.png" />
-          <img src="~@/static/images/relacionamentos/rede.png" />
-          <img src="~@/static/images/relacionamentos/santander.png" />
-          <img src="~@/static/images/relacionamentos/santillana.png" />
-          <img src="~@/static/images/relacionamentos/telefonica.png" />
-          <img src="~@/static/images/relacionamentos/tim.png" />
+          <img src="~@/static/images/relacionamentos/ambev.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/avon.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/bnds.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/bradesco.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/btg.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/ccee.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/claro.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/delta.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/gpa.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/itau.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/jbs.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/leroy.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/liberty.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/boticario.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/ons.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/porto seguro.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/renault.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/rede.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/santander.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/santillana.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/telefonica.png" class="relacionamento">
+          <img src="~@/static/images/relacionamentos/tim.png" class="relacionamento">
         </div>
       </div>
     </section>
@@ -498,8 +479,7 @@ export default {
       scrollTrigger: {
         trigger: ".video-cover",
         start: "-=300",
-        end: "+=300",
-        markers: true,
+        end:"+=300",
         scrub: 0.5,
       },
       y: 100,
@@ -516,8 +496,27 @@ export default {
   }
 }
 
+#market-share {
+  h2 {
+    font-size: 4.4rem;
+  }
+  span {
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1;
+    font-size: 6rem;
+  }
+}
+
 #feras {
-  margin-top: 30px;
+  margin-top: -100px;
+}
+
+#seja-digital {
+  > div {
+    > h2 {
+      font-size: 6rem;
+    }
+  }
 }
 
 .relacionamentos-section {
@@ -588,6 +587,12 @@ export default {
     padding-bottom: 2rem;
   }
 
+  span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
   > *::after {
     content: "";
     display: block;
@@ -603,7 +608,9 @@ export default {
   position: relative;
 
   span {
-    font-size: 2.2rem;
+    font-size: 4.2rem;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1;
   }
 }
 
@@ -613,14 +620,24 @@ export default {
   }
 }
 
+#gov-e-transp {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 .gov-e-transp {
   div {
     position: relative;
     padding-bottom: 60px;
   }
 
-  > div::after {
-    content: "";
+  p {
+    font-size: 1rem;
+  }
+
+  >div::after {
+    content: '';
     display: block;
     width: 10rem;
     border-bottom: 1px solid var(--brq-blue);
@@ -651,7 +668,7 @@ export default {
 }
 
 .offset-y-diagonal {
-  transform: translate(0, 150%);
+  transform: translate(0, 130%);
 }
 
 .side-box:before {
@@ -669,7 +686,7 @@ export default {
 }
 
 .h2-font-size {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .blue-text {
