@@ -60,11 +60,12 @@
         </div>
       </div>
     </section>
-    <section class="image-text-container">
-      <div class="container">
+
+    <section class="image-text-container pt-5">
+      <div class="container mt-5">
         <div class="row">
-          <div class="col-md-6">
-            <p class="h2">
+          <div class="col-md-6 positioned-container">
+            <p class="h2 text-white">
               Porque acreditamos que o resultado é a evolução de modelos de
               negócio que visam levar a melhor experiência para os consumidores.
             </p>
@@ -73,7 +74,6 @@
             <img
               src="~@/static/images/platform-plus.png"
               class="w-100"
-              alt=""
             />
           </div>
         </div>
@@ -88,7 +88,7 @@
             negócio que visam levar a melhor experiência para os consumidores.
           </p>
           <div class="col-md-6">
-            <img src="~@/static/images/platform-plus.png" alt="">
+            <img src="~@/static/images/platform-plus.png">
           </div>
         </div>
       </div> -->
@@ -276,69 +276,62 @@
       </div>
     </section>
 
+    <section class="relacionamentos-section">
+      <div class="container">
+        <h2>RELACIONAMENTOS LONGOS E PERENES,<br><span>SINÔNIMO DE CONFIANÇA</span></h2>
+        <div class="relacionamentos">
+          <img src="~@/static/images/relacionamentos/ambev.png">
+          <img src="~@/static/images/relacionamentos/avon.png">
+          <img src="~@/static/images/relacionamentos/bnds.png">
+          <img src="~@/static/images/relacionamentos/bradesco.png">
+          <img src="~@/static/images/relacionamentos/btg.png">
+          <img src="~@/static/images/relacionamentos/ccee.png">
+          <img src="~@/static/images/relacionamentos/claro.png">
+          <img src="~@/static/images/relacionamentos/delta.png">
+          <img src="~@/static/images/relacionamentos/gpa.png">
+          <img src="~@/static/images/relacionamentos/itau.png">
+          <img src="~@/static/images/relacionamentos/jbs.png">
+          <img src="~@/static/images/relacionamentos/leroy.png">
+          <img src="~@/static/images/relacionamentos/liberty.png">
+          <img src="~@/static/images/relacionamentos/boticario.png">
+          <img src="~@/static/images/relacionamentos/ons.png">
+          <img src="~@/static/images/relacionamentos/porto seguro.png">
+          <img src="~@/static/images/relacionamentos/renault.png">
+          <img src="~@/static/images/relacionamentos/rede.png">
+          <img src="~@/static/images/relacionamentos/santander.png">
+          <img src="~@/static/images/relacionamentos/santillana.png">
+          <img src="~@/static/images/relacionamentos/telefonica.png">
+          <img src="~@/static/images/relacionamentos/tim.png">
+        </div>
+      </div>
+    </section>
+
     <!-- ONDE ESTAMOS -->
-    <section id="where" class="bg-diagonal-light">
+    <section id="where">
       <div class="container content">
         <div class="row">
-          <div class="col-md-12 text-md-right mt-5 mt-md-0 py-5">
+          <div class="col-md-12 text-md-left mt-5 mt-md-0 py-5">
             <h2 class="blue-title">Onde Estamos</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-2 mt-3">
             <h4>Matriz - SP</h4>
-            <p>
-              Rua Boa Vista, 254 <br />
-              9 andar <br />Centro<br />
-              São Paulo - SP<br />
-              CEP 01014-000 <br />+55 (11) 2526-0600
-            </p>
           </div>
           <div class="col-md-2 mt-3">
             <h4>Alphaville - SP</h4>
-            <p>
-              Av Copacabana,238 <br />
-              3 andar <br />18 do Forte<br />
-              Barueri - SP<br />
-              CEP 06465-903 <br />+55 (11) 3927-0600
-            </p>
           </div>
           <div class="col-md-2 mt-3">
             <h4>Rio de Janeiro - RJ</h4>
-            <p>
-              Rua Teofilo Otoni,63 <br />
-              4 andar <br />Centro<br />
-              Rio de Janeiro - RJ<br />
-              CEP 20090-080<br />+55 (21) 3211-9800 / +55 (21) 3211-9811
-            </p>
           </div>
           <div class="col-md-2 mt-3">
             <h4>Curitiba - PR</h4>
-            <p>
-              Av. Mal. Floriano Peixoto, 2610 <br />
-              Cj.07 <br />Parolin<br />
-              Curitiba - PR<br />
-              CEP 80220-000 <br />+55 (41) 3778-8000 <br />
-              +55 (41) 3778-8002
-            </p>
           </div>
           <div class="col-md-2 mt-3">
             <h4>Recife - PE</h4>
-            <p>
-              Av. Marquês de Olinda, 126 <br />
-              Saka 102 - 1 andar Condomínio Citi Empresarial <br />Bairro do
-              Recife<br />
-              Recife - PE<br />
-              CEP 50030-000
-            </p>
           </div>
           <div class="col-md-2 mt-3">
             <h4>New York - USA</h4>
-            <p>
-              20 Hicksville Road <br />
-              Suite 7 <br />Massapequa<br />
-              New York 11758 <br />+1 516-541 3100
-            </p>
           </div>
         </div>
       </div>
@@ -376,6 +369,54 @@ export default {
 
 
 <style lang="scss" scoped>
+
+.relacionamentos-section {
+  margin-top: 6rem;
+  background-color: var(--brq-dark);
+  padding-top: 6rem;
+  padding-bottom: 18rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 65%);
+
+  h2 {
+    color: white;
+  }
+  span {
+    font-size: 3rem;
+  }
+}
+
+.positioned-container::before {
+  content: url('~@/static/images/Group.png');
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0);
+}
+
+#where {
+  transform: translate(0, -50%);
+}
+
+.image-text-container {
+  background-image: url('~@/static/images/group 6.png');
+  height: 110vh;
+  background-size: cover;
+}
+
+.relacionamentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    height: 100px;
+    width: 130px;
+    object-fit: scale-down;
+  }
+}
+
 .boxes-seja-digital {
   * {
     font-size: 1.6rem;
@@ -510,10 +551,6 @@ export default {
   width: 200%;
   top: 70%;
   left: -10%;
-}
-
-.image-text-container {
-  position: relative;
 }
 
 .absolute-text {
