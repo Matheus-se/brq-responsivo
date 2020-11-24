@@ -24,8 +24,8 @@
           </nav>
           <div class="col-md-6 mt-4 title">
             <h2>
-              Caminhamos ao seu lado<br />em todos os desafios<br />de
-              transformação digital
+              Caminhamos ao seu <br class="d-md-none d-block">lado <br  class="d-md-block d-none"/>em todos os <br class="d-md-none d-block">desafios <br  class="d-md-block d-none"/>de
+              <br class="d-md-none d-block">transformação digital
             </h2>
             <img
               src="~@/static/images/arrow-dobra.svg"
@@ -39,7 +39,7 @@
     </section>
     <section>
       <div class="container">
-        <div class="row mb-md-5">
+        <div class="row mb-md-5 flex-md-row flex-column-reverse">
           <div class="col-md-5">
             <p class="font-size-p content-title-brq">
               Com mais de 28 anos de experiência no mercado, somos uma das
@@ -61,9 +61,9 @@
       </div>
     </section>
 
-    <section class="image-text-container pt-5 mt-5">
+    <section class="image-text-container pt-5 mt-5 ">
       <div class="container mt-5">
-        <div class="row pt-5">
+        <div class="row pt-md-5 pt-1">
           <div class="col-md-6 positioned-container text-content">
             <p class="text-white">
               Porque acreditamos que o resultado é a evolução de modelos de
@@ -79,9 +79,9 @@
     <section id="seja-digital">
       <div class="container" id="feras">
         <p class="font-size-p">
-          Somos um time de mais de
-          <span class="text-orange font-weight-bold">3.000 #feras</span
-          ><br />apaixonados por tecnologia e transformação,<br />atuando no
+          Somos um time de mais de<br class="d-block d-md-none">
+          <span class="text-orange font-weight-bold">3.000 #feras <br class="d-none d-md-block"/></span
+          >apaixonados por <br class="d-block d-md-none">tecnologia e transformação,<br/>atuando no
           Brasil e nos EUA.
         </p>
         <p class="h2-style blue-text">
@@ -90,7 +90,7 @@
           PARA QUALQUER LUGAR DO MUNDO.
         </p>
       </div>
-      <div class="container-fluid d-flex flex-column align-items-center py-5">
+      <div class="container-fluid d-flex flex-column align-items-center py-1 py-md-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="64.707"
@@ -98,7 +98,7 @@
           viewBox="0 0 64.707 160.707"
           ref="seta"
           id="seta-seja-digital"
-          class="seta-ct d-none d-md-block"
+          class="seta-ct"
         >
           <g id="_arrow-1a-dobra" transform="translate(64.354) rotate(90)">
             <path
@@ -122,42 +122,40 @@
             />
           </g>
         </svg>
-        <h2 class="text-muted mt-5 mb-5">SEJA DIGITAL COM A BRQ</h2>
+        <h2 class="text-muted mt-5 mb-5 text-center">SEJA DIGITAL COM A BRQ</h2>
       </div>
       <div
-        class="container d-flex flex-row justify-content-between boxes-seja-digital"
+        class="container d-flex flex-column flex-md-row justify-content-between boxes-seja-digital"
       >
-        <div class="first">
+        <div class="first mt-md-0 mt-5">
           <p>
             <span class="text-uppercase text-nowrap"
               >TRANSFORMAÇÃO <br />DIGITAL<br
             /></span>
-            com robustez, <br />segurança e <br />credibilidade
+            com robustez, <br class="d-none d-md-block"/>segurança e <br class="d-none d-md-block"/>credibilidade
           </p>
         </div>
-        <div class="second">
+        <div class="second mt-md-0 mt-5">
           <p>
-            Aplicação de
+            Aplicação de<br />
             <span class="text-uppercase text-nowrap"
-              ><br />EFICIENTES E <br />INOVADORAS<br
+              >EFICIENTES E <br />INOVADORAS<br
             /></span>
-            tecnologias e <br />metodologias
+            tecnologias e <br class="d-none d-md-block"/>metodologias
           </p>
         </div>
-        <div class="third">
+        <div class="third mt-md-0 mt-5">
           <p>
-            Processos e <br />ferramentas<span
-              class="text-uppercase text-nowrap"
-              ><br />TESTADAS E <br />MADURAS</span
-            >
+            Processos e <br class="d-none d-md-block"/>ferramentas<br /><span class="text-uppercase text-nowrap">
+            TESTADAS E <br />MADURAS</span>
           </p>
         </div>
-        <div class="forth">
+        <div class="forth mt-md-0 mt-5">
           <p>
             <span class="text-uppercase text-nowrap"
               >ENTRE AS <br />MELHORES<br
             /></span>
-            empresas para <br />trabalhar
+            empresas para <br class="d-none d-md-block"/>trabalhar
           </p>
           <img src="~@/static/images/bitmap.png" />
         </div>
@@ -167,7 +165,7 @@
     <section>
       <div class="container side-box infra">
         <p class="h1 text-muted">INFRAESTRUTURA ROBUSTA</p>
-        <div class="d-flex flex-row justify-content-around mt-5">
+        <div class="d-flex flex-column flex-md-row justify-content-around mt-5">
           <div class="text-center first">
             <h2 class="h2-font-size text-orange m-0">6</h2>
             <p class="font-size-p">Centros de Serviço</p>
@@ -181,7 +179,7 @@
             <p class="font-size-p">De receita</p>
           </div>
         </div>
-        <div class="text-center mt-5 d-flex justify-content-center flex-row">
+        <div class="text-center mt-5 d-flex justify-content-center flex-column flex-md-row">
           <p class="font-size-p anywhere-office">
             Nosso time engajado atuando<br /><span
               class="blue-text"
@@ -197,17 +195,17 @@
 
     <section class="bg-diagonal-light" id="market-share">
       <div class="container content">
-        <div class="row">
+        <div class="pr-md-0 pr-5">
           <h2 class="blue-text w-100 text-right mb-5">MARKET SHARE</h2>
         </div>
         <div class="row mt-5">
-          <div class="col-12 col-md-4 first">
+          <div class="col-12 col-md-4 first mt-5 mt-md-0">
             <p class="text-center font-size-p">IT SERVICE TOTAL<br><span class="text-orange">8º Local/<br />28º Geral</span></p>
           </div>
-          <div class="col-12 col-md-4 second">
+          <div class="col-12 col-md-4 second mt-5 mt-md-0">
             <p class="text-center font-size-p">APLICAÇÕES<br><span class="text-orange">2º Local/<br>7º Geral</span></p>
           </div>
-          <div class="col-12 col-md-4 third">
+          <div class="col-12 col-md-4 third mt-5 mt-md-0">
             <p class="text-center font-size-p">APLICAÇÕES PARA<br>O SETOR<br><span class="text-orange">2º geral</span></p>
           </div>
         </div>
@@ -220,20 +218,20 @@
         <div class="row w-100 text-right mb-5">
           <h2 class="text-muted w-100 text-uppercase">Governança<br>e transparência</h2>
         </div>
-        <div class="row justify-content-between gov-e-transp">
-          <div class="first">
+        <div class="d-flex flex-column flex-md-row justify-content-between gov-e-transp">
+          <div class="first mt-5 mt-md-0">
             <p>Hoshin Kanri</p>
             <img src="~@/static/images/hoshin.png" />
           </div>
-          <div class="second">
+          <div class="second mt-5 mt-md-0">
             <p>Bovespa</p>
             <img src="~@/static/images/Grupo 1.png" />
           </div>
-          <div class="third">
+          <div class="third mt-5 mt-md-0">
             <p>Acionista</p>
             <img src="~@/static/images/ancionista.png" />
           </div>
-          <div class="forth">
+          <div class="forth mt-5 mt-md-0">
             <p>Auditoria</p>
             <img src="~@/static/images/auditoria.png" />
           </div>
@@ -243,8 +241,8 @@
 
     <section id="premiacoes">
       <div class="container side-box">
-        <p class="text-muted font-size-p">PREMIAÇÕES</p>
-        <div class="row justify-content-between px-5 mt-5">
+        <p class="text-muted font-size-p text-md-left text-center">PREMIAÇÕES</p>
+        <div class="d-flex flex-column flex-md-row justify-content-between px-5 mt-5">
           <div
             class="d-flex flex-column text-center justify-content-between align-items-center first"
           >
@@ -258,7 +256,7 @@
             <img src="~@/static/images/isg.svg" />
           </div>
           <div
-            class="d-flex flex-column text-center justify-content-between align-items-center second"
+            class="d-flex flex-column text-center justify-content-between align-items-center second mt-5 mt-md-0"
           >
             <p class="font-size-p">
               <span class="text-orange font-weight-bold">4º lugar</span>em
@@ -269,7 +267,7 @@
             <img src="~@/static/images/isg.svg" />
           </div>
           <div
-            class="d-flex flex-column text-center justify-content-between align-items-center third"
+            class="d-flex flex-column text-center justify-content-between align-items-center third mt-5 mt-md-0"
           >
             <p class="font-size-p">
               <span class="text-orange font-weight-bold">1º lugar</span> na
@@ -374,6 +372,20 @@ export default {
       },
       rotation: 0,
       y: 70,
+    });
+
+    gsap.utils.toArray(".relacionamento").forEach((relacionamento: any) => {
+      gsap.from(relacionamento, {
+        scrollTrigger: {
+          trigger: relacionamento,
+          start: "-=500",
+          end: "-=500",
+          scrub: 0,
+        },
+        ease: "expo",
+        autoAlpha: 0,
+        y: 50,
+      });
     });
 
     gsap.from("#seta-seja-digital", {
@@ -544,7 +556,7 @@ export default {
 
 .image-text-container {
   background-image: url("~@/static/images/group 6.png");
-  height: 100vh;
+  height: 110vh;
   background-size: cover;
 
   p {
@@ -575,6 +587,7 @@ export default {
 .boxes-seja-digital {
   * {
     font-size: 1.6rem;
+    line-height: 1.2;
   }
 
   > * {
@@ -585,7 +598,6 @@ export default {
   span {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2.5rem;
-    line-height: 1;
   }
 
   > *::after {
@@ -736,6 +748,24 @@ export default {
 @media (max-width: 575.98px) {
   .bg-diagonal-light {
     margin-top: 0 !important;
+  }
+
+  .relacionamentos-section {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+  }
+
+  .main-title.cut-lr .diagonal-pages {
+    top: 90%;
+  }
+
+  #where {
+    transform: translate(0, -20%);
+  }
+
+  .image-text-container {
+    p {
+      font-size: 1.4rem;
+    }
   }
 }
 </style>
