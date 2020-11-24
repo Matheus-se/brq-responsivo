@@ -71,10 +71,7 @@
             </p>
           </div>
           <div class="col-md-6 image-content">
-            <img
-              src="~@/static/images/platform-plus.png"
-              class="w-100"
-            />
+            <img src="~@/static/images/platform-plus.png" class="w-100" />
           </div>
         </div>
       </div>
@@ -100,7 +97,7 @@
           height="160.707"
           viewBox="0 0 64.707 160.707"
           ref="seta"
-          id="seta"
+          id="seta-seja-digital"
           class="seta-ct d-none d-md-block"
         >
           <g id="_arrow-1a-dobra" transform="translate(64.354) rotate(90)">
@@ -125,12 +122,14 @@
             />
           </g>
         </svg>
-        <h2 class="font-size-h1 text-muted mt-5 mb-5">SEJA DIGITAL COM A BRQ</h2>
+        <h2 class="font-size-h1 text-muted mt-5 mb-5">
+          SEJA DIGITAL COM A BRQ
+        </h2>
       </div>
       <div
         class="container d-flex flex-row justify-content-between boxes-seja-digital"
       >
-        <div>
+        <div class="first">
           <p>
             <span class="text-uppercase font-weight-bold text-nowrap"
               >TRANSFORMAÇÃO <br />DIGITAL<br
@@ -138,7 +137,7 @@
             com robustez, <br />segurança e <br />credibilidade
           </p>
         </div>
-        <div>
+        <div class="second">
           <p>
             Aplicação de
             <span class="text-uppercase font-weight-bold text-nowrap"
@@ -147,7 +146,7 @@
             tecnologias e <br />metodologias
           </p>
         </div>
-        <div>
+        <div class="third">
           <p>
             Processos e <br />ferramentas<span
               class="text-uppercase font-weight-bold text-nowrap"
@@ -155,7 +154,7 @@
             >
           </p>
         </div>
-        <div>
+        <div class="forth">
           <p>
             <span class="text-uppercase font-weight-bold text-nowrap"
               >ENTRE AS <br />MELHORES<br
@@ -168,18 +167,18 @@
     </section>
 
     <section>
-      <div class="container side-box">
+      <div class="container side-box infra">
         <p class="h1">INFRAESTRUTURA ROBUSTA</p>
         <div class="d-flex flex-row justify-content-around">
-          <div class="text-center">
+          <div class="text-center first">
             <p class="h2-font-size font-weight-bold text-orange m-0">6</p>
             <p class="font-size-p">Centros de Serviço</p>
           </div>
-          <div class="text-center">
+          <div class="text-center second">
             <p class="h2-font-size font-weight-bold text-orange m-0">3.000</p>
             <p class="font-size-p">Profissionais</p>
           </div>
-          <div class="text-center">
+          <div class="text-center third">
             <p class="h2-font-size font-weight-bold text-orange m-0">500MM</p>
             <p class="font-size-p">De receita</p>
           </div>
@@ -199,19 +198,34 @@
     </section>
 
     <section class="bg-diagonal-light">
-      <div class="container content">
+      <div class="container content market-share">
         <div class="row">
           <h2 class="blue-text font-size-h1 w-100 text-right">MARKET SHARE</h2>
         </div>
         <div class="row mt-5">
-          <div class="col-12 col-md-4">
-            <p class="text-center font-size-p">IT SERVICE TOTAL<br><span class="text-orange font-size-h1 font-weight-bold">8º Local/<br />28º Geral</span></p>
+          <div class="col-12 col-md-4 first">
+            <p class="text-center font-size-p">
+              IT SERVICE TOTAL<br /><span
+                class="text-orange font-size-h1 font-weight-bold"
+                >8º Local/<br />28º Geral</span
+              >
+            </p>
           </div>
-          <div class="col-12 col-md-4">
-            <p class="text-center font-size-p">APLICAÇÕES<br><span class="text-orange font-size-h1 font-weight-bold">2º Local/<br>7º Geral</span></p>
+          <div class="col-12 col-md-4 second">
+            <p class="text-center font-size-p">
+              APLICAÇÕES<br /><span
+                class="text-orange font-size-h1 font-weight-bold"
+                >2º Local/<br />7º Geral</span
+              >
+            </p>
           </div>
-          <div class="col-12 col-md-4">
-            <p class="text-center font-size-p">APLICAÇÕES PARA O SETOR<br><span class="text-orange font-size-h1 font-weight-bold">2º geral</span></p>
+          <div class="col-12 col-md-4 third">
+            <p class="text-center font-size-p">
+              APLICAÇÕES PARA O SETOR<br /><span
+                class="text-orange font-size-h1 font-weight-bold"
+                >2º geral</span
+              >
+            </p>
           </div>
         </div>
         <p class="mt-5">Fonte: IDC</p>
@@ -219,46 +233,70 @@
     </section>
 
     <section>
-      <div class="container">
+      <div class="container governance">
         <div class="row w-100 text-right mb-5">
-          <p class="font-size-p text-muted w-100 text-uppercase">Governança<br>e transparência</p>
+          <p class="font-size-p text-muted w-100 text-uppercase">
+            Governança<br />e transparência
+          </p>
         </div>
         <div class="row justify-content-between gov-e-transp">
-          <div>
+          <div class="first">
             <p>Hoshin Kanri</p>
-            <img src="~@/static/images/hoshin.png">
+            <img src="~@/static/images/hoshin.png" />
           </div>
-          <div>
+          <div class="second">
             <p>Bovespa</p>
-            <img src="~@/static/images/Grupo 1.png">
+            <img src="~@/static/images/Grupo 1.png" />
           </div>
-          <div>
+          <div class="third">
             <p>Acionista</p>
-            <img src="~@/static/images/ancionista.png">
+            <img src="~@/static/images/ancionista.png" />
           </div>
-          <div>
+          <div class="forth">
             <p>Auditoria</p>
-            <img src="~@/static/images/auditoria.png">
+            <img src="~@/static/images/auditoria.png" />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="premiações">
+    <section id="premiacoes">
       <div class="container side-box">
         <p class="text-muted font-size-p">PREMIAÇÕES</p>
         <div class="row justify-content-between px-5 mt-5">
-          <div class="d-flex flex-column text-center justify-content-between align-items-center">
-            <p class="font-size-p">Líder em <span class="text-orange font-weight-bold">4 de 5<br>quadrantes</span> de<br>transformação Digital</p>
-            <img src="~@/static/images/isg.svg"/>
+          <div
+            class="d-flex flex-column text-center justify-content-between align-items-center first"
+          >
+            <p class="font-size-p">
+              Líder em
+              <span class="text-orange font-weight-bold"
+                >4 de 5<br />quadrantes</span
+              >
+              de<br />transformação Digital
+            </p>
+            <img src="~@/static/images/isg.svg" />
           </div>
-          <div class="d-flex flex-column text-center justify-content-between align-items-center">
-            <p class="font-size-p"><span class="text-orange font-weight-bold">4º lugar</span>em Inovações e<span class="text-orange font-weight-bold"><br>5º Lugar </span>em Tecnologia</p>
-            <img src="~@/static/images/isg.svg"/>
+          <div
+            class="d-flex flex-column text-center justify-content-between align-items-center second"
+          >
+            <p class="font-size-p">
+              <span class="text-orange font-weight-bold">4º lugar</span>em
+              Inovações e<span class="text-orange font-weight-bold"
+                ><br />5º Lugar </span
+              >em Tecnologia
+            </p>
+            <img src="~@/static/images/isg.svg" />
           </div>
-          <div class="d-flex flex-column text-center justify-content-between align-items-center">
-            <p class="font-size-p"><span class="text-orange font-weight-bold">1º lugar</span> na categoria<br><span class="text-orange font-weight-bold">Grande Empresa<br>Mais Digital</span></p>
-            <img src="~@/static/images/empresas-mais-sigitais.svg"/>
+          <div
+            class="d-flex flex-column text-center justify-content-between align-items-center third"
+          >
+            <p class="font-size-p">
+              <span class="text-orange font-weight-bold">1º lugar</span> na
+              categoria<br /><span class="text-orange font-weight-bold"
+                >Grande Empresa<br />Mais Digital</span
+              >
+            </p>
+            <img src="~@/static/images/empresas-mais-sigitais.svg" />
           </div>
         </div>
       </div>
@@ -266,30 +304,34 @@
 
     <section class="relacionamentos-section">
       <div class="container">
-        <h2>RELACIONAMENTOS LONGOS E PERENES,<br><span>SINÔNIMO DE CONFIANÇA</span></h2>
+        <h2>
+          RELACIONAMENTOS LONGOS E PERENES,<br /><span
+            >SINÔNIMO DE CONFIANÇA</span
+          >
+        </h2>
         <div class="relacionamentos">
-          <img src="~@/static/images/relacionamentos/ambev.png">
-          <img src="~@/static/images/relacionamentos/avon.png">
-          <img src="~@/static/images/relacionamentos/bnds.png">
-          <img src="~@/static/images/relacionamentos/bradesco.png">
-          <img src="~@/static/images/relacionamentos/btg.png">
-          <img src="~@/static/images/relacionamentos/ccee.png">
-          <img src="~@/static/images/relacionamentos/claro.png">
-          <img src="~@/static/images/relacionamentos/delta.png">
-          <img src="~@/static/images/relacionamentos/gpa.png">
-          <img src="~@/static/images/relacionamentos/itau.png">
-          <img src="~@/static/images/relacionamentos/jbs.png">
-          <img src="~@/static/images/relacionamentos/leroy.png">
-          <img src="~@/static/images/relacionamentos/liberty.png">
-          <img src="~@/static/images/relacionamentos/boticario.png">
-          <img src="~@/static/images/relacionamentos/ons.png">
-          <img src="~@/static/images/relacionamentos/porto seguro.png">
-          <img src="~@/static/images/relacionamentos/renault.png">
-          <img src="~@/static/images/relacionamentos/rede.png">
-          <img src="~@/static/images/relacionamentos/santander.png">
-          <img src="~@/static/images/relacionamentos/santillana.png">
-          <img src="~@/static/images/relacionamentos/telefonica.png">
-          <img src="~@/static/images/relacionamentos/tim.png">
+          <img src="~@/static/images/relacionamentos/ambev.png" />
+          <img src="~@/static/images/relacionamentos/avon.png" />
+          <img src="~@/static/images/relacionamentos/bnds.png" />
+          <img src="~@/static/images/relacionamentos/bradesco.png" />
+          <img src="~@/static/images/relacionamentos/btg.png" />
+          <img src="~@/static/images/relacionamentos/ccee.png" />
+          <img src="~@/static/images/relacionamentos/claro.png" />
+          <img src="~@/static/images/relacionamentos/delta.png" />
+          <img src="~@/static/images/relacionamentos/gpa.png" />
+          <img src="~@/static/images/relacionamentos/itau.png" />
+          <img src="~@/static/images/relacionamentos/jbs.png" />
+          <img src="~@/static/images/relacionamentos/leroy.png" />
+          <img src="~@/static/images/relacionamentos/liberty.png" />
+          <img src="~@/static/images/relacionamentos/boticario.png" />
+          <img src="~@/static/images/relacionamentos/ons.png" />
+          <img src="~@/static/images/relacionamentos/porto seguro.png" />
+          <img src="~@/static/images/relacionamentos/renault.png" />
+          <img src="~@/static/images/relacionamentos/rede.png" />
+          <img src="~@/static/images/relacionamentos/santander.png" />
+          <img src="~@/static/images/relacionamentos/santillana.png" />
+          <img src="~@/static/images/relacionamentos/telefonica.png" />
+          <img src="~@/static/images/relacionamentos/tim.png" />
         </div>
       </div>
     </section>
@@ -350,29 +392,117 @@ export default {
         scrub: 0.5,
       },
       rotation: 0,
-      y:70
+      y: 70,
     });
 
-    gsap.timeline({
-          scrollTrigger: {
-            trigger: ".image-text-container",
-            start: "top center+=5%",
-            end: "+=300"
-          },
-        })
-        .from(".image-text-container", { y:100, autoAlpha:0 })
-        .from(".image-text-container .text-content", { xPercent: -50, ease: "expo", autoAlpha:0 })
-        .from(".image-text-container .image-content", { autoAlpha: 0, xPercent:50, ease: "expo" });
-
-    gsap.from('.video-cover', {
+    gsap.from("#seta-seja-digital", {
       scrollTrigger: {
-        trigger: '.video-cover',
-        start: "-=300",
-        end:"+=300",
-        markers:true,
+        trigger: "#feras",
+        start: "-=200",
+        end: "+=150",
         scrub: 0.5,
       },
-      y:100
+      y: -100,
+      autoAlpha: 0,
+    });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".image-text-container",
+          start: "top center+=5%",
+          end: "+=300",
+        },
+      })
+      .from(".image-text-container", { y: 100, autoAlpha: 0 })
+      .from(".image-text-container .text-content", {
+        xPercent: -50,
+        ease: "expo",
+        autoAlpha: 0,
+      })
+      .from(".image-text-container .image-content", {
+        autoAlpha: 0,
+        xPercent: 50,
+        ease: "expo",
+      });
+
+      gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".boxes-seja-digital",
+          start: "-=500",
+          end: "+=250",
+          scrub: 0.5,
+          markers: true
+        },
+      }).from(".boxes-seja-digital .first", { y:100, autoAlpha:0 })
+      .from(".boxes-seja-digital .second", { y:100, autoAlpha:0 })
+      .from(".boxes-seja-digital .third", { y:100, autoAlpha:0 })
+      .from(".boxes-seja-digital .forth", { y:100, autoAlpha:0 });
+
+      gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".governance",
+          start: "-=500",
+          end: "+=250",
+          scrub: 0.5,
+          markers: true
+        },
+      }).from(".governance .first", { y:100, autoAlpha:0 })
+      .from(".governance .second", { y:100, autoAlpha:0 })
+      .from(".governance .third", { y:100, autoAlpha:0 })
+      .from(".governance .forth", { y:100, autoAlpha:0 });
+
+      gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".infra",
+          start: "-=500",
+          end: "+=250",
+          scrub: 0.5,
+          markers: true
+        },
+      }).from(".infra .first", { y:100, autoAlpha:0 })
+      .from(".infra .second", { y:100, autoAlpha:0 })
+      .from(".infra .third", { y:100, autoAlpha:0 });
+
+      gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".market-share",
+          start: "-=500",
+          end: "+=250",
+          scrub: 0.5,
+          markers: true
+        },
+      }).from(".market-share .first", { y:100, autoAlpha:0 })
+      .from(".market-share .second", { y:100, autoAlpha:0 })
+      .from(".market-share .third", { y:100, autoAlpha:0 });
+
+      gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#premiacoes",
+          start: "-=500",
+          end: "+=250",
+          scrub: 0.5,
+          markers: true
+        },
+      }).from("#premiacoes .first", { y:100, autoAlpha:0 })
+      .from("#premiacoes .second", { y:100, autoAlpha:0 })
+      .from("#premiacoes .third", { y:100, autoAlpha:0 });
+
+  
+    gsap.from(".video-cover", {
+      scrollTrigger: {
+        trigger: ".video-cover",
+        start: "-=300",
+        end: "+=300",
+        markers: true,
+        scrub: 0.5,
+      },
+      y: 100,
     });
   },
 };
@@ -380,8 +510,7 @@ export default {
 
 
 <style lang="scss" scoped>
-
-#premiações {
+#premiacoes {
   .side-box {
     padding-bottom: 13rem !important;
   }
@@ -407,7 +536,7 @@ export default {
 }
 
 .positioned-container::before {
-  content: url('~@/static/images/seta-quem-somos.svg');
+  content: url("~@/static/images/seta-quem-somos.svg");
   display: block;
   position: absolute;
   top: 0;
@@ -420,10 +549,10 @@ export default {
 }
 
 .image-text-container {
-  background-image: url('~@/static/images/group 6.png');
+  background-image: url("~@/static/images/group 6.png");
   height: 110vh;
   background-size: cover;
-  
+
   p {
     font-size: 2.4rem;
   }
@@ -445,9 +574,8 @@ export default {
 
   img:hover {
     transform: scale(1.1);
-      filter: none;
+    filter: none;
   }
-
 }
 
 .boxes-seja-digital {
@@ -491,8 +619,8 @@ export default {
     padding-bottom: 60px;
   }
 
-  >div::after {
-    content: '';
+  > div::after {
+    content: "";
     display: block;
     width: 10rem;
     border-bottom: 1px solid var(--brq-blue);
