@@ -125,7 +125,7 @@
             />
           </g>
         </svg>
-        <p class="font-size-h1 text-muted mt-5 mb-5">SEJA DIGITAL COM A BRQ</p>
+        <h2 class="font-size-h1 text-muted mt-5 mb-5">SEJA DIGITAL COM A BRQ</h2>
       </div>
       <div
         class="container d-flex flex-row justify-content-between boxes-seja-digital"
@@ -203,14 +203,14 @@
         <div class="row">
           <h2 class="blue-text font-size-h1 w-100 text-right">MARKET SHARE</h2>
         </div>
-        <div class="row mt-5 justify-content-between">
-          <div >
+        <div class="row mt-5">
+          <div class="col-12 col-md-4">
             <p class="text-center font-size-p">IT SERVICE TOTAL<br><span class="text-orange font-size-h1 font-weight-bold">8º Local/<br />28º Geral</span></p>
           </div>
-          <div >
+          <div class="col-12 col-md-4">
             <p class="text-center font-size-p">APLICAÇÕES<br><span class="text-orange font-size-h1 font-weight-bold">2º Local/<br>7º Geral</span></p>
           </div>
-          <div >
+          <div class="col-12 col-md-4">
             <p class="text-center font-size-p">APLICAÇÕES PARA O SETOR<br><span class="text-orange font-size-h1 font-weight-bold">2º geral</span></p>
           </div>
         </div>
@@ -435,11 +435,19 @@ export default {
   justify-content: center;
   align-items: center;
 
-  * {
+  img {
+    filter: brightness(0) invert(1);
+    transition: all 0.5s ease;
     height: 100px;
     width: 130px;
     object-fit: scale-down;
   }
+
+  img:hover {
+    transform: scale(1.1);
+      filter: none;
+  }
+
 }
 
 .boxes-seja-digital {
