@@ -61,11 +61,11 @@
       </div>
     </section>
 
-    <section class="image-text-container pt-5">
+    <section class="image-text-container pt-5 mt-5">
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-6 positioned-container">
-            <p class="h2 text-white">
+            <p class="text-white">
               Porque acreditamos que o resultado é a evolução de modelos de
               negócio que visam levar a melhor experiência para os consumidores.
             </p>
@@ -80,19 +80,7 @@
       </div>
     </section>
     <section>
-      <!-- <div class="container-fluid mt-5 p-0 image-text-container">
-        <img src="~@/static/images/group 6.png" width="100%" />
-        <div class="container">
-          <p class="absolute-text col-5 mt-5">
-            Porque acreditamos que o resultado é a evolução de modelos de
-            negócio que visam levar a melhor experiência para os consumidores.
-          </p>
-          <div class="col-md-6">
-            <img src="~@/static/images/platform-plus.png">
-          </div>
-        </div>
-      </div> -->
-      <div class="container">
+      <div class="container" id="feras">
         <p class="font-size-p">
           Somos um time de mais de
           <span class="text-orange font-weight-bold">3.000 #feras</span
@@ -256,21 +244,21 @@
       </div>
     </section>
 
-    <section>
+    <section id="premiações">
       <div class="container side-box">
         <p class="text-muted font-size-p">PREMIAÇÕES</p>
-        <div class="row justify-content-between px-5">
-          <div class="d-flex flex-column text-center">
+        <div class="row justify-content-between px-5 mt-5">
+          <div class="d-flex flex-column text-center justify-content-between align-items-center">
             <p class="font-size-p">Líder em <span class="text-orange font-weight-bold">4 de 5<br>quadrantes</span> de<br>transformação Digital</p>
-            <img src=""/> <!--Adicionar Imagem-->
+            <img src="~@/static/images/isg.svg"/>
           </div>
-          <div class="d-flex flex-column text-center">
+          <div class="d-flex flex-column text-center justify-content-between align-items-center">
             <p class="font-size-p"><span class="text-orange font-weight-bold">4º lugar</span>em Inovações e<span class="text-orange font-weight-bold"><br>5º Lugar </span>em Tecnologia</p>
-            <img src=""/> <!--Adicionar Imagem-->
+            <img src="~@/static/images/isg.svg"/>
           </div>
-          <div class="d-flex flex-column text-center">
+          <div class="d-flex flex-column text-center justify-content-between align-items-center">
             <p class="font-size-p"><span class="text-orange font-weight-bold">1º lugar</span> na categoria<br><span class="text-orange font-weight-bold">Grande Empresa<br>Mais Digital</span></p>
-            <img src=""/> <!--Adicionar Imagem-->
+            <img src="~@/static/images/empresas-mais-sigitais.svg"/>
           </div>
         </div>
       </div>
@@ -370,6 +358,16 @@ export default {
 
 <style lang="scss" scoped>
 
+#premiações {
+  .side-box {
+    padding-bottom: 13rem !important;
+  }
+}
+
+#feras {
+  margin-top: 30px;
+}
+
 .relacionamentos-section {
   margin-top: 6rem;
   background-color: var(--brq-dark);
@@ -386,12 +384,12 @@ export default {
 }
 
 .positioned-container::before {
-  content: url('~@/static/images/Group.png');
+  content: url('~@/static/images/seta-quem-somos.svg');
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, 25%);
 }
 
 #where {
@@ -402,6 +400,10 @@ export default {
   background-image: url('~@/static/images/group 6.png');
   height: 110vh;
   background-size: cover;
+  
+  p {
+    font-size: 2.4rem;
+  }
 }
 
 .relacionamentos {
