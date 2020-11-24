@@ -144,7 +144,7 @@
       >
         <div>
           <p>
-            <span class="text-uppercase font-weight-bold"
+            <span class="text-uppercase font-weight-bold text-nowrap"
               >TRANSFORMAÇÃO <br />DIGITAL<br
             /></span>
             com robustez, <br />segurança e <br />credibilidade
@@ -153,7 +153,7 @@
         <div>
           <p>
             Aplicação de
-            <span class="text-uppercase font-weight-bold"
+            <span class="text-uppercase font-weight-bold text-nowrap"
               ><br />EFICIENTES E <br />INOVADORAS<br
             /></span>
             tecnologias e <br />metodologias
@@ -162,22 +162,121 @@
         <div>
           <p>
             Processos e <br />ferramentas<span
-              class="text-uppercase font-weight-bold"
+              class="text-uppercase font-weight-bold text-nowrap"
               ><br />TESTADAS E <br />MADURAS</span
             >
           </p>
         </div>
         <div>
           <p>
-            <span class="text-uppercase font-weight-bold"
+            <span class="text-uppercase font-weight-bold text-nowrap"
               >ENTRE AS <br />MELHORES<br
             /></span>
             empresas para <br />trabalhar
+          </p>
+          <img src="~@/static/images/bitmap.png" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container side-box">
+        <p class="h1">INFRAESTRUTURA ROBUSTA</p>
+        <div class="d-flex flex-row justify-content-around">
+          <div class="text-center">
+            <p class="h2-font-size font-weight-bold text-orange m-0">6</p>
+            <p class="font-size-p">Centros de Serviço</p>
+          </div>
+          <div class="text-center">
+            <p class="h2-font-size font-weight-bold text-orange m-0">3.000</p>
+            <p class="font-size-p">Profissionais</p>
+          </div>
+          <div class="text-center">
+            <p class="h2-font-size font-weight-bold text-orange m-0">500MM</p>
+            <p class="font-size-p">De receita</p>
+          </div>
+        </div>
+        <div class="text-center mt-5 d-flex justify-content-center flex-row">
+          <p class="font-size-p anywhere-office">
+            Nosso time engajado atuando<br /><span
+              class="blue-text font-weight-bold"
+              >ANYWHERE OFFICE</span
+            >
+          </p>
+          <p class="font-size-p offset-y-diagonal">
+            Centros de serviço, Home Office <br />ou direto no cliente
           </p>
         </div>
       </div>
     </section>
 
+    <section class="bg-diagonal-light">
+      <div class="container content">
+        <div class="row">
+          <h2 class="blue-text font-size-h1 w-100 text-right">MARKET SHARE</h2>
+        </div>
+        <div class="row mt-5 justify-content-between">
+          <div >
+            <p class="text-center font-size-p">IT SERVICE TOTAL<br><span class="text-orange font-size-h1 font-weight-bold">8º Local/<br />28º Geral</span></p>
+          </div>
+          <div >
+            <p class="text-center font-size-p">APLICAÇÕES<br><span class="text-orange font-size-h1 font-weight-bold">2º Local/<br>7º Geral</span></p>
+          </div>
+          <div >
+            <p class="text-center font-size-p">APLICAÇÕES PARA O SETOR<br><span class="text-orange font-size-h1 font-weight-bold">2º geral</span></p>
+          </div>
+        </div>
+        <p class="mt-5">Fonte: IDC</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row w-100 text-right mb-5">
+          <p class="font-size-p text-muted w-100 text-uppercase">Governança<br>e transparência</p>
+        </div>
+        <div class="row justify-content-between gov-e-transp">
+          <div>
+            <p>Hoshin Kanri</p>
+            <img src="~@/static/images/hoshin.png">
+          </div>
+          <div>
+            <p>Bovespa</p>
+            <img src="~@/static/images/Grupo 1.png">
+          </div>
+          <div>
+            <p>Acionista</p>
+            <img src="~@/static/images/ancionista.png">
+          </div>
+          <div>
+            <p>Auditoria</p>
+            <img src="~@/static/images/auditoria.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container side-box">
+        <p class="text-muted font-size-p">PREMIAÇÕES</p>
+        <div class="row justify-content-between px-5">
+          <div class="d-flex flex-column text-center">
+            <p class="font-size-p">Líder em <span class="text-orange font-weight-bold">4 de 5<br>quadrantes</span> de<br>transformação Digital</p>
+            <img src=""/> <!--Adicionar Imagem-->
+          </div>
+          <div class="d-flex flex-column text-center">
+            <p class="font-size-p"><span class="text-orange font-weight-bold">4º lugar</span>em Inovações e<span class="text-orange font-weight-bold"><br>5º Lugar </span>em Tecnologia</p>
+            <img src=""/> <!--Adicionar Imagem-->
+          </div>
+          <div class="d-flex flex-column text-center">
+            <p class="font-size-p"><span class="text-orange font-weight-bold">1º lugar</span> na categoria<br><span class="text-orange font-weight-bold">Grande Empresa<br>Mais Digital</span></p>
+            <img src=""/> <!--Adicionar Imagem-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONDE ESTAMOS -->
     <section id="where" class="bg-diagonal-light">
       <div class="container content">
         <div class="row">
@@ -282,15 +381,93 @@ export default {
     font-size: 1.6rem;
   }
 
-  div {
-    transform: translate(-30px, 0) rotate(-15deg);
-    border-bottom: 1px solid var(--brq-blue);
-    
-
-    p {
-      transform: translate(30px, 0) rotate(15deg);
-    }
+  > * {
+    position: relative;
+    padding-bottom: 2rem;
   }
+
+  > *::after {
+    content: "";
+    display: block;
+    width: 13rem;
+    position: absolute;
+    transform: rotate(-15deg);
+    border-bottom: 1px solid var(--brq-blue);
+    bottom: 0;
+  }
+}
+
+.anywhere-office {
+  position: relative;
+
+  span {
+    font-size: 2.2rem;
+  }
+}
+
+.bg-diagonal-light {
+  .content {
+    padding: 5rem 0;
+  }
+}
+
+.gov-e-transp {
+  div {
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  >div::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    border-bottom: 1px solid var(--brq-blue);
+    transform: rotate(-20deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.anywhere-office::after {
+  content: "";
+  display: block;
+  width: 13rem;
+  position: absolute;
+  transform: translate(50%) rotate(-15deg);
+  border-bottom: 1px solid var(--brq-blue);
+  bottom: -15%;
+  right: 0;
+}
+
+.side-box {
+  width: 90%;
+  margin-top: 10rem;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 18rem;
+}
+
+.offset-y-diagonal {
+  transform: translate(0, 150%);
+}
+
+.side-box:before {
+  content: "";
+  border: 2px solid var(--brq-blue);
+  border-top: 0;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  transform: skewY(-10deg);
+  bottom: 100px;
+  left: 0;
+  z-index: -1;
+}
+
+.h2-font-size {
+  font-size: 5rem;
 }
 
 .blue-text {

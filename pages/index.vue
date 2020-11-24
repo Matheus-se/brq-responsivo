@@ -594,9 +594,10 @@ export default {
 
     gsap.to(".method", {
       scrollTrigger: {
+        markers: true,
         trigger: ".video-cover",
         start: "-=200",
-        end: "+=100",
+        end: "+=50",
         scrub: 0.5,
       },
       borderLeftColor: "#fff",

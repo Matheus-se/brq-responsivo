@@ -408,7 +408,7 @@
             <img src="~@/static/images/team_care.png" class="pr-4 pb-3" />
           </div>
           <div class="d-flex align-items-end flex-column computador">
-            <img src="~@/static/images/Grupo 1.png" class="computador" />
+            <img src="~@/static/images/pc.png" class="computador" />
           </div>
         </div>
       </div>
