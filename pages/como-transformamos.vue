@@ -900,7 +900,7 @@ export default {
   scrollbar-color: transparent transparent;
   height: 100%;
   width: 100%;
-  touch-action: none;
+  touch-action:pan-y;
 
   * {
     outline: none;
