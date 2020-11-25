@@ -49,8 +49,8 @@
 
             <div class="services" v-if="dept">
               <p v-if="dept === 'rh'">
-                Para conhecer nossas vagas, <a href="#" class="text-lowercase">Clique aqui.</a> Agora
-                se precisar de outras informações, continua a preencher o
+                Para conhecer nossas vagas, <a href="#">clique aqui.</a><br />
+                Agora se precisar de outras informações, continue a preencher o
                 formulário. :)
               </p>
 

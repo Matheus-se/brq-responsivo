@@ -75,7 +75,7 @@
             <template #button-content>
               <span>Quem somos</span>
             </template>
-            <b-dropdown-item to="/quem-somos/sobre-nos">Sobre nós</b-dropdown-item>
+            <b-dropdown-item>Sobre nós</b-dropdown-item>
             <b-dropdown-item>Nossa cultura</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item to="/como-transformamos"
