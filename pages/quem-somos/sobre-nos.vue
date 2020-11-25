@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="image-section">
       <div class="container">
         <div class="row mb-md-5 flex-md-row flex-column-reverse">
           <div class="col-md-5">
@@ -62,12 +62,12 @@
     </section>
 
     <section class="image-text-container pt-5 mt-5 ">
-      <div class="container mt-5">
+      <div class="container mt-md-5 mt-0">
         <div class="row pt-md-5 pt-1">
           <div class="col-md-6 positioned-container text-content">
-            <p class="text-white">
-              Porque acreditamos que o resultado é a evolução de modelos de
-              negócio que visam levar a melhor experiência para os consumidores.
+            <p class="text-white mb-md-0 mb-4">
+              Porque acreditamos que <br class="d-block d-md-none"/>o resultado é a evolução <br class="d-block d-md-none"/>de modelos de
+              negócio que <br class="large-mobile-br"/>visam levar a melhor <br class="d-block d-md-none"/>experiência para os <br class="d-block d-md-none"/>consumidores.
             </p>
           </div>
           <div class="col-md-6 image-content">
@@ -78,7 +78,7 @@
     </section>
     <section id="seja-digital">
       <div class="container" id="feras">
-        <p class="font-size-p">
+        <p class="font-size-p mb-md-0 mb-5">
           Somos um time de mais de<br class="d-block d-md-none">
           <span class="text-orange font-weight-bold">3.000 #feras <br class="d-none d-md-block"/></span
           >apaixonados por <br class="d-block d-md-none">tecnologia e transformação,<br/>atuando no
@@ -122,12 +122,12 @@
             />
           </g>
         </svg>
-        <h2 class="text-muted mt-5 mb-5 text-center">SEJA DIGITAL COM A BRQ</h2>
+        <h2 class="text-muted mt-5 mb-5 text-center be-digital-text">SEJA DIGITAL COM A BRQ</h2>
       </div>
       <div
-        class="container d-flex flex-column flex-md-row justify-content-between boxes-seja-digital"
+        class="container d-flex flex-column flex-md-row justify-content-between boxes-seja-digital align-items-center"
       >
-        <div class="first mt-md-0 mt-5">
+        <div class="first mt-0 col-md-auto col-10">
           <p>
             <span class="text-uppercase text-nowrap"
               >TRANSFORMAÇÃO <br />DIGITAL<br
@@ -135,7 +135,7 @@
             com robustez, <br class="d-none d-md-block"/>segurança e <br class="d-none d-md-block"/>credibilidade
           </p>
         </div>
-        <div class="second mt-md-0 mt-5">
+        <div class="second mt-md-0 mt-5 col-md-auto col-10">
           <p>
             Aplicação de<br />
             <span class="text-uppercase text-nowrap"
@@ -144,13 +144,13 @@
             tecnologias e <br class="d-none d-md-block"/>metodologias
           </p>
         </div>
-        <div class="third mt-md-0 mt-5">
+        <div class="third mt-md-0 mt-5 col-md-auto col-10">
           <p>
             Processos e <br class="d-none d-md-block"/>ferramentas<br /><span class="text-uppercase text-nowrap">
             TESTADAS E <br />MADURAS</span>
           </p>
         </div>
-        <div class="forth mt-md-0 mt-5">
+        <div class="forth mt-md-0 mt-5 col-md-auto col-10">
           <p>
             <span class="text-uppercase text-nowrap"
               >ENTRE AS <br />MELHORES<br
@@ -165,7 +165,7 @@
     <section>
       <div class="container side-box infra">
         <p class="h1 text-muted">INFRAESTRUTURA ROBUSTA</p>
-        <div class="d-flex flex-column flex-md-row justify-content-around mt-5">
+        <div class="d-flex flex-column flex-md-row justify-content-around mt-0 mt-md-5">
           <div class="text-center first">
             <h2 class="h2-font-size text-orange m-0">6</h2>
             <p class="font-size-p">Centros de Serviço</p>
@@ -182,12 +182,12 @@
         <div class="text-center mt-5 d-flex justify-content-center flex-column flex-md-row">
           <p class="font-size-p anywhere-office">
             Nosso time engajado atuando<br /><span
-              class="blue-text"
+              class="blue-text text-nowrap"
               >ANYWHERE OFFICE</span
             >
           </p>
           <p class="font-size-p offset-y-diagonal">
-            Centros de serviço, Home Office <br />ou direto no cliente
+            Centros de serviço, Home <br class="d-block d-md-none"/>Office <br class="d-none d-md-block"/>ou direto no cliente
           </p>
         </div>
       </div>
@@ -241,7 +241,7 @@
 
     <section id="premiacoes">
       <div class="container side-box">
-        <p class="text-muted font-size-p text-md-left text-center">PREMIAÇÕES</p>
+        <h2 class="text-muted text-md-left text-center">PREMIAÇÕES</h2>
         <div class="d-flex flex-column flex-md-row justify-content-between px-5 mt-5">
           <div
             class="d-flex flex-column text-center justify-content-between align-items-center first"
@@ -281,7 +281,7 @@
       </div>
     </section>
 
-    <section class="relacionamentos-section">
+    <section class="relacionamentos-section mt-0 mt-md-5">
       <div class="container">
         <h2>
           RELACIONAMENTOS LONGOS E PERENES,<br /><span
@@ -481,16 +481,17 @@ export default {
       .from("#premiacoes .second", { y:100, autoAlpha:0 })
       .from("#premiacoes .third", { y:100, autoAlpha:0 });
 
-  
-    gsap.from(".video-cover", {
-      scrollTrigger: {
-        trigger: ".video-cover",
-        start: "-=300",
-        end:"+=300",
-        scrub: 0.5,
-      },
-      y: 100,
-    });
+    if (window.matchMedia("(min-width: 700px)").matches) {    
+      gsap.from(".video-cover", {
+        scrollTrigger: {
+          trigger: ".video-cover",
+          start: "-=300",
+          end:"+=300",
+          scrub: 0.5,
+        },
+        y: 100,
+      });
+    }
   },
 };
 </script>
@@ -498,6 +499,9 @@ export default {
 
 <style lang="scss" scoped>
 #premiacoes {
+  h2 {
+    font-size: 3rem;
+  }
   .side-box {
     padding-bottom: 13rem !important;
   }
@@ -527,7 +531,6 @@ export default {
 }
 
 .relacionamentos-section {
-  margin-top: 6rem;
   background-color: var(--brq-dark);
   padding-top: 6rem;
   padding-bottom: 18rem;
@@ -556,7 +559,7 @@ export default {
 
 .image-text-container {
   background-image: url("~@/static/images/group 6.png");
-  height: 110vh;
+  height: 120vh;
   background-size: cover;
 
   p {
@@ -746,8 +749,55 @@ export default {
 }
 
 @media (max-width: 575.98px) {
+
+  .gov-e-transp {
+    >div::after {
+      content: '';
+      width: 80%;
+      transform: rotate(-8deg);
+    }
+  }
+
+  .relacionamentos-section {
+    margin-top: 0rem;
+  }
+
+  .anywhere-office {
+
+    span {
+      font-size: 3.4rem;
+    }
+  }
+
   .bg-diagonal-light {
     margin-top: 0 !important;
+    margin-bottom: 3rem;
+  }
+
+  .main-title {
+    padding-bottom: 20rem;
+  }
+
+  .font-size-p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
+
+  #feras {
+    margin-top: -11rem;
+  }
+
+  .side-box {
+    margin-top: 1rem;
+  }
+
+  .video-cover {
+    
+    img {
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+      transform: translate(0, 25%);
+    }
   }
 
   .relacionamentos-section {
@@ -758,14 +808,107 @@ export default {
     top: 90%;
   }
 
+  .boxes-seja-digital {
+
+    > *::after {
+      content: "";
+      width: 90%;
+      transform: rotate(-8deg);
+    }
+
+    > * {
+      padding-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.2;
+    }
+
+    >.forth::after {
+      content: '';
+      display: none;
+    }
+  }
+
   #where {
     transform: translate(0, -20%);
   }
 
   .image-text-container {
+    height: 200vw;
     p {
       font-size: 1.4rem;
     }
+  }
+
+  .image-section {
+    margin-top: -18rem;
+  }
+
+  .anywhere-office {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .anywhere-office::after {
+    content: "";
+    width: 70%;
+    transform: rotate(-8deg);
+    bottom: 0;
+    left: 15%;
+  }
+
+  #gov-e-transp {
+    width: 90%;
+
+    .forth {
+      padding-bottom: 2rem;
+    }
+
+    .forth::after {
+      content: '';
+      display: none;
+    }
+  }
+
+  .offset-y-diagonal {
+    transform: translate(0, 0);
+  }
+
+  .infra {
+    padding-bottom: 12rem;
+    .h1 {
+      font-size: 1.7rem;
+    }
+
+    >div {
+      >div {
+        margin-top: 3rem;
+
+        >h2 {
+          line-height: .8;
+        }
+      }
+    }
+  }
+
+  .title {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .large-mobile-br {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .be-digital-text {
+    font-size: 4.5rem !important;
   }
 }
 </style>
