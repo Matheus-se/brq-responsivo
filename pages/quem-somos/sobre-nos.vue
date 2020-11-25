@@ -253,7 +253,7 @@
               >
               de<br />transformação Digital
             </p>
-            <img src="~@/static/images/isg.svg" />
+            <img src="~@/static/images/isg.svg" class="img-premios"/>
           </div>
           <div
             class="d-flex flex-column text-center justify-content-between align-items-center second mt-5 mt-md-0"
@@ -264,7 +264,7 @@
                 ><br />5º Lugar </span
               >em Tecnologia
             </p>
-            <img src="~@/static/images/isg.svg" />
+            <img src="~@/static/images/360.svg" class="img-premios"/>
           </div>
           <div
             class="d-flex flex-column text-center justify-content-between align-items-center third mt-5 mt-md-0"
@@ -275,7 +275,7 @@
                 >Grande Empresa<br />Mais Digital</span
               >
             </p>
-            <img src="~@/static/images/empresas-mais-sigitais.svg" />
+            <img src="~@/static/images/empresas-mais-sigitais.svg" class="img-premios"/>
           </div>
         </div>
       </div>
@@ -546,6 +546,11 @@ export default {
   .side-box {
     padding-bottom: 13rem !important;
   }
+}
+
+.img-premios {
+  height: 50%;
+  object-fit: scale-down;
 }
 
 #market-share {
@@ -957,5 +962,11 @@ export default {
   .be-digital-text {
     font-size: 4.5rem !important;
   }
+}
+
+@media(min-width: 1440px) and (max-width: 1920px) {
+    .main-title.cut-lr .diagonal-pages {
+        transform: rotate(-3deg);
+    }
 }
 </style>

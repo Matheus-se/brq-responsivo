@@ -1361,6 +1361,16 @@ div.parcerias {
   }
 }
 
+/* Ultra HD */
+@media(min-width: 1441px) and (max-width: 1920px) {
+  .title {
+
+    svg.diagonal-line {
+      bottom: -24vw !important;
+    }
+  }
+} 
+
 @media (max-width: 575.98px) {
   .seta-responsive {
     margin-left: 33px;

@@ -85,6 +85,7 @@
           devem <br />ser protagonistas de suas jornadas, sempre com o foco em
           autonimia <br />e responsabilidade.
         </p>
+      </div>
         <div class="fera-box text-center">
           <h2>
             cuidamos dos nossos <br />#feras desde a atração! <br /><span
@@ -93,7 +94,12 @@
             >
           </h2>
         </div>
-      </div>
+        <div class="orange-rectangle">
+            <div class="d-flex">
+                <h2>FIT CULTURAL</h2>
+                <p>Autonimia e responsabilidade</p>
+            </div>
+        </div>
     </section>
   </div>
 </template>
@@ -109,6 +115,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.orange-rectangle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 86%);
+    background-color: var(--brq-yellow);
+    width: 95%;
+    margin-left: 2.5%;
+}
+
 .step-1,
 .step-2,
 .step-3,
@@ -120,14 +134,16 @@ export default {
 }
 
 .fera-box {
-  background-color: white;
-  color: var(--brq-grey);
-  z-index: 10;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding: 2rem 5rem;
+    background-color: white;
+    color: var(--brq-grey);
+    border: 1px solid var(--brq-yellow);
+    width: 50%;
+    transform: translate(50%, -40%);
+    padding: 1.5rem 0;
+
+    h2 {
+        font-size: 2.5rem;
+    }
 }
 
 #overlay-box {
@@ -171,7 +187,7 @@ export default {
   transform: skewY(-10deg);
   bottom: 100px;
   left: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
 .lean-desc {

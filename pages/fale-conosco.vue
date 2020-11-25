@@ -397,5 +397,11 @@ export default {
       width: 100%;
     }
   }
+
+  @media(min-width: 1440px) and (max-width: 1920px) {
+    .main-title.cut-lr .diagonal-pages {
+        transform: rotate(-3deg);
+    }
+  }
 }
 </style>
