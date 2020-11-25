@@ -300,7 +300,7 @@
                 <div class="slider-1 px-md-2 px-4 slider-brq">
                   <section>
                     <h2 class="change-text-1 transition-opacity">
-                      definir a estratégia <br class="d-block d-md-none" />e
+                      Desdobrar a estratégia <br class="d-block d-md-none" />e
                       transformar <br class="d-block d-md-none" />a cultura
                     </h2>
                     <ul>
