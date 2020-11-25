@@ -167,15 +167,15 @@
         <p class="h1 text-muted">INFRAESTRUTURA ROBUSTA</p>
         <div class="d-flex flex-column flex-md-row justify-content-around mt-0 mt-md-5">
           <div class="text-center first">
-            <h2 class="h2-font-size text-orange m-0">6</h2>
+            <h2 class="h2-font-size text-orange m-0 counter-placeholder-services" data-number="6">0</h2>
             <p class="font-size-p">Centros de Serviço</p>
           </div>
           <div class="text-center second">
-            <h2 class="h2-font-size text-orange m-0">3.000</h2>
+            <h2 class="h2-font-size text-orange m-0 counter-placeholder-profissionais" data-number="3000">0</h2>
             <p class="font-size-p">Profissionais</p>
           </div>
           <div class="text-center third">
-            <h2 class="h2-font-size text-orange m-0">500MM</h2>
+            <h2 class="h2-font-size text-orange m-0 counter-placeholder-receita" data-number="500">0MM</h2>
             <p class="font-size-p">De receita</p>
           </div>
         </div>
@@ -363,6 +363,47 @@ export default {
     },
   },
   mounted() {
+
+    const services: any = document.querySelector('.counter-placeholder-services');
+    const profissionais: any = document.querySelector('.counter-placeholder-profissionais');
+    const receita: any = document.querySelector('.counter-placeholder-receita');
+
+    let zero = {
+      services: 0, 
+      profissionais: 0, 
+      receita: 0
+    };
+
+    function countNumber() {
+      var servicesVal = gsap.utils.snap(1, zero.services);
+      var profissionaisVal = gsap.utils.snap(1, zero.profissionais);
+      var receitaVal = gsap.utils.snap(1, zero.receita);
+      services.innerHTML = servicesVal;
+      profissionais.innerHTML = profissionaisVal;
+      receita.innerHTML = `${receitaVal}MM`;
+    }
+
+    function resetCounter() {
+      services.innerHTML = '0';
+      profissionais.innerHTML = '0';
+      receita.innerHTML = '0MM';
+    }
+
+    gsap.to(zero, {
+      scrollTrigger: {
+        trigger: ".infra",
+        start: "-=300",
+        // toggleActions: "restart none none none",
+        // onLeaveBack: resetCounter
+      },
+
+      duration:1,
+      services: services.dataset.number,
+      profissionais: profissionais.dataset.number,
+      receita: receita.dataset.number,
+      onUpdate:countNumber
+    })
+    
     gsap.to(".diagonal-pages", {
       scrollTrigger: {
         trigger: ".content-title-brq",
@@ -378,8 +419,8 @@ export default {
       gsap.from(relacionamento, {
         scrollTrigger: {
           trigger: relacionamento,
-          start: "-=500",
-          end: "-=500",
+          start: "-=550",
+          end: "-=550",
           scrub: 0,
         },
         ease: "expo",
@@ -749,6 +790,12 @@ export default {
 }
 
 @media (max-width: 575.98px) {
+
+  .image-content {
+    img {
+      transform: translate(-13%, 0);
+    }
+  }
 
   .gov-e-transp {
     >div::after {
