@@ -136,7 +136,7 @@
           <div class="row">
             <div class="col-md-10 mx-auto">
               <p>
-                Para mais informações, solicitações de entrevistas e conteúdos
+                Para mais informações, solicitações de entrevistas <br class="d-block d-md-none"> e conteúdos
                 entre <br class="d-block d-md-none"> em contato com <br class="d-block d-md-none">
                 <span class="color-transition-text"
                   >leticia@pineapplehub.com.br</span
@@ -284,7 +284,9 @@ h2 {
   margin-bottom: 15rem;
 }
 
-@media (max-width: 768px) {
+/* To any type of mobile phone */
+
+@media (max-width: 425px) {
   .main-title {
     padding-bottom: 20rem;
     overflow: unset; //retirar bordas no mobile
@@ -330,6 +332,14 @@ h2 {
       position: relative;
       transform: translate(0, -100px);
     }
+  }
+}
+
+/* Fix for Iphone Plus and large phone */
+
+@media (min-width: 410px) and (max-width: 420px) {
+  .laptop {
+    margin-top: -65%;
   }
 }
 </style>

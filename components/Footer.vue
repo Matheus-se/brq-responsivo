@@ -12,10 +12,10 @@
                 <a class="nav-link" href="#">Quem somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Como Transformamos</a>
+                <a class="nav-link" href="/como-transformamos">Como Transformamos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conteúdos</a>
+                <a class="nav-link" href="/conteudos/blog">Conteúdos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">RI</a>
@@ -24,7 +24,7 @@
                 <a class="nav-link" href="#">Venha ser fera</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Fale com a gente</a>
+                <a class="nav-link" href="/fale-conosco">Fale com a gente</a>
               </li>
             </ul>
           </div>

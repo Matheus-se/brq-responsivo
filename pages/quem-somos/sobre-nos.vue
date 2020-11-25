@@ -209,7 +209,7 @@
             <p class="text-center font-size-p">APLICAÇÕES PARA<br>O SETOR<br><span class="text-orange">2º geral</span></p>
           </div>
         </div>
-        <p class="mt-5">Fonte: IDC</p>
+        <p class="mt-5 text-center text-md-left">Fonte: IDC</p>
       </div>
     </section>
 
@@ -799,6 +799,7 @@ export default {
   .image-content {
     img {
       transform: translate(-13%, 0);
+      width: 113% !important;
     }
   }
 
