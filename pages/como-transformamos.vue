@@ -830,7 +830,8 @@ export default {
 
 
 .left-placeholder, .right-placeholder {
-  transform: translate(0, 25%)
+  transform: translate(0, 25%);
+  padding: 0 10px;
 }
 
 .left-placeholder {
